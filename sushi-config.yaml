@@ -13,7 +13,15 @@ version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
-publisher: NCPI
+publisher:
+  name: NCPI FHIR Working Group
+  url: https://github.com/ncpi-fhir
+contact:
+  - name: Meen Chul Kim
+    telecom:
+      - system: email
+        value: meenchul@d3b.center
+        use: work
 dependencies:
   hl7.fhir.us.core: 3.1.1
 
