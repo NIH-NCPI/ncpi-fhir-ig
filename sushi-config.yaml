@@ -1,0 +1,34 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: NCPI-FHIR-Implementation-Guide
+canonical: https://ncpi-fhir.github.io/ncpi-fhir-ig
+name: NCPIFHIRImplementationGuide
+title: NCPI FHIR Implementation Guide
+description: "FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI)."
+status: draft
+license: CC0-1.0
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2021+
+releaseLabel: ci-build
+publisher:
+  name: NCPI FHIR Working Group
+  url: https://github.com/ncpi-fhir
+contact:
+  - name: Meen Chul Kim
+    telecom:
+      - system: email
+        value: meenchul@d3b.center
+        use: work
+dependencies:
+  hl7.fhir.us.core: 3.1.1
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  Artifacts: artifacts.html
