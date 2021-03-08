@@ -2,7 +2,7 @@
 FROM jekyll/builder
 
 # add node
-RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
+RUN apk update
 RUN apk add  nodejs 
 # add the sushi tool
 RUN  npm install -g fsh-sushi@1.2.0
