@@ -2,7 +2,11 @@
 
 ## Quick Start
 
-1. Install Node.js and SUSHI, following [the instructions](https://fshschool.org/docs/sushi/installation/).
+1. Install the following dependencies (See [the instructions](https://fshschool.org/docs/sushi/installation/)):
+
+- Node.js >= v10.0.0
+- SUSHI >= v1.2.0
+- Jekyll >= v4.2.0
 
 2. Clone this repository.
 
@@ -20,13 +24,13 @@ $ sushi .
 4. Update the HL7 FHIR IG Publisher. This will download the latest version of the tool. This step can be skipped if 1) the command already has been run recently or 2) you don't want to update it.
 
 ```bash
-$ ./updatePublisher.sh
+$ ./_updatePublisher.sh
 ```
 
 5. Generate the IG.
 
 ```bash
-$ ./genounce.sh
+$ ./_genonce.sh
 ```
 
 6. Open the file `./output/index.html` to browse the resulting IG.
