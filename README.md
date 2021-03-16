@@ -70,7 +70,7 @@ docker run --rm -it -v $(pwd)/:/src fsh sh -c  "java -version && node  --version
 ### Create shorthand alias
 
 ```
-alias fsh='docker run -v $(pwd)/:/src --rm -it fish'
+alias fsh='docker run -v $(pwd)/:/src --rm -it fsh'
 ```
 
 ### Run development tools
@@ -91,14 +91,14 @@ fsh ./_genonce.sh
 You may need to run sushi or _gen* scripts several times in development mode.
 
 ```
-# start image named `fish` in background
+# start image named `fsh` in background
 docker run -d  -v $(pwd)/:/src -it --entrypoint "/bin/bash" --name fsh  fsh
 
 # show running container
 docker ps
 >>>
 CONTAINER ID   IMAGE     COMMAND       CREATED         STATUS         PORTS                 NAMES
-69759e4336b7   fsh       "/bin/bash"   4 seconds ago   Up 3 seconds   4000/tcp, 35729/tcp   fish
+69759e4336b7   fsh       "/bin/bash"   4 seconds ago   Up 3 seconds   4000/tcp, 35729/tcp   fsh
 
 # create alias referencing the running container
 alias fsh='docker exec fsh'
