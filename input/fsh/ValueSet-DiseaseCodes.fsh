@@ -1,4 +1,4 @@
-ValueSet: disease-codes
+ValueSet: DiseaseCodes
 Id: disease-codes
 Title: "Disease Codes"
 Description: "This value set includes all codes from NCIt (NCI Thesaurus)."

@@ -1,3 +1,5 @@
+// All instances of type Specimen should go in this file.
+
 Alias: SpecimenTypeCodeSystem = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: SCT = http://snomed.info/sct
 
