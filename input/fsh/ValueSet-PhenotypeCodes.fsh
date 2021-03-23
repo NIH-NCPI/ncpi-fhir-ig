@@ -6,4 +6,4 @@ Description: "This value set includes all codes from Human Phenotype Ontology."
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "NCPI Project Forge"
-* include codes from system $hp.owl
+* include codes from system hpo
