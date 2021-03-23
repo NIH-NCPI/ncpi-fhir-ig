@@ -12,6 +12,13 @@ else
 	txoption="-tx n/a"
 fi
 
+# The NLM server is currently running at R3 and thus not compatible with our current efforts
+NLM_TERM="https://cts.nlm.nih.gov/fhir/"
+
+# This is the system we'll likely use in the immediate future
+ONTO="https://r4.ontoserver.csiro.au/fhir"
+
+#txoption="-tx $ONTO"
 echo "$txoption"
 
 publisher=$input_cache_path/$publisher_jar
