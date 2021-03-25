@@ -1,6 +1,6 @@
 Alias: ContactRoleCodeSystem = http://terminology.hl7.org/CodeSystem/v2-0131
 
-Instance: pt-001
+Instance: patient-example-1
 InstanceOf: Patient
 * meta.profile = "http://hl7.org/fhir/StructureDefinition/Patient"
 * identifier[0].system = "https://kf-api-dataservice.kidsfirstdrc.org/participants?study_id=SD_PREASA7S"

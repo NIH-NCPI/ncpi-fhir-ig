@@ -12,7 +12,7 @@ InstanceOf: Specimen
 * identifier[1].value = "Specimen|SD_BHJXBDQK|571312"
 * type.coding = SpecimenTypeCodeSystem#TISS "Tissue"
 * type.text = "Solid Tissue"
-* subject = Reference(pt-001)
+* subject = Reference(patient-example-1)
 * receivedTime = "2019-06-15"
 * collection.collectedDateTime = "2019-06-15"
 * collection.quantity = 50.0 'uL' 
