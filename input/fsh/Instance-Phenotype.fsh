@@ -1,5 +1,5 @@
 Instance: phenotype-1
-InstanceOf: phenotype
+InstanceOf: Phenotype
 Usage: #example
 Description: "Example of the representation of an observed phenotype"
 * identifier[0].system = "urn:ncpi:unique-string"

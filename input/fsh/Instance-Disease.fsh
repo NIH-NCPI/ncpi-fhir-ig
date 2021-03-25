@@ -1,5 +1,5 @@
 Instance: disease-1
-InstanceOf: disease
+InstanceOf: Disease
 Usage: #example
 Description: "Example of the representation of a disease"
 * subject.reference = "Patient/patient-example-1"
