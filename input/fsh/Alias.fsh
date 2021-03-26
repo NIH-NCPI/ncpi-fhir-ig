@@ -6,6 +6,8 @@
  External aliases
  */
 // Extension
+Alias: $us-core-race = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
+Alias: $us-core-ethnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
 Alias: $cqf-relativeDateTime = http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime
 
 // CodeSystem
@@ -17,6 +19,7 @@ Alias: $ncit.owl = http://purl.obolibrary.org/obo/ncit.owl
 Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $practitioner-role = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: $sct = http://snomed.info/sct
+Alias: $urn:oid:2.16.840.1.113883.6.238 = urn:oid:2.16.840.1.113883.6.238 // Race & Ethnicity - CDC
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131 // Contact Role
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487 // Specimen Type
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
