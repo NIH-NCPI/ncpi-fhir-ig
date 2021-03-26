@@ -1,12 +1,11 @@
-Alias: ContactRoleCodeSystem = http://terminology.hl7.org/CodeSystem/v2-0131
+/** 
+ All instances of Patient profile should go in this file.
+ */
 
 Instance: patient-example-1
 InstanceOf: Patient
-* meta.profile = "http://hl7.org/fhir/StructureDefinition/Patient"
-* identifier[0].system = "https://kf-api-dataservice.kidsfirstdrc.org/participants?study_id=SD_PREASA7S"
-* identifier[0].value = "14999"
-* identifier[1].system = "urn:kids-first:unique-string"
-* identifier[1].value = "Patient|SD_PREASA7S|14999"
+Usage: #example
+Description: "Example of the representation of Patient."
 * name.use = #official
 * name.text = "Mariah Abigail Smith"
 * name.family = "Smith"
@@ -17,7 +16,7 @@ InstanceOf: Patient
 * telecom.use = #home
 * telecom.rank = 1
 * gender = #female
-* birthDate = "2019-01-01"
+* birthDate = "2019-06-15"
 * address.use = #home
 * address.type = #both
 * address.text = "3401 Civic Center Blvd., Philadelphia, PA 19104"
@@ -25,8 +24,8 @@ InstanceOf: Patient
 * address.city = "Philadelphia"
 * address.state = "PA"
 * address.postalCode = "19104"
-* contact[0].relationship = ContactRoleCodeSystem#C "Emergency Contact"
-* contact[0].relationship.text = "Mother"
+* contact[0].relationship = $v2-0131#C "Emergency Contact"
+* contact[0].relationship.text = "Parent"
 * contact[0].name.use = #official
 * contact[0].name.text = "Jane Samantha Smith"
 * contact[0].name.family = "Smith"
@@ -44,8 +43,8 @@ InstanceOf: Patient
 * contact[0].address.state = "PA"
 * contact[0].address.postalCode = "19104"
 * contact[0].gender = #female
-* contact[1].relationship = ContactRoleCodeSystem#C "Emergency Contact"
-* contact[1].relationship.text = "Father"
+* contact[1].relationship = $v2-0131#C "Emergency Contact"
+* contact[1].relationship.text = "Parent"
 * contact[1].name.use = #official
 * contact[1].name.text = "John Samuel Smith"
 * contact[1].name.family = "Smith"
@@ -63,3 +62,85 @@ InstanceOf: Patient
 * contact[1].address.state = "PA"
 * contact[1].address.postalCode = "19104"
 * contact[1].gender = #male
+
+Instance: patient-example-2
+InstanceOf: Patient
+Usage: #example
+Description: "Example of the representation of Patient."
+* name.use = #official
+* name.text = "Jane Samantha Smith"
+* name.family = "Smith"
+* name.given[0] = "Jane"
+* name.given[1] = "Samantha"
+* telecom.system = #phone
+* telecom.value = "(555) 555-5555"
+* telecom.use = #home
+* telecom.rank = 1
+* gender = #female
+* address.use = #home
+* address.type = #both
+* address.text = "3401 Civic Center Blvd., Philadelphia, PA 19104"
+* address.line = "3401 Civic Center Blvd."
+* address.city = "Philadelphia"
+* address.state = "PA"
+* address.postalCode = "19104"
+* contact.relationship = $v2-0131#C "Emergency Contact"
+* contact.relationship.text = "Spouse"
+* contact.name.use = #official
+* contact.name.text = "John Samuel Smith"
+* contact.name.family = "Smith"
+* contact.name.given[0] = "John"
+* contact.name.given[1] = "Samuel"
+* contact.telecom.system = #phone
+* contact.telecom.value = "(555) 555-5555"
+* contact.telecom.use = #home
+* contact.telecom.rank = 1
+* contact.address.use = #home
+* contact.address.type = #both
+* contact.address.text = "3401 Civic Center Blvd., Philadelphia, PA 19104"
+* contact.address.line = "3401 Civic Center Blvd."
+* contact.address.city = "Philadelphia"
+* contact.address.state = "PA"
+* contact.address.postalCode = "19104"
+* contact.gender = #male
+
+Instance: patient-example-3
+InstanceOf: Patient
+Usage: #example
+Description: "Example of the representation of Patient."
+* name.use = #official
+* name.text = "John Samuel Smith"
+* name.family = "Smith"
+* name.given[0] = "Jone"
+* name.given[1] = "Samuel"
+* telecom.system = #phone
+* telecom.value = "(555) 555-5555"
+* telecom.use = #home
+* telecom.rank = 1
+* gender = #male
+* address.use = #home
+* address.type = #both
+* address.text = "3401 Civic Center Blvd., Philadelphia, PA 19104"
+* address.line = "3401 Civic Center Blvd."
+* address.city = "Philadelphia"
+* address.state = "PA"
+* address.postalCode = "19104"
+* contact.relationship = $v2-0131#C "Emergency Contact"
+* contact.relationship.text = "Spouse"
+* contact.name.use = #official
+* contact.name.text = "Jane Samantha Smith"
+* contact.name.family = "Smith"
+* contact.name.given[0] = "Jane"
+* contact.name.given[1] = "Samantha"
+* contact.telecom.system = #phone
+* contact.telecom.value = "(555) 555-5555"
+* contact.telecom.use = #home
+* contact.telecom.rank = 1
+* contact.address.use = #home
+* contact.address.type = #both
+* contact.address.text = "3401 Civic Center Blvd., Philadelphia, PA 19104"
+* contact.address.line = "3401 Civic Center Blvd."
+* contact.address.city = "Philadelphia"
+* contact.address.state = "PA"
+* contact.address.postalCode = "19104"
+* contact.gender = #female
