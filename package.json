@@ -1,0 +1,28 @@
+{
+ "name": "ncpi-fhir-ig",
+ "version" : "0.1.0",  
+ "canonical" : "https://ncpi-fhir.github.io/ncpi-fhir-ig",
+ "url" : "https://ncpi-fhir.github.io/ncpi-fhir-ig",
+ "title" : "NCPI FHIR Implementation Guide",
+ "description": "The NIH Cloud Platform Interoperability Effort (NCPI) FHIR Implementation Guide.",
+ "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.us.core": "3.1.0"
+ },
+ "keywords": [
+   "NCPI",
+   "Kids First",   
+   "AnVIL",
+   "GA4GH",
+   "BioInformatics"
+ ],
+ "language": "en",
+ "author": "NCPI FHIR Working Group",
+ "maintainers": [
+   {
+     "name": "NIH Cloud Platform Interoperability Effort (NCPI)",
+     "email": "support@ncpi.org"
+   }
+ ],
+ "license": "CC0-1.0"
+}
