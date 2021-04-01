@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="specimen-example-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0487 TISS}">Solid Tissue</span></p><p><b>subject</b>: <a href="Patient-patient-example-1.html">Generated Summary: Mariah Abigail Smith(OFFICIAL); Phone: (555) 555-5555; gender: female; birthDate: 2019-06-15</a></p><p><b>receivedTime</b>: </p><h3>Collections</h3><table class="grid"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td>*</td><td></td><td>50 uL</td><td><span title="Codes: {http://snomed.info/sct 129314006}">Biopsy</span></td><td><span title="Codes: {http://snomed.info/sct 21483005}">Central Nervous System</span></td></tr></table></div>
+  </text>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+      <code value="TISS"/>
+      <display value="Tissue"/>
+    </coding>
+    <text value="Solid Tissue"/>
+  </type>
+  <subject>
+    <reference value="Patient/patient-example-1"/>
+  </subject>
+  <receivedTime>
+    <extension url="http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime">
+      <extension url="target">
+        <valueReference>
+          <reference value="Patient/patient-example-1"/>
+        </valueReference>
+      </extension>
+      <extension url="targetPath">
+        <valueString value="birthDate"/>
+      </extension>
+      <extension url="relationship">
+        <valueCode value="after"/>
+      </extension>
+      <extension url="offset">
+        <valueDuration>
+          <value value="366"/>
+          <unit value="d"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="days"/>
+        </valueDuration>
+      </extension>
+    </extension>
+  </receivedTime>
+  <collection>
+    <collectedDateTime>
+      <extension url="http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime">
+        <extension url="target">
+          <valueReference>
+            <reference value="Patient/patient-example-1"/>
+          </valueReference>
+        </extension>
+        <extension url="targetPath">
+          <valueString value="birthDate"/>
+        </extension>
+        <extension url="relationship">
+          <valueCode value="after"/>
+        </extension>
+        <extension url="offset">
+          <valueDuration>
+            <value value="366"/>
+            <unit value="d"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="days"/>
+          </valueDuration>
+        </extension>
+      </extension>
+    </collectedDateTime>
+    <quantity>
+      <value value="50"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="uL"/>
+    </quantity>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="129314006"/>
+        <display value="Biopsy - action"/>
+      </coding>
+      <text value="Biopsy"/>
+    </method>
+    <bodySite>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="21483005"/>
+        <display value="Structure of central nervous system"/>
+      </coding>
+      <text value="Central Nervous System"/>
+    </bodySite>
+  </collection>
+</Specimen>

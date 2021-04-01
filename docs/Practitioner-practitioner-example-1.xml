@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="practitioner-example-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Jane Samantha Smith(OFFICIAL)</p><p><b>telecom</b>: ph: (555) 555-5555(WORK)</p><p><b>address</b>: 3401 Civic Center Blvd., Philadelphia, PA 19104(WORK)</p><p><b>gender</b>: female</p></div>
+  </text>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <text value="Jane Samantha Smith"/>
+    <family value="Smith"/>
+    <given value="Jane"/>
+    <given value="Samantha"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="(555) 555-5555"/>
+    <use value="work"/>
+    <rank value="1"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="both"/>
+    <text value="3401 Civic Center Blvd., Philadelphia, PA 19104"/>
+    <line value="3401 Civic Center Blvd."/>
+    <city value="Philadelphia"/>
+    <state value="PA"/>
+    <postalCode value="19104"/>
+  </address>
+  <gender value="female"/>
+</Practitioner>

@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/Condition/phenotype-example-1> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "phenotype-example-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype";
+       fhir:index 0;
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://fhir.ncpi-project-forge.io/CodeSystem/hpo HP:0000076}\">Present: Vesicoureteral reflux</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Generated Summary: Mariah Abigail Smith(OFFICIAL); Phone: (555) 555-5555; gender: female; birthDate: 2019-06-15</a></p><p><b>recordedDate</b>: </p></div>"
+  ];
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
+       fhir:Coding.code [ fhir:value "confirmed" ];
+       fhir:Coding.display [ fhir:value "Confirmed" ]
+     ]
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://fhir.ncpi-project-forge.io/CodeSystem/hpo" ];
+       fhir:Coding.code [ fhir:value "HP:0000076" ];
+       fhir:Coding.display [ fhir:value "Vesicoureteral reflux" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Present: Vesicoureteral reflux" ]
+  ];
+  fhir:Condition.subject [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
+  ];
+  fhir:Condition.recordedDate [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "target" ];
+         fhir:Extension.valueReference [
+           fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+           fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "targetPath" ];
+         fhir:Extension.valueString [ fhir:value "birthDate" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "relationship" ];
+         fhir:Extension.valueCode [ fhir:value "after" ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "offset" ];
+         fhir:Extension.valueDuration [
+           fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "w" ];
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+           fhir:Quantity.code [ fhir:value "weeks" ]
+         ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/Condition/phenotype-example-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

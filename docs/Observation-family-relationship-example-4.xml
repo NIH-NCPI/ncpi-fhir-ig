@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="family-relationship-example-4"/>
+  <meta>
+    <profile value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FAMMEMB}">family member</span></p><p><b>subject</b>: <a href="Patient-patient-example-3.html">Generated Summary: John Samuel Smith(OFFICIAL); Phone: (555) 555-5555; gender: male</a></p><p><b>focus</b>: <a href="Patient-patient-example-1.html">Generated Summary: Mariah Abigail Smith(OFFICIAL); Phone: (555) 555-5555; gender: female; birthDate: 2019-06-15</a></p><p><b>value</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode PRN}, {http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}">Father</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="FAMMEMB"/>
+      <display value="family member"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-3"/>
+  </subject>
+  <focus>
+    <reference value="Patient/patient-example-1"/>
+  </focus>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="PRN"/>
+      <display value="parent"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="FTH"/>
+      <display value="father"/>
+    </coding>
+    <text value="Father"/>
+  </valueCodeableConcept>
+</Observation>
