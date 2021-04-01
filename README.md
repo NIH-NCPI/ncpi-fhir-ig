@@ -108,3 +108,7 @@ alias fsh='docker exec fsh'
 ```
 ls -l output/*.zip
 ```
+
+## Implementation Guide (Pre-Release)
+
+The NCPI FHIR Implementation Guide (pre-release) is available [here](https://ncpi-fhir.github.io/ncpi-fhir-ig/).

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="disease-example-1"/>
+  <meta>
+    <profile value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>clinicalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Affected</span></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>code</b>: <span title="Codes: {http://purl.obolibrary.org/obo/ncit.owl NCIT:C54705}">Neoplastic Syndrome</span></p><p><b>subject</b>: <a href="Patient-patient-example-1.html">Generated Summary: Mariah Abigail Smith(OFFICIAL); Phone: (555) 555-5555; gender: female; birthDate: 2019-06-15</a></p><p><b>recordedDate</b>: </p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Affected"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://purl.obolibrary.org/obo/ncit.owl"/>
+      <code value="NCIT:C54705"/>
+      <display value="Neoplastic Syndrome"/>
+    </coding>
+    <text value="Neoplastic Syndrome"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-1"/>
+  </subject>
+  <recordedDate>
+    <extension url="http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime">
+      <extension url="target">
+        <valueReference>
+          <reference value="Patient/patient-example-1"/>
+        </valueReference>
+      </extension>
+      <extension url="targetPath">
+        <valueString value="birthDate"/>
+      </extension>
+      <extension url="relationship">
+        <valueCode value="after"/>
+      </extension>
+      <extension url="offset">
+        <valueDuration>
+          <value value="25"/>
+          <unit value="d"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="days"/>
+        </valueDuration>
+      </extension>
+    </extension>
+  </recordedDate>
+</Condition>

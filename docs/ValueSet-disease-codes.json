@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "disease-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://purl.obolibrary.org/obo/ncit.owl</code></li></ul></div>"
+  },
+  "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
+  "version": "0.1.0",
+  "name": "DiseaseCodes",
+  "title": "Disease Codes",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-03-31T00:51:49-04:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/ncpi-fhir"
+        }
+      ]
+    },
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes all codes from NCIt (NCI Thesaurus).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://purl.obolibrary.org/obo/ncit.owl"
+      }
+    ]
+  }
+}

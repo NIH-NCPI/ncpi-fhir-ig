@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/PractitionerRole/practitioner-role-example-1> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-role-example-1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-practitioner-example-1.html\">Generated Summary: active; Jane Samantha Smith(OFFICIAL); Phone: (555) 555-5555; gender: female</a></p><p><b>organization</b>: <a href=\"Organization-organization-example-1.html\">Generated Summary: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Hospital</span>; name: Amazing Children's Hospital; Phone: (555) 555-5555</a></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/practitioner-role researcher}\">Principal Investigator</span></p><p><b>telecom</b>: ph: (555) 555-5555(WORK)</p></div>"
+  ];
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Practitioner/practitioner-example-1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example-1" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Organization/organization-example-1>;
+     fhir:Reference.reference [ fhir:value "Organization/organization-example-1" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/practitioner-role" ];
+       fhir:Coding.code [ fhir:value "researcher" ];
+       fhir:Coding.display [ fhir:value "Researcher" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Principal Investigator" ]
+  ];
+  fhir:PractitionerRole.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(555) 555-5555" ];
+     fhir:ContactPoint.use [ fhir:value "work" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/PractitionerRole/practitioner-role-example-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

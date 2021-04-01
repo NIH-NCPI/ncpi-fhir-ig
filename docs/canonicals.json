@@ -1,0 +1,65 @@
+[
+  {
+    "id": "hpo",
+    "type": "CodeSystem",
+    "url": "http://fhir.ncpi-project-forge.io/CodeSystem/hpo",
+    "version": "0.1.0",
+    "name": "HumanPhenotypeOntology"
+  },
+  {
+    "id": "NCPI-FHIR-Implementation-Guide",
+    "type": "ImplementationGuide",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide",
+    "version": "0.1.0",
+    "name": "NCPIFHIRImplementationGuide"
+  },
+  {
+    "id": "disease",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease",
+    "version": "0.1.0",
+    "name": "Disease"
+  },
+  {
+    "id": "family-relationship",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship",
+    "version": "0.1.0",
+    "name": "FamilyRelationship"
+  },
+  {
+    "id": "ncpi-drs-attachment",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment",
+    "version": "0.1.0",
+    "name": "DRSAttachment"
+  },
+  {
+    "id": "ncpi-drs-document-reference",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference",
+    "version": "0.1.0",
+    "name": "DRSDocumentReference"
+  },
+  {
+    "id": "phenotype",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
+    "version": "0.1.0",
+    "name": "Phenotype"
+  },
+  {
+    "id": "disease-codes",
+    "type": "ValueSet",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
+    "version": "0.1.0",
+    "name": "DiseaseCodes"
+  },
+  {
+    "id": "phenotype-codes",
+    "type": "ValueSet",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes",
+    "version": "0.1.0",
+    "name": "PhenotypeCodes"
+  }
+]
