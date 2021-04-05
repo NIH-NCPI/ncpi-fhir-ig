@@ -24,6 +24,12 @@ Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131 // Contact Role
 Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487 // Specimen Type
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $loinc = http://loinc.org
+Alias: $tbd-codes = http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes
+Alias: $gene = https://www.ncbi.nlm.nih.gov/gene
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $refseq = http://www.ncbi.nlm.nih.gov/refseq
+Alias: $varnomen = http://varnomen.hgvs.org
 
 // ValueSet
 Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
@@ -38,3 +44,4 @@ Alias: $hpo = http://fhir.ncpi-project-forge.io/CodeSystem/hpo
 // ValueSet
 Alias: $disease-codes = http://fhir.ncpi-project-forge.io/ValueSet/disease-codes
 Alias: $phenotype-codes = http://fhir.ncpi-project-forge.io/ValueSet/phenotype-codes
+Alias: $loinc-answer-codes = http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers
