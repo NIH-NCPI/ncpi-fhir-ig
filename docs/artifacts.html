@@ -259,10 +259,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-loinc-answers.html" title="ValueSet/loinc-answers">LOINC Answers</a>
+               </td>
+               <td>
+<p>LOINC ANSWERS used by NCPI resources</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-phenotype-codes.html" title="ValueSet/phenotype-codes">Phenotype Codes</a>
                </td>
                <td>
 <p>This value set includes all codes from Human Phenotype Ontology.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-tbd-codes.html" title="ValueSet/tbd-codes">tbd-codes</a>
+               </td>
+               <td>
+<p>This value set includes all TBD Codes</p>
 </td>
             </tr>
          </tbody>
@@ -279,10 +295,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-v3-hgvs.html" title="CodeSystem/v3-hgvs">Human Genome Variation Society nomenclature</a>
+               </td>
+               <td>
+<p>HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>HGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX</td>
+      <td>1</td>
+      <td>CWE</td>
+      <td>48004-6^DNA Sequence Variation^LN</td>
+      <td> </td>
+      <td>c.1129C&gt;T^^HGVS</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Versioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007</p>
+
+<p>HGVS nomenclatures can be used freely by the public.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-hpo.html" title="CodeSystem/hpo">Human Phenotype Ontology</a>
                </td>
                <td>
 <p>Please see license of HPO at http://www.human-phenotype-ontology.org</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-loinc-answers.html" title="CodeSystem/loinc-answers">LOINC Answers</a>
+               </td>
+               <td>
+<p>LOINC ANSWERS used by NCPI resources</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-tbd-codes.html" title="CodeSystem/tbd-codes">ToBeDeterminedCodes ('TbdCodes')</a>
+               </td>
+               <td>
+<p>These codes are currently ‘TBD-LOINC’ codes. The CG WG is requesting formal LOINC codes.</p>
 </td>
             </tr>
          </tbody>
@@ -428,6 +485,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Example of the representation of Task.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-variant-example-1.html"
+                     title="Observation/variant-example-1">variant-example-1</a>
+               </td>
+               <td>
+<p>Example of a fhir representation of a variant</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -453,7 +519,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://github.com/ncpi-fhir">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 31, 2021 00:51-0400">2021-03-31</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://github.com/ncpi-fhir">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 5, 2021 10:17-0500">2021-04-05</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

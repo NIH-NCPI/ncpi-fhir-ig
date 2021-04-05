@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="v3-hgvs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://varnomen.hgvs.org defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">c.10283T&gt;G<a name="v3-hgvs-c.4610283T.62G"> </a></td><td>c.10283T&gt;G</td></tr><tr><td style="white-space:nowrap">c.1090delA<a name="v3-hgvs-c.461090delA"> </a></td><td>c.1090delA</td></tr><tr><td style="white-space:nowrap">c.1100 G&gt;T<a name="v3-hgvs-c.461100G.62T"> </a></td><td>c.1100 G&gt;T</td></tr><tr><td style="white-space:nowrap">c.1130G&gt;A<a name="v3-hgvs-c.461130G.62A"> </a></td><td>c.1130G&gt;A</td></tr><tr><td style="white-space:nowrap">c.11521C&gt;G<a name="v3-hgvs-c.4611521C.62G"> </a></td><td>c.11521C&gt;G</td></tr><tr><td style="white-space:nowrap">c.1152_1170del<a name="v3-hgvs-c.461152_1170del"> </a></td><td>c.1152_1170del</td></tr><tr><td style="white-space:nowrap">c.1243A&gt;C<a name="v3-hgvs-c.461243A.62C"> </a></td><td>c.1243A&gt;C</td></tr><tr><td style="white-space:nowrap">c.1378C&gt;T<a name="v3-hgvs-c.461378C.62T"> </a></td><td>c.1378C&gt;T</td></tr><tr><td style="white-space:nowrap">c.1528 G&gt;C<a name="v3-hgvs-c.461528G.62C"> </a></td><td>c.1528 G&gt;C</td></tr><tr><td style="white-space:nowrap">c.1558C&gt;T<a name="v3-hgvs-c.461558C.62T"> </a></td><td>c.1558C&gt;T</td></tr><tr><td style="white-space:nowrap">c.1559C&gt;T<a name="v3-hgvs-c.461559C.62T"> </a></td><td>c.1559C&gt;T</td></tr><tr><td style="white-space:nowrap">c.158G&gt;T<a name="v3-hgvs-c.46158G.62T"> </a></td><td>c.158G&gt;T</td></tr><tr><td style="white-space:nowrap">c.1640A&gt;G<a name="v3-hgvs-c.461640A.62G"> </a></td><td>c.1640A&gt;G</td></tr><tr><td style="white-space:nowrap">c.1720C&gt;T<a name="v3-hgvs-c.461720C.62T"> </a></td><td>c.1720C&gt;T</td></tr><tr><td style="white-space:nowrap">c.1823T&gt;G<a name="v3-hgvs-c.461823T.62G"> </a></td><td>c.1823T&gt;G</td></tr><tr><td style="white-space:nowrap">c.2056+1G&gt;T<a name="v3-hgvs-c.462056.431G.62T"> </a></td><td>c.2056+1G&gt;T</td></tr><tr><td style="white-space:nowrap">c.2159 A&gt;T<a name="v3-hgvs-c.462159A.62T"> </a></td><td>c.2159 A&gt;T</td></tr><tr><td style="white-space:nowrap">c.223delG<a name="v3-hgvs-c.46223delG"> </a></td><td>c.223delG</td></tr><tr><td style="white-space:nowrap">c.2258C&gt;G<a name="v3-hgvs-c.462258C.62G"> </a></td><td>c.2258C&gt;G</td></tr><tr><td style="white-space:nowrap">c.226C&gt;T<a name="v3-hgvs-c.46226C.62T"> </a></td><td>c.226C&gt;T</td></tr><tr><td style="white-space:nowrap">c.2303C&gt;T<a name="v3-hgvs-c.462303C.62T"> </a></td><td>c.2303C&gt;T</td></tr><tr><td style="white-space:nowrap">c.2332G&gt;A<a name="v3-hgvs-c.462332G.62A"> </a></td><td>c.2332G&gt;A</td></tr><tr><td style="white-space:nowrap">c.2405G&gt;T<a name="v3-hgvs-c.462405G.62T"> </a></td><td>c.2405G&gt;T</td></tr><tr><td style="white-space:nowrap">c.2471T&gt;C<a name="v3-hgvs-c.462471T.62C"> </a></td><td>c.2471T&gt;C</td></tr><tr><td style="white-space:nowrap">c.2539_2541del<a name="v3-hgvs-c.462539_2541del"> </a></td><td>c.2539_2541del</td></tr><tr><td style="white-space:nowrap">c.257 G&gt;A<a name="v3-hgvs-c.46257G.62A"> </a></td><td>c.257 G&gt;A</td></tr><tr><td style="white-space:nowrap">c.265T&gt;A<a name="v3-hgvs-c.46265T.62A"> </a></td><td>c.265T&gt;A</td></tr><tr><td style="white-space:nowrap">c.2662G&gt;A<a name="v3-hgvs-c.462662G.62A"> </a></td><td>c.2662G&gt;A</td></tr><tr><td style="white-space:nowrap">c.2674C&gt;A<a name="v3-hgvs-c.462674C.62A"> </a></td><td>c.2674C&gt;A</td></tr><tr><td style="white-space:nowrap">c.26_28delAGC<a name="v3-hgvs-c.4626_28delAGC"> </a></td><td>c.26_28delAGC</td></tr><tr><td style="white-space:nowrap">c.296 C&gt;T<a name="v3-hgvs-c.46296C.62T"> </a></td><td>c.296 C&gt;T</td></tr><tr><td style="white-space:nowrap">c.314delA<a name="v3-hgvs-c.46314delA"> </a></td><td>c.314delA</td></tr><tr><td style="white-space:nowrap">c.320del<a name="v3-hgvs-c.46320del"> </a></td><td>c.320del</td></tr><tr><td style="white-space:nowrap">c.3478G&gt;A<a name="v3-hgvs-c.463478G.62A"> </a></td><td>c.3478G&gt;A</td></tr><tr><td style="white-space:nowrap">c.349 C&gt;T<a name="v3-hgvs-c.46349C.62T"> </a></td><td>c.349 C&gt;T</td></tr><tr><td style="white-space:nowrap">c.350delC<a name="v3-hgvs-c.46350delC"> </a></td><td>c.350delC</td></tr><tr><td style="white-space:nowrap">c.4009 G&gt;A<a name="v3-hgvs-c.464009G.62A"> </a></td><td>c.4009 G&gt;A</td></tr><tr><td style="white-space:nowrap">c.416T&gt;G<a name="v3-hgvs-c.46416T.62G"> </a></td><td>c.416T&gt;G</td></tr><tr><td style="white-space:nowrap">c.441_457del<a name="v3-hgvs-c.46441_457del"> </a></td><td>c.441_457del</td></tr><tr><td style="white-space:nowrap">c.448 C&gt;G<a name="v3-hgvs-c.46448C.62G"> </a></td><td>c.448 C&gt;G</td></tr><tr><td style="white-space:nowrap">c.481C&gt;G<a name="v3-hgvs-c.46481C.62G"> </a></td><td>c.481C&gt;G</td></tr><tr><td style="white-space:nowrap">c.5 A&gt;G<a name="v3-hgvs-c.465A.62G"> </a></td><td>c.5 A&gt;G</td></tr><tr><td style="white-space:nowrap">c.5294G&gt;A<a name="v3-hgvs-c.465294G.62A"> </a></td><td>c.5294G&gt;A</td></tr><tr><td style="white-space:nowrap">c.5375C&gt;T<a name="v3-hgvs-c.465375C.62T"> </a></td><td>c.5375C&gt;T</td></tr><tr><td style="white-space:nowrap">c.5380C&gt;T<a name="v3-hgvs-c.465380C.62T"> </a></td><td>c.5380C&gt;T</td></tr><tr><td style="white-space:nowrap">c.5549C&gt;G<a name="v3-hgvs-c.465549C.62G"> </a></td><td>c.5549C&gt;G</td></tr><tr><td style="white-space:nowrap">c.5693 G&gt;A<a name="v3-hgvs-c.465693G.62A"> </a></td><td>c.5693 G&gt;A</td></tr><tr><td style="white-space:nowrap">c.619 G&gt;A<a name="v3-hgvs-c.46619G.62A"> </a></td><td>c.619 G&gt;A</td></tr><tr><td style="white-space:nowrap">c.685+1G&gt;C<a name="v3-hgvs-c.46685.431G.62C"> </a></td><td>c.685+1G&gt;C</td></tr><tr><td style="white-space:nowrap">c.7003C&gt;T<a name="v3-hgvs-c.467003C.62T"> </a></td><td>c.7003C&gt;T</td></tr><tr><td style="white-space:nowrap">c.700C&gt;A<a name="v3-hgvs-c.46700C.62A"> </a></td><td>c.700C&gt;A</td></tr><tr><td style="white-space:nowrap">c.716C&gt;G<a name="v3-hgvs-c.46716C.62G"> </a></td><td>c.716C&gt;G</td></tr><tr><td style="white-space:nowrap">c.760 C&gt;A<a name="v3-hgvs-c.46760C.62A"> </a></td><td>c.760 C&gt;A</td></tr><tr><td style="white-space:nowrap">c.7955G&gt;A<a name="v3-hgvs-c.467955G.62A"> </a></td><td>c.7955G&gt;A</td></tr><tr><td style="white-space:nowrap">c.7975C&gt;T<a name="v3-hgvs-c.467975C.62T"> </a></td><td>c.7975C&gt;T</td></tr><tr><td style="white-space:nowrap">c.8056C&gt;G<a name="v3-hgvs-c.468056C.62G"> </a></td><td>c.8056C&gt;G</td></tr><tr><td style="white-space:nowrap">c.851G&gt;C<a name="v3-hgvs-c.46851G.62C"> </a></td><td>c.851G&gt;C</td></tr><tr><td style="white-space:nowrap">c.863_864insACCT<a name="v3-hgvs-c.46863_864insACCT"> </a></td><td>c.863_864insACCT</td></tr><tr><td style="white-space:nowrap">c.868G&gt;A<a name="v3-hgvs-c.46868G.62A"> </a></td><td>c.868G&gt;A</td></tr><tr><td style="white-space:nowrap">c.931C&gt;T<a name="v3-hgvs-c.46931C.62T"> </a></td><td>c.931C&gt;T</td></tr><tr><td style="white-space:nowrap">c.9552G&gt;A<a name="v3-hgvs-c.469552G.62A"> </a></td><td>c.9552G&gt;A</td></tr><tr><td style="white-space:nowrap">c.959C&gt;T<a name="v3-hgvs-c.46959C.62T"> </a></td><td>c.959C&gt;T</td></tr><tr><td style="white-space:nowrap">c.[711G&gt;T;712C&gt;A]<a name="v3-hgvs-c.46.91711G.62T.59712C.62A.93"> </a></td><td>c.[711G&gt;T;712C&gt;A]</td></tr><tr><td style="white-space:nowrap">p.(Arg2659Trp)<a name="v3-hgvs-p.46.40Arg2659Trp.41"> </a></td><td>p.(Arg2659Trp)</td></tr><tr><td style="white-space:nowrap">p.(Gln9del)<a name="v3-hgvs-p.46.40Gln9del.41"> </a></td><td>p.(Gln9del)</td></tr><tr><td style="white-space:nowrap">p.(Leu3428Arg)<a name="v3-hgvs-p.46.40Leu3428Arg.41"> </a></td><td>p.(Leu3428Arg)</td></tr><tr><td style="white-space:nowrap">p.(Met3184Ile)<a name="v3-hgvs-p.46.40Met3184Ile.41"> </a></td><td>p.(Met3184Ile)</td></tr><tr><td style="white-space:nowrap">p.(Pro460Ser)<a name="v3-hgvs-p.46.40Pro460Ser.41"> </a></td><td>p.(Pro460Ser)</td></tr></table></div>
+  </text>
+  <url value="http://varnomen.hgvs.org"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.6.282"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="Hgvs"/>
+  <title value="Human Genome Variation Society nomenclature"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-03-20T00:00:00-04:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ncpi-fhir"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.&#xA;&#xA;HGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX|1|CWE|48004-6^DNA Sequence Variation^LN||c.1129C&gt;T^^HGVS|&#xA;&#xA;Versioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007&#xA;&#xA;HGVS nomenclatures can be used freely by the public."/>
+  <content value="complete"/>
+  <count value="68"/>
+  <concept>
+    <code value="c.10283T&gt;G"/>
+    <display value="c.10283T&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.1090delA"/>
+    <display value="c.1090delA"/>
+  </concept>
+  <concept>
+    <code value="c.1100 G&gt;T"/>
+    <display value="c.1100 G&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.1130G&gt;A"/>
+    <display value="c.1130G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.11521C&gt;G"/>
+    <display value="c.11521C&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.1152_1170del"/>
+    <display value="c.1152_1170del"/>
+  </concept>
+  <concept>
+    <code value="c.1243A&gt;C"/>
+    <display value="c.1243A&gt;C"/>
+  </concept>
+  <concept>
+    <code value="c.1378C&gt;T"/>
+    <display value="c.1378C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.1528 G&gt;C"/>
+    <display value="c.1528 G&gt;C"/>
+  </concept>
+  <concept>
+    <code value="c.1558C&gt;T"/>
+    <display value="c.1558C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.1559C&gt;T"/>
+    <display value="c.1559C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.158G&gt;T"/>
+    <display value="c.158G&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.1640A&gt;G"/>
+    <display value="c.1640A&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.1720C&gt;T"/>
+    <display value="c.1720C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.1823T&gt;G"/>
+    <display value="c.1823T&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.2056+1G&gt;T"/>
+    <display value="c.2056+1G&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.2159 A&gt;T"/>
+    <display value="c.2159 A&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.223delG"/>
+    <display value="c.223delG"/>
+  </concept>
+  <concept>
+    <code value="c.2258C&gt;G"/>
+    <display value="c.2258C&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.226C&gt;T"/>
+    <display value="c.226C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.2303C&gt;T"/>
+    <display value="c.2303C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.2332G&gt;A"/>
+    <display value="c.2332G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.2405G&gt;T"/>
+    <display value="c.2405G&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.2471T&gt;C"/>
+    <display value="c.2471T&gt;C"/>
+  </concept>
+  <concept>
+    <code value="c.2539_2541del"/>
+    <display value="c.2539_2541del"/>
+  </concept>
+  <concept>
+    <code value="c.257 G&gt;A"/>
+    <display value="c.257 G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.265T&gt;A"/>
+    <display value="c.265T&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.2662G&gt;A"/>
+    <display value="c.2662G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.2674C&gt;A"/>
+    <display value="c.2674C&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.26_28delAGC"/>
+    <display value="c.26_28delAGC"/>
+  </concept>
+  <concept>
+    <code value="c.296 C&gt;T"/>
+    <display value="c.296 C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.314delA"/>
+    <display value="c.314delA"/>
+  </concept>
+  <concept>
+    <code value="c.320del"/>
+    <display value="c.320del"/>
+  </concept>
+  <concept>
+    <code value="c.3478G&gt;A"/>
+    <display value="c.3478G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.349 C&gt;T"/>
+    <display value="c.349 C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.350delC"/>
+    <display value="c.350delC"/>
+  </concept>
+  <concept>
+    <code value="c.4009 G&gt;A"/>
+    <display value="c.4009 G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.416T&gt;G"/>
+    <display value="c.416T&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.441_457del"/>
+    <display value="c.441_457del"/>
+  </concept>
+  <concept>
+    <code value="c.448 C&gt;G"/>
+    <display value="c.448 C&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.481C&gt;G"/>
+    <display value="c.481C&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.5 A&gt;G"/>
+    <display value="c.5 A&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.5294G&gt;A"/>
+    <display value="c.5294G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.5375C&gt;T"/>
+    <display value="c.5375C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.5380C&gt;T"/>
+    <display value="c.5380C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.5549C&gt;G"/>
+    <display value="c.5549C&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.5693 G&gt;A"/>
+    <display value="c.5693 G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.619 G&gt;A"/>
+    <display value="c.619 G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.685+1G&gt;C"/>
+    <display value="c.685+1G&gt;C"/>
+  </concept>
+  <concept>
+    <code value="c.7003C&gt;T"/>
+    <display value="c.7003C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.700C&gt;A"/>
+    <display value="c.700C&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.716C&gt;G"/>
+    <display value="c.716C&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.760 C&gt;A"/>
+    <display value="c.760 C&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.7955G&gt;A"/>
+    <display value="c.7955G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.7975C&gt;T"/>
+    <display value="c.7975C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.8056C&gt;G"/>
+    <display value="c.8056C&gt;G"/>
+  </concept>
+  <concept>
+    <code value="c.851G&gt;C"/>
+    <display value="c.851G&gt;C"/>
+  </concept>
+  <concept>
+    <code value="c.863_864insACCT"/>
+    <display value="c.863_864insACCT"/>
+  </concept>
+  <concept>
+    <code value="c.868G&gt;A"/>
+    <display value="c.868G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.931C&gt;T"/>
+    <display value="c.931C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.9552G&gt;A"/>
+    <display value="c.9552G&gt;A"/>
+  </concept>
+  <concept>
+    <code value="c.959C&gt;T"/>
+    <display value="c.959C&gt;T"/>
+  </concept>
+  <concept>
+    <code value="c.[711G&gt;T;712C&gt;A]"/>
+    <display value="c.[711G&gt;T;712C&gt;A]"/>
+  </concept>
+  <concept>
+    <code value="p.(Arg2659Trp)"/>
+    <display value="p.(Arg2659Trp)"/>
+  </concept>
+  <concept>
+    <code value="p.(Gln9del)"/>
+    <display value="p.(Gln9del)"/>
+  </concept>
+  <concept>
+    <code value="p.(Leu3428Arg)"/>
+    <display value="p.(Leu3428Arg)"/>
+  </concept>
+  <concept>
+    <code value="p.(Met3184Ile)"/>
+    <display value="p.(Met3184Ile)"/>
+  </concept>
+  <concept>
+    <code value="p.(Pro460Ser)"/>
+    <display value="p.(Pro460Ser)"/>
+  </concept>
+</CodeSystem>
