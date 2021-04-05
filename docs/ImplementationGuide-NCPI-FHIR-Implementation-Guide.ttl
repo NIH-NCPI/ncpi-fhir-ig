@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NCPIFHIRImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "NCPI FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-31T00:51:49-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-04-05T10:17:24-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -376,6 +376,20 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/loinc-answers>;
+         fhir:Reference.reference [ fhir:value "ValueSet/loinc-answers" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC Answers" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC ANSWERS used by NCPI resources" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes>;
          fhir:Reference.reference [ fhir:value "ValueSet/phenotype-codes" ]
        ];
@@ -383,7 +397,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set includes all codes from Human Phenotype Ontology." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/tbd-codes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/tbd-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "tbd-codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set includes all TBD Codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/v3-hgvs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/v3-hgvs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Human Genome Variation Society nomenclature" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.\n\nHGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX|1|CWE|48004-6^DNA Sequence Variation^LN||c.1129C>T^^HGVS|\n\nVersioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007\n\nHGVS nomenclatures can be used freely by the public." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -397,7 +439,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Please see license of HPO at http://www.human-phenotype-ontology.org" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/loinc-answers>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/loinc-answers" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC Answers" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC ANSWERS used by NCPI resources" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/tbd-codes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/tbd-codes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ToBeDeterminedCodes ('TbdCodes')" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "These codes are currently 'TBD-LOINC' codes. The CG WG is requesting formal LOINC codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -414,7 +484,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease>
        ]
      ], [
-       fhir:index 9;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -431,7 +501,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference>
        ]
      ], [
-       fhir:index 10;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -448,7 +518,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -465,7 +535,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -482,7 +552,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -499,7 +569,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -513,7 +583,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Organization." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -527,7 +597,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -541,7 +611,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -555,7 +625,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -572,7 +642,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>
        ]
      ], [
-       fhir:index 19;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -586,7 +656,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Practitioner." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -600,7 +670,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Practitioner Role." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -614,7 +684,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Specimen." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -626,6 +696,20 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "task-example-1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Task." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/variant-example-1>;
+         fhir:Reference.reference [ fhir:value "Observation/variant-example-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "variant-example-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a fhir representation of a variant" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
