@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 2, info = 1
-IG Publisher Version: 1.1.63 Out of date - current version is 1.1.65
-Generated Wed Mar 31 00:52:18 EDT 2021. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig)
+IG Publisher Version: 1.1.63 Out of date - current version is 1.1.66
+Generated Tue Apr 13 13:34:02 EDT 2021. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig)
 
  Build Errors : 0 / 0 / 0
  /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide : 0 / 0 / 1
@@ -21,6 +21,10 @@ Generated Wed Mar 31 00:52:18 EDT 2021. FHIR version 4.0.1 for NCPI-FHIR-Impleme
  /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/patient-patient-example-3 : 0 / 0 / 1
  /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/practitioner-practitioner-example-1 : 0 / 0 / 1
  /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/practitionerrole-practitioner-role-example-1 : 0 / 0 / 1
+ /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/researchstudy-research-study-example-1 : 0 / 0 / 1
+ /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/researchsubject-research-subject-example-1 : 0 / 0 / 1
+ /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/researchsubject-research-subject-example-2 : 0 / 0 / 1
+ /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/researchsubject-research-subject-example-3 : 0 / 0 / 1
  /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/specimen-specimen-example-1 : 0 / 0 / 1
  /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/structuredefinition-disease : 0 / 0 / 1
  /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/structuredefinition-family-relationship : 0 / 0 / 1
@@ -64,6 +68,14 @@ INFORMATION: Patient/patient-example-3: Patient: Validate resource against profi
 INFORMATION: Practitioner/practitioner-example-1: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
 == /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/PractitionerRole-practitioner-role-example-1.json ==
 INFORMATION: PractitionerRole/practitioner-role-example-1: PractitionerRole: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
+== /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/ResearchStudy-research-study-example-1.json ==
+INFORMATION: ResearchStudy/research-study-example-1: ResearchStudy: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchStudy
+== /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-1.json ==
+INFORMATION: ResearchSubject/research-subject-example-1: ResearchSubject: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject
+== /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-2.json ==
+INFORMATION: ResearchSubject/research-subject-example-2: ResearchSubject: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject
+== /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-3.json ==
+INFORMATION: ResearchSubject/research-subject-example-3: ResearchSubject: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject
 == /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/Specimen-specimen-example-1.json ==
 INFORMATION: Specimen/specimen-example-1: Specimen: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Specimen
 == /Users/kimm11/Documents/workspace/ncpi-fhir/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-disease.json ==

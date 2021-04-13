@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NCPIFHIRImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "NCPI FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-31T00:51:49-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-04-13T13:33:34-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -604,6 +604,62 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchStudy/research-study-example-1>;
+         fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-example-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-study-example-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Study." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-1>;
+         fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-2>;
+         fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-3>;
+         fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Specimen" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -614,7 +670,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Specimen." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
