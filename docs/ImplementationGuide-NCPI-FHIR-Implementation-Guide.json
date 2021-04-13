@@ -10,7 +10,7 @@
   "name": "NCPIFHIRImplementationGuide",
   "title": "NCPI FHIR Implementation Guide",
   "status": "draft",
-  "date": "2021-03-31T00:51:49-04:00",
+  "date": "2021-04-13T13:33:34-04:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -590,6 +590,62 @@
         },
         "name": "practitioner-role-example-1",
         "description": "Example of the representation of Practitioner Role.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchStudy/research-study-example-1"
+        },
+        "name": "research-study-example-1",
+        "description": "Example of the representation of Research Study.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-example-1"
+        },
+        "name": "research-subject-example-1",
+        "description": "Example of the representation of Research Subject.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-example-2"
+        },
+        "name": "research-subject-example-2",
+        "description": "Example of the representation of Research Subject.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-example-3"
+        },
+        "name": "research-subject-example-3",
+        "description": "Example of the representation of Research Subject.",
         "exampleBoolean": true
       },
       {

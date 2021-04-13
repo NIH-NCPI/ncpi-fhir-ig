@@ -11,7 +11,7 @@
   <name value="NCPIFHIRImplementationGuide"/>
   <title value="NCPI FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-03-31T00:51:49-04:00"/>
+  <date value="2021-04-13T13:33:34-04:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -419,6 +419,50 @@
       </reference>
       <name value="practitioner-role-example-1"/>
       <description value="Example of the representation of Practitioner Role."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/research-study-example-1"/>
+      </reference>
+      <name value="research-study-example-1"/>
+      <description value="Example of the representation of Research Study."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-1"/>
+      </reference>
+      <name value="research-subject-example-1"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-2"/>
+      </reference>
+      <name value="research-subject-example-2"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-3"/>
+      </reference>
+      <name value="research-subject-example-3"/>
+      <description value="Example of the representation of Research Subject."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
