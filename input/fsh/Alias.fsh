@@ -45,3 +45,4 @@ Alias: $hpo = http://fhir.ncpi-project-forge.io/CodeSystem/hpo
 Alias: $disease-codes = http://fhir.ncpi-project-forge.io/ValueSet/disease-codes
 Alias: $phenotype-codes = http://fhir.ncpi-project-forge.io/ValueSet/phenotype-codes
 Alias: $loinc-answer-codes = http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers
+Alias: $condition-interitanc-codes = http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs
