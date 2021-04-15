@@ -38,6 +38,9 @@ Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
 /**
  Local aliases
  */
+Alias: $supporting-info = http://fhir.ncpi-project-forge.io/StructureDefinition/SupportingInfo
+
+
 // CodeSystem
 Alias: $hpo = http://fhir.ncpi-project-forge.io/CodeSystem/hpo
 
