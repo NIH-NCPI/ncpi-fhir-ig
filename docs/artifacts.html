@@ -157,13 +157,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Data Type Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -241,6 +244,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-supporting-info.html"
+                     title="StructureDefinition/supporting-info">Supporting Information</a>
+               </td>
+               <td>
+<p>Additional information relevant to interpreting/understanding the report.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -251,10 +275,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-condition-inheritance-vs.html"
+                     title="ValueSet/condition-inheritance-vs">Condition Inheritance Pattern</a>
+               </td>
+               <td>
+<p>Value Set for specific ttransmission patterns of a condition in a pedigree</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-disease-codes.html" title="ValueSet/disease-codes">Disease Codes</a>
                </td>
                <td>
 <p>This value set includes all codes from NCIt (NCI Thesaurus).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-loinc-answers.html" title="ValueSet/loinc-answers">LOINC Answers</a>
+               </td>
+               <td>
+<p>LOINC ANSWERS used by NCPI resources</p>
 </td>
             </tr>
             <tr>
@@ -265,10 +306,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This value set includes all codes from Human Phenotype Ontology.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-tbd-codes.html" title="ValueSet/tbd-codes">tbd-codes</a>
+               </td>
+               <td>
+<p>This value set includes all TBD Codes</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -279,16 +328,66 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-ConditionInheritanceMode.html"
+                     title="CodeSystem/ConditionInheritanceMode">Condition Inheritance Pattern</a>
+               </td>
+               <td>
+<p>A set of terms that describe the transmission pattern of a condition in a pedigree.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-v3-hgvs.html" title="CodeSystem/v3-hgvs">Human Genome Variation Society nomenclature</a>
+               </td>
+               <td>
+<p>HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>HGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX</td>
+      <td>1</td>
+      <td>CWE</td>
+      <td>48004-6^DNA Sequence Variation^LN</td>
+      <td> </td>
+      <td>c.1129C&gt;T^^HGVS</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Versioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007</p>
+
+<p>HGVS nomenclatures can be used freely by the public.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-hpo.html" title="CodeSystem/hpo">Human Phenotype Ontology</a>
                </td>
                <td>
 <p>Please see license of HPO at http://www.human-phenotype-ontology.org</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-loinc-answers.html" title="CodeSystem/loinc-answers">LOINC Answers</a>
+               </td>
+               <td>
+<p>LOINC ANSWERS used by NCPI resources</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-tbd-codes.html" title="CodeSystem/tbd-codes">ToBeDeterminedCodes ('TbdCodes')</a>
+               </td>
+               <td>
+<p>These codes are currently ‘TBD-LOINC’ codes. The CG WG is requesting formal LOINC codes.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -297,6 +396,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-diagnostic-implication-1.html"
+                     title="Observation/diagnostic-implication-1">diagnostic-implication-1</a>
+               </td>
+               <td>
+<p>Example representation of a known variant found during genetic testing</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-diagnostic-report-1.html"
+                     title="DiagnosticReport/diagnostic-report-1">diagnostic-report-1</a>
+               </td>
+               <td>
+<p>Example of a DiagnosticReport which aggregates genetic findings for a given test or run</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Condition-disease-example-1.html"
@@ -464,6 +581,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Example of the representation of Task.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-variant-example-1.html"
+                     title="Observation/variant-example-1">variant-example-1</a>
+               </td>
+               <td>
+<p>Example of a fhir representation of a variant</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -489,7 +615,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://github.com/ncpi-fhir">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 13, 2021 13:33-0400">2021-04-13</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://github.com/ncpi-fhir">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 16, 2021 11:49-0500">2021-04-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

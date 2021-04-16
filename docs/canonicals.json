@@ -7,6 +7,37 @@
     "name": "HumanPhenotypeOntology"
   },
   {
+    "id": "tbd-codes",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes",
+    "version": "0.1.0",
+    "name": "TbdCodes"
+  },
+  {
+    "id": "tbd-codes",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes",
+    "version": "0.1.0",
+    "name": "ToBeDeterminedCodes"
+  },
+  {
+    "id": "v3-hgvs",
+    "type": "CodeSystem",
+    "url": "http://varnomen.hgvs.org",
+    "version": "0.1.0",
+    "name": "Hgvs",
+    "oids": [
+      "2.16.840.1.113883.6.282"
+    ]
+  },
+  {
+    "id": "ConditionInheritanceMode",
+    "type": "CodeSystem",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode",
+    "version": "0.1.0",
+    "name": "ConditionInheritanceMode"
+  },
+  {
     "id": "NCPI-FHIR-Implementation-Guide",
     "type": "ImplementationGuide",
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide",
@@ -49,6 +80,20 @@
     "name": "Phenotype"
   },
   {
+    "id": "supporting-info",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info",
+    "version": "0.1.0",
+    "name": "SupportingInformation"
+  },
+  {
+    "id": "condition-inheritance-vs",
+    "type": "ValueSet",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs",
+    "version": "0.1.0",
+    "name": "ConditionInheritanceModeVS"
+  },
+  {
     "id": "disease-codes",
     "type": "ValueSet",
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
@@ -56,10 +101,24 @@
     "name": "DiseaseCodes"
   },
   {
+    "id": "loinc-answers",
+    "type": "ValueSet",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/loinc-answers",
+    "version": "0.1.0",
+    "name": "LoincAnswers"
+  },
+  {
     "id": "phenotype-codes",
     "type": "ValueSet",
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes",
     "version": "0.1.0",
     "name": "PhenotypeCodes"
+  },
+  {
+    "id": "loinc-answers",
+    "type": "CodeSystem",
+    "url": "ncpi:loinc-answers",
+    "version": "0.1.0",
+    "name": "LoincAnswers"
   }
 ]

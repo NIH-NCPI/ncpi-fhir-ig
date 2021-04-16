@@ -2,7 +2,15 @@
   "package": "NCPI-FHIR-Implementation-Guide",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info",
+      "title": "Supporting Information",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
     "Condition": [
       {
@@ -62,6 +70,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "ValueSet"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
@@ -73,6 +84,9 @@
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
+    ],
+    "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info": [
+      "DiagnosticReport"
     ]
   }
 }
