@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tbd-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">grouper<a name="tbd-codes-grouper"> </a></td><td>grouper</td><td>A means to bundle several observations such as one would find in a genetics test panel.</td></tr><tr><td style="white-space:nowrap">mode-of-inheritance<a name="tbd-codes-mode-of-inheritance"> </a></td><td>mode-of-inheritance</td><td>This is actually LOINC code 79742-3. And the IG will be updated</td></tr><tr><td style="white-space:nowrap">effect-transporter-function<a name="tbd-codes-effect-transporter-function"> </a></td><td>effect-transporter-function</td><td>Predicted phenotype for drug efficacy through transport mechanism. A single marker interpretation value known to increase or decrease the drug's performance.</td></tr><tr><td style="white-space:nowrap">effect-medication-efficacy<a name="tbd-codes-effect-medication-efficacy"> </a></td><td>Medication Efficacy</td><td/></tr><tr><td style="white-space:nowrap">effect-medication-metabolism<a name="tbd-codes-effect-medication-metabolism"> </a></td><td>Medication Metabolism</td><td/></tr><tr><td style="white-space:nowrap">effect-medication-transporter<a name="tbd-codes-effect-medication-transporter"> </a></td><td>Medication Transporter Function</td><td/></tr><tr><td style="white-space:nowrap">effect-high-risk-allele<a name="tbd-codes-effect-high-risk-allele"> </a></td><td>High Risk Allele</td><td/></tr><tr><td style="white-space:nowrap">prognostic-implication<a name="tbd-codes-prognostic-implication"> </a></td><td>Prognostic Implication component</td><td>Finding of whether a particular somatic genotype/haplotype/variation or combination-thereof predicts a particular outcome for the specified cancer - either on its own or in conjunction with one or more interventions.</td></tr><tr><td style="white-space:nowrap">associated-cancer<a name="tbd-codes-associated-cancer"> </a></td><td>associated-cancer</td><td/></tr><tr><td style="white-space:nowrap">associated-therapy<a name="tbd-codes-associated-therapy"> </a></td><td>Genomically linked therapy</td><td>The non-medication therapy (procedure) associated with this implication.</td></tr><tr><td style="white-space:nowrap">region-coverage<a name="tbd-codes-region-coverage"> </a></td><td>region-coverage</td><td>Given as a number between 0 and 100. Mean mapped read depth. Obtained by counting total number of mapped reads and divided by the number of bases in the region sequence.</td></tr><tr><td style="white-space:nowrap">functional-annotation<a name="tbd-codes-functional-annotation"> </a></td><td>functional-annotation</td><td>Annotated changes to sequence features caused by this variant. Terms are from the sequence ontology under SO:0001537.</td></tr><tr><td style="white-space:nowrap">exact-start-end<a name="tbd-codes-exact-start-end"> </a></td><td>Variant exact start and end</td><td>The genomic coordinates of the exact genomic range in which the variant resides.</td></tr><tr><td style="white-space:nowrap">inner-start-end<a name="tbd-codes-inner-start-end"> </a></td><td>Variant inner start and end</td><td>The genomic coordinates of the inner genomic range in which the variant might reside.</td></tr><tr><td style="white-space:nowrap">outer-start-end<a name="tbd-codes-outer-start-end"> </a></td><td>Variant outer start and end</td><td>The genomic coordinates of the outer genomic range in which the variant might reside.</td></tr><tr><td style="white-space:nowrap">variant-inheritance<a name="tbd-codes-variant-inheritance"> </a></td><td>Variant inheritance</td><td>A quality inhering in a variant by virtue of its origin. The terms are in the sequence ontology under SO:0001762.</td></tr><tr><td style="white-space:nowrap">diagnostic-implication<a name="tbd-codes-diagnostic-implication"> </a></td><td>Diagnostic Implication</td><td>An observation linking a genomic finding with a knowledge base, providing context that may aid in diagnosing a patient with a particular phenotype or condition.</td></tr><tr><td style="white-space:nowrap">therapeutic-implication<a name="tbd-codes-therapeutic-implication"> </a></td><td>Therapeutic Implication</td><td>An observation linking a genomic finding with a knowledge base, providing potential evidence of an interaction with a specified medication or non-medicinal therapy.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"/>
+  <version value="0.1.0"/>
+  <name value="TbdCodes"/>
+  <title value="ToBeDeterminedCodes (&#39;TbdCodes&#39;)"/>
+  <status value="active"/>
+  <date value="2020-11-12T19:37:28+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ncpi-fhir"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="These codes are currently &#39;TBD-LOINC&#39; codes. The CG WG is requesting formal LOINC codes."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="18"/>
+  <concept>
+    <code value="grouper"/>
+    <display value="grouper"/>
+    <definition value="A means to bundle several observations such as one would find in a genetics test panel."/>
+  </concept>
+  <concept>
+    <code value="mode-of-inheritance"/>
+    <display value="mode-of-inheritance"/>
+    <definition value="This is actually LOINC code 79742-3. And the IG will be updated"/>
+  </concept>
+  <concept>
+    <code value="effect-transporter-function"/>
+    <display value="effect-transporter-function"/>
+    <definition value="Predicted phenotype for drug efficacy through transport mechanism. A single marker interpretation value known to increase or decrease the drug&#39;s performance."/>
+  </concept>
+  <concept>
+    <code value="effect-medication-efficacy"/>
+    <display value="Medication Efficacy"/>
+  </concept>
+  <concept>
+    <code value="effect-medication-metabolism"/>
+    <display value="Medication Metabolism"/>
+  </concept>
+  <concept>
+    <code value="effect-medication-transporter"/>
+    <display value="Medication Transporter Function"/>
+  </concept>
+  <concept>
+    <code value="effect-high-risk-allele"/>
+    <display value="High Risk Allele"/>
+  </concept>
+  <concept>
+    <code value="prognostic-implication"/>
+    <display value="Prognostic Implication component"/>
+    <definition value="Finding of whether a particular somatic genotype/haplotype/variation or combination-thereof predicts a particular outcome for the specified cancer - either on its own or in conjunction with one or more interventions."/>
+  </concept>
+  <concept>
+    <code value="associated-cancer"/>
+    <display value="associated-cancer"/>
+  </concept>
+  <concept>
+    <code value="associated-therapy"/>
+    <display value="Genomically linked therapy"/>
+    <definition value="The non-medication therapy (procedure) associated with this implication."/>
+  </concept>
+  <concept>
+    <code value="region-coverage"/>
+    <display value="region-coverage"/>
+    <definition value="Given as a number between 0 and 100. Mean mapped read depth. Obtained by counting total number of mapped reads and divided by the number of bases in the region sequence."/>
+  </concept>
+  <concept>
+    <code value="functional-annotation"/>
+    <display value="functional-annotation"/>
+    <definition value="Annotated changes to sequence features caused by this variant. Terms are from the sequence ontology under SO:0001537."/>
+  </concept>
+  <concept>
+    <code value="exact-start-end"/>
+    <display value="Variant exact start and end"/>
+    <definition value="The genomic coordinates of the exact genomic range in which the variant resides."/>
+  </concept>
+  <concept>
+    <code value="inner-start-end"/>
+    <display value="Variant inner start and end"/>
+    <definition value="The genomic coordinates of the inner genomic range in which the variant might reside."/>
+  </concept>
+  <concept>
+    <code value="outer-start-end"/>
+    <display value="Variant outer start and end"/>
+    <definition value="The genomic coordinates of the outer genomic range in which the variant might reside."/>
+  </concept>
+  <concept>
+    <code value="variant-inheritance"/>
+    <display value="Variant inheritance"/>
+    <definition value="A quality inhering in a variant by virtue of its origin. The terms are in the sequence ontology under SO:0001762."/>
+  </concept>
+  <concept>
+    <code value="diagnostic-implication"/>
+    <display value="Diagnostic Implication"/>
+    <definition value="An observation linking a genomic finding with a knowledge base, providing context that may aid in diagnosing a patient with a particular phenotype or condition."/>
+  </concept>
+  <concept>
+    <code value="therapeutic-implication"/>
+    <display value="Therapeutic Implication"/>
+    <definition value="An observation linking a genomic finding with a knowledge base, providing potential evidence of an interaction with a specified medication or non-medicinal therapy."/>
+  </concept>
+</CodeSystem>
