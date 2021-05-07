@@ -2,11 +2,11 @@ CodeSystem: HumanPhenotypeOntology
 Id: hpo
 Title: "Human Phenotype Ontology"
 Description: "Please see license of HPO at http://www.human-phenotype-ontology.org"
-* ^url = "http://fhir.ncpi-project-forge.io/CodeSystem/hpo"
+* ^url =  $hpo
 * ^version = "http://purl.obolibrary.org/obo/hp/releases/2020-03-27/hp.owl"
 * ^status = #draft
 * ^experimental = false
-* ^valueSet = "http://fhir.kids-first.io/ValueSet/phenotype-codes"
+* ^valueSet = "http://fhir.ncpi-project-forge.io/ValueSet/phenotype-codes"
 * ^hierarchyMeaning = #is-a
 * ^compositional = false
 * ^versionNeeded = false
