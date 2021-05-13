@@ -1,7 +1,7 @@
 CodeSystem: HumanPhenotypeOntology
 Id: hpo
 Title: "Human Phenotype Ontology"
-Description: "Please see license of HPO at http://www.human-phenotype-ontology.org"
+Description: "The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Please see license of HPO at http://www.human-phenotype-ontology.org"
 * ^url =  $hpo
 * ^version = "http://purl.obolibrary.org/obo/hp/releases/2020-03-27/hp.owl"
 * ^status = #draft
