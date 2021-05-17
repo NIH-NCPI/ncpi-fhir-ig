@@ -11,8 +11,8 @@ Description: "Example of the representation of Disease."
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * verificationStatus.text = "Affected"
 * category = $condition-category#encounter-diagnosis "Encounter Diagnosis"
-* code = $ncit.owl#NCIT:C54705 "Neoplastic Syndrome"
-* code.text = "Neoplastic Syndrome"
+* code = $ncit.owl#NCIT:Neuroblastoma "Neuroblastoma"
+* code.text = "Neuroblastoma"
 * subject = Reference(patient-example-1)
 * recordedDate.extension.url = $cqf-relativeDateTime
 * recordedDate.extension.extension[0].url = "target"
