@@ -44,6 +44,7 @@ Alias: $supporting-info = http://fhir.ncpi-project-forge.io/StructureDefinition/
 // CodeSystem
 Alias: $hpo = http://purl.obolibrary.org/obo/hp.owl
 Alias: $omim = https://omim.org/
+Alias: $mondo = http://purl.obolibrary.org/obo/mondo.owl
 
 // ValueSet
 Alias: $disease-codes = http://fhir.ncpi-project-forge.io/ValueSet/disease-codes

@@ -1,4 +1,4 @@
-CodeSystem: HumanPhenotypeOntology
+CodeSystem: HPO
 Id: hpo
 Title: "Human Phenotype Ontology"
 Description: "The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Please see license of HPO at http://www.human-phenotype-ontology.org"

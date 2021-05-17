@@ -1,4 +1,4 @@
-CodeSystem: Omim
+CodeSystem: OMIM
 Id: omim
 Title: "Online Mendelian Inheritance in Man"
 Description: "An online database that describes the function and phenotypes associated with human genes"
