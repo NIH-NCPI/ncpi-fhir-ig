@@ -2,7 +2,7 @@ CodeSystem: NCIt
 Id: ncit
 Title: "NCI Thesaurus"
 Description: "NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities."
-* ^url = $ncit.owl
+* ^url = $ncit
 * ^status = #draft
 * ^experimental = false
 * ^caseSensitive = true
