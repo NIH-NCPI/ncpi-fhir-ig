@@ -15,7 +15,7 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
-Alias: $ncit.owl = http://purl.obolibrary.org/obo/ncit.owl
+Alias: $ncit = http://purl.obolibrary.org/obo/ncit.owl
 Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $practitioner-role = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: $sct = http://snomed.info/sct
@@ -42,7 +42,9 @@ Alias: $supporting-info = http://fhir.ncpi-project-forge.io/StructureDefinition/
 
 
 // CodeSystem
-Alias: $hpo = http://fhir.ncpi-project-forge.io/CodeSystem/hpo
+Alias: $hpo = http://purl.obolibrary.org/obo/hp.owl
+Alias: $omim = https://omim.org/
+Alias: $mondo = http://purl.obolibrary.org/obo/mondo.owl
 
 // ValueSet
 Alias: $disease-codes = http://fhir.ncpi-project-forge.io/ValueSet/disease-codes

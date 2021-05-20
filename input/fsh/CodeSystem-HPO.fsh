@@ -1,12 +1,12 @@
-CodeSystem: HumanPhenotypeOntology
+CodeSystem: HPO
 Id: hpo
 Title: "Human Phenotype Ontology"
-Description: "Please see license of HPO at http://www.human-phenotype-ontology.org"
-* ^url = "http://fhir.ncpi-project-forge.io/CodeSystem/hpo"
+Description: "The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Please see license of HPO at http://www.human-phenotype-ontology.org"
+* ^url =  $hpo
 * ^version = "http://purl.obolibrary.org/obo/hp/releases/2020-03-27/hp.owl"
 * ^status = #draft
 * ^experimental = false
-* ^valueSet = "http://fhir.kids-first.io/ValueSet/phenotype-codes"
+* ^valueSet = "http://fhir.ncpi-project-forge.io/ValueSet/phenotype-codes"
 * ^hierarchyMeaning = #is-a
 * ^compositional = false
 * ^versionNeeded = false
