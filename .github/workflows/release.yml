@@ -1,0 +1,83 @@
+name: Release
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+jobs:
+  release:
+    if: github.event.pull_request.merged && contains(github.event.pull_request.labels.*.name, 'release')
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Manual workaround for Github not having a runtime macro to check for the default branch
+        id: gatekeeper
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DEFAULT_BRANCH=$(curl -H "Authorization: token $GITHUB_TOKEN" -s https://api.github.com/repos/$GITHUB_REPOSITORY | jq -rc .default_branch)
+          unset IS_DEFAULT_BRANCH
+          if [ "$GITHUB_BASE_REF" == "$DEFAULT_BRANCH" ]; then
+            IS_DEFAULT_BRANCH='true'
+          fi
+          echo "::set-output name=IS_DEFAULT_BRANCH::$IS_DEFAULT_BRANCH"
+
+      - name: Check out branch
+        uses: actions/checkout@v2
+        if: steps.gatekeeper.outputs.IS_DEFAULT_BRANCH
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        if: steps.gatekeeper.outputs.IS_DEFAULT_BRANCH
+        with:
+          python-version: 3.8
+
+      - name: Create tag from title and run asset script
+        if: steps.gatekeeper.outputs.IS_DEFAULT_BRANCH
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: find_tag_and_prepare_assets
+        run: |
+          TAG=$(echo ${{ github.event.pull_request.title }} | sed -E "s/^.*Release (.+\..+\..+)$/\1/g")
+          echo "::set-output name=tag::$TAG"
+
+          SCRIPT=.github/prepare_assets.sh
+          if [ -f $SCRIPT ]; then 
+            chmod u+x $SCRIPT
+            $SCRIPT $TAG
+          fi
+
+      - name: Create release
+        if: steps.gatekeeper.outputs.IS_DEFAULT_BRANCH
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.find_tag_and_prepare_assets.outputs.tag }}
+          release_name: ${{ github.event.pull_request.title }}
+          body: ${{ github.event.pull_request.body }}
+          draft: false
+          prerelease: false
+
+      - name: Add latest-release tag
+        if: steps.gatekeeper.outputs.IS_DEFAULT_BRANCH
+        run: |
+          git tag -f latest-release
+          git push -f --tags
+
+      - name: Upload assets
+        if: steps.gatekeeper.outputs.IS_DEFAULT_BRANCH
+        run: |
+          upload_url=${{ steps.create_release.outputs.upload_url }}
+          if [ -f .github/release_assets.txt ]; then
+            while IFS="" read -r FILE || [ -n "$FILE" ]
+            do
+              curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                -H "Content-Type: $(file -b --mime-type $FILE)" \
+                --data-binary "@$FILE" \
+                "${upload_url%\{*}?name=$(basename $FILE)"
+            done < .github/release_assets.txt
+          fi
