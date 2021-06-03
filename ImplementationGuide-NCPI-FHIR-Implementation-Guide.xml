@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="NCPI-FHIR-Implementation-Guide"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NCPIFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide</pre><div><p>FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).</p>
+</div></div>
+  </text>
+  <url value="https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide"/>
+  <version value="0.1.0"/>
+  <name value="NCPIFHIRImplementationGuide"/>
+  <title value="NCPI FHIR Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2021-06-03T15:34:37+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ncpi-fhir"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI)."/>
+  <packageId value="NCPI-FHIR-Implementation-Guide"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.1"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://ncpi-fhir.github.io/ncpi-fhir-ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-drs-attachment"/>
+      </reference>
+      <name value="DRS Attachment"/>
+      <description value="A FHIR Attachment with a DRS url."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-drs-document-reference"/>
+      </reference>
+      <name value="DRS Document Reference"/>
+      <description value="A FHIR Document Reference with an embedded DRS URI. See https://github.com/ga4gh/data-repository-service-schemas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/disease"/>
+      </reference>
+      <name value="NCPI Disease"/>
+      <description value="Representation for a disease under study for a given research dataset."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/family-relationship"/>
+      </reference>
+      <name value="NCPI Family Relationship"/>
+      <description value="Representation of a family relationship."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/phenotype"/>
+      </reference>
+      <name value="NCPI Phenotype"/>
+      <description value="Representation of phenotypic observations (present or absent)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/supporting-info"/>
+      </reference>
+      <name value="Supporting Information"/>
+      <description value="Additional information relevant to interpreting/understanding the report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/condition-inheritance-vs"/>
+      </reference>
+      <name value="Condition Inheritance Pattern"/>
+      <description value="Value Set for specific ttransmission patterns of a condition in a pedigree"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/disease-codes"/>
+      </reference>
+      <name value="Disease Codes"/>
+      <description value="This value set includes all codes from this FHIR server&#39;s representation of OMIM, Mondo and NICt CodeSystems."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/loinc-answers"/>
+      </reference>
+      <name value="LOINC Answers"/>
+      <description value="LOINC ANSWERS used by NCPI resources"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/phenotype-codes"/>
+      </reference>
+      <name value="Phenotype Codes"/>
+      <description value="This value set includes all codes from Human Phenotype Ontology."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tbd-codes"/>
+      </reference>
+      <name value="tbd-codes"/>
+      <description value="This value set includes all TBD Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ConditionInheritanceMode"/>
+      </reference>
+      <name value="Condition Inheritance Pattern"/>
+      <description value="A set of terms that describe the transmission pattern of a condition in a pedigree."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hpo"/>
+      </reference>
+      <name value="Human Phenotype Ontology"/>
+      <description value="The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Please see license of HPO at http://www.human-phenotype-ontology.org"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/v3-hgvs"/>
+      </reference>
+      <name value="Human Genome Variation Society nomenclature"/>
+      <description value="HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.&#xA;&#xA;HGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX|1|CWE|48004-6^DNA Sequence Variation^LN||c.1129C&gt;T^^HGVS|&#xA;&#xA;Versioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007&#xA;&#xA;HGVS nomenclatures can be used freely by the public."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/loinc-answers"/>
+      </reference>
+      <name value="LOINC Answers"/>
+      <description value="LOINC ANSWERS used by NCPI resources"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mondo"/>
+      </reference>
+      <name value="Mondo Disease Ontology"/>
+      <description value="The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the latin word &#39;mundus&#39; and means &#39;for the world.&#39;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ncit"/>
+      </reference>
+      <name value="NCI Thesaurus"/>
+      <description value="NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/omim"/>
+      </reference>
+      <name value="Online Mendelian Inheritance in Man"/>
+      <description value="An online database that describes the function and phenotypes associated with human genes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tbd-codes"/>
+      </reference>
+      <name value="ToBeDeterminedCodes (&#39;TbdCodes&#39;)"/>
+      <description value="These codes are currently &#39;TBD-LOINC&#39; codes. The CG WG is requesting formal LOINC codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/diagnostic-implication-1"/>
+      </reference>
+      <name value="diagnostic-implication-1"/>
+      <description value="Example representation of a known variant found during genetic testing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnostic-report-1"/>
+      </reference>
+      <name value="diagnostic-report-1"/>
+      <description value="Example of a DiagnosticReport which aggregates genetic findings for a given test or run"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/disease-example-1"/>
+      </reference>
+      <name value="disease-example-1"/>
+      <description value="Example of the representation of Disease."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/drs-document-reference-example-1"/>
+      </reference>
+      <name value="drs-document-reference-example-1"/>
+      <description value="Example of the representation of DRS Document Reference."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/family-relationship-example-1"/>
+      </reference>
+      <name value="family-relationship-example-1"/>
+      <description value="Example of the representation of Family Relationship."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/family-relationship-example-2"/>
+      </reference>
+      <name value="family-relationship-example-2"/>
+      <description value="Example of the representation of Family Relationship."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/family-relationship-example-3"/>
+      </reference>
+      <name value="family-relationship-example-3"/>
+      <description value="Example of the representation of Family Relationship."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/family-relationship-example-4"/>
+      </reference>
+      <name value="family-relationship-example-4"/>
+      <description value="Example of the representation of Family Relationship."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-example-1"/>
+      </reference>
+      <name value="organization-example-1"/>
+      <description value="Example of the representation of Organization."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-1"/>
+      </reference>
+      <name value="patient-example-1"/>
+      <description value="Example of the representation of Patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-2"/>
+      </reference>
+      <name value="patient-example-2"/>
+      <description value="Example of the representation of Patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-3"/>
+      </reference>
+      <name value="patient-example-3"/>
+      <description value="Example of the representation of Patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/phenotype-example-1"/>
+      </reference>
+      <name value="phenotype-example-1"/>
+      <description value="Example of the representation of observed Phenotype."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner-example-1"/>
+      </reference>
+      <name value="practitioner-example-1"/>
+      <description value="Example of the representation of Practitioner."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/practitioner-role-example-1"/>
+      </reference>
+      <name value="practitioner-role-example-1"/>
+      <description value="Example of the representation of Practitioner Role."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/research-study-example-1"/>
+      </reference>
+      <name value="research-study-example-1"/>
+      <description value="Example of the representation of Research Study."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-1"/>
+      </reference>
+      <name value="research-subject-example-1"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-2"/>
+      </reference>
+      <name value="research-subject-example-2"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-3"/>
+      </reference>
+      <name value="research-subject-example-3"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen-example-1"/>
+      </reference>
+      <name value="specimen-example-1"/>
+      <description value="Example of the representation of Specimen."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/task-example-1"/>
+      </reference>
+      <name value="task-example-1"/>
+      <description value="Example of the representation of Task."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/variant-example-1"/>
+      </reference>
+      <name value="variant-example-1"/>
+      <description value="Example of a fhir representation of a variant"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="authors.html"/>
+        <title value="Authors"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contact.html"/>
+        <title value="Contact"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="use_cases.html"/>
+        <title value="Use Cases"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

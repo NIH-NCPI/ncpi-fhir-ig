@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/DocumentReference/drs-document-reference-example-1> a fhir:DocumentReference;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "drs-document-reference-example-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
+       fhir:index 0;
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: current</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  ];
+  fhir:DocumentReference.status [ fhir:value "current"];
+  fhir:DocumentReference.content [
+     fhir:index 0;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.url [ fhir:value "drs://example.com/ga4gh/drs/v1/objects/0f8c27b9-3300-4249-bb28-f49ffb80e277" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/DocumentReference/drs-document-reference-example-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "mondo",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://purl.obolibrary.org/obo/mondo.owl defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">MONDO:0005072<a name=\"mondo-MONDO.580005072\"> </a></td><td>neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">MONDO:0002749<a name=\"mondo-MONDO.580002749\"> </a></td><td>extracranial neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">MONDO:0008542<a name=\"mondo-MONDO.580008542\"> </a></td><td>tetralogy of fallot</td></tr></table></div>"
+  },
+  "url": "http://purl.obolibrary.org/obo/mondo.owl",
+  "version": "0.1.0",
+  "name": "Mondo",
+  "title": "Mondo Disease Ontology",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-06-03T15:34:37+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/ncpi-fhir"
+        }
+      ]
+    },
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the latin word 'mundus' and means 'for the world.'",
+  "caseSensitive": true,
+  "content": "fragment",
+  "count": 3,
+  "concept": [
+    {
+      "code": "MONDO:0005072",
+      "display": "neuroblastoma"
+    },
+    {
+      "code": "MONDO:0002749",
+      "display": "extracranial neuroblastoma"
+    },
+    {
+      "code": "MONDO:0008542",
+      "display": "tetralogy of fallot"
+    }
+  ]
+}

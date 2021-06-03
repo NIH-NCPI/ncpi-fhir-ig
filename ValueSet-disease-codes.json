@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "disease-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-omim.html\"><code>https://omim.org/</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-mondo.html\"><code>http://purl.obolibrary.org/obo/mondo.owl</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncit.html\"><code>http://purl.obolibrary.org/obo/ncit.owl</code></a></li></ul></div>"
+  },
+  "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
+  "version": "0.1.0",
+  "name": "DiseaseCodes",
+  "title": "Disease Codes",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-06-03T15:34:37+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/ncpi-fhir"
+        }
+      ]
+    },
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://omim.org/"
+      },
+      {
+        "system": "http://purl.obolibrary.org/obo/mondo.owl"
+      },
+      {
+        "system": "http://purl.obolibrary.org/obo/ncit.owl"
+      }
+    ]
+  }
+}

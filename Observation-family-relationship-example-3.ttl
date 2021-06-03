@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/family-relationship-example-3> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "family-relationship-example-3"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+       fhir:index 0;
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FAMMEMB}\">family member</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-2.html\">Generated Summary: Jane Samantha Smith(OFFICIAL); Phone: (555) 555-5555; gender: female</a></p><p><b>focus</b>: <a href=\"Patient-patient-example-1.html\">Generated Summary: Mariah Abigail Smith(OFFICIAL); Phone: (555) 555-5555; gender: female; birthDate: 2019-06-15</a></p><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode PRN}, {http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">Mother</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "FAMMEMB" ];
+       fhir:Coding.display [ fhir:value "family member" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-2>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-2" ]
+  ];
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "PRN" ];
+       fhir:Coding.display [ fhir:value "parent" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "MTH" ];
+       fhir:Coding.display [ fhir:value "mother" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Mother" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/family-relationship-example-3.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

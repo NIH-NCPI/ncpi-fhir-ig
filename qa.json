@@ -1,0 +1,12 @@
+{
+  "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide",
+  "name": "NCPIFHIRImplementationGuide",
+  "package-id": "NCPI-FHIR-Implementation-Guide",
+  "ig-ver": "0.1.0",
+  "date": "Thu, 03 Jun, 2021 15:34:37 +0000",
+  "errs": 0,
+  "warnings": 1,
+  "hints": 4,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

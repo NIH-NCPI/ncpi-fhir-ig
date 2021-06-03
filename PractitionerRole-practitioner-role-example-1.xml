@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="practitioner-role-example-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-practitioner-example-1.html">Generated Summary: active; Jane Samantha Smith(OFFICIAL); Phone: (555) 555-5555; gender: female</a></p><p><b>organization</b>: <a href="Organization-organization-example-1.html">Generated Summary: active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Hospital</span>; name: Amazing Children's Hospital; Phone: (555) 555-5555</a></p><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/practitioner-role researcher}">Principal Investigator</span></p><p><b>telecom</b>: ph: (555) 555-5555(WORK)</p></div>
+  </text>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/practitioner-example-1"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/organization-example-1"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/practitioner-role"/>
+      <code value="researcher"/>
+      <display value="Researcher"/>
+    </coding>
+    <text value="Principal Investigator"/>
+  </code>
+  <telecom>
+    <system value="phone"/>
+    <value value="(555) 555-5555"/>
+    <use value="work"/>
+    <rank value="1"/>
+  </telecom>
+</PractitionerRole>

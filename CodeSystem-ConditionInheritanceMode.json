@@ -1,0 +1,151 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ConditionInheritanceMode",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">GENO:0000143<a name=\"ConditionInheritanceMode-GENO.580000143\"> </a></td><td>Codominant inheritance</td></tr><tr><td style=\"white-space:nowrap\">GENO:0000889<a name=\"ConditionInheritanceMode-GENO.580000889\"> </a></td><td>Unknown inheritance</td></tr><tr><td style=\"white-space:nowrap\">GENO:0000892<a name=\"ConditionInheritanceMode-GENO.580000892\"> </a></td><td>Mitochondrial inheritance (primarily or exclusively heteroplasmic)</td></tr><tr><td style=\"white-space:nowrap\">GENO:0000893<a name=\"ConditionInheritanceMode-GENO.580000893\"> </a></td><td>Mitochondrial inheritance (primarily or exclusively homoplasmic)</td></tr><tr><td style=\"white-space:nowrap\">HP:0000006<a name=\"ConditionInheritanceMode-HP.580000006\"> </a></td><td>Autosomal dominant inheritance</td></tr><tr><td style=\"white-space:nowrap\">HP:0000007<a name=\"ConditionInheritanceMode-HP.580000007\"> </a></td><td>Autosomal recessive inheritance</td></tr><tr><td style=\"white-space:nowrap\">HP:0001417<a name=\"ConditionInheritanceMode-HP.580001417\"> </a></td><td>X-linked inheritance</td></tr><tr><td style=\"white-space:nowrap\">HP:0001419<a name=\"ConditionInheritanceMode-HP.580001419\"> </a></td><td>X-linked inheritance (recessive)</td></tr><tr><td style=\"white-space:nowrap\">HP:0001423<a name=\"ConditionInheritanceMode-HP.580001423\"> </a></td><td>X-linked inheritance (dominant)</td></tr><tr><td style=\"white-space:nowrap\">HP:0001426<a name=\"ConditionInheritanceMode-HP.580001426\"> </a></td><td>Multifactorial inheritance</td></tr><tr><td style=\"white-space:nowrap\">HP:0001427<a name=\"ConditionInheritanceMode-HP.580001427\"> </a></td><td>Mitochondrial inheritance</td></tr><tr><td style=\"white-space:nowrap\">HP:0001428<a name=\"ConditionInheritanceMode-HP.580001428\"> </a></td><td>Somatic mutation</td></tr><tr><td style=\"white-space:nowrap\">HP:0001450<a name=\"ConditionInheritanceMode-HP.580001450\"> </a></td><td>Y-linked inheritance</td></tr><tr><td style=\"white-space:nowrap\">HP:0001470<a name=\"ConditionInheritanceMode-HP.580001470\"> </a></td><td>Autosomal dominant inheritance (sex-limited)</td></tr><tr><td style=\"white-space:nowrap\">HP:0003743<a name=\"ConditionInheritanceMode-HP.580003743\"> </a></td><td>Genetic anticipation</td></tr><tr><td style=\"white-space:nowrap\">HP:0003745<a name=\"ConditionInheritanceMode-HP.580003745\"> </a></td><td>Sporadic</td></tr><tr><td style=\"white-space:nowrap\">HP:0010983<a name=\"ConditionInheritanceMode-HP.580010983\"> </a></td><td>Oligogenic</td></tr><tr><td style=\"white-space:nowrap\">HP:0012274<a name=\"ConditionInheritanceMode-HP.580012274\"> </a></td><td>Autosomal dominant inheritance (with paternal imprinting)</td></tr><tr><td style=\"white-space:nowrap\">HP:0012275<a name=\"ConditionInheritanceMode-HP.580012275\"> </a></td><td>Autosomal dominant inheritance (with maternal imprinting)</td></tr><tr><td style=\"white-space:nowrap\">HP:0025352<a name=\"ConditionInheritanceMode-HP.580025352\"> </a></td><td>Autosomal dominant inheritance (primarily or exclusively de novo)</td></tr><tr><td style=\"white-space:nowrap\">HP:0031362<a name=\"ConditionInheritanceMode-HP.580031362\"> </a></td><td>Autosomal recessive inheritance (sex-limited)</td></tr><tr><td style=\"white-space:nowrap\">SEPIO-CG:97020<a name=\"ConditionInheritanceMode-SEPIO-CG.5897020\"> </a></td><td>Semidominant inheritance</td></tr><tr><td style=\"white-space:nowrap\">SEPIO-CG:97021<a name=\"ConditionInheritanceMode-SEPIO-CG.5897021\"> </a></td><td>X-linked inheritance (primarily recessive with milder female expression)</td></tr><tr><td style=\"white-space:nowrap\">SEPIO-CG:97022<a name=\"ConditionInheritanceMode-SEPIO-CG.5897022\"> </a></td><td>Autosomal dominant inheritance (with genetic anticipation)</td></tr><tr><td style=\"white-space:nowrap\">SEPIO-CG:97023<a name=\"ConditionInheritanceMode-SEPIO-CG.5897023\"> </a></td><td>Autosomal recessive inheritance (with genetic anticipation)</td></tr></table></div>"
+  },
+  "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode",
+  "version": "0.1.0",
+  "name": "ConditionInheritanceMode",
+  "title": "Condition Inheritance Pattern",
+  "status": "active",
+  "date": "2021-06-03T15:34:37+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/ncpi-fhir"
+        }
+      ]
+    },
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "A set of terms that describe the transmission pattern of a condition in a pedigree.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 25,
+  "concept": [
+    {
+      "code": "GENO:0000143",
+      "display": "Codominant inheritance"
+    },
+    {
+      "code": "GENO:0000889",
+      "display": "Unknown inheritance"
+    },
+    {
+      "code": "GENO:0000892",
+      "display": "Mitochondrial inheritance (primarily or exclusively heteroplasmic)"
+    },
+    {
+      "code": "GENO:0000893",
+      "display": "Mitochondrial inheritance (primarily or exclusively homoplasmic)"
+    },
+    {
+      "code": "HP:0000006",
+      "display": "Autosomal dominant inheritance"
+    },
+    {
+      "code": "HP:0000007",
+      "display": "Autosomal recessive inheritance"
+    },
+    {
+      "code": "HP:0001417",
+      "display": "X-linked inheritance"
+    },
+    {
+      "code": "HP:0001419",
+      "display": "X-linked inheritance (recessive)"
+    },
+    {
+      "code": "HP:0001423",
+      "display": "X-linked inheritance (dominant)"
+    },
+    {
+      "code": "HP:0001426",
+      "display": "Multifactorial inheritance"
+    },
+    {
+      "code": "HP:0001427",
+      "display": "Mitochondrial inheritance"
+    },
+    {
+      "code": "HP:0001428",
+      "display": "Somatic mutation"
+    },
+    {
+      "code": "HP:0001450",
+      "display": "Y-linked inheritance"
+    },
+    {
+      "code": "HP:0001470",
+      "display": "Autosomal dominant inheritance (sex-limited)"
+    },
+    {
+      "code": "HP:0003743",
+      "display": "Genetic anticipation"
+    },
+    {
+      "code": "HP:0003745",
+      "display": "Sporadic"
+    },
+    {
+      "code": "HP:0010983",
+      "display": "Oligogenic"
+    },
+    {
+      "code": "HP:0012274",
+      "display": "Autosomal dominant inheritance (with paternal imprinting)"
+    },
+    {
+      "code": "HP:0012275",
+      "display": "Autosomal dominant inheritance (with maternal imprinting)"
+    },
+    {
+      "code": "HP:0025352",
+      "display": "Autosomal dominant inheritance (primarily or exclusively de novo)"
+    },
+    {
+      "code": "HP:0031362",
+      "display": "Autosomal recessive inheritance (sex-limited)"
+    },
+    {
+      "code": "SEPIO-CG:97020",
+      "display": "Semidominant inheritance"
+    },
+    {
+      "code": "SEPIO-CG:97021",
+      "display": "X-linked inheritance (primarily recessive with milder female expression)"
+    },
+    {
+      "code": "SEPIO-CG:97022",
+      "display": "Autosomal dominant inheritance (with genetic anticipation)"
+    },
+    {
+      "code": "SEPIO-CG:97023",
+      "display": "Autosomal recessive inheritance (with genetic anticipation)"
+    }
+  ]
+}

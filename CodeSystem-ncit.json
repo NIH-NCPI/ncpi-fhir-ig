@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ncit",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://purl.obolibrary.org/obo/ncit.owl defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C3270<a name=\"ncit-C3270\"> </a></td><td>Neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">C5437<a name=\"ncit-C5437\"> </a></td><td>Extracranial Neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">C84505<a name=\"ncit-C84505\"> </a></td><td>Tetralogy of Fallot</td></tr></table></div>"
+  },
+  "url": "http://purl.obolibrary.org/obo/ncit.owl",
+  "version": "0.1.0",
+  "name": "NCIt",
+  "title": "NCI Thesaurus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-06-03T15:34:37+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/ncpi-fhir"
+        }
+      ]
+    },
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities.",
+  "caseSensitive": true,
+  "content": "fragment",
+  "count": 3,
+  "concept": [
+    {
+      "code": "C3270",
+      "display": "Neuroblastoma"
+    },
+    {
+      "code": "C5437",
+      "display": "Extracranial Neuroblastoma"
+    },
+    {
+      "code": "C84505",
+      "display": "Tetralogy of Fallot"
+    }
+  ]
+}

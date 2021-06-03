@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ncit"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://purl.obolibrary.org/obo/ncit.owl defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">C3270<a name="ncit-C3270"> </a></td><td>Neuroblastoma</td></tr><tr><td style="white-space:nowrap">C5437<a name="ncit-C5437"> </a></td><td>Extracranial Neuroblastoma</td></tr><tr><td style="white-space:nowrap">C84505<a name="ncit-C84505"> </a></td><td>Tetralogy of Fallot</td></tr></table></div>
+  </text>
+  <url value="http://purl.obolibrary.org/obo/ncit.owl"/>
+  <version value="0.1.0"/>
+  <name value="NCIt"/>
+  <title value="NCI Thesaurus"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-06-03T15:34:37+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ncpi-fhir"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities."/>
+  <caseSensitive value="true"/>
+  <content value="fragment"/>
+  <count value="3"/>
+  <concept>
+    <code value="C3270"/>
+    <display value="Neuroblastoma"/>
+  </concept>
+  <concept>
+    <code value="C5437"/>
+    <display value="Extracranial Neuroblastoma"/>
+  </concept>
+  <concept>
+    <code value="C84505"/>
+    <display value="Tetralogy of Fallot"/>
+  </concept>
+</CodeSystem>

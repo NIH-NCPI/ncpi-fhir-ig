@@ -1,0 +1,692 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 0, warn = 1, info = 4 -->
+<head>
+  <title>NCPIFHIRImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for NCPIFHIRImplementationGuide</h1>
+ <p>Generated Thu Jun 03 15:35:11 UTC 2021, FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = <a href="https://ncpi-fhir.github.io/ncpi-fhir-ig">https://ncpi-fhir.github.io/ncpi-fhir-ig</a> (<a href="https://ncpi-fhir.github.io/ncpi-fhir-ig/history.html">history</a>)). See <a href="/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.72</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = NCPI-FHIR-Implementation-Guide, Canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> NCPI-FHIR-Implementation-Guide</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://ncpi-fhir.github.io/ncpi-fhir-ig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU3.1.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://ncpi-fhir.github.io/ncpi-fhir-ig (Problem #1 with package-list.json at https://ncpi-fhir.github.io/ncpi-fhir-ig: https://ncpi-fhir.github.io/ncpi-fhir-ig/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 0, warn = 1, info = 4</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-ConditionInheritanceMode"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ConditionInheritanceMode</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-hpo"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-hpo</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-loinc-answers"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-loinc-answers</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-mondo"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-mondo</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-ncit"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncit</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-omim"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-omim</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-tbd-codes"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-tbd-codes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-v3-hgvs"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-v3-hgvs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Condition-disease-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-disease-example-1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Condition-phenotype-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-phenotype-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_DiagnosticReport-diagnostic-report-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/DiagnosticReport-diagnostic-report-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_DocumentReference-drs-document-reference-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/DocumentReference-drs-document-reference-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ImplementationGuide-NCPI-FHIR-Implementation-Guide"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-diagnostic-implication-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-diagnostic-implication-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-family-relationship-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-family-relationship-example-2"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-family-relationship-example-3"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-3</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-family-relationship-example-4"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-4</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-variant-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-variant-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Organization-organization-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Organization-organization-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Patient-patient-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Patient-patient-example-2"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Patient-patient-example-3"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-3</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Practitioner-practitioner-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Practitioner-practitioner-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_PractitionerRole-practitioner-role-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/PractitionerRole-practitioner-role-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ResearchStudy-research-study-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchStudy-research-study-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ResearchSubject-research-subject-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ResearchSubject-research-subject-example-2"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ResearchSubject-research-subject-example-3"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-3</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Specimen-specimen-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Specimen-specimen-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-disease"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-disease</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-family-relationship"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-family-relationship</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-ncpi-drs-attachment"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-attachment</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-ncpi-drs-document-reference"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-document-reference</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-phenotype"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-phenotype</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-supporting-info"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-supporting-info</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Task-task-example-1"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Task-task-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-condition-inheritance-vs"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-condition-inheritance-vs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-disease-codes"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-disease-codes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-loinc-answers"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-loinc-answers</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-phenotype-codes"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-phenotype-codes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-tbd-codes"><b>/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-ConditionInheritanceMode"> </a>
+<h2><a href="CodeSystem-ConditionInheritanceMode.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ConditionInheritanceMode.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/ConditionInheritanceMode: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-hpo"> </a>
+<h2><a href="CodeSystem-hpo.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-hpo.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/hpo: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-loinc-answers"> </a>
+<h2><a href="CodeSystem-loinc-answers.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-loinc-answers.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/loinc-answers: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-mondo"> </a>
+<h2><a href="CodeSystem-mondo.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-mondo.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/mondo: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-ncit"> </a>
+<h2><a href="CodeSystem-ncit.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncit.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/ncit: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-omim"> </a>
+<h2><a href="CodeSystem-omim.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-omim.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/omim: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-tbd-codes"> </a>
+<h2><a href="CodeSystem-tbd-codes.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-tbd-codes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/tbd-codes: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_CodeSystem-v3-hgvs"> </a>
+<h2><a href="CodeSystem-v3-hgvs.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-v3-hgvs.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/v3-hgvs: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Condition-disease-example-1"> </a>
+<h2><a href="Condition-disease-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-disease-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Condition/disease-example-1: Condition (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition/disease-example-1: Condition.code.coding[0] (l42/c8)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma in http://purl.obolibrary.org/obo/ncit.owl - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Condition-phenotype-example-1"> </a>
+<h2><a href="Condition-phenotype-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-phenotype-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Condition/phenotype-example-1: Condition (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_DiagnosticReport-diagnostic-report-1"> </a>
+<h2><a href="DiagnosticReport-diagnostic-report-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/DiagnosticReport-diagnostic-report-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>DiagnosticReport/diagnostic-report-1: DiagnosticReport (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/DiagnosticReport</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_DocumentReference-drs-document-reference-example-1"> </a>
+<h2><a href="DocumentReference-drs-document-reference-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/DocumentReference-drs-document-reference-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>DocumentReference/drs-document-reference-example-1: DocumentReference (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ImplementationGuide-NCPI-FHIR-Implementation-Guide"> </a>
+<h2><a href="ImplementationGuide-NCPI-FHIR-Implementation-Guide.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/NCPI-FHIR-Implementation-Guide: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-diagnostic-implication-1"> </a>
+<h2><a href="Observation-diagnostic-implication-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-diagnostic-implication-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/diagnostic-implication-1: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/diagnostic-implication-1: Observation.component[0].value.ofType(CodeableConcept).coding[0] (l42/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-family-relationship-example-1"> </a>
+<h2><a href="Observation-family-relationship-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/family-relationship-example-1: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-family-relationship-example-2"> </a>
+<h2><a href="Observation-family-relationship-example-2.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-2.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/family-relationship-example-2: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-family-relationship-example-3"> </a>
+<h2><a href="Observation-family-relationship-example-3.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-3.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/family-relationship-example-3: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-family-relationship-example-4"> </a>
+<h2><a href="Observation-family-relationship-example-4.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-4.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/family-relationship-example-4: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Observation-variant-example-1"> </a>
+<h2><a href="Observation-variant-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-variant-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/variant-example-1: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/variant-example-1: Observation.component[0].value.ofType(CodeableConcept).coding[0] (l59/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://www.ncbi.nlm.nih.gov/gene' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/variant-example-1: Observation.component[1].value.ofType(CodeableConcept).coding[0] (l79/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/variant-example-1: Observation.component[7].value.ofType(CodeableConcept).coding[0] (l182/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://www.ncbi.nlm.nih.gov/refseq' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Organization-organization-example-1"> </a>
+<h2><a href="Organization-organization-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Organization-organization-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Organization/organization-example-1: Organization (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Patient-patient-example-1"> </a>
+<h2><a href="Patient-patient-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/patient-example-1: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Patient-patient-example-2"> </a>
+<h2><a href="Patient-patient-example-2.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-2.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/patient-example-2: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Patient-patient-example-3"> </a>
+<h2><a href="Patient-patient-example-3.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-3.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/patient-example-3: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Practitioner-practitioner-example-1"> </a>
+<h2><a href="Practitioner-practitioner-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Practitioner-practitioner-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Practitioner/practitioner-example-1: Practitioner (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_PractitionerRole-practitioner-role-example-1"> </a>
+<h2><a href="PractitionerRole-practitioner-role-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/PractitionerRole-practitioner-role-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>PractitionerRole/practitioner-role-example-1: PractitionerRole (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ResearchStudy-research-study-example-1"> </a>
+<h2><a href="ResearchStudy-research-study-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchStudy-research-study-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ResearchStudy/research-study-example-1: ResearchStudy (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchStudy</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ResearchSubject-research-subject-example-1"> </a>
+<h2><a href="ResearchSubject-research-subject-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ResearchSubject/research-subject-example-1: ResearchSubject (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ResearchSubject-research-subject-example-2"> </a>
+<h2><a href="ResearchSubject-research-subject-example-2.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-2.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ResearchSubject/research-subject-example-2: ResearchSubject (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ResearchSubject-research-subject-example-3"> </a>
+<h2><a href="ResearchSubject-research-subject-example-3.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-3.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ResearchSubject/research-subject-example-3: ResearchSubject (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Specimen-specimen-example-1"> </a>
+<h2><a href="Specimen-specimen-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Specimen-specimen-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Specimen/specimen-example-1: Specimen (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Specimen</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-disease"> </a>
+<h2><a href="StructureDefinition-disease.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-disease.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/disease: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-family-relationship"> </a>
+<h2><a href="StructureDefinition-family-relationship.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-family-relationship.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/family-relationship: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-ncpi-drs-attachment"> </a>
+<h2><a href="StructureDefinition-ncpi-drs-attachment.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-attachment.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ncpi-drs-attachment: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-ncpi-drs-document-reference"> </a>
+<h2><a href="StructureDefinition-ncpi-drs-document-reference.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-document-reference.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/ncpi-drs-document-reference: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-phenotype"> </a>
+<h2><a href="StructureDefinition-phenotype.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-phenotype.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/phenotype: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_StructureDefinition-supporting-info"> </a>
+<h2><a href="StructureDefinition-supporting-info.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-supporting-info.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/supporting-info: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_Task-task-example-1"> </a>
+<h2><a href="Task-task-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Task-task-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Task/task-example-1: Task (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Task</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-condition-inheritance-vs"> </a>
+<h2><a href="ValueSet-condition-inheritance-vs.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-condition-inheritance-vs.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/condition-inheritance-vs: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-disease-codes"> </a>
+<h2><a href="ValueSet-disease-codes.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-disease-codes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/disease-codes: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-loinc-answers"> </a>
+<h2><a href="ValueSet-loinc-answers.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-loinc-answers.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/loinc-answers: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-phenotype-codes"> </a>
+<h2><a href="ValueSet-phenotype-codes.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-phenotype-codes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/phenotype-codes: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig_ncpi-fhir-ig_fsh-generated_resources_ValueSet-tbd-codes"> </a>
+<h2><a href="ValueSet-tbd-codes.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/tbd-codes: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/tbd-codes: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/shareablevalueset - listed in meta</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Condition-disease-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-disease-example-1.json</a></td><td><b>Unknown Code http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma in http://purl.obolibrary.org/obo/ncit.owl - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-diagnostic-implication-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-diagnostic-implication-1.json</a></td><td><b>Code System URI 'http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-variant-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-variant-example-1.json</a></td><td><b>Code System URI 'https://www.ncbi.nlm.nih.gov/gene' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-variant-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-variant-example-1.json</a></td><td><b>Code System URI 'http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-variant-example-1.html">/home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-variant-example-1.json</a></td><td><b>Code System URI 'http://www.ncbi.nlm.nih.gov/refseq' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>

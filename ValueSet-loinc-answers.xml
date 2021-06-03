@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="loinc-answers"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-loinc-answers.html"><code>ncpi:loinc-answers</code></a></li></ul></div>
+  </text>
+  <url value="https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/loinc-answers"/>
+  <version value="0.1.0"/>
+  <name value="LoincAnswers"/>
+  <title value="LOINC Answers"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-06-03T15:34:37+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ncpi-fhir"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="LOINC ANSWERS used by NCPI resources"/>
+  <compose>
+    <include>
+      <system value="ncpi:loinc-answers"/>
+    </include>
+  </compose>
+</ValueSet>

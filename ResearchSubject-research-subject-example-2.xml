@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchSubject xmlns="http://hl7.org/fhir">
+  <id value="research-subject-example-2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: on-study</p><p><b>study</b>: <a href="ResearchStudy-research-study-example-1.html">Generated Summary: title: NCPI Research Study Example 1; status: completed</a></p><p><b>individual</b>: <a href="Patient-patient-example-2.html">Generated Summary: Jane Samantha Smith(OFFICIAL); Phone: (555) 555-5555; gender: female</a></p></div>
+  </text>
+  <status value="on-study"/>
+  <study>
+    <reference value="ResearchStudy/research-study-example-1"/>
+  </study>
+  <individual>
+    <reference value="Patient/patient-example-2"/>
+  </individual>
+</ResearchSubject>

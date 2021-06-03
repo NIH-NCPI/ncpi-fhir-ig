@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="disease-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-omim.html"><code>https://omim.org/</code></a></li><li>Include all codes defined in <a href="CodeSystem-mondo.html"><code>http://purl.obolibrary.org/obo/mondo.owl</code></a></li><li>Include all codes defined in <a href="CodeSystem-ncit.html"><code>http://purl.obolibrary.org/obo/ncit.owl</code></a></li></ul></div>
+  </text>
+  <url value="https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/disease-codes"/>
+  <version value="0.1.0"/>
+  <name value="DiseaseCodes"/>
+  <title value="Disease Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-06-03T15:34:37+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ncpi-fhir"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes all codes from this FHIR server&#39;s representation of OMIM, Mondo and NICt CodeSystems."/>
+  <compose>
+    <include>
+      <system value="https://omim.org/"/>
+    </include>
+    <include>
+      <system value="http://purl.obolibrary.org/obo/mondo.owl"/>
+    </include>
+    <include>
+      <system value="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </include>
+  </compose>
+</ValueSet>
