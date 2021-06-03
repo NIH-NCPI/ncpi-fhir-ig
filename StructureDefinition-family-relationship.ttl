@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "FamilyRelationship"];
   fhir:StructureDefinition.title [ fhir:value "NCPI Family Relationship"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-03T15:34:37+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-03T15:35:13+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

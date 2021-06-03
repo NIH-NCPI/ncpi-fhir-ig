@@ -3,7 +3,7 @@
 
 err = 0, warn = 1, info = 4
 IG Publisher Version: 1.1.72
-Generated Thu Jun 03 15:35:12 UTC 2021. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig)
+Generated Thu Jun 03 15:35:43 UTC 2021. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig)
 
  Build Errors : 0 / 0 / 0
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ConditionInheritanceMode : 0 / 0 / 1
