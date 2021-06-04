@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "Human Phenotype Ontology"];
   fhir:CodeSystem.status [ fhir:value "draft"];
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2021-06-03T15:35:13+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-06-04T17:39:51+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
