@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8e82e47c-da73-4228-b032-b7d2c02c3cb7",
+  "id" : "6d3a3ce6-32b6-4e33-a233-4dd7ba65f695",
   "meta" : {
-    "lastUpdated" : "2021-06-04T17:39:51.635+00:00"
+    "lastUpdated" : "2021-06-04T17:40:21.481+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "ConditionInheritanceModeVS",
       "title" : "Condition Inheritance Pattern",
       "status" : "active",
-      "date" : "2021-06-04T17:39:51+00:00",
+      "date" : "2021-06-04T17:40:21+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -44,8 +44,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:20aea7f1-9c6c-449e-9b1c-6e23de1735bd",
-        "timestamp" : "2021-06-04T17:40:09+00:00",
+        "identifier" : "urn:uuid:d7d05b3b-a398-4d9c-9872-b2f1d1b12434",
+        "timestamp" : "2021-06-04T17:40:48+00:00",
         "total" : 25,
         "parameter" : [{
           "name" : "excludeNested",
@@ -198,7 +198,7 @@
       "title" : "Disease Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2021-06-04T17:39:51+00:00",
+      "date" : "2021-06-04T17:40:21+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -229,8 +229,8 @@
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment",
           "valueUri" : "http://purl.obolibrary.org/obo/ncit.owl"
         }],
-        "identifier" : "urn:uuid:f657d493-81d1-4ce2-aa90-d26d1649f14e",
-        "timestamp" : "2021-06-04T17:40:09+00:00",
+        "identifier" : "urn:uuid:af497703-001c-4b05-9ee7-504bbd6055ed",
+        "timestamp" : "2021-06-04T17:40:48+00:00",
         "total" : 504,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2786,7 +2786,7 @@
       "title" : "LOINC Answers",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2021-06-04T17:39:51+00:00",
+      "date" : "2021-06-04T17:40:21+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -2805,8 +2805,8 @@
       }],
       "description" : "LOINC ANSWERS used by NCPI resources",
       "expansion" : {
-        "identifier" : "urn:uuid:e7cffe2d-2777-4cc7-bd04-eb7d142ef61a",
-        "timestamp" : "2021-06-04T17:40:09+00:00",
+        "identifier" : "urn:uuid:3f0b64cb-49b0-49d9-8e0b-3a1971ecbf30",
+        "timestamp" : "2021-06-04T17:40:48+00:00",
         "total" : 24,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2954,7 +2954,7 @@
       "title" : "Phenotype Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2021-06-04T17:39:51+00:00",
+      "date" : "2021-06-04T17:40:21+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -2973,8 +2973,8 @@
       }],
       "description" : "This value set includes all codes from Human Phenotype Ontology.",
       "expansion" : {
-        "identifier" : "urn:uuid:776d647e-4e45-43db-92b8-3de579ba9e6f",
-        "timestamp" : "2021-06-04T17:40:09+00:00",
+        "identifier" : "urn:uuid:40b7ec60-97cd-44d4-a514-23960b18a19c",
+        "timestamp" : "2021-06-04T17:40:48+00:00",
         "total" : 1880,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12428,8 +12428,8 @@
       }],
       "description" : "This value set includes all TBD Codes",
       "expansion" : {
-        "identifier" : "urn:uuid:20a0d779-d18f-4d55-a803-40097d2c2650",
-        "timestamp" : "2021-06-04T17:40:09+00:00",
+        "identifier" : "urn:uuid:1577af36-99dc-4094-b979-fff741a714f8",
+        "timestamp" : "2021-06-04T17:40:48+00:00",
         "total" : 18,
         "parameter" : [{
           "name" : "excludeNested",
