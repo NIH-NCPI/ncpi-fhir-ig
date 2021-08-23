@@ -81,18 +81,25 @@ Instance: patient-example-2
 InstanceOf: Patient
 Usage: #example
 Description: "Example of the representation of Patient."
-* extension[0].url = $us-core-race
-* extension[0].extension[0].url = "ombCategory"
-* extension[0].extension[0].valueCoding = $urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
-* extension[0].extension[1].url = "text"
-* extension[0].extension[1].valueString = "White"
-* extension[1].url = $us-core-ethnicity
-* extension[1].extension[0].url = "ombCategory"
-* extension[1].extension[0].valueCoding = $urn:oid:2.16.840.1.113883.6.238#2135-2 "Hispanic or Latino"
-* extension[1].extension[1].url = "detailed"
-* extension[1].extension[1].valueCoding = $urn:oid:2.16.840.1.113883.6.238#2148-5 "Mexican"
-* extension[1].extension[2].url = "text"
-* extension[1].extension[2].valueString = "Hispanic or Latino"
+* extension[+]
+  * url = $us-core-race
+  * extension[+]
+    * url = "ombCategory"
+    * valueCoding = $urn:oid:2.16.840.1.113883.6.238#2106-3 "White"
+  * extension[+]
+    * url = "text"
+    * valueString = "White"
+* extension[+]
+  * url = $us-core-ethnicity
+  * extension[+]
+    * url = "ombCategory"
+    * valueCoding = $urn:oid:2.16.840.1.113883.6.238#2135-2 "Hispanic or Latino"
+  * extension[+]
+    * url = "detailed"
+    * valueCoding = $urn:oid:2.16.840.1.113883.6.238#2148-5 "Mexican"
+  * extension[+]
+    * url = "text"
+    * valueString = "Hispanic or Latino"
 * name.use = #official
 * name.text = "Jane Samantha Smith"
 * name.family = "Smith"
