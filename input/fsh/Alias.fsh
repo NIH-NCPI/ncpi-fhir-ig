@@ -49,3 +49,26 @@ Alias: $disease-codes = http://fhir.ncpi-project-forge.io/ValueSet/disease-codes
 Alias: $phenotype-codes = http://fhir.ncpi-project-forge.io/ValueSet/phenotype-codes
 Alias: $loinc-answer-codes = http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers
 Alias: $condition-interitanc-codes = http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs
+
+// dbGap
+Alias: $DbGaPConcept-SecurityStudyConsent = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/DbGaPConcept-SecurityStudyConsent
+Alias: $ResearchStudy-StudyConsents-StudyConsent = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/ResearchStudy-StudyConsents-StudyConsent
+Alias: $unitsofmeasure = http://unitsofmeasure.org
+Alias: $ResearchStudy-MolecularDataTypes-MolecularDataType = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/ResearchStudy-MolecularDataTypes-MolecularDataType
+Alias: $DbGaPConcept-DbGaPStudyIdentifier = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/DbGaPConcept-DbGaPStudyIdentifier
+Alias: $ResearchStudy-StudyDesign = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/ResearchStudy-StudyDesign
+Alias: $MeshEntryTerm = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/NamingSystem/MeshEntryTerm
+Alias: $metathesaurus.html = https://uts.nlm.nih.gov/metathesaurus.html
+Alias: $AssertionsFromTopMed-UMLs = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/AssertionsFromTopMed-UMLs
+Alias: $DbGaPConcept-DbGaPStudyIdentifier_1 = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/DbGaPConcept-DbGaPStudyIdentifier
+Alias: $DbGaPConcept-HarmonizationUnit = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/DbGaPConcept-HarmonizationUnit
+Alias: $DbGaPConcept-HarmonizedVariableAccession = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/DbGaPConcept-HarmonizedVariableAccession
+Alias: $DbGaPConcept-SecurityStudyConsent_1 = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/DbGaPConcept-SecurityStudyConsent
+Alias: $DbGaPConcept-SubjectIdentifier = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/DbGaPConcept-SubjectIdentifier
+Alias: $DbGaPConcept-TopMedHarmonizedVariableId = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/DbGaPConcept-TopMedHarmonizedVariableId
+Alias: $NihInstitute = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/NihInstitute
+Alias: $ResearchStudy-ComputedAncestry-AncestryCount-Ancestry = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/ResearchStudy-ComputedAncestry-AncestryCount-Ancestry
+Alias: $ResearchStudy-MolecularDataTypes-MolecularDataType_1 = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/ResearchStudy-MolecularDataTypes-MolecularDataType
+Alias: $ResearchStudy-StudyConsents-StudyConsent_1 = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/ResearchStudy-StudyConsents-StudyConsent
+Alias: $ResearchStudy-StudyDesign_1 = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/ResearchStudy-StudyDesign
+Alias: $ResearchStudy-StudyMarkersets-StudyMarkerset = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/ValueSet/ResearchStudy-StudyMarkersets-StudyMarkerset
