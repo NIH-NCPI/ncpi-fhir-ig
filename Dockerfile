@@ -6,6 +6,8 @@ RUN apk update
 RUN apk add  nodejs 
 # add the sushi tool
 RUN  npm install -g fsh-sushi@1.2.0
+# add the GOFSH tool, which turns FHIR artifacts into FSH definitions
+RUN npm install -g gofsh
 
 
 # add java
