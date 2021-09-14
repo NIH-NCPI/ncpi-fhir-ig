@@ -5,7 +5,7 @@ FROM jekyll/builder
 RUN apk update
 RUN apk add  nodejs 
 # add the sushi tool
-RUN  npm install -g fsh-sushi@1.2.0
+RUN  npm install -g fsh-sushi
 
 
 # add java

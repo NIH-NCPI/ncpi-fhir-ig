@@ -10,14 +10,16 @@ Description: "Example of the representation of Organization."
 * type = $organization-type#prov "Healthcare Provider"
 * type.text = "Hospital"
 * name = "Amazing Children's Hospital"
-* telecom.system = #phone
-* telecom.value = "(555) 555-5555"
-* telecom.use = #work
-* telecom.rank = 1
-* address.use = #work
-* address.type = #both
-* address.text = "3401 Civic Center Blvd., Philadelphia, PA 19104"
-* address.line = "3401 Civic Center Blvd."
-* address.city = "Philadelphia"
-* address.state = "PA"
-* address.postalCode = "19104"
+* telecom
+  * system = #phone
+  * value = "(555) 555-5555"
+  * use = #work
+  * rank = 1
+* address
+  * use = #work
+  * type = #both
+  * text = "3401 Civic Center Blvd., Philadelphia, PA 19104"
+  * line = "3401 Civic Center Blvd."
+  * city = "Philadelphia"
+  * state = "PA"
+  * postalCode = "19104"

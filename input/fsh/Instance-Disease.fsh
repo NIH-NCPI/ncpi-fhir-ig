@@ -15,12 +15,16 @@ Description: "Example of the representation of Disease."
 * code.text = "Neuroblastoma"
 * subject = Reference(patient-example-1)
 * recordedDate.extension.url = $cqf-relativeDateTime
-* recordedDate.extension.extension[0].url = "target"
-* recordedDate.extension.extension[0].valueReference = Reference(patient-example-1)
-* recordedDate.extension.extension[1].url = "targetPath"
-* recordedDate.extension.extension[1].valueString = "birthDate"
-* recordedDate.extension.extension[2].url = "relationship"
-* recordedDate.extension.extension[2].valueCode = #after
-* recordedDate.extension.extension[3].url = "offset"
-* recordedDate.extension.extension[3].valueDuration = 25 'days'
-* recordedDate.extension.extension[3].valueDuration.unit = "d"
+* recordedDate.extension.extension[+]
+  * url = "target"
+  * valueReference = Reference(patient-example-1)
+* recordedDate.extension.extension[+]
+  * url = "targetPath"
+  * valueString = "birthDate"
+* recordedDate.extension.extension[+]
+  * url = "relationship"
+  * valueCode = #after
+* recordedDate.extension.extension[+]
+  * url = "offset"
+  * valueDuration = 25 'days'
+  * valueDuration.unit = "d"

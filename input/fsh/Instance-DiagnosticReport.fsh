@@ -7,7 +7,7 @@ Description: "Example of a DiagnosticReport which aggregates genetic findings fo
 * status = #final
 * code = $loinc#81247-9 "Master HL7 genetic variant reporting panel"
 * subject = Reference(patient-example-1)
-* result[0] = Reference(variant-example-1)
-* result[1] = Reference(diagnostic-implication-1)
+* result[+] = Reference(variant-example-1)
+* result[+] = Reference(diagnostic-implication-1)
 * extension[supporting-info].valueReference = Reference(task-example-1)
 
