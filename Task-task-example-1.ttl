@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "task-example-1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><h3>Inputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: \">Specimen</span></td><td><a href=\"Specimen-specimen-example-1.html\">Generated Summary: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0487 TISS}\">Solid Tissue</span>; </a></td></tr></table><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
   ];
   fhir:Task.status [ fhir:value "completed"];
   fhir:Task.intent [ fhir:value "order"];

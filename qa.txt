@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 1, info = 4
-IG Publisher Version: 1.1.72
-Generated Fri Jun 04 17:41:03 UTC 2021. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig)
+IG Publisher Version: 1.1.80
+Generated Tue Sep 14 17:59:37 UTC 2021. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig)
 
  Build Errors : 0 / 0 / 0
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ConditionInheritanceMode : 0 / 0 / 1
@@ -50,93 +50,50 @@ Generated Fri Jun 04 17:41:03 UTC 2021. FHIR version 4.0.1 for NCPI-FHIR-Impleme
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes : 0 / 0 / 2
 </table>
 == n/a ==
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ConditionInheritanceMode.json ==
-INFORMATION: CodeSystem/ConditionInheritanceMode: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-hpo.json ==
-INFORMATION: CodeSystem/hpo: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-loinc-answers.json ==
-INFORMATION: CodeSystem/loinc-answers: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-mondo.json ==
-INFORMATION: CodeSystem/mondo: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncit.json ==
-INFORMATION: CodeSystem/ncit: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-omim.json ==
-INFORMATION: CodeSystem/omim: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-tbd-codes.json ==
-INFORMATION: CodeSystem/tbd-codes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-v3-hgvs.json ==
-INFORMATION: CodeSystem/v3-hgvs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-disease-example-1.json ==
-INFORMATION: Condition/disease-example-1: Condition: Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease
+== fsh-generated/resources/CodeSystem-ConditionInheritanceMode.json ==
+== fsh-generated/resources/CodeSystem-hpo.json ==
+== fsh-generated/resources/CodeSystem-loinc-answers.json ==
+== fsh-generated/resources/CodeSystem-mondo.json ==
+== fsh-generated/resources/CodeSystem-ncit.json ==
+== fsh-generated/resources/CodeSystem-omim.json ==
+== fsh-generated/resources/CodeSystem-tbd-codes.json ==
+== fsh-generated/resources/CodeSystem-v3-hgvs.json ==
+== fsh-generated/resources/Condition-disease-example-1.json ==
 WARNING: Condition/disease-example-1: Condition.code.coding[0]: Unknown Code http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma in http://purl.obolibrary.org/obo/ncit.owl - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma'
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-phenotype-example-1.json ==
-INFORMATION: Condition/phenotype-example-1: Condition: Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/DiagnosticReport-diagnostic-report-1.json ==
-INFORMATION: DiagnosticReport/diagnostic-report-1: DiagnosticReport: Validate resource against profile http://hl7.org/fhir/StructureDefinition/DiagnosticReport
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/DocumentReference-drs-document-reference-example-1.json ==
-INFORMATION: DocumentReference/drs-document-reference-example-1: DocumentReference: Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide.json ==
-INFORMATION: ImplementationGuide/NCPI-FHIR-Implementation-Guide: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-diagnostic-implication-1.json ==
-INFORMATION: Observation/diagnostic-implication-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== fsh-generated/resources/Condition-phenotype-example-1.json ==
+== fsh-generated/resources/DiagnosticReport-diagnostic-report-1.json ==
+== fsh-generated/resources/DocumentReference-drs-document-reference-example-1.json ==
+== fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide.json ==
+== fsh-generated/resources/Observation-diagnostic-implication-1.json ==
 INFORMATION: Observation/diagnostic-implication-1: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs' is unknown so the code cannot be validated
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-1.json ==
-INFORMATION: Observation/family-relationship-example-1: Observation: Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-2.json ==
-INFORMATION: Observation/family-relationship-example-2: Observation: Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-3.json ==
-INFORMATION: Observation/family-relationship-example-3: Observation: Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-4.json ==
-INFORMATION: Observation/family-relationship-example-4: Observation: Validate resource against profile https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-variant-example-1.json ==
-INFORMATION: Observation/variant-example-1: Observation: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+== fsh-generated/resources/Observation-family-relationship-example-1.json ==
+== fsh-generated/resources/Observation-family-relationship-example-2.json ==
+== fsh-generated/resources/Observation-family-relationship-example-3.json ==
+== fsh-generated/resources/Observation-family-relationship-example-4.json ==
+== fsh-generated/resources/Observation-variant-example-1.json ==
 INFORMATION: Observation/variant-example-1: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.ncbi.nlm.nih.gov/gene' is unknown so the code cannot be validated
 INFORMATION: Observation/variant-example-1: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers' is unknown so the code cannot be validated
 INFORMATION: Observation/variant-example-1: Observation.component[7].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.ncbi.nlm.nih.gov/refseq' is unknown so the code cannot be validated
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Organization-organization-example-1.json ==
-INFORMATION: Organization/organization-example-1: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-1.json ==
-INFORMATION: Patient/patient-example-1: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-2.json ==
-INFORMATION: Patient/patient-example-2: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Patient-patient-example-3.json ==
-INFORMATION: Patient/patient-example-3: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Practitioner-practitioner-example-1.json ==
-INFORMATION: Practitioner/practitioner-example-1: Practitioner: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/PractitionerRole-practitioner-role-example-1.json ==
-INFORMATION: PractitionerRole/practitioner-role-example-1: PractitionerRole: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchStudy-research-study-example-1.json ==
-INFORMATION: ResearchStudy/research-study-example-1: ResearchStudy: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchStudy
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-1.json ==
-INFORMATION: ResearchSubject/research-subject-example-1: ResearchSubject: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-2.json ==
-INFORMATION: ResearchSubject/research-subject-example-2: ResearchSubject: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-3.json ==
-INFORMATION: ResearchSubject/research-subject-example-3: ResearchSubject: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ResearchSubject
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Specimen-specimen-example-1.json ==
-INFORMATION: Specimen/specimen-example-1: Specimen: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Specimen
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-disease.json ==
-INFORMATION: StructureDefinition/disease: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-family-relationship.json ==
-INFORMATION: StructureDefinition/family-relationship: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-attachment.json ==
-INFORMATION: StructureDefinition/ncpi-drs-attachment: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-document-reference.json ==
-INFORMATION: StructureDefinition/ncpi-drs-document-reference: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-phenotype.json ==
-INFORMATION: StructureDefinition/phenotype: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-supporting-info.json ==
-INFORMATION: StructureDefinition/supporting-info: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Task-task-example-1.json ==
-INFORMATION: Task/task-example-1: Task: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Task
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-condition-inheritance-vs.json ==
-INFORMATION: ValueSet/condition-inheritance-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-disease-codes.json ==
-INFORMATION: ValueSet/disease-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-loinc-answers.json ==
-INFORMATION: ValueSet/loinc-answers: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-phenotype-codes.json ==
-INFORMATION: ValueSet/phenotype-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-== /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes.json ==
-INFORMATION: ValueSet/tbd-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/tbd-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/shareablevalueset - listed in meta
+== fsh-generated/resources/Organization-organization-example-1.json ==
+== fsh-generated/resources/Patient-patient-example-1.json ==
+== fsh-generated/resources/Patient-patient-example-2.json ==
+== fsh-generated/resources/Patient-patient-example-3.json ==
+== fsh-generated/resources/Practitioner-practitioner-example-1.json ==
+== fsh-generated/resources/PractitionerRole-practitioner-role-example-1.json ==
+== fsh-generated/resources/ResearchStudy-research-study-example-1.json ==
+== fsh-generated/resources/ResearchSubject-research-subject-example-1.json ==
+== fsh-generated/resources/ResearchSubject-research-subject-example-2.json ==
+== fsh-generated/resources/ResearchSubject-research-subject-example-3.json ==
+== fsh-generated/resources/Specimen-specimen-example-1.json ==
+== fsh-generated/resources/StructureDefinition-disease.json ==
+== fsh-generated/resources/StructureDefinition-family-relationship.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-drs-attachment.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-drs-document-reference.json ==
+== fsh-generated/resources/StructureDefinition-phenotype.json ==
+== fsh-generated/resources/StructureDefinition-supporting-info.json ==
+== fsh-generated/resources/Task-task-example-1.json ==
+== fsh-generated/resources/ValueSet-condition-inheritance-vs.json ==
+== fsh-generated/resources/ValueSet-disease-codes.json ==
+== fsh-generated/resources/ValueSet-loinc-answers.json ==
+== fsh-generated/resources/ValueSet-phenotype-codes.json ==
+== fsh-generated/resources/ValueSet-tbd-codes.json ==

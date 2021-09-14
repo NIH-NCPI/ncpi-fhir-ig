@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="6d3a3ce6-32b6-4e33-a233-4dd7ba65f695"/>
+  <id value="3c9580ce-7293-40a7-9397-eb391b7b3284"/>
   <meta>
-    <lastUpdated value="2021-06-04T17:40:21.481+00:00"/>
+    <lastUpdated value="2021-09-14T17:59:08.301+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,7 +18,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-ConditionInheritanceMode.html">Condition Inheritance Pattern v0.1.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-ConditionInheritanceMode.html">
                 <code>https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</code>
               </a>
@@ -243,7 +243,7 @@
         <name value="ConditionInheritanceModeVS"/>
         <title value="Condition Inheritance Pattern"/>
         <status value="active"/>
-        <date value="2021-06-04T17:40:21+00:00"/>
+        <date value="2021-09-14T17:59:08+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -268,8 +268,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d7d05b3b-a398-4d9c-9872-b2f1d1b12434"/>
-          <timestamp value="2021-06-04T17:40:48+00:00"/>
+          <identifier value="urn:uuid:68b0efd4-ebeb-4e5a-b172-da167f4afa43"/>
+          <timestamp value="2021-09-14T17:59:25+00:00"/>
           <total value="25"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4501,7 +4501,7 @@
         <title value="Disease Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-06-04T17:40:21+00:00"/>
+        <date value="2021-09-14T17:59:08+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -4529,8 +4529,8 @@
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment">
             <valueUri value="http://purl.obolibrary.org/obo/ncit.owl"/>
           </extension>
-          <identifier value="urn:uuid:af497703-001c-4b05-9ee7-504bbd6055ed"/>
-          <timestamp value="2021-06-04T17:40:48+00:00"/>
+          <identifier value="urn:uuid:c0862f8e-5b34-42df-acfd-d6ec298f9046"/>
+          <timestamp value="2021-09-14T17:59:25+00:00"/>
           <total value="504"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7084,7 +7084,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-loinc-answers.html">LOINC Answers v0.1.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-loinc-answers.html">
                 <code>ncpi:loinc-answers</code>
               </a>
@@ -7302,7 +7302,7 @@
         <title value="LOINC Answers"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-06-04T17:40:21+00:00"/>
+        <date value="2021-09-14T17:59:08+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -7321,8 +7321,8 @@
         </contact>
         <description value="LOINC ANSWERS used by NCPI resources"/>
         <expansion>
-          <identifier value="urn:uuid:3f0b64cb-49b0-49d9-8e0b-3a1971ecbf30"/>
-          <timestamp value="2021-06-04T17:40:48+00:00"/>
+          <identifier value="urn:uuid:88e4a236-ca61-4be6-8bd8-c08d8bce82f2"/>
+          <timestamp value="2021-09-14T17:59:25+00:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7468,7 +7468,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-hpo.html">Human Phenotype Ontology v0.1.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-hpo.html">
                 <code>http://purl.obolibrary.org/obo/hp.owl</code>
               </a>
@@ -22534,7 +22534,7 @@
         <title value="Phenotype Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-06-04T17:40:21+00:00"/>
+        <date value="2021-09-14T17:59:08+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -22553,8 +22553,8 @@
         </contact>
         <description value="This value set includes all codes from Human Phenotype Ontology."/>
         <expansion>
-          <identifier value="urn:uuid:40b7ec60-97cd-44d4-a514-23960b18a19c"/>
-          <timestamp value="2021-06-04T17:40:48+00:00"/>
+          <identifier value="urn:uuid:3ebd2895-be03-41bd-b8f4-7f2847f250c8"/>
+          <timestamp value="2021-09-14T17:59:25+00:00"/>
           <total value="1880"/>
           <parameter>
             <name value="excludeNested"/>
@@ -31983,7 +31983,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-tbd-codes.html">ToBeDeterminedCodes (&#39;TbdCodes&#39;) v0.1.0 (CodeSystem)</a>
             </p>
-            <p>All codes from system 
+            <p>All codes in this table are from the system 
               <a href="CodeSystem-tbd-codes.html">
                 <code>http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes</code>
               </a>
@@ -32175,8 +32175,8 @@
         </contact>
         <description value="This value set includes all TBD Codes"/>
         <expansion>
-          <identifier value="urn:uuid:1577af36-99dc-4094-b979-fff741a714f8"/>
-          <timestamp value="2021-06-04T17:40:48+00:00"/>
+          <identifier value="urn:uuid:0125e19f-06db-4654-9d7c-13e8afff4c08"/>
+          <timestamp value="2021-09-14T17:59:25+00:00"/>
           <total value="18"/>
           <parameter>
             <name value="excludeNested"/>
