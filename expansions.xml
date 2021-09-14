@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3c9580ce-7293-40a7-9397-eb391b7b3284"/>
+  <id value="66cebd40-1d49-4205-bd68-01dd43708412"/>
   <meta>
-    <lastUpdated value="2021-09-14T17:59:08.301+00:00"/>
+    <lastUpdated value="2021-09-14T17:59:16.058+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -243,7 +243,7 @@
         <name value="ConditionInheritanceModeVS"/>
         <title value="Condition Inheritance Pattern"/>
         <status value="active"/>
-        <date value="2021-09-14T17:59:08+00:00"/>
+        <date value="2021-09-14T17:59:16+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -268,8 +268,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:68b0efd4-ebeb-4e5a-b172-da167f4afa43"/>
-          <timestamp value="2021-09-14T17:59:25+00:00"/>
+          <identifier value="urn:uuid:913eed1f-91ae-4d74-b6bd-bc642f35590b"/>
+          <timestamp value="2021-09-14T17:59:34+00:00"/>
           <total value="25"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4501,7 +4501,7 @@
         <title value="Disease Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-09-14T17:59:08+00:00"/>
+        <date value="2021-09-14T17:59:16+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -4529,8 +4529,8 @@
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment">
             <valueUri value="http://purl.obolibrary.org/obo/ncit.owl"/>
           </extension>
-          <identifier value="urn:uuid:c0862f8e-5b34-42df-acfd-d6ec298f9046"/>
-          <timestamp value="2021-09-14T17:59:25+00:00"/>
+          <identifier value="urn:uuid:58dad367-e777-4290-b274-21b91a6c2e33"/>
+          <timestamp value="2021-09-14T17:59:35+00:00"/>
           <total value="504"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7302,7 +7302,7 @@
         <title value="LOINC Answers"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-09-14T17:59:08+00:00"/>
+        <date value="2021-09-14T17:59:16+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -7321,8 +7321,8 @@
         </contact>
         <description value="LOINC ANSWERS used by NCPI resources"/>
         <expansion>
-          <identifier value="urn:uuid:88e4a236-ca61-4be6-8bd8-c08d8bce82f2"/>
-          <timestamp value="2021-09-14T17:59:25+00:00"/>
+          <identifier value="urn:uuid:ee59e646-c119-424f-adb2-de45cac21ddb"/>
+          <timestamp value="2021-09-14T17:59:35+00:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -22534,7 +22534,7 @@
         <title value="Phenotype Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-09-14T17:59:08+00:00"/>
+        <date value="2021-09-14T17:59:16+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -22553,8 +22553,8 @@
         </contact>
         <description value="This value set includes all codes from Human Phenotype Ontology."/>
         <expansion>
-          <identifier value="urn:uuid:3ebd2895-be03-41bd-b8f4-7f2847f250c8"/>
-          <timestamp value="2021-09-14T17:59:25+00:00"/>
+          <identifier value="urn:uuid:a55df64a-513e-4597-b3fc-c39509a46419"/>
+          <timestamp value="2021-09-14T17:59:35+00:00"/>
           <total value="1880"/>
           <parameter>
             <name value="excludeNested"/>
@@ -32175,8 +32175,8 @@
         </contact>
         <description value="This value set includes all TBD Codes"/>
         <expansion>
-          <identifier value="urn:uuid:0125e19f-06db-4654-9d7c-13e8afff4c08"/>
-          <timestamp value="2021-09-14T17:59:25+00:00"/>
+          <identifier value="urn:uuid:dd26e2b7-2476-42af-88b9-2a0f6ed175cc"/>
+          <timestamp value="2021-09-14T17:59:35+00:00"/>
           <total value="18"/>
           <parameter>
             <name value="excludeNested"/>
