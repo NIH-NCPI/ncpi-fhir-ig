@@ -11,9 +11,6 @@ Description: "A FHIR analysis task that takes at least one specimen as input and
 // Must have a populated for field
 * for 1..1
 * for only Reference(Patient)
-// Must have a populated for field
-* for 1..1
-* for only Reference(Patient)
 // Must have a populated owner field
 * owner 1..1
 * owner only Reference(Organization)
