@@ -51,3 +51,8 @@ Alias: $disease-codes = http://fhir.ncpi-project-forge.io/ValueSet/disease-codes
 Alias: $phenotype-codes = http://fhir.ncpi-project-forge.io/ValueSet/phenotype-codes
 Alias: $loinc-answer-codes = http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers
 Alias: $condition-interitanc-codes = http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs
+
+// NCPI Observations
+Alias: $ncpi = https://nih-ncpi.github.io/ncpi-fhir-ig
+Alias: $ncpi_datatypes = https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes
+Alias: $ucum = http://unitsofmeasure.org
