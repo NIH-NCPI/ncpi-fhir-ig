@@ -3,7 +3,7 @@
   "name": "NCPIFHIRImplementationGuide",
   "package-id": "NCPI-FHIR-Implementation-Guide",
   "ig-ver": "0.1.0",
-  "date": "Mon, 13 Dec, 2021 19:23:29 +0000",
+  "date": "Mon, 13 Dec, 2021 19:24:22 +0000",
   "errs": 0,
   "warnings": 16,
   "hints": 9,
