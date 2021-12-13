@@ -3,7 +3,7 @@
   "id": "research-subject-example-3",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: on-study</p><p><b>study</b>: <a href=\"ResearchStudy-research-study-example-1.html\">Generated Summary: title: NCPI Research Study Example 1; status: completed</a></p><p><b>individual</b>: <a href=\"Patient-patient-example-3.html\">Generated Summary: John Samuel Smith(OFFICIAL); Phone: (555) 555-5555; gender: male</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"research-subject-example-3\" </p></div><p><b>status</b>: on-study</p><p><b>study</b>: <a href=\"ResearchStudy-research-study-example-1.html\">ResearchStudy/research-study-example-1</a></p><p><b>individual</b>: <a href=\"Patient-patient-example-3.html\">Patient/patient-example-3</a> \" SMITH\"</p></div>"
   },
   "status": "on-study",
   "study": {

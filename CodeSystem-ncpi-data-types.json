@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ncpi-data-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Exome<a name=\"ncpi-data-types-Exome\"> </a></td><td>Exome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\">WholeGenome<a name=\"ncpi-data-types-WholeGenome\"> </a></td><td>Whole Genome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\">GWAS<a name=\"ncpi-data-types-GWAS\"> </a></td><td>Genome-Wide Association Studies</td></tr></table></div>"
+  },
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes",
+  "version": "0.1.0",
+  "name": "NcpiDataTypes",
+  "title": "Data Types for NCPI Research",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-12-13T19:23:29+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/ncpi-fhir"
+        }
+      ]
+    },
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Data Types for NCPI Research",
+  "content": "fragment",
+  "concept": [
+    {
+      "code": "Exome",
+      "display": "Exome Sequence Data"
+    },
+    {
+      "code": "WholeGenome",
+      "display": "Whole Genome Sequence Data"
+    },
+    {
+      "code": "GWAS",
+      "display": "Genome-Wide Association Studies"
+    }
+  ]
+}

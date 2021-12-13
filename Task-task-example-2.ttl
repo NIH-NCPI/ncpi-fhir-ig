@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/Task/task-example-2> a fhir:Task;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "task-example-2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task";
+       fhir:index 0;
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"task-example-2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-specimen-task.html\">Research Task</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1</a></p><p><b>for</b>: <a href=\"Patient-patient-example-3.html\">Patient/patient-example-3</a> \" SMITH\"</p><p><b>owner</b>: <a href=\"Organization-organization-example-1.html\">Organization/organization-example-1</a> \"Amazing Children's Hospital\"</p><h3>Inputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1</a></td></tr></table><h3>Outputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>DocumentReference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"DocumentReference-research-document-reference-example-1.html\">DocumentReference/research-document-reference-example-1</a></td></tr></table></div>"
+  ];
+  fhir:Task.status [ fhir:value "completed"];
+  fhir:Task.intent [ fhir:value "order"];
+  fhir:Task.focus [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Specimen/specimen-example-1>;
+     fhir:Reference.reference [ fhir:value "Specimen/specimen-example-1" ]
+  ];
+  fhir:Task.for [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-3>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-3" ]
+  ];
+  fhir:Task.owner [
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Organization/organization-example-1>;
+     fhir:Reference.reference [ fhir:value "Organization/organization-example-1" ]
+  ];
+  fhir:Task.input [
+     fhir:index 0;
+     fhir:Task.input.type [
+       fhir:CodeableConcept.text [ fhir:value "Specimen" ]
+     ];
+     fhir:Task.input.valueReference [
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Specimen/specimen-example-1>;
+       fhir:Reference.reference [ fhir:value "Specimen/specimen-example-1" ]
+     ]
+  ];
+  fhir:Task.output [
+     fhir:index 0;
+     fhir:Task.output.type [
+       fhir:CodeableConcept.text [ fhir:value "DocumentReference" ]
+     ];
+     fhir:Task.output.valueReference [
+       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/DocumentReference/research-document-reference-example-1>;
+       fhir:Reference.reference [ fhir:value "DocumentReference/research-document-reference-example-1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/Task/task-example-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

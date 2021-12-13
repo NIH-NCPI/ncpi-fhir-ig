@@ -1,0 +1,44 @@
+{
+  "resourceType": "Task",
+  "id": "task-example-2",
+  "meta": {
+    "profile": [
+      "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"task-example-2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-specimen-task.html\">Research Task</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1</a></p><p><b>for</b>: <a href=\"Patient-patient-example-3.html\">Patient/patient-example-3</a> \" SMITH\"</p><p><b>owner</b>: <a href=\"Organization-organization-example-1.html\">Organization/organization-example-1</a> \"Amazing Children's Hospital\"</p><h3>Inputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1</a></td></tr></table><h3>Outputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>DocumentReference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"DocumentReference-research-document-reference-example-1.html\">DocumentReference/research-document-reference-example-1</a></td></tr></table></div>"
+  },
+  "status": "completed",
+  "intent": "order",
+  "focus": {
+    "reference": "Specimen/specimen-example-1"
+  },
+  "for": {
+    "reference": "Patient/patient-example-3"
+  },
+  "owner": {
+    "reference": "Organization/organization-example-1"
+  },
+  "input": [
+    {
+      "type": {
+        "text": "Specimen"
+      },
+      "valueReference": {
+        "reference": "Specimen/specimen-example-1"
+      }
+    }
+  ],
+  "output": [
+    {
+      "type": {
+        "text": "DocumentReference"
+      },
+      "valueReference": {
+        "reference": "DocumentReference/research-document-reference-example-1"
+      }
+    }
+  ]
+}

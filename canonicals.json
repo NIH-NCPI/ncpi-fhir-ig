@@ -87,6 +87,20 @@
     "name": "DRSDocumentReference"
   },
   {
+    "id": "ncpi-research-document-reference",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference",
+    "version": "0.1.0",
+    "name": "ResearchDocumentReference"
+  },
+  {
+    "id": "ncpi-specimen-task",
+    "type": "StructureDefinition",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
+    "version": "0.1.0",
+    "name": "SpecimenTask"
+  },
+  {
     "id": "phenotype",
     "type": "StructureDefinition",
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
@@ -122,11 +136,32 @@
     "name": "LoincAnswers"
   },
   {
+    "id": "ncpi-vs",
+    "type": "ValueSet",
+    "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs",
+    "version": "0.1.0",
+    "name": "Ncpi_VS"
+  },
+  {
     "id": "phenotype-codes",
     "type": "ValueSet",
     "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes",
     "version": "0.1.0",
     "name": "PhenotypeCodes"
+  },
+  {
+    "id": "ncpi",
+    "type": "CodeSystem",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+    "version": "0.1.0",
+    "name": "Ncpi"
+  },
+  {
+    "id": "ncpi-data-types",
+    "type": "CodeSystem",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes",
+    "version": "0.1.0",
+    "name": "NcpiDataTypes"
   },
   {
     "id": "omim",

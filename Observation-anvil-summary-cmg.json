@@ -1,0 +1,75 @@
+{
+  "resourceType": "Observation",
+  "id": "anvil-summary-cmg",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"anvil-summary-cmg\" </p></div><p><b>status</b>: final</p><p><b>code</b>: Variable Summary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#Summary)</span></p><p><b>focus</b>: <a href=\"ResearchStudy-research-study-cmg.html\">ResearchStudy/research-study-cmg</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Number of Cohorts <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#CohortCount)</span></p><p><b>value</b>: 41</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Number of Samples <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#SampleCount)</span></p><p><b>value</b>: 807</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Number of Participants <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#Participant)</span></p><p><b>value</b>: 807</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Size on Disk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#StorageSize)</span></p><p><b>value</b>: 4.87 TR<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code TR = 'TR')</span></p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+        "code": "Summary",
+        "display": "Variable Summary"
+      }
+    ]
+  },
+  "focus": [
+    {
+      "reference": "ResearchStudy/research-study-cmg"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "CohortCount",
+            "display": "Number of Cohorts"
+          }
+        ]
+      },
+      "valueInteger": 41
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+            "code": "SampleCount",
+            "display": "Number of Samples"
+          }
+        ]
+      },
+      "valueInteger": 807
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+            "code": "Participant",
+            "display": "Number of Participants"
+          }
+        ]
+      },
+      "valueInteger": 807
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "StorageSize",
+            "display": "Size on Disk"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 4.87,
+        "system": "http://unitsofmeasure.org",
+        "code": "TR"
+      }
+    }
+  ]
+}

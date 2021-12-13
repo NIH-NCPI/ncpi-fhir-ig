@@ -1,0 +1,33 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "research-study-cmg",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"research-study-cmg\" </p></div><p><b>title</b>: Center for Mendelian Genomics</p><p><b>status</b>: completed</p><p><b>primaryPurposeType</b>: diagnostic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#diagnostic)</span></p><p><b>category</b>: Study Consortium <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#Consortium)</span></p><p><b>condition</b>: Mendelian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  },
+  "title": "Center for Mendelian Genomics",
+  "status": "completed",
+  "primaryPurposeType": {
+    "coding": [
+      {
+        "code": "diagnostic"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+          "code": "Consortium",
+          "display": "Study Consortium"
+        }
+      ]
+    }
+  ],
+  "condition": [
+    {
+      "text": "Mendelian"
+    }
+  ]
+}

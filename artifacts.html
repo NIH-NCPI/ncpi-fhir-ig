@@ -221,6 +221,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Representation of phenotypic observations (present or absent)</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncpi-research-document-reference.html"
+                     title="StructureDefinition/ncpi-research-document-reference">Research Document Reference</a>
+               </td>
+               <td>
+<p>A FHIR Document Reference created by an analysis task. Context.related = Task</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncpi-specimen-task.html"
+                     title="StructureDefinition/ncpi-specimen-task">Research Task</a>
+               </td>
+               <td>
+<p>A FHIR analysis task that takes at least one specimen as input and produces at least one document.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -298,6 +316,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>LOINC ANSWERS used by NCPI resources</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ncpi-vs.html" title="ValueSet/ncpi-vs">NCPI FHIR Codes</a>
+               </td>
+               <td>
+<p>Codes that would apply to NCPI projects</p>
 </td>
             </tr>
             <tr>
@@ -396,6 +422,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-ncpi.html" title="CodeSystem/ncpi">NCPI FHIR Codes</a>
+               </td>
+               <td>
+<p>Codes that would apply to NCPI projects</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-ncpi-data-types.html"
+                     title="CodeSystem/ncpi-data-types">Data Types for NCPI Research</a>
+               </td>
+               <td>
+<p>Data Types for NCPI Research</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-omim.html" title="CodeSystem/omim">Online Mendelian Inheritance in Man</a>
                </td>
                <td>
@@ -422,6 +465,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-anvil-summary-cmg.html"
+                     title="Observation/anvil-summary-cmg">Summary detail for Center for Mendelian Genomics</a>
+               </td>
+               <td>
+<p>Summary detail for Center for Mendelian Genomics</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-anvil-summary-phs000711.html"
+                     title="Observation/anvil-summary-phs000711">Baylor Hopkins Center for Mendelian Genomics (BH CMG)</a>
+               </td>
+               <td>
+<p>Baylor Hopkins Center for Mendelian Genomics (BH CMG)</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-diagnostic-implication-1.html"
@@ -556,11 +617,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="DocumentReference-research-document-reference-example-1.html"
+                     title="DocumentReference/research-document-reference-example-1">research-document-reference-example-1</a>
+               </td>
+               <td>
+<p>Example of the representation of Research Document Reference.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ResearchStudy-research-study-cmg.html"
+                     title="ResearchStudy/research-study-cmg">research-study-cmg</a>
+               </td>
+               <td>
+<p>Center for Mendelian Genomics</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ResearchStudy-research-study-example-1.html"
                      title="ResearchStudy/research-study-example-1">research-study-example-1</a>
                </td>
                <td>
 <p>Example of the representation of Research Study.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ResearchStudy-research-study-phs000711.html"
+                     title="ResearchStudy/research-study-phs000711">research-study-phs000711</a>
+               </td>
+               <td>
+<p>Baylor Hopkins Center for Mendelian Genomics (BH CMG)</p>
 </td>
             </tr>
             <tr>
@@ -609,6 +697,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Task-task-example-2.html" title="Task/task-example-2">task-example-2</a>
+               </td>
+               <td>
+<p>Example of the representation of Task that points to a ResearchDocumentReference.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Observation-variant-example-1.html"
                      title="Observation/variant-example-1">variant-example-1</a>
                </td>
@@ -643,7 +739,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/ncpi-fhir">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 14, 2021 17:59+0000">2021-09-14</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/ncpi-fhir">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 13, 2021 19:23+0000">2021-12-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

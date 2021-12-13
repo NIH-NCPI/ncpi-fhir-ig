@@ -1,0 +1,128 @@
+{
+  "resourceType": "Observation",
+  "id": "anvil-summary-phs000711",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"anvil-summary-phs000711\" </p></div><p><b>status</b>: final</p><p><b>code</b>: Variable Summary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#Summary)</span></p><p><b>focus</b>: <a href=\"ResearchStudy-research-study-phs000711.html\">ResearchStudy/research-study-phs000711</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Number of Samples <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#SampleCount)</span></p><p><b>value</b>: 807</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Number of Participants <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#Participant)</span></p><p><b>value</b>: 807</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Consent Codes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#ConsentCodes)</span></p><p><b>value</b>: HMB-IRB-NPU</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Terra Workspace Name <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#TerraWorkspace)</span></p><p><b>value</b>: AnVIL_CMG_BaylorHopkins_HMB-NPU_WES</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Primary Disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#PrimaryDisease)</span></p><p><b>value</b>: Mendelian</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Access Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AccessType)</span></p><p><b>value</b>: Controlled Access</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: StudyDesign <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#StudyDesign)</span></p><p><b>value</b>: Mendelian</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DataType <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#DataType)</span></p><p><b>value</b>: Exome</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Size on Disk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#StorageSize)</span></p><p><b>value</b>: 4.87 TR<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code TR = 'TR')</span></p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+        "code": "Summary",
+        "display": "Variable Summary"
+      }
+    ]
+  },
+  "focus": [
+    {
+      "reference": "ResearchStudy/research-study-phs000711"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+            "code": "SampleCount",
+            "display": "Number of Samples"
+          }
+        ]
+      },
+      "valueInteger": 807
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+            "code": "Participant",
+            "display": "Number of Participants"
+          }
+        ]
+      },
+      "valueInteger": 807
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "ConsentCodes",
+            "display": "Consent Codes"
+          }
+        ]
+      },
+      "valueString": "HMB-IRB-NPU"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "TerraWorkspace",
+            "display": "Terra Workspace Name"
+          }
+        ]
+      },
+      "valueString": "AnVIL_CMG_BaylorHopkins_HMB-NPU_WES"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "PrimaryDisease",
+            "display": "Primary Disease"
+          }
+        ]
+      },
+      "valueString": "Mendelian"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "AccessType",
+            "display": "Access Type"
+          }
+        ]
+      },
+      "valueString": "Controlled Access"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "StudyDesign"
+          }
+        ]
+      },
+      "valueString": "Mendelian"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "DataType"
+          }
+        ]
+      },
+      "valueString": "Exome"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "StorageSize",
+            "display": "Size on Disk"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 4.87,
+        "system": "http://unitsofmeasure.org",
+        "code": "TR"
+      }
+    }
+  ]
+}

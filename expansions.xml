@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="66cebd40-1d49-4205-bd68-01dd43708412"/>
+  <id value="24a2bc0e-be7e-4e8a-a647-884b896092df"/>
   <meta>
-    <lastUpdated value="2021-09-14T17:59:16.058+00:00"/>
+    <lastUpdated value="2021-12-13T19:23:29.603+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -243,7 +243,7 @@
         <name value="ConditionInheritanceModeVS"/>
         <title value="Condition Inheritance Pattern"/>
         <status value="active"/>
-        <date value="2021-09-14T17:59:16+00:00"/>
+        <date value="2021-12-13T19:23:29+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -268,8 +268,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:913eed1f-91ae-4d74-b6bd-bc642f35590b"/>
-          <timestamp value="2021-09-14T17:59:34+00:00"/>
+          <identifier value="urn:uuid:8ad6c5e1-23aa-431c-8b1e-8627feab26e6"/>
+          <timestamp value="2021-12-13T19:23:52+00:00"/>
           <total value="25"/>
           <parameter>
             <name value="excludeNested"/>
@@ -417,17 +417,17 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 504 concepts</p>
-            <div style="border: maroon 1px solid; background-color: #FFCCCC; padding: 8px">
-              <p>Warning: this expansion is generated from fragments of the following code systems, and may be missing codes, or include codes that are not valid:</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on code system fragments: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-omim.html">Online Mendelian Inheritance in Man</a>
+                  <a href="CodeSystem-ncit.html">NCI Thesaurus v0.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-mondo.html">Mondo Disease Ontology</a>
+                  <a href="CodeSystem-omim.html">Online Mendelian Inheritance in Man v0.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-ncit.html">NCI Thesaurus</a>
+                  <a href="CodeSystem-mondo.html">Mondo Disease Ontology v0.1.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -4501,7 +4501,7 @@
         <title value="Disease Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-09-14T17:59:16+00:00"/>
+        <date value="2021-12-13T19:23:29+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -4520,17 +4520,8 @@
         </contact>
         <description value="This value set includes all codes from this FHIR server&#39;s representation of OMIM, Mondo and NICt CodeSystems."/>
         <expansion>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment">
-            <valueUri value="https://omim.org/"/>
-          </extension>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment">
-            <valueUri value="http://purl.obolibrary.org/obo/mondo.owl"/>
-          </extension>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment">
-            <valueUri value="http://purl.obolibrary.org/obo/ncit.owl"/>
-          </extension>
-          <identifier value="urn:uuid:58dad367-e777-4290-b274-21b91a6c2e33"/>
-          <timestamp value="2021-09-14T17:59:35+00:00"/>
+          <identifier value="urn:uuid:96d9caed-4df9-4519-bd40-a229fc2298db"/>
+          <timestamp value="2021-12-13T19:23:53+00:00"/>
           <total value="504"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4541,11 +4532,23 @@
             <valueUri value="https://omim.org/|0.1.0"/>
           </parameter>
           <parameter>
+            <name value="fragment"/>
+            <valueUri value="https://omim.org/|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
             <valueUri value="http://purl.obolibrary.org/obo/mondo.owl|0.1.0"/>
           </parameter>
           <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://purl.obolibrary.org/obo/mondo.owl|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
+            <valueUri value="http://purl.obolibrary.org/obo/ncit.owl|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
             <valueUri value="http://purl.obolibrary.org/obo/ncit.owl|0.1.0"/>
           </parameter>
           <contains>
@@ -7302,7 +7305,7 @@
         <title value="LOINC Answers"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-09-14T17:59:16+00:00"/>
+        <date value="2021-12-13T19:23:29+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -7321,8 +7324,8 @@
         </contact>
         <description value="LOINC ANSWERS used by NCPI resources"/>
         <expansion>
-          <identifier value="urn:uuid:ee59e646-c119-424f-adb2-de45cac21ddb"/>
-          <timestamp value="2021-09-14T17:59:35+00:00"/>
+          <identifier value="urn:uuid:f4300402-4f2f-4e24-bf4f-c01061b8a3ff"/>
+          <timestamp value="2021-12-13T19:23:53+00:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -7451,6 +7454,301 @@
             <system value="ncpi:loinc-answers"/>
             <code value="LA21277-1"/>
             <display value="Chromosome Y"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="ncpi-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 15 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on code system fragments: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-ncpi.html">NCPI FHIR Codes v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-ncpi-data-types.html">Data Types for NCPI Research v0.1.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-ncpi.html">NCPI FHIR Codes v0.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="CodeSystem-ncpi-data-types.html">Data Types for NCPI Research v0.1.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-Consortium"> </a>Consortium
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Study Consortium</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-StudyCohort"> </a>StudyCohort
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Study Cohort</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-Summary"> </a>Summary
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Summary Data</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CohortCount"> </a>CohortCount
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Number of Cohorts</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-SampleCount"> </a>SampleCount
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Number of Samples</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-Participant"> </a>Participant
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Number of Participants</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-StorageSize"> </a>StorageSize
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Size on Disk</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-ConsentCodes"> </a>ConsentCodes
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Consent Codes</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-TerraWorkspace"> </a>TerraWorkspace
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Terra Workspace Name</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-PrimaryDisease"> </a>PrimaryDisease
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Primary Disease</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-AccessType"> </a>AccessType
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Access Type</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-StudyDesign"> </a>StudyDesign
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig</td>
+                <td>Study Design</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-Exome"> </a>Exome
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td>
+                <td>Exome Sequence Data</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-WholeGenome"> </a>WholeGenome
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td>
+                <td>Whole Genome Sequence Data</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-GWAS"> </a>GWAS
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td>
+                <td>Genome-Wide Association Studies</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs"/>
+        <version value="0.1.0"/>
+        <name value="Ncpi_VS"/>
+        <title value="NCPI FHIR Codes"/>
+        <status value="draft"/>
+        <date value="2021-12-13T19:23:29+00:00"/>
+        <publisher value="NCPI FHIR Working Group"/>
+        <contact>
+          <name value="NCPI FHIR Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://github.com/ncpi-fhir"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Meen Chul Kim"/>
+          <telecom>
+            <system value="email"/>
+            <value value="meenchul@d3b.center"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Codes that would apply to NCPI projects"/>
+        <expansion>
+          <identifier value="urn:uuid:7fa47bd0-bbbe-4435-b78e-eea85edbde61"/>
+          <timestamp value="2021-12-13T19:23:53+00:00"/>
+          <total value="15"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="Consortium"/>
+            <display value="Study Consortium"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="StudyCohort"/>
+            <display value="Study Cohort"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="Summary"/>
+            <display value="Summary Data"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="CohortCount"/>
+            <display value="Number of Cohorts"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="SampleCount"/>
+            <display value="Number of Samples"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="Participant"/>
+            <display value="Number of Participants"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="StorageSize"/>
+            <display value="Size on Disk"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="ConsentCodes"/>
+            <display value="Consent Codes"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="TerraWorkspace"/>
+            <display value="Terra Workspace Name"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="PrimaryDisease"/>
+            <display value="Primary Disease"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="AccessType"/>
+            <display value="Access Type"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+            <code value="StudyDesign"/>
+            <display value="Study Design"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes"/>
+            <code value="Exome"/>
+            <display value="Exome Sequence Data"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes"/>
+            <code value="WholeGenome"/>
+            <display value="Whole Genome Sequence Data"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes"/>
+            <code value="GWAS"/>
+            <display value="Genome-Wide Association Studies"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -22534,7 +22832,7 @@
         <title value="Phenotype Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2021-09-14T17:59:16+00:00"/>
+        <date value="2021-12-13T19:23:29+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -22553,8 +22851,8 @@
         </contact>
         <description value="This value set includes all codes from Human Phenotype Ontology."/>
         <expansion>
-          <identifier value="urn:uuid:a55df64a-513e-4597-b3fc-c39509a46419"/>
-          <timestamp value="2021-09-14T17:59:35+00:00"/>
+          <identifier value="urn:uuid:733938d0-6fab-45f1-b266-a88af85e078d"/>
+          <timestamp value="2021-12-13T19:23:53+00:00"/>
           <total value="1880"/>
           <parameter>
             <name value="excludeNested"/>
@@ -32175,8 +32473,8 @@
         </contact>
         <description value="This value set includes all TBD Codes"/>
         <expansion>
-          <identifier value="urn:uuid:dd26e2b7-2476-42af-88b9-2a0f6ed175cc"/>
-          <timestamp value="2021-09-14T17:59:35+00:00"/>
+          <identifier value="urn:uuid:8035852d-33d5-461b-aa6a-bb6c893fed9e"/>
+          <timestamp value="2021-12-13T19:23:53+00:00"/>
           <total value="18"/>
           <parameter>
             <name value="excludeNested"/>

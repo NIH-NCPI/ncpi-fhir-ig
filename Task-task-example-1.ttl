@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "task-example-1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"task-example-1\" </p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><h3>Inputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1</a></td></tr></table><h3>Outputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>DocumentReference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"DocumentReference-drs-document-reference-example-1.html\">DocumentReference/drs-document-reference-example-1</a></td></tr></table></div>"
   ];
   fhir:Task.status [ fhir:value "completed"];
   fhir:Task.intent [ fhir:value "order"];

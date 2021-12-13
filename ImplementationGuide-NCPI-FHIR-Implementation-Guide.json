@@ -10,7 +10,7 @@
   "name": "NCPIFHIRImplementationGuide",
   "title": "NCPI FHIR Implementation Guide",
   "status": "draft",
-  "date": "2021-09-14T17:59:16+00:00",
+  "date": "2021-12-13T19:23:29+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -372,6 +372,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncpi-research-document-reference"
+        },
+        "name": "Research Document Reference",
+        "description": "A FHIR Document Reference created by an analysis task. Context.related = Task ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ncpi-specimen-task"
+        },
+        "name": "Research Task",
+        "description": "A FHIR analysis task that takes at least one specimen as input and produces at least one document.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -422,6 +450,20 @@
         },
         "name": "LOINC Answers",
         "description": "LOINC ANSWERS used by NCPI resources",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ncpi-vs"
+        },
+        "name": "NCPI FHIR Codes",
+        "description": "Codes that would apply to NCPI projects",
         "exampleBoolean": false
       },
       {
@@ -544,6 +586,34 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/ncpi"
+        },
+        "name": "NCPI FHIR Codes",
+        "description": "Codes that would apply to NCPI projects",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ncpi-data-types"
+        },
+        "name": "Data Types for NCPI Research",
+        "description": "Data Types for NCPI Research",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/omim"
         },
         "name": "Online Mendelian Inheritance in Man",
@@ -563,6 +633,34 @@
         "name": "ToBeDeterminedCodes ('TbdCodes')",
         "description": "These codes are currently 'TBD-LOINC' codes. The CG WG is requesting formal LOINC codes.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/anvil-summary-cmg"
+        },
+        "name": "Summary detail for Center for Mendelian Genomics",
+        "description": "Summary detail for Center for Mendelian Genomics",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/anvil-summary-phs000711"
+        },
+        "name": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
+        "description": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -778,6 +876,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DocumentReference"
+          }
+        ],
+        "reference": {
+          "reference": "DocumentReference/research-document-reference-example-1"
+        },
+        "name": "research-document-reference-example-1",
+        "description": "Example of the representation of Research Document Reference.",
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchStudy/research-study-cmg"
+        },
+        "name": "research-study-cmg",
+        "description": "Center for Mendelian Genomics",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ResearchStudy"
           }
         ],
@@ -786,6 +912,20 @@
         },
         "name": "research-study-example-1",
         "description": "Example of the representation of Research Study.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchStudy/research-study-phs000711"
+        },
+        "name": "research-study-phs000711",
+        "description": "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
         "exampleBoolean": true
       },
       {
@@ -857,6 +997,20 @@
         "name": "task-example-1",
         "description": "Example of the representation of Task.",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Task"
+          }
+        ],
+        "reference": {
+          "reference": "Task/task-example-2"
+        },
+        "name": "task-example-2",
+        "description": "Example of the representation of Task that points to a ResearchDocumentReference.",
+        "exampleCanonical": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task"
       },
       {
         "extension": [

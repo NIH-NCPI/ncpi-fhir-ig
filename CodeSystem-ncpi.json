@@ -1,0 +1,89 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ncpi",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://nih-ncpi.github.io/ncpi-fhir-ig defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Consortium<a name=\"ncpi-Consortium\"> </a></td><td>Study Consortium</td></tr><tr><td style=\"white-space:nowrap\">StudyCohort<a name=\"ncpi-StudyCohort\"> </a></td><td>Study Cohort</td></tr><tr><td style=\"white-space:nowrap\">Summary<a name=\"ncpi-Summary\"> </a></td><td>Summary Data</td></tr><tr><td style=\"white-space:nowrap\">CohortCount<a name=\"ncpi-CohortCount\"> </a></td><td>Number of Cohorts</td></tr><tr><td style=\"white-space:nowrap\">SampleCount<a name=\"ncpi-SampleCount\"> </a></td><td>Number of Samples</td></tr><tr><td style=\"white-space:nowrap\">Participant<a name=\"ncpi-Participant\"> </a></td><td>Number of Participants</td></tr><tr><td style=\"white-space:nowrap\">StorageSize<a name=\"ncpi-StorageSize\"> </a></td><td>Size on Disk</td></tr><tr><td style=\"white-space:nowrap\">ConsentCodes<a name=\"ncpi-ConsentCodes\"> </a></td><td>Consent Codes</td></tr><tr><td style=\"white-space:nowrap\">TerraWorkspace<a name=\"ncpi-TerraWorkspace\"> </a></td><td>Terra Workspace Name</td></tr><tr><td style=\"white-space:nowrap\">PrimaryDisease<a name=\"ncpi-PrimaryDisease\"> </a></td><td>Primary Disease</td></tr><tr><td style=\"white-space:nowrap\">AccessType<a name=\"ncpi-AccessType\"> </a></td><td>Access Type</td></tr><tr><td style=\"white-space:nowrap\">StudyDesign<a name=\"ncpi-StudyDesign\"> </a></td><td>Study Design</td></tr></table></div>"
+  },
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+  "version": "0.1.0",
+  "name": "Ncpi",
+  "title": "NCPI FHIR Codes",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-12-13T19:23:29+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/ncpi-fhir"
+        }
+      ]
+    },
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Codes that would apply to NCPI projects",
+  "content": "fragment",
+  "concept": [
+    {
+      "code": "Consortium",
+      "display": "Study Consortium"
+    },
+    {
+      "code": "StudyCohort",
+      "display": "Study Cohort"
+    },
+    {
+      "code": "Summary",
+      "display": "Summary Data"
+    },
+    {
+      "code": "CohortCount",
+      "display": "Number of Cohorts"
+    },
+    {
+      "code": "SampleCount",
+      "display": "Number of Samples"
+    },
+    {
+      "code": "Participant",
+      "display": "Number of Participants"
+    },
+    {
+      "code": "StorageSize",
+      "display": "Size on Disk"
+    },
+    {
+      "code": "ConsentCodes",
+      "display": "Consent Codes"
+    },
+    {
+      "code": "TerraWorkspace",
+      "display": "Terra Workspace Name"
+    },
+    {
+      "code": "PrimaryDisease",
+      "display": "Primary Disease"
+    },
+    {
+      "code": "AccessType",
+      "display": "Access Type"
+    },
+    {
+      "code": "StudyDesign",
+      "display": "Study Design"
+    }
+  ]
+}

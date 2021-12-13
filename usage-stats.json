@@ -28,6 +28,16 @@
       {
         "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference",
         "title": "DRS Document Reference"
+      },
+      {
+        "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference",
+        "title": "Research Document Reference"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
+        "title": "Research Task"
       }
     ]
   },
@@ -59,6 +69,9 @@
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [

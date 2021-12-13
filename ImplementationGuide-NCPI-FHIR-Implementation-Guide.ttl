@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NCPIFHIRImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "NCPI FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-09-14T17:59:16+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-13T19:23:29+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -359,6 +359,34 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ncpi-research-document-reference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Document Reference" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A FHIR Document Reference created by an analysis task. Context.related = Task " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ncpi-specimen-task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Task" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A FHIR analysis task that takes at least one specimen as input and produces at least one document." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -369,7 +397,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Additional information relevant to interpreting/understanding the report." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -383,7 +411,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Set for specific ttransmission patterns of a condition in a pedigree" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -397,7 +425,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -411,7 +439,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC ANSWERS used by NCPI resources" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ncpi-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI FHIR Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes that would apply to NCPI projects" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -425,7 +467,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set includes all codes from Human Phenotype Ontology." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -439,7 +481,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set includes all TBD Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -453,7 +495,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A set of terms that describe the transmission pattern of a condition in a pedigree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -467,7 +509,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Please see license of HPO at http://www.human-phenotype-ontology.org" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -481,7 +523,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.\n\nHGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX|1|CWE|48004-6^DNA Sequence Variation^LN||c.1129C>T^^HGVS|\n\nVersioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007\n\nHGVS nomenclatures can be used freely by the public." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -495,7 +537,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC ANSWERS used by NCPI resources" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -509,7 +551,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the latin word 'mundus' and means 'for the world.'" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -523,7 +565,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ncpi>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ncpi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI FHIR Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes that would apply to NCPI projects" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ncpi-data-types" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Types for NCPI Research" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data Types for NCPI Research" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -537,7 +607,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An online database that describes the function and phenotypes associated with human genes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -551,7 +621,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "These codes are currently 'TBD-LOINC' codes. The CG WG is requesting formal LOINC codes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/anvil-summary-cmg>;
+         fhir:Reference.reference [ fhir:value "Observation/anvil-summary-cmg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary detail for Center for Mendelian Genomics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Summary detail for Center for Mendelian Genomics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/anvil-summary-phs000711>;
+         fhir:Reference.reference [ fhir:value "Observation/anvil-summary-phs000711" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -565,7 +663,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example representation of a known variant found during genetic testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -579,7 +677,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a DiagnosticReport which aggregates genetic findings for a given test or run" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -596,7 +694,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -613,7 +711,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -630,7 +728,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -647,7 +745,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -664,7 +762,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -681,7 +779,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -695,7 +793,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Organization." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -709,7 +807,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -723,7 +821,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -737,7 +835,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -754,7 +852,7 @@
          fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -768,7 +866,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Practitioner." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -782,7 +880,38 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Practitioner Role." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 34;
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DocumentReference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/DocumentReference/research-document-reference-example-1>;
+         fhir:Reference.reference [ fhir:value "DocumentReference/research-document-reference-example-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-document-reference-example-1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Document Reference." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference";
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference>
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchStudy/research-study-cmg>;
+         fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-cmg" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-study-cmg" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Center for Mendelian Genomics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -796,7 +925,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Study." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchStudy/research-study-phs000711>;
+         fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-phs000711" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-study-phs000711" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -810,7 +953,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -824,7 +967,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 37;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -838,7 +981,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 38;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -852,7 +995,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Specimen." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -866,7 +1009,24 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Task." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 40;
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Task/task-example-2>;
+         fhir:Reference.reference [ fhir:value "Task/task-example-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "task-example-2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Task that points to a ResearchDocumentReference." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task";
+         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task>
+       ]
+     ], [
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

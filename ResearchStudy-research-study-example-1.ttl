@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "research-study-example-1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>title</b>: NCPI Research Study Example 1</p><p><b>status</b>: completed</p><p><b>principalInvestigator</b>: <a href=\"PractitionerRole-practitioner-role-example-1.html\">Generated Summary: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/practitioner-role researcher}\">Principal Investigator</span>; Phone: (555) 555-5555</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"research-study-example-1\" </p></div><p><b>title</b>: NCPI Research Study Example 1</p><p><b>status</b>: completed</p><p><b>principalInvestigator</b>: <a href=\"PractitionerRole-practitioner-role-example-1.html\">PractitionerRole/practitioner-role-example-1</a></p></div>"
   ];
   fhir:ResearchStudy.title [ fhir:value "NCPI Research Study Example 1"];
   fhir:ResearchStudy.status [ fhir:value "completed"];

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ncpi-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-ncpi.html"><code>https://nih-ncpi.github.io/ncpi-fhir-ig</code></a></li><li>Include all codes defined in <a href="CodeSystem-ncpi-data-types.html"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</code></a></li></ul></div>
+  </text>
+  <url value="https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs"/>
+  <version value="0.1.0"/>
+  <name value="Ncpi_VS"/>
+  <title value="NCPI FHIR Codes"/>
+  <status value="draft"/>
+  <date value="2021-12-13T19:23:29+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/ncpi-fhir"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes that would apply to NCPI projects"/>
+  <compose>
+    <include>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+    </include>
+    <include>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes"/>
+    </include>
+  </compose>
+</ValueSet>

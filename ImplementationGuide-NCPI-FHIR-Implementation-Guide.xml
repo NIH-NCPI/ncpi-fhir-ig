@@ -11,7 +11,7 @@
   <name value="NCPIFHIRImplementationGuide"/>
   <title value="NCPI FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-09-14T17:59:16+00:00"/>
+  <date value="2021-12-13T19:23:29+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -247,6 +247,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-research-document-reference"/>
+      </reference>
+      <name value="Research Document Reference"/>
+      <description value="A FHIR Document Reference created by an analysis task. Context.related = Task "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-specimen-task"/>
+      </reference>
+      <name value="Research Task"/>
+      <description value="A FHIR analysis task that takes at least one specimen as input and produces at least one document."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -287,6 +309,17 @@
       </reference>
       <name value="LOINC Answers"/>
       <description value="LOINC ANSWERS used by NCPI resources"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ncpi-vs"/>
+      </reference>
+      <name value="NCPI FHIR Codes"/>
+      <description value="Codes that would apply to NCPI projects"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -382,6 +415,28 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/ncpi"/>
+      </reference>
+      <name value="NCPI FHIR Codes"/>
+      <description value="Codes that would apply to NCPI projects"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ncpi-data-types"/>
+      </reference>
+      <name value="Data Types for NCPI Research"/>
+      <description value="Data Types for NCPI Research"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/omim"/>
       </reference>
       <name value="Online Mendelian Inheritance in Man"/>
@@ -398,6 +453,28 @@
       <name value="ToBeDeterminedCodes (&#39;TbdCodes&#39;)"/>
       <description value="These codes are currently &#39;TBD-LOINC&#39; codes. The CG WG is requesting formal LOINC codes."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/anvil-summary-cmg"/>
+      </reference>
+      <name value="Summary detail for Center for Mendelian Genomics"/>
+      <description value="Summary detail for Center for Mendelian Genomics"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/anvil-summary-phs000711"/>
+      </reference>
+      <name value="Baylor Hopkins Center for Mendelian Genomics (BH CMG)"/>
+      <description value="Baylor Hopkins Center for Mendelian Genomics (BH CMG)"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -566,6 +643,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/research-document-reference-example-1"/>
+      </reference>
+      <name value="research-document-reference-example-1"/>
+      <description value="Example of the representation of Research Document Reference."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/research-study-cmg"/>
+      </reference>
+      <name value="research-study-cmg"/>
+      <description value="Center for Mendelian Genomics"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ResearchStudy"/>
       </extension>
       <reference>
@@ -573,6 +672,17 @@
       </reference>
       <name value="research-study-example-1"/>
       <description value="Example of the representation of Research Study."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/research-study-phs000711"/>
+      </reference>
+      <name value="research-study-phs000711"/>
+      <description value="Baylor Hopkins Center for Mendelian Genomics (BH CMG)"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -629,6 +739,17 @@
       <name value="task-example-1"/>
       <description value="Example of the representation of Task."/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/task-example-2"/>
+      </reference>
+      <name value="task-example-2"/>
+      <description value="Example of the representation of Task that points to a ResearchDocumentReference."/>
+      <exampleCanonical value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

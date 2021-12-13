@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/anvil-summary-cmg> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "anvil-summary-cmg"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"anvil-summary-cmg\" </p></div><p><b>status</b>: final</p><p><b>code</b>: Variable Summary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#Summary)</span></p><p><b>focus</b>: <a href=\"ResearchStudy-research-study-cmg.html\">ResearchStudy/research-study-cmg</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Number of Cohorts <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#CohortCount)</span></p><p><b>value</b>: 41</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Number of Samples <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#SampleCount)</span></p><p><b>value</b>: 807</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Number of Participants <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes</a>#Participant)</span></p><p><b>value</b>: 807</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Size on Disk <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#StorageSize)</span></p><p><b>value</b>: 4.87 TR<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code TR = 'TR')</span></p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig" ];
+       fhir:Coding.code [ fhir:value "Summary" ];
+       fhir:Coding.display [ fhir:value "Variable Summary" ]
+     ]
+  ];
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchStudy/research-study-cmg>;
+     fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-cmg" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "CohortCount" ];
+         fhir:Coding.display [ fhir:value "Number of Cohorts" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "41"^^xsd:integer ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig" ];
+         fhir:Coding.code [ fhir:value "SampleCount" ];
+         fhir:Coding.display [ fhir:value "Number of Samples" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "807"^^xsd:integer ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig" ];
+         fhir:Coding.code [ fhir:value "Participant" ];
+         fhir:Coding.display [ fhir:value "Number of Participants" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "807"^^xsd:integer ]
+  ], [
+     fhir:index 3;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "StorageSize" ];
+         fhir:Coding.display [ fhir:value "Size on Disk" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "4.87"^^xsd:decimal ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "TR" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/anvil-summary-cmg.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
