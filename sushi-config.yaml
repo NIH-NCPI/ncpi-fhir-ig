@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: NCPI-FHIR-Implementation-Guide
-canonical: https://ncpi-fhir.github.io/ncpi-fhir-ig-v02
+canonical: https://nih-ncpi.github.io/ncpi-fhir-ig
 name: NCPIFHIRImplementationGuide
 title: NCPI FHIR Implementation Guide
 description: "FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI)."
@@ -33,7 +33,6 @@ menu:
   Table of Contents: toc.html
   Background:
     NCPI: ncpi.html
-    This IG: background.html
     Authors: authors.html
     Contact: contact.html
   Modules:
