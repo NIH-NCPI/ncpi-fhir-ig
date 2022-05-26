@@ -1,21 +1,32 @@
-
 ### Overview
 
-The [NIH Cloud Platform Interoperability effort](https://anvilproject.org/ncpi) is a collaboration about several NIH-funded platforms for cloud data analysis. Identifying a set of common use cases and a vision of better supporting researchers, these groups have been working towards making data more FAIR among these NIH projects. The NCPI FHIR Working Group has taken on the task of promoting interoperability of Clinical and Phenotypic Data and Study Metadata through the use of FHIR.
+Data sharing is key to reproducible science. However, if the data cannot be shared in a robust, low cost manner can we effectively claim to enable reproducible science? 
 
-<img width="100%" src="background-overview.png" alt="background-overview" />
+The aim of this effort is to produce a shared view of research structure and semantics to accelerate the scientific process and reduce impediments needed to share knowledge among researchers. FHIR has the ability to uniformly represent structure and semantics and make the data available and searchable.
 
+This is a marked improvement over the status quo where data consumers need to contact the authors and implement an ad hoc process for access and consumption.
 
-### FHIR Relevance
+Our ImplementationGuide defines the structure of a study using the following Resource Types (Entities).  Your project will contain instances of these resource types, tagged with your identifiers and described by a defined vocabulary of CodableConcepts. 
 
-One of the major problems with making clinical and phenotype data available to the research community is the lack of universal standards for representing and transmitting this data. This variability creates challenges at every phase of the research process as there is overhead even to simply move the data from one task to another if it’s expected to be interpreted.
+<img width="100%" src="research-study-structure.png" alt="research-study-structure" />
 
+### Organization
 
-<img width="100%" src="overview-of-data-flow.png" alt="overview-of-data-flow" />
+This IG is organized in three components:
+- Profiles and Extensions
+- Modules
+- Use Cases
 
+These components are intended to work together to more clearly describe the building blocks, how they interact, and how a user can leverage them. Not all NCPI platforms, studies, tools, or users will need or implement all of these building blocks, and different services may support different portions of this IG.
 
-While there are standards and common data models, such as OMOP, that do allow for common representations, the source systems do not typically use them, and there are many local customization aspects that are challenging to merge.
+#### Profiles and Extensions
 
-FHIR presents an opportunity to make clinical and phenotypic data robustly available over APIs to the broader research community. The NCPI partners represent several of the best-equipped groups in the country to make this a reality for researchers, and alignment with dbGaP presents great opportunities for those continuing in existing models. This IG describes some ways in which FHIR can integrate with the current systems and what it can provide to supplement them and create opportunity for growth.
+These are the raw building blocks implemented in FHIR that dictate how to construct resources to be compliant with this Implementation Guide. These elements detail the specific sematics expected to meet a common need in NCPI and are critical for technical implementation and validation. 
 
-FHIR provides a way to have end-to-end consistency by providing methods to keep data representations accurate from data providers through the platforms and to data users and by providing a structured way to manage vocabulary information.
+#### Modules
+
+The modules represent the "generic circumstances" that an implementer may consider when building content leveraging this IG. They are intended to provide a mental model that enables discussion of several of the above elements at once in order to make more clear why the IG is constructed this way. 
+
+#### Use Cases
+
+Use cases are real-world, data-consumer-centric situations that describe what elements are required to be implemented and how an end-user can use those tools to solve their problem. These use cases are not exhaustive, but are intended to describe a breadth of scenarios that may help one implement or use the NCPI data.

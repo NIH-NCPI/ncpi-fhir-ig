@@ -3,19 +3,19 @@
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: NCPI-FHIR-Implementation-Guide
-canonical: https://ncpi-fhir.github.io/ncpi-fhir-ig
+canonical: https://ncpi-fhir.github.io/ncpi-fhir-ig-v02
 name: NCPIFHIRImplementationGuide
 title: NCPI FHIR Implementation Guide
 description: "FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI)."
 status: draft
 license: CC0-1.0
-version: 0.1.0
+version: 0.2.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
 publisher:
   name: NCPI FHIR Working Group
-  url: https://github.com/ncpi-fhir
+  url: https://github.com/nih-ncpi
 contact:
   - name: Meen Chul Kim
     telecom:
@@ -32,10 +32,23 @@ menu:
   IG Home: index.html
   Table of Contents: toc.html
   Background:
-    NCPI FHIR: background.html
-    Use Cases: use_cases.html
+    NCPI: ncpi.html
+    This IG: background.html
     Authors: authors.html
     Contact: contact.html
+  Modules:
+    Research Study Summary: research_study.html
+    Participant-level Data: participant.html
+    Assays and File Data: files.html
+    Generic Tabular Data: tabular.html
+    Family Relationships: family.html
+  Use Case Guides: 
+    Finding a Research Study: finding_research_study.html
+    Genomic Analysis: genomic_analysis.html
+    Rare Disease: rare_disease.html
+    Childhood Cancer: childhood_cancer.html
+    Using "Source" Data: source.html
+    EHR Data: ehr.html
   Artifacts: artifacts.html
   Support: 
     FHIR Spec: http://hl7.org/fhir/R4/index.html
