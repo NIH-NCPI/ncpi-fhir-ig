@@ -111,4 +111,4 @@ ls -l output/*.zip
 
 ## Implementation Guide (Pre-Release)
 
-The NCPI FHIR Implementation Guide (pre-release) is available [here](https://ncpi-fhir.github.io/ncpi-fhir-ig/).
+The NCPI FHIR Implementation Guide (pre-release) is available [here](https://nih-ncpi.github.io/ncpi-fhir-ig/).
