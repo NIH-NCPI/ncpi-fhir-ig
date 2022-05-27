@@ -11,7 +11,7 @@
   <name value="DRSAttachment"/>
   <title value="DRS Attachment"/>
   <status value="draft"/>
-  <date value="2021-12-13T19:24:22+00:00"/>
+  <date value="2022-05-27T12:40:13+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -79,7 +79,7 @@
         <key value="must-be-drs-uri"/>
         <severity value="error"/>
         <human value="attachment.url must start with ^drs://. A drs:// hostname-based URI, as defined in the DRS documentation, that tells clients how to access this object. The intent of this field is to make DRS objects self-contained, and therefore easier for clients to store and pass around.  For example, if you arrive at this DRS JSON by resolving a compact identifier-based DRS URI, the `self_uri` presents you with a hostname and properly encoded DRS ID for use in subsequent `access` endpoint calls."/>
-        <expression value="$this.url.matches(&#39;^drs://.*&#39;)"/>
+        <expression value="$this.url.matches('^drs://.*')"/>
         <source value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment"/>
       </constraint>
       <isModifier value="false"/>
@@ -477,7 +477,7 @@
         <key value="must-be-drs-uri"/>
         <severity value="error"/>
         <human value="attachment.url must start with ^drs://. A drs:// hostname-based URI, as defined in the DRS documentation, that tells clients how to access this object. The intent of this field is to make DRS objects self-contained, and therefore easier for clients to store and pass around.  For example, if you arrive at this DRS JSON by resolving a compact identifier-based DRS URI, the `self_uri` presents you with a hostname and properly encoded DRS ID for use in subsequent `access` endpoint calls."/>
-        <expression value="$this.url.matches(&#39;^drs://.*&#39;)"/>
+        <expression value="$this.url.matches('^drs://.*')"/>
         <source value="https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment"/>
       </constraint>
     </element>

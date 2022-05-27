@@ -11,7 +11,7 @@
   <title value="Human Phenotype Ontology"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-12-13T19:24:22+00:00"/>
+  <date value="2022-05-27T12:40:13+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -780,7 +780,7 @@
   </concept>
   <concept>
     <code value="HP:0100280"/>
-    <display value="Crohn&#39;s disease"/>
+    <display value="Crohn's disease"/>
   </concept>
   <concept>
     <code value="HP:0002631"/>
@@ -1776,7 +1776,7 @@
   </concept>
   <concept>
     <code value="HP:0000349"/>
-    <display value="Widow&#39;s peak"/>
+    <display value="Widow's peak"/>
   </concept>
   <concept>
     <code value="HP:0000444"/>
@@ -2988,7 +2988,7 @@
   </concept>
   <concept>
     <code value="HP:0010800"/>
-    <display value="Absent cupid&#39;s bow"/>
+    <display value="Absent cupid's bow"/>
   </concept>
   <concept>
     <code value="HP:0010808"/>
@@ -4132,7 +4132,7 @@
   </concept>
   <concept>
     <code value="HP:0002263"/>
-    <display value="Exaggerated cupid&#39;s bow"/>
+    <display value="Exaggerated cupid's bow"/>
   </concept>
   <concept>
     <code value="HP:0002500"/>

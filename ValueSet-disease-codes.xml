@@ -11,7 +11,7 @@
   <title value="Disease Codes"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-12-13T19:24:22+00:00"/>
+  <date value="2022-05-27T12:40:13+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -28,7 +28,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="This value set includes all codes from this FHIR server&#39;s representation of OMIM, Mondo and NICt CodeSystems."/>
+  <description value="This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems."/>
   <compose>
     <include>
       <system value="https://omim.org/"/>

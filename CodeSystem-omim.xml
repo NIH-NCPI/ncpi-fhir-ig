@@ -11,7 +11,7 @@
   <title value="Online Mendelian Inheritance in Man"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-12-13T19:24:22+00:00"/>
+  <date value="2022-05-27T12:40:13+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -2018,7 +2018,7 @@
   </concept>
   <concept>
     <code value="OMIM:618512"/>
-    <display value="O\&#39;DONNELL-LURIA-RODAN SYNDROME; ODLURO"/>
+    <display value="O\'DONNELL-LURIA-RODAN SYNDROME; ODLURO"/>
   </concept>
   <concept>
     <code value="OMIM:614921"/>

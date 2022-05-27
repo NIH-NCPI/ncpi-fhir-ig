@@ -8,7 +8,7 @@
   <url value="http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"/>
   <version value="0.1.0"/>
   <name value="TbdCodes"/>
-  <title value="ToBeDeterminedCodes (&#39;TbdCodes&#39;)"/>
+  <title value="ToBeDeterminedCodes ('TbdCodes')"/>
   <status value="active"/>
   <date value="2020-11-12T19:37:28+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
@@ -27,7 +27,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="These codes are currently &#39;TBD-LOINC&#39; codes. The CG WG is requesting formal LOINC codes."/>
+  <description value="These codes are currently 'TBD-LOINC' codes. The CG WG is requesting formal LOINC codes."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -49,7 +49,7 @@
   <concept>
     <code value="effect-transporter-function"/>
     <display value="effect-transporter-function"/>
-    <definition value="Predicted phenotype for drug efficacy through transport mechanism. A single marker interpretation value known to increase or decrease the drug&#39;s performance."/>
+    <definition value="Predicted phenotype for drug efficacy through transport mechanism. A single marker interpretation value known to increase or decrease the drug's performance."/>
   </concept>
   <concept>
     <code value="effect-medication-efficacy"/>

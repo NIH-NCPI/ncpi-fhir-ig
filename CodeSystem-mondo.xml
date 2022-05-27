@@ -11,7 +11,7 @@
   <title value="Mondo Disease Ontology"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-12-13T19:24:22+00:00"/>
+  <date value="2022-05-27T12:40:13+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -28,7 +28,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the latin word &#39;mundus&#39; and means &#39;for the world.&#39;"/>
+  <description value="The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the latin word 'mundus' and means 'for the world.'"/>
   <caseSensitive value="true"/>
   <content value="fragment"/>
   <count value="3"/>

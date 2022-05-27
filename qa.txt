@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 16, info = 9
-IG Publisher Version: 1.1.90
-Generated Mon Dec 13 19:25:09 UTC 2021. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig)
+IG Publisher Version: 1.1.120
+Generated Fri May 27 12:40:48 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.1.0 (canonical = https://ncpi-fhir.github.io/ncpi-fhir-ig)
  Build Errors : 0 / 0 / 0
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ConditionInheritanceMode : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-hpo : 0 / 0 / 2
@@ -57,7 +57,7 @@ Generated Mon Dec 13 19:25:09 UTC 2021. FHIR version 4.0.1 for NCPI-FHIR-Impleme
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-loinc-answers : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-ncpi-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-phenotype-codes : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes : 0 / 0 / 2
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes : 0 / 0 / 1
 </table>
 == n/a ==
 == fsh-generated/resources/CodeSystem-ConditionInheritanceMode.json ==
@@ -73,7 +73,7 @@ INFORMATION: CodeSystem/ncpi: CodeSystem: CodeSystems SHOULD have a stated value
 INFORMATION: CodeSystem/ncpi-data-types: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-omim.json ==
 == fsh-generated/resources/CodeSystem-tbd-codes.json ==
-WARNING: CodeSystem/tbd-codes: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly 
+WARNING: CodeSystem/tbd-codes: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/CodeSystem-v3-hgvs.json ==
 INFORMATION: CodeSystem/v3-hgvs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 == fsh-generated/resources/Condition-disease-example-1.json ==
@@ -83,7 +83,7 @@ WARNING: Condition/disease-example-1: Condition.code.coding[0]: Unknown Code htt
 == fsh-generated/resources/DocumentReference-drs-document-reference-example-1.json ==
 == fsh-generated/resources/DocumentReference-research-document-reference-example-1.json ==
 == fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide.json ==
-WARNING: ImplementationGuide/NCPI-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/NCPI-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace 'A...Task '
 == fsh-generated/resources/Observation-anvil-summary-cmg.json ==
 WARNING: Observation/anvil-summary-cmg: Observation.code.coding[0]: Display Name for https://nih-ncpi.github.io/ncpi-fhir-ig#Summary should be one of 'Summary Data' instead of 'Variable Summary' for 'https://nih-ncpi.github.io/ncpi-fhir-ig#Summary'
 WARNING: Observation/anvil-summary-cmg: Observation.component[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided

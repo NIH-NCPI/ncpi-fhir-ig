@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "Disease"];
   fhir:StructureDefinition.title [ fhir:value "NCPI Disease"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-13T19:24:22+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-27T12:40:13+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1451,7 +1451,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Stage SHALL have summary or assessment" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "summary.exists() or assessment.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:summary) or exists(f:assessment)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:summary) or exists(f:assessment)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Condition";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+         ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -1806,7 +1810,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "evidence SHALL have code or details" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "code.exists() or detail.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:code) or exists(f:detail)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:code) or exists(f:detail)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Condition";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+         ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
