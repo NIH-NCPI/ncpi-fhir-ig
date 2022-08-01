@@ -1,4 +1,4 @@
-name: 🚀 Deploy Implementation Guide Site Preview on Netlify
+name: 🚀 Deploy IG Site Preview
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish:
-    name: 📝 Publish Implementation Guide
+    name: 📝 Preview Implementation Guide
     runs-on: ubuntu-18.04
     steps:
       - name: 👩‍💻 Checkout code
@@ -44,15 +44,31 @@ jobs:
           chmod +x ./_genonce.sh
           ./_genonce.sh
 
-      - name: 🚀 Deploy IG to Netlify
+      - name: 🚀 Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
+        id: netlify
         with:
           publish-dir: './output'
           deploy-message: "🚀 Deploy from GitHub Actions"
           github-token: ${{ secrets.GITHUB_TOKEN }}
           alias: deploy-preview-${{ github.event.number }}
           fails-without-credentials: true
+          enable-pull-request-comment: false
+          enable-commit-comment: false
+          enable-commit-status: false
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      
+
+      - name: 🏷 PR Deploy Preview Comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            ### :rocket: IG Site Preview Deployed
+
+            Latest commit: ${{ github.event.pull_request.head.sha }}
+
+            [View deployment](${{ steps.netlify.outputs.deploy-url }})
+
+
+
