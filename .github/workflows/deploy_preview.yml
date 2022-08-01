@@ -1,0 +1,58 @@
+name: 🚀 Deploy Implementation Guide Site Preview on Netlify
+
+on:
+  pull_request:
+    types: [opened, reopened, edited, synchronize] 
+
+jobs:
+  publish:
+    name: 📝 Publish Implementation Guide
+    runs-on: ubuntu-18.04
+    steps:
+      - name: 👩‍💻 Checkout code
+        uses: actions/checkout@v3
+         
+      - name: 🛠 Set up OpenJDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 8
+
+      - name: 🛠 Set up Jekyll
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install ruby-full build-essential zlib1g-dev
+          sudo gem install jekyll bundler
+
+      - name: 🛠 Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12 
+
+      - name: 🛠 Install SUSHI and add FSH definitions
+        run: |
+          npm install -g fsh-sushi
+          sushi .
+
+      - name: ⬆️ Update IG publisher
+        run: |
+          sudo apt-get -y install iputils-ping
+          chmod +x ./_updatePublisher.sh
+          ./_updatePublisher.sh -y
+
+      - name: 🚦 Validate IG
+        run: |
+          chmod +x ./_genonce.sh
+          ./_genonce.sh
+
+      - name: 🚀 Deploy IG to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './output'
+          deploy-message: "🚀 Deploy from GitHub Actions"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          alias: deploy-preview-${{ github.event.number }}
+          fails-without-credentials: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      
