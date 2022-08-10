@@ -3,7 +3,7 @@
 <ResearchSubject xmlns="http://hl7.org/fhir">
   <id value="research-subject-example-3"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "research-subject-example-3" </p></div><p><b>status</b>: on-study</p><p><b>study</b>: <a href="ResearchStudy-research-study-example-1.html">ResearchStudy/research-study-example-1</a></p><p><b>individual</b>: <a href="Patient-patient-example-3.html">Patient/patient-example-3</a> " SMITH"</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ResearchSubject</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ResearchSubject "research-subject-example-3" </p></div><p><b>status</b>: on-study</p><p><b>study</b>: <a href="ResearchStudy-research-study-example-1.html">ResearchStudy/research-study-example-1</a></p><p><b>individual</b>: <a href="Patient-patient-example-3.html">Patient/patient-example-3</a> " SMITH"</p></div>
   </text>
   <status value="on-study"/>
   <study>
