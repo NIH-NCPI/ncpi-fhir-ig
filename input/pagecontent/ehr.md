@@ -1,0 +1,10 @@
+
+### EHR Data
+
+Electronic Health Record (EHR) data is a treasure trove of opportunity for research. Several initiatives are contributing EHR data to NCPI partner platforms. With the Office of the National Coordinator of Health Information Technology’s (ONC) mandate that all US healthcare providers support FHIR R4 elements defined as the ["US Core Data for Interoperability"](https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi), there is a solid foundation for data export over FHIR. While EHRs had supported some DSTU2 elements (ie, 2 major versions old), it was ad hoc and seemed exploratory for the groups. This new requirement by the US Federal government (in spite of early pushing back by vendors, e.g. Epic) has already created movement in a direction to support interoperability with FHIR.
+
+For our uses here, if the healthcare system successfully integrates FHIR, research use cases will be able to extract robust clinical information from EHRs in an interoperable manner. This could provide a huge boost for data extraction and sharing, especially when providing access to EHR data has been one of the most challenging areas. It also provides more access for patients themselves to access their data, eg, Apple Health Records and Sync for Science, using the FHIR APIs.
+
+There are likely to be some challenges still in that many of the organizations doing research on EHR data have worked hard to provide supplementary mappings and knowledge into the EHR data extracts. For example, historic laboratory measures may not have standard LOINC codes attached, making semantic interoperability more of a challenge. However, the scope and challenges here have not been well assessed, and presumably data quality will improve over time as these approaches become more standard.
+
+This IG will mainly serve to provide the ResearchStudy and ResearchSubject resource layer on top of the EHR data as collected. Additional work may need to be done to address the challenges of EHR data interoperability and consistency, but this is within the bounds of any other type of study data.
