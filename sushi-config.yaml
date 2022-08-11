@@ -36,6 +36,7 @@ menu:
     Use Cases: use_cases.html
     Authors: authors.html
     Contact: contact.html
+  Use Cases: use_cases.html
   Artifacts: artifacts.html
   Support: 
     FHIR Spec: http://hl7.org/fhir/R4/index.html
