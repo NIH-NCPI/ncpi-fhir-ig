@@ -1,4 +1,12 @@
 
+The NCPI IG is intended to be a modular design where FHIR providers and data consumers will be able to find the use cases specific to their data and research objectives. We have broken these uses cases out into their own modules in this documentation to make it clear exactly how each of the pieces should be built and consumed. 
+
+<img width="100%" src="modular-ig-design.png" alt="Modular IG Design" />
+
+Each use case should detail the resources used to define the details that are specific to those use cases, all restrictions to CodeSystems and how all of these pieces fit together. 
+
+For those producing resources to conform to the NCPI IG, only those use cases which apply to the data they are producing are required. 
+
 ### Representing Research Studies
 
 Data sharing is key to reproducible science. However, if the data cannot be shared in a robust, low cost manner can we effectively claim to enable reproducible science? 
@@ -85,6 +93,14 @@ For our uses here, if the healthcare system successfully integrates FHIR, resear
 There are likely to be some challenges still in that many of the organizations doing research on EHR data have worked hard to provide supplementary mappings and knowledge into the EHR data extracts. For example, historic laboratory measures may not have standard LOINC codes attached, making semantic interoperability more of a challenge. However, the scope and challenges here have not been well assessed, and presumably data quality will improve over time as these approaches become more standard.
 
 This IG will mainly serve to provide the ResearchStudy and ResearchSubject resource layer on top of the EHR data as collected. Additional work may need to be done to address the challenges of EHR data interoperability and consistency, but this is within the bounds of any other type of study data.
+
+### Representing Summary Data in FHIR
+While summary information can be calculated "on the fly", it can be somewhat resource intensive for larger studies. To provide summary information, there is real value in providing a reliable model for the most common types of summary data. 
+
+### Representation of Data Dictionary in FHIR
+The data dictionary is a key component for understanding the contents of a dataset. While this may not be the first thing one would expect from research data loaded into a FHIR server, for the purposes of *discovery*, it is vital. Because no actual row-level data will ever be a part of a data-dictionary, this information can just as easily reside in a publicly accessible location providing access to study meta data that can be key for researchers looking for options when building out their cohorts. 
+
+For more information, see the [detailed description](data_dictionary.html).
 
 ### Representation of Raw Data 
 There are a number of reasons to support representing raw data in FHIR whether or not it is expected that the data will be fully transformed to meet the appropriate FHIR representation for interoperable data. These include:
