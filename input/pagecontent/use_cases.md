@@ -109,4 +109,3 @@ There are a number of reasons to support representing raw data in FHIR whether o
 * Provide access to all data even if there are items that currently don't fit any of the current FHIR models in use. 
 * Provide data provenance for all of the transformed data using the same API, FHIR as opposed to requiring researchers to step outside FHIR and attempt to trace the origins back to those original data sources. 
 
-For more information, see the [detailed description](use_case_raw_data.html).
