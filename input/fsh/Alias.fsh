@@ -53,6 +53,7 @@ Alias: $supporting-info = http://fhir.ncpi-project-forge.io/StructureDefinition/
 Alias: $ExampleStudyDatasetCS = http://example.org/my-dataset/fhir/codesystem/dataset
 Alias: $ExampleStudyTableCS = http://example.org/my-dataset/fhir/codesystem/demographics-table
 Alias: $ExampleStudyTableVS = http://example.org/my-dataset/fhir/valueset/demographics-table
+Alias: $ExampleCaseControlVS1 = http://example.org/my-dataset/fhir/valueset/case-control
 
 
 // CodeSystem
