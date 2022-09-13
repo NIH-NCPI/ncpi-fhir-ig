@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide> a fhir:ImplementationGuide;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "NCPI-FHIR-Implementation-Guide"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCPIFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide</pre><div><p>FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCPIFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://nih-ncpi.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide</pre><div><p>FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
   fhir:ImplementationGuide.name [ fhir:value "NCPIFHIRImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "NCPI FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-08-23T15:00:44+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-09-13T16:54:38+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -25,7 +25,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://github.com/ncpi-fhir" ]
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-ncpi" ]
      ]
   ], [
      fhir:index 1;
@@ -169,7 +169,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -337,7 +337,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncpi-drs-attachment" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DRS Attachment" ];
@@ -351,7 +351,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncpi-drs-document-reference" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DRS Document Reference" ];
@@ -365,7 +365,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/disease" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI Disease" ];
@@ -379,7 +379,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/family-relationship" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI Family Relationship" ];
@@ -393,7 +393,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/phenotype" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI Phenotype" ];
@@ -407,7 +407,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncpi-research-document-reference" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Document Reference" ];
@@ -421,7 +421,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncpi-specimen-task" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Research Task" ];
@@ -435,7 +435,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/supporting-info" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Supporting Information" ];
@@ -449,7 +449,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/condition-inheritance-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Inheritance Pattern" ];
@@ -463,7 +463,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/disease-codes>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes>;
          fhir:Reference.reference [ fhir:value "ValueSet/disease-codes" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Disease Codes" ];
@@ -477,7 +477,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/loinc-answers>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/loinc-answers>;
          fhir:Reference.reference [ fhir:value "ValueSet/loinc-answers" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC Answers" ];
@@ -491,7 +491,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/ncpi-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI FHIR Codes" ];
@@ -505,7 +505,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes>;
          fhir:Reference.reference [ fhir:value "ValueSet/phenotype-codes" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Phenotype Codes" ];
@@ -519,7 +519,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/tbd-codes>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/tbd-codes>;
          fhir:Reference.reference [ fhir:value "ValueSet/tbd-codes" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "tbd-codes" ];
@@ -533,7 +533,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode>;
          fhir:Reference.reference [ fhir:value "CodeSystem/ConditionInheritanceMode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition Inheritance Pattern" ];
@@ -547,7 +547,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/hpo>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/hpo>;
          fhir:Reference.reference [ fhir:value "CodeSystem/hpo" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Human Phenotype Ontology" ];
@@ -561,7 +561,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/v3-hgvs>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/v3-hgvs>;
          fhir:Reference.reference [ fhir:value "CodeSystem/v3-hgvs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Human Genome Variation Society nomenclature" ];
@@ -575,7 +575,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/loinc-answers>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/loinc-answers>;
          fhir:Reference.reference [ fhir:value "CodeSystem/loinc-answers" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC Answers" ];
@@ -589,7 +589,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/mondo>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/mondo>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mondo" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mondo Disease Ontology" ];
@@ -603,7 +603,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ncit>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncit>;
          fhir:Reference.reference [ fhir:value "CodeSystem/ncit" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCI Thesaurus" ];
@@ -617,7 +617,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ncpi>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi>;
          fhir:Reference.reference [ fhir:value "CodeSystem/ncpi" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI FHIR Codes" ];
@@ -631,7 +631,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types>;
          fhir:Reference.reference [ fhir:value "CodeSystem/ncpi-data-types" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Types for NCPI Research" ];
@@ -645,7 +645,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/omim>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/omim>;
          fhir:Reference.reference [ fhir:value "CodeSystem/omim" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Online Mendelian Inheritance in Man" ];
@@ -659,7 +659,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/tbd-codes>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/tbd-codes>;
          fhir:Reference.reference [ fhir:value "CodeSystem/tbd-codes" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ToBeDeterminedCodes ('TbdCodes')" ];
@@ -673,7 +673,7 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/anvil-summary-cmg>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/anvil-summary-cmg>;
          fhir:Reference.reference [ fhir:value "Observation/anvil-summary-cmg" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary detail for Center for Mendelian Genomics" ];
@@ -687,7 +687,7 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/anvil-summary-phs000711>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/anvil-summary-phs000711>;
          fhir:Reference.reference [ fhir:value "Observation/anvil-summary-phs000711" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG)" ];
@@ -701,7 +701,7 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/diagnostic-implication-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/diagnostic-implication-1>;
          fhir:Reference.reference [ fhir:value "Observation/diagnostic-implication-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnostic-implication-1" ];
@@ -715,7 +715,7 @@
          fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/DiagnosticReport/diagnostic-report-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/DiagnosticReport/diagnostic-report-1>;
          fhir:Reference.reference [ fhir:value "DiagnosticReport/diagnostic-report-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "diagnostic-report-1" ];
@@ -729,14 +729,14 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Condition/disease-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Condition/disease-example-1>;
          fhir:Reference.reference [ fhir:value "Condition/disease-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "disease-example-1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Disease." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/disease>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease>
        ]
      ], [
        fhir:index 29;
@@ -746,14 +746,14 @@
          fhir:Extension.valueString [ fhir:value "DocumentReference" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/DocumentReference/drs-document-reference-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/DocumentReference/drs-document-reference-example-1>;
          fhir:Reference.reference [ fhir:value "DocumentReference/drs-document-reference-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "drs-document-reference-example-1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of DRS Document Reference." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference>
        ]
      ], [
        fhir:index 30;
@@ -763,14 +763,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/family-relationship-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/family-relationship-example-1>;
          fhir:Reference.reference [ fhir:value "Observation/family-relationship-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "family-relationship-example-1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Family Relationship." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
        fhir:index 31;
@@ -780,14 +780,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/family-relationship-example-2>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/family-relationship-example-2>;
          fhir:Reference.reference [ fhir:value "Observation/family-relationship-example-2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "family-relationship-example-2" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Family Relationship." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
        fhir:index 32;
@@ -797,14 +797,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/family-relationship-example-3>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/family-relationship-example-3>;
          fhir:Reference.reference [ fhir:value "Observation/family-relationship-example-3" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "family-relationship-example-3" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Family Relationship." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
        fhir:index 33;
@@ -814,14 +814,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/family-relationship-example-4>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/family-relationship-example-4>;
          fhir:Reference.reference [ fhir:value "Observation/family-relationship-example-4" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "family-relationship-example-4" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Family Relationship." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
        fhir:index 34;
@@ -831,7 +831,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Organization/organization-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Organization/organization-example-1>;
          fhir:Reference.reference [ fhir:value "Organization/organization-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "organization-example-1" ];
@@ -845,7 +845,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
          fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-1" ];
@@ -859,7 +859,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-2>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-2>;
          fhir:Reference.reference [ fhir:value "Patient/patient-example-2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-2" ];
@@ -873,7 +873,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-3>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-3>;
          fhir:Reference.reference [ fhir:value "Patient/patient-example-3" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-3" ];
@@ -887,14 +887,14 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Condition/phenotype-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Condition/phenotype-example-1>;
          fhir:Reference.reference [ fhir:value "Condition/phenotype-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "phenotype-example-1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of observed Phenotype." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>
        ]
      ], [
        fhir:index 39;
@@ -904,7 +904,7 @@
          fhir:Extension.valueString [ fhir:value "Practitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Practitioner/practitioner-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Practitioner/practitioner-example-1>;
          fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-example-1" ];
@@ -918,7 +918,7 @@
          fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/PractitionerRole/practitioner-role-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/PractitionerRole/practitioner-role-example-1>;
          fhir:Reference.reference [ fhir:value "PractitionerRole/practitioner-role-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-role-example-1" ];
@@ -932,14 +932,14 @@
          fhir:Extension.valueString [ fhir:value "DocumentReference" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/DocumentReference/research-document-reference-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/DocumentReference/research-document-reference-example-1>;
          fhir:Reference.reference [ fhir:value "DocumentReference/research-document-reference-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-document-reference-example-1" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Document Reference." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference>
        ]
      ], [
        fhir:index 42;
@@ -949,7 +949,7 @@
          fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchStudy/research-study-cmg>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchStudy/research-study-cmg>;
          fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-cmg" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-study-cmg" ];
@@ -963,7 +963,7 @@
          fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchStudy/research-study-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchStudy/research-study-example-1>;
          fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-study-example-1" ];
@@ -977,7 +977,7 @@
          fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchStudy/research-study-phs000711>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchStudy/research-study-phs000711>;
          fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-phs000711" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-study-phs000711" ];
@@ -991,7 +991,7 @@
          fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-1>;
          fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-1" ];
@@ -1005,7 +1005,7 @@
          fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-2>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-2>;
          fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-2" ];
@@ -1019,7 +1019,7 @@
          fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-3>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchSubject/research-subject-example-3>;
          fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-3" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-3" ];
@@ -1033,7 +1033,7 @@
          fhir:Extension.valueString [ fhir:value "Specimen" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Specimen/specimen-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1>;
          fhir:Reference.reference [ fhir:value "Specimen/specimen-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "specimen-example-1" ];
@@ -1047,7 +1047,7 @@
          fhir:Extension.valueString [ fhir:value "Task" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Task/task-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Task/task-example-1>;
          fhir:Reference.reference [ fhir:value "Task/task-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "task-example-1" ];
@@ -1061,14 +1061,14 @@
          fhir:Extension.valueString [ fhir:value "Task" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Task/task-example-2>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Task/task-example-2>;
          fhir:Reference.reference [ fhir:value "Task/task-example-2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "task-example-2" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Task that points to a ResearchDocumentReference." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task";
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task>
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task>
        ]
      ], [
        fhir:index 51;
@@ -1078,7 +1078,7 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/variant-example-1>;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/variant-example-1>;
          fhir:Reference.reference [ fhir:value "Observation/variant-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "variant-example-1" ];
@@ -1106,18 +1106,78 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "childhood_cancer.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Childhood Cancer" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "contact.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Contact" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 4;
+         fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 5;
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "ehr.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Ehr" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "family.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Family" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 8;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "files.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Files" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 9;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "finding_a_research_study.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Finding a Research Study" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 10;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "ncpi.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Ncpi" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 11;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "participant.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Participant" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 12;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "performing_a_genomic_analysis.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Performing a Genomic Analysis" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 13;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "rare_disease.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Rare Disease" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 14;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "research_study.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Research Study" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 15;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "tabular.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Tabular" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 16;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use_cases.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 17;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "using_source_data.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Using Source Data" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
@@ -1186,7 +1246,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide.ttl> a owl:Ontology;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

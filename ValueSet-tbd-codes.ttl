@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/tbd-codes> a fhir:ValueSet;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/tbd-codes> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "tbd-codes"];
   fhir:Resource.meta [
@@ -25,7 +25,7 @@
      fhir:Extension.valueCode [ fhir:value "cg" ]
   ];
   fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.version [ fhir:value "0.2.0"];
   fhir:ValueSet.name [ fhir:value "ToBeDeterminedCodes"];
   fhir:ValueSet.title [ fhir:value "tbd-codes"];
   fhir:ValueSet.status [ fhir:value "active"];
@@ -38,7 +38,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://github.com/ncpi-fhir" ]
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-ncpi" ]
      ]
   ], [
      fhir:index 1;
@@ -60,7 +60,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/tbd-codes.ttl> a owl:Ontology;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/tbd-codes.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -3,21 +3,21 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="mondo"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://purl.obolibrary.org/obo/mondo.owl defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">MONDO:0005072<a name="mondo-MONDO.580005072"> </a></td><td>neuroblastoma</td></tr><tr><td style="white-space:nowrap">MONDO:0002749<a name="mondo-MONDO.580002749"> </a></td><td>extracranial neuroblastoma</td></tr><tr><td style="white-space:nowrap">MONDO:0008542<a name="mondo-MONDO.580008542"> </a></td><td>tetralogy of fallot</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://purl.obolibrary.org/obo/mondo.owl</code> defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">MONDO:0005072<a name="mondo-MONDO.580005072"> </a></td><td>neuroblastoma</td></tr><tr><td style="white-space:nowrap">MONDO:0002749<a name="mondo-MONDO.580002749"> </a></td><td>extracranial neuroblastoma</td></tr><tr><td style="white-space:nowrap">MONDO:0008542<a name="mondo-MONDO.580008542"> </a></td><td>tetralogy of fallot</td></tr></table></div>
   </text>
   <url value="http://purl.obolibrary.org/obo/mondo.owl"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="Mondo"/>
   <title value="Mondo Disease Ontology"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-08-23T15:00:44+00:00"/>
+  <date value="2022-09-13T16:54:38+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
     <telecom>
       <system value="url"/>
-      <value value="https://github.com/ncpi-fhir"/>
+      <value value="https://github.com/nih-ncpi"/>
     </telecom>
   </contact>
   <contact>

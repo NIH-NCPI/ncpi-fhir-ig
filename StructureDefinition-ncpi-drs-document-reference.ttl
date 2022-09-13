@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference> a fhir:StructureDefinition;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ncpi-drs-document-reference"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "DRSDocumentReference"];
   fhir:StructureDefinition.title [ fhir:value "DRS Document Reference"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-23T15:00:44+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-13T16:54:38+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -34,7 +34,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://github.com/ncpi-fhir" ]
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-ncpi" ]
      ]
   ], [
      fhir:index 1;
@@ -214,7 +214,7 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
-           fhir:Extension.valueUrl [ fhir:value "string" ]
+           fhir:Extension.valueUrl [ fhir:value "id" ]
          ];
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
        ];
@@ -1891,9 +1891,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Attachment" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment";
+           fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment";
            fhir:index 0;
-           fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment>
+           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1929,8 +1929,8 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "attachment.url must start with ^drs://. A drs:// hostname-based URI, as defined in the DRS documentation, that tells clients how to access this object. The intent of this field is to make DRS objects self-contained, and therefore easier for clients to store and pass around.  For example, if you arrive at this DRS JSON by resolving a compact identifier-based DRS URI, the `self_uri` presents you with a hostname and properly encoded DRS ID for use in subsequent `access` endpoint calls." ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "$this.url.matches('^drs://.*')" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment";
-           fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment>
+           fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment";
+           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -2603,9 +2603,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Attachment" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment";
+           fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment";
            fhir:index 0;
-           fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment>
+           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment>
          ]
        ]
      ]
@@ -2613,7 +2613,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference.ttl> a owl:Ontology;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

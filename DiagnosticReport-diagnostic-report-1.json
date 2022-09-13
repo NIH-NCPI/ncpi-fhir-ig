@@ -7,7 +7,7 @@
   },
   "extension": [
     {
-      "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info",
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info",
       "valueReference": {
         "reference": "Task/task-example-1"
       }

@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "fhirVersion": [
     "4.0.1"
   ],
-  "date": "20220823150007",
+  "date": "20220913165354",
   "name": "NCPI-FHIR-Implementation-Guide"
 }

@@ -17,7 +17,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "ToBeDeterminedCodes",
   "title": "tbd-codes",
   "status": "active",
@@ -30,7 +30,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://github.com/ncpi-fhir"
+          "value": "https://github.com/nih-ncpi"
         }
       ]
     },

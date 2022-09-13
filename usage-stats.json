@@ -1,10 +1,10 @@
 {
   "package": "NCPI-FHIR-Implementation-Guide",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info",
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info",
       "title": "Supporting Information",
       "types": [
         "Reference"
@@ -14,29 +14,29 @@
   "profiles": {
     "Condition": [
       {
-        "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
         "title": "NCPI Phenotype"
       }
     ],
     "Observation": [
       {
-        "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship",
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship",
         "title": "NCPI Family Relationship"
       }
     ],
     "DocumentReference": [
       {
-        "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference",
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference",
         "title": "DRS Document Reference"
       },
       {
-        "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference",
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference",
         "title": "Research Document Reference"
       }
     ],
     "Task": [
       {
-        "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
         "title": "Research Task"
       }
     ]
@@ -98,7 +98,7 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
-    "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info": [
+    "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info": [
       "DiagnosticReport"
     ]
   }

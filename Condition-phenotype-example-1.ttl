@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/Condition/phenotype-example-1> a fhir:Condition;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Condition/phenotype-example-1> a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "phenotype-example-1"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype";
+       fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype";
        fhir:index 0;
-       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition \"phenotype-example-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-phenotype.html\">NCPI Phenotype</a></p></div><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Present: Vesicoureteral reflux <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hpo.html\">Human Phenotype Ontology</a>#HP:0000076 \"Vesicoureteral reflux\")</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> \" SMITH\"</p><p><b>recordedDate</b>: </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"phenotype-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition \"phenotype-example-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-phenotype.html\">NCPI Phenotype</a></p></div><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Present: Vesicoureteral reflux <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hpo.html\">Human Phenotype Ontology</a>#HP:0000076 \"Vesicoureteral reflux\")</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> \" SMITH\"</p><p><b>recordedDate</b>: </p></div>"
   ];
   fhir:Condition.verificationStatus [
      fhir:CodeableConcept.coding [
@@ -37,7 +37,7 @@
      fhir:CodeableConcept.text [ fhir:value "Present: Vesicoureteral reflux" ]
   ];
   fhir:Condition.subject [
-     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
      fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
   ];
   fhir:Condition.recordedDate [
@@ -47,7 +47,7 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "target" ];
          fhir:Extension.valueReference [
-           fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
            fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
          ]
        ], [
@@ -74,7 +74,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/Condition/phenotype-example-1.ttl> a owl:Ontology;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Condition/phenotype-example-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

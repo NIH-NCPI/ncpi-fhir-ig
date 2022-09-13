@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/DiagnosticReport/diagnostic-report-1> a fhir:DiagnosticReport;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/DiagnosticReport/diagnostic-report-1> a fhir:DiagnosticReport;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "diagnostic-report-1"];
   fhir:DomainResource.text [
@@ -15,9 +15,9 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info" ];
+     fhir:Extension.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info" ];
      fhir:Extension.valueReference [
-       fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Task/task-example-1>;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Task/task-example-1>;
        fhir:Reference.reference [ fhir:value "Task/task-example-1" ]
      ]
   ];
@@ -32,22 +32,22 @@
      ]
   ];
   fhir:DiagnosticReport.subject [
-     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
      fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
   ];
   fhir:DiagnosticReport.result [
      fhir:index 0;
-     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/variant-example-1>;
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/variant-example-1>;
      fhir:Reference.reference [ fhir:value "Observation/variant-example-1" ]
   ], [
      fhir:index 1;
-     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Observation/diagnostic-implication-1>;
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/diagnostic-implication-1>;
      fhir:Reference.reference [ fhir:value "Observation/diagnostic-implication-1" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/DiagnosticReport/diagnostic-report-1.ttl> a owl:Ontology;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/DiagnosticReport/diagnostic-report-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

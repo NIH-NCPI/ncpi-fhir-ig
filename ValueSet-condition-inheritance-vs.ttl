@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs> a fhir:ValueSet;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "condition-inheritance-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ConditionInheritanceMode.html\"><code>https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ConditionInheritanceMode.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs"];
+  fhir:ValueSet.version [ fhir:value "0.2.0"];
   fhir:ValueSet.name [ fhir:value "ConditionInheritanceModeVS"];
   fhir:ValueSet.title [ fhir:value "Condition Inheritance Pattern"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-08-23T15:00:44+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-09-13T16:54:38+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -25,7 +25,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://github.com/ncpi-fhir" ]
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-ncpi" ]
      ]
   ], [
      fhir:index 1;
@@ -49,13 +49,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://ncpi-fhir.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs.ttl> a owl:Ontology;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

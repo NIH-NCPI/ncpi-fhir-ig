@@ -3,15 +3,15 @@
   "id": "ncit",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://purl.obolibrary.org/obo/ncit.owl defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C3270<a name=\"ncit-C3270\"> </a></td><td>Neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">C5437<a name=\"ncit-C5437\"> </a></td><td>Extracranial Neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">C84505<a name=\"ncit-C84505\"> </a></td><td>Tetralogy of Fallot</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://purl.obolibrary.org/obo/ncit.owl</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C3270<a name=\"ncit-C3270\"> </a></td><td>Neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">C5437<a name=\"ncit-C5437\"> </a></td><td>Extracranial Neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">C84505<a name=\"ncit-C84505\"> </a></td><td>Tetralogy of Fallot</td></tr></table></div>"
   },
   "url": "http://purl.obolibrary.org/obo/ncit.owl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "NCIt",
   "title": "NCI Thesaurus",
   "status": "draft",
   "experimental": false,
-  "date": "2022-08-23T15:00:44+00:00",
+  "date": "2022-09-13T16:54:38+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -19,7 +19,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://github.com/ncpi-fhir"
+          "value": "https://github.com/nih-ncpi"
         }
       ]
     },

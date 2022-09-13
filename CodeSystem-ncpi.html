@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.21"}
-    h3,h4,h5,h6{--heading-prefix:"7.21"}</style>
+    <style type="text/css">h2{--heading-prefix:"19.21"}
+    h3,h4,h5,h6{--heading-prefix:"19.21"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">NCPI FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -88,16 +88,60 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="background.html">NCPI FHIR</a>
-      </li>
-      <li>
-        <a href="use_cases.html">Use Cases</a>
+        <a href="ncpi.html">NCPI</a>
       </li>
       <li>
         <a href="authors.html">Authors</a>
       </li>
       <li>
         <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modules
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="research_study.html">Research Study Summary</a>
+      </li>
+      <li>
+        <a href="participant.html">Participant-level Data</a>
+      </li>
+      <li>
+        <a href="files.html">Assays and File Data</a>
+      </li>
+      <li>
+        <a href="tabular.html">Generic Tabular Data</a>
+      </li>
+      <li>
+        <a href="family.html">Family Relationships</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Case Guides
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="finding_a_research_study.html">Finding a Research Study</a>
+      </li>
+      <li>
+        <a href="performing_a_genomic_analysis.html">Genomic Analysis</a>
+      </li>
+      <li>
+        <a href="rare_disease.html">Rare Disease</a>
+      </li>
+      <li>
+        <a href="childhood_cancer.html">Childhood Cancer</a>
+      </li>
+      <li>
+        <a href="using_source_data.html">Using "Source" Data</a>
+      </li>
+      <li>
+        <a href="ehr.html">EHR Data</a>
       </li>
     </ul>
   </li>
@@ -142,7 +186,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="https://ncpi-fhir.github.io/ncpi-fhir-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide - Local Development build (v0.2.0). See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -194,7 +238,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://nih-ncpi.github.io/ncpi-fhir-ig<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig|0.1.0"/></span>
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://nih-ncpi.github.io/ncpi-fhir-ig|0.2.0"/></span>
       </td>
     </tr>
 
@@ -210,7 +254,7 @@
         
           Active
           
-            as of 2022-08-23
+            as of 2022-09-13
           
         
       </td>
@@ -245,7 +289,7 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://nih-ncpi.github.io/ncpi-fhir-ig defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Consortium<a name="ncpi-Consortium"> </a></td><td>Study Consortium</td></tr><tr><td style="white-space:nowrap">StudyCohort<a name="ncpi-StudyCohort"> </a></td><td>Study Cohort</td></tr><tr><td style="white-space:nowrap">Summary<a name="ncpi-Summary"> </a></td><td>Summary Data</td></tr><tr><td style="white-space:nowrap">CohortCount<a name="ncpi-CohortCount"> </a></td><td>Number of Cohorts</td></tr><tr><td style="white-space:nowrap">SampleCount<a name="ncpi-SampleCount"> </a></td><td>Number of Samples</td></tr><tr><td style="white-space:nowrap">Participant<a name="ncpi-Participant"> </a></td><td>Number of Participants</td></tr><tr><td style="white-space:nowrap">StorageSize<a name="ncpi-StorageSize"> </a></td><td>Size on Disk</td></tr><tr><td style="white-space:nowrap">ConsentCodes<a name="ncpi-ConsentCodes"> </a></td><td>Consent Codes</td></tr><tr><td style="white-space:nowrap">TerraWorkspace<a name="ncpi-TerraWorkspace"> </a></td><td>Terra Workspace Name</td></tr><tr><td style="white-space:nowrap">PrimaryDisease<a name="ncpi-PrimaryDisease"> </a></td><td>Primary Disease</td></tr><tr><td style="white-space:nowrap">AccessType<a name="ncpi-AccessType"> </a></td><td>Access Type</td></tr><tr><td style="white-space:nowrap">StudyDesign<a name="ncpi-StudyDesign"> </a></td><td>Study Design</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig</code> defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Consortium<a name="ncpi-Consortium"> </a></td><td>Study Consortium</td></tr><tr><td style="white-space:nowrap">StudyCohort<a name="ncpi-StudyCohort"> </a></td><td>Study Cohort</td></tr><tr><td style="white-space:nowrap">Summary<a name="ncpi-Summary"> </a></td><td>Summary Data</td></tr><tr><td style="white-space:nowrap">CohortCount<a name="ncpi-CohortCount"> </a></td><td>Number of Cohorts</td></tr><tr><td style="white-space:nowrap">SampleCount<a name="ncpi-SampleCount"> </a></td><td>Number of Samples</td></tr><tr><td style="white-space:nowrap">Participant<a name="ncpi-Participant"> </a></td><td>Number of Participants</td></tr><tr><td style="white-space:nowrap">StorageSize<a name="ncpi-StorageSize"> </a></td><td>Size on Disk</td></tr><tr><td style="white-space:nowrap">ConsentCodes<a name="ncpi-ConsentCodes"> </a></td><td>Consent Codes</td></tr><tr><td style="white-space:nowrap">TerraWorkspace<a name="ncpi-TerraWorkspace"> </a></td><td>Terra Workspace Name</td></tr><tr><td style="white-space:nowrap">PrimaryDisease<a name="ncpi-PrimaryDisease"> </a></td><td>Primary Disease</td></tr><tr><td style="white-space:nowrap">AccessType<a name="ncpi-AccessType"> </a></td><td>Access Type</td></tr><tr><td style="white-space:nowrap">StudyDesign<a name="ncpi-StudyDesign"> </a></td><td>Study Design</td></tr></table></div>
 
   
 
@@ -278,7 +322,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/ncpi-fhir">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 23, 2022 15:00+0000">2022-08-23</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 13, 2022 16:54+0000">2022-09-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

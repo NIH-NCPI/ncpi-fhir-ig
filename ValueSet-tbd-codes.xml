@@ -12,7 +12,7 @@
     <valueCode value="cg"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="ToBeDeterminedCodes"/>
   <title value="tbd-codes"/>
   <status value="active"/>
@@ -23,7 +23,7 @@
     <name value="NCPI FHIR Working Group"/>
     <telecom>
       <system value="url"/>
-      <value value="https://github.com/ncpi-fhir"/>
+      <value value="https://github.com/nih-ncpi"/>
     </telecom>
   </contact>
   <contact>

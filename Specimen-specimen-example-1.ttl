@@ -6,12 +6,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/Specimen/specimen-example-1> a fhir:Specimen;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1> a fhir:Specimen;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "specimen-example-1"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen \"specimen-example-1\" </p></div><p><b>type</b>: Solid Tissue <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0487.html\">specimenType</a>#TISS \"Tissue\")</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> \" SMITH\"</p><p><b>receivedTime</b>: </p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td>*</td><td></td><td>50 uL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code uL = 'uL')</span></td><td>Biopsy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129314006 \"Biopsy - action\")</span></td><td>Central Nervous System <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#21483005 \"Structure of central nervous system\")</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"specimen-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen \"specimen-example-1\" </p></div><p><b>type</b>: Solid Tissue <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0487.html\">specimenType</a>#TISS \"Tissue\")</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> \" SMITH\"</p><p><b>receivedTime</b>: </p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td>*</td><td></td><td>50 uL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code uL = 'uL')</span></td><td>Biopsy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129314006 \"Biopsy - action\")</span></td><td>Central Nervous System <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#21483005 \"Structure of central nervous system\")</span></td></tr></table></div>"
   ];
   fhir:Specimen.type [
      fhir:CodeableConcept.coding [
@@ -23,7 +23,7 @@
      fhir:CodeableConcept.text [ fhir:value "Solid Tissue" ]
   ];
   fhir:Specimen.subject [
-     fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
      fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
   ];
   fhir:Specimen.receivedTime [
@@ -33,7 +33,7 @@
          fhir:index 0;
          fhir:Extension.url [ fhir:value "target" ];
          fhir:Extension.valueReference [
-           fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
            fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
          ]
        ], [
@@ -65,7 +65,7 @@
            fhir:index 0;
            fhir:Extension.url [ fhir:value "target" ];
            fhir:Extension.valueReference [
-             fhir:link <https://ncpi-fhir.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
+             fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
              fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
            ]
          ], [
@@ -118,7 +118,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://ncpi-fhir.github.io/ncpi-fhir-ig/Specimen/specimen-example-1.ttl> a owl:Ontology;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

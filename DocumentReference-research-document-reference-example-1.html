@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.42"}
-    h3,h4,h5,h6{--heading-prefix:"7.42"}</style>
+    <style type="text/css">h2{--heading-prefix:"19.42"}
+    h3,h4,h5,h6{--heading-prefix:"19.42"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">NCPI FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -88,16 +88,60 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="background.html">NCPI FHIR</a>
-      </li>
-      <li>
-        <a href="use_cases.html">Use Cases</a>
+        <a href="ncpi.html">NCPI</a>
       </li>
       <li>
         <a href="authors.html">Authors</a>
       </li>
       <li>
         <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modules
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="research_study.html">Research Study Summary</a>
+      </li>
+      <li>
+        <a href="participant.html">Participant-level Data</a>
+      </li>
+      <li>
+        <a href="files.html">Assays and File Data</a>
+      </li>
+      <li>
+        <a href="tabular.html">Generic Tabular Data</a>
+      </li>
+      <li>
+        <a href="family.html">Family Relationships</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Case Guides
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="finding_a_research_study.html">Finding a Research Study</a>
+      </li>
+      <li>
+        <a href="performing_a_genomic_analysis.html">Genomic Analysis</a>
+      </li>
+      <li>
+        <a href="rare_disease.html">Rare Disease</a>
+      </li>
+      <li>
+        <a href="childhood_cancer.html">Childhood Cancer</a>
+      </li>
+      <li>
+        <a href="using_source_data.html">Using "Source" Data</a>
+      </li>
+      <li>
+        <a href="ehr.html">EHR Data</a>
       </li>
     </ul>
   </li>
@@ -142,7 +186,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="https://ncpi-fhir.github.io/ncpi-fhir-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide - Local Development build (v0.2.0). See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -210,7 +254,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DocumentReference</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DocumentReference &quot;research-document-reference-example-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-research-document-reference.html">Research Document Reference</a></p></div><p><b>status</b>: current</p><p><b>subject</b>: <a href="Patient-patient-example-3.html">Patient/patient-example-3</a> &quot; SMITH&quot;</p><p><b>custodian</b>: <a href="Organization-organization-example-1.html">Organization/organization-example-1</a> &quot;Amazing Children's Hospital&quot;</p><blockquote><p><b>content</b></p></blockquote><h3>Contexts</h3><table class="grid"><tr><td>-</td><td><b>Related</b></td></tr><tr><td>*</td><td><a href="Task-task-example-2.html">Task/task-example-2</a></td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DocumentReference</b><a name="research-document-reference-example-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DocumentReference &quot;research-document-reference-example-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ncpi-research-document-reference.html">Research Document Reference</a></p></div><p><b>status</b>: current</p><p><b>subject</b>: <a href="Patient-patient-example-3.html">Patient/patient-example-3</a> &quot; SMITH&quot;</p><p><b>custodian</b>: <a href="Organization-organization-example-1.html">Organization/organization-example-1</a> &quot;Amazing Children's Hospital&quot;</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td>-</td><td><b>Url</b></td></tr><tr><td>*</td><td><code>drs://example.com/ga4gh/drs/v1/objects/0f8c27b9-3300-4249-bb28-f49ffb80e277</code></td></tr></table></blockquote><h3>Contexts</h3><table class="grid"><tr><td>-</td><td><b>Related</b></td></tr><tr><td>*</td><td><a href="Task-task-example-2.html">Task/task-example-2</a></td></tr></table></div>
 
   
 
@@ -241,7 +285,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/ncpi-fhir">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 23, 2022 15:00+0000">2022-08-23</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 13, 2022 16:54+0000">2022-09-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

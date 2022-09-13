@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://ncpi-fhir.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
-  "version": "0.1.0",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
+  "version": "0.2.0",
   "name": "Phenotype",
   "title": "NCPI Phenotype",
   "status": "draft",
-  "date": "2022-08-23T15:00:44+00:00",
+  "date": "2022-09-13T16:54:38+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -28,7 +28,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://github.com/ncpi-fhir"
+          "value": "https://github.com/nih-ncpi"
         }
       ]
     },
@@ -225,7 +225,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"
@@ -869,7 +869,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes"
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes"
         },
         "mapping": [
           {
@@ -1998,7 +1998,7 @@
         "path": "Condition.code",
         "binding": {
           "strength": "required",
-          "valueSet": "https://ncpi-fhir.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes"
+          "valueSet": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes"
         }
       }
     ]
