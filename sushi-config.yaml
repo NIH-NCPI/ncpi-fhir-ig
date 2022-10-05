@@ -34,7 +34,7 @@ menu:
   Background:
     NCPI: ncpi.html
     Profile Versioning: ig_versioning.html
-    FHIR Basics: fhir_basics.html
+    FHIR Basics: FHIR_Basics.html
     Authors: authors.html
     Contact: contact.html
   Modules:
