@@ -1,4 +1,4 @@
-Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as "All Participants" or "Participants From a Particular Consent Group", etc. 
+
 
 While there can be more than one StudyGroup per study, there **must** be one group representing the entire study enrollment. Patients can be members of more than one StudyGroup.
 
