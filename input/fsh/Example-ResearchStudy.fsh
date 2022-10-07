@@ -12,7 +12,7 @@
   * The Research Study 
   */
 Instance: ncpi-research-study-01
-InstanceOf: ResearchStudy
+InstanceOf: NcpiResearchStudy
 Usage: #example
 Description: "An example research study"
 * title = "Example research study"

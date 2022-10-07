@@ -2,12 +2,12 @@
 This module describes the tools used for a public representation of a Research Study. The Research Study represents the umbrella under which all related information can be found. Because of its central role in data aggregation, the Research Study resource should be present, even on public servers providing only summary information. 
 
 #### ResearchStudy
-NCPI uses the ResearchStudy resource to share data about Research Studies themselves. In the NCPI setting, these resources are focused on retrieving information about the study and data from the study and not on operating a research study. Additionally, we’ve acknowledged some of the weaknesses of the R4 ResearchStudy and have included some extensions that map to the R5 version.
+The [NCPI ResearchStudy](StructureDefinition-ncpi-research-study.html) profile is used to share data about Research Studies themselves. In the NCPI setting, these resources are focused on retrieving information about the study and data from the study and not on operating a research study. Additionally, we’ve acknowledged some of the weaknesses of the R4 ResearchStudy and have included some extensions that map to the R5 version.
 
 Patient resources are associated with the study by way of the ResearchSubject resource as well as membership in one or more of the StudyGroup resources. 
 
 ### Conventions
-For each Research Study resource, there should be at least one [StudyGroup](StructureDefinition-study-group.html).
+For each NCPI Research Study resource, there **must** be at least one [StudyGroup](StructureDefinition-study-group.html).
 
 For summary level FHIR servers with no patient level information, the Study Group must provide the number of members it represents, but doesn't have to list the references directly. 
 
