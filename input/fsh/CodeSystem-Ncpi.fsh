@@ -15,6 +15,7 @@ Description: "Codes that would apply to NCPI projects"
 * ^content = #fragment 
 * #Consortium "Study Consortium"
 * #StudyCohort "Study Cohort"
+* #ConsentGroup "Study Consent Group"
 * #Summary "Summary Data"
 * #CohortCount "Number of Cohorts"
 * #SampleCount "Number of Samples"
