@@ -1,0 +1,4 @@
+### Key Guidelines for Usage
+The StudyDdVariable *SHALL* have the corresponding Code from the data-table associated with the specified variable as it's *Code*. This provides a clear reference to the variable being described, and, when the code is properly used throughout transformed resources, it provides traceability to the origins of those transformed values. 
+
+Each variable *SHALL* describe, as completely as possible, everything a typical Data Dictionary entry might describe. The point of these is to aid researchers in knowing both what they should expect to find at any given column and how they may interpret the resulting information. 

@@ -7,9 +7,18 @@ By hosting studies' well formed metadata on a FHIR server with no access restric
 Resource that can be hosted on unrestricted servers, even for restricted data include: 
 * [NCPI Research Study](StructureDefinition-ncpi-research-study.html)
 * [NCPI Study Group](StructureDefinition-study-group.html)
+* [NCPI Study DD Table](StructureDefinition-study-dd-table.html)
+* [NCPI Stuidy DD Variable](StructureDefinition-study-dd-variable.html)
+* Various Study specific CodeSystems and ValueSets required to support any of the resources listed above
 
 #### NCPI Research Study Condition
 Linking the study's condition to appropriate terms from a public ontology, such as Human Phenotype Ontology, MONDO allows simple queries to return all studies known to contain data about the disease of interest. 
 
 #### NCPI Study Group Count
 Providing an accurate *quantity* allows for researchers to know the size of studies that may suit their needs. 
+
+#### NCPI Study DD Table
+The study table collects those variables together in the manner of traditional data-dictionary file. This provides a list of references to the StudyDdVariables, each of which provides a comprehensive description of what should be found inside the *table*.
+
+#### NCPI Study DD Variable
+The study variable provides the means to describe each variable as completely as the resource production team can provide. 
