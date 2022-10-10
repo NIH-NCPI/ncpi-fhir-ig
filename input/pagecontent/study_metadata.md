@@ -17,7 +17,7 @@ Together, these CodeSystems provide a highly specific vocabulary with terms that
 #### Tables and Variables
 For each variable contained within the dataset, a [Study DD Variable](StructureDefinition-study-dd-variable.html) should be defined describing in as great of detail as possible. At a minimum, there should be the data type (permittedDataType), the variable's entry from the table's CodeSystem (code) and a corresponding reference to a ValueSet (validCodedValueSet) when the variable represents an enumerated data type. Additional details are helpful but are data type specific such as the units associated with a Quantity data type, numeric type limits, etc. 
 
-The table itself is a simple container where each of the table's variables are referenced in the *observationResultRequirement* property. It too should have the appropriate vocabulary referenced from the dataset's code system for it's *topic*. 
+The [Study DD Table](StructureDefinition-study-dd-table.html) itself is a simple container where each of the table's variables are referenced in the *observationResultRequirement* property. It too should have the appropriate vocabulary referenced from the dataset's code system for it's *topic*. 
 
 ### Relevant Artifacts
 #### Dataset Specific CodeSystem
