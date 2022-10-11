@@ -101,6 +101,13 @@
     "name": "ResearchDocumentReference"
   },
   {
+    "id": "ncpi-research-study",
+    "type": "StructureDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study",
+    "version": "0.2.0",
+    "name": "NcpiResearchStudy"
+  },
+  {
     "id": "ncpi-specimen-task",
     "type": "StructureDefinition",
     "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
@@ -113,6 +120,13 @@
     "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
     "version": "0.2.0",
     "name": "Phenotype"
+  },
+  {
+    "id": "study-group",
+    "type": "StructureDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group",
+    "version": "0.2.0",
+    "name": "StudyGroup"
   },
   {
     "id": "supporting-info",

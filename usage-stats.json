@@ -34,10 +34,22 @@
         "title": "Research Document Reference"
       }
     ],
+    "ResearchStudy": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study",
+        "title": "NCPI Research Study"
+      }
+    ],
     "Task": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
         "title": "Research Task"
+      }
+    ],
+    "Group": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group",
+        "title": "NCPI Study Group"
       }
     ]
   },
@@ -85,6 +97,10 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
       "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

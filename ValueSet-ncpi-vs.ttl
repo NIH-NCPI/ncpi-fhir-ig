@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "Ncpi_VS"];
   fhir:ValueSet.title [ fhir:value "NCPI FHIR Codes"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-09-13T16:54:38+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-10-11T14:45:04+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Group xmlns="http://hl7.org/fhir">
+  <id value="ncpi-research-study-01-group-01-main"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Group</b><a name="ncpi-research-study-01-group-01-main"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Group "ncpi-research-study-01-group-01-main" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-study-group.html">NCPI Study Group</a></p></div><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>name</b>: Study 01's participants</p><p><b>quantity</b>: 2</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-ncpi-research-study-01-patient-01.html">Patient/ncpi-research-study-01-patient-01</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-ncpi-research-study-01-patient-02.html">Patient/ncpi-research-study-01-patient-02</a></p></blockquote></div>
+  </text>
+  <type value="person"/>
+  <actual value="true"/>
+  <name value="Study 01's participants"/>
+  <quantity value="2"/>
+  <member>
+    <entity>
+      <reference value="Patient/ncpi-research-study-01-patient-01"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/ncpi-research-study-01-patient-02"/>
+    </entity>
+  </member>
+</Group>

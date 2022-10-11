@@ -11,7 +11,7 @@
   <name value="NCPIFHIRImplementationGuide"/>
   <title value="NCPI FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-09-13T16:54:38+00:00"/>
+  <date value="2022-10-11T14:45:04+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -35,7 +35,7 @@
   <dependsOn id="hl7tx">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="3.1.0"/>
+    <version value="4.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_core">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -268,6 +268,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ncpi-research-study"/>
+      </reference>
+      <name value="NCPI Research Study"/>
+      <description value="The NCPI Research Study is based upon the core FHIR ResearchStudy resource and shall act as the umbrella under which all study resources can ultimately be found. For the purposes of interoperability, some restrictions have been made to enforce a common mechanism for describing enrollment and provide a simple means for summarizing subject count and consent group membership."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/phenotype"/>
       </reference>
       <name value="NCPI Phenotype"/>
@@ -294,6 +305,17 @@
       </reference>
       <name value="Research Task"/>
       <description value="A FHIR analysis task that takes at least one specimen as input and produces at least one document."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-group"/>
+      </reference>
+      <name value="NCPI Study Group"/>
+      <description value="Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -595,6 +617,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/ncpi-research-study-01"/>
+      </reference>
+      <name value="ncpi-research-study-01"/>
+      <description value="An example research study"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/ncpi-research-study-01-group-01-main"/>
+      </reference>
+      <name value="ncpi-research-study-01-group-01-main"/>
+      <description value="Study 01's complete enrollment"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ncpi-research-study-01-patient-01"/>
+      </reference>
+      <name value="ncpi-research-study-01-patient-01"/>
+      <description value="Example of a patient from study 01"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ncpi-research-study-01-patient-02"/>
+      </reference>
+      <name value="ncpi-research-study-01-patient-02"/>
+      <description value="Example of a patient from study 02"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -749,6 +815,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-study-01-patient-01"/>
+      </reference>
+      <name value="research-subject-study-01-patient-01"/>
+      <description value="Example representation of a research subject"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-study-01-patient-02"/>
+      </reference>
+      <name value="research-subject-study-01-patient-02"/>
+      <description value="Example representation of a research subject"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Specimen"/>
       </extension>
       <reference>
@@ -792,95 +880,192 @@
       <exampleBoolean value="true"/>
     </resource>
     <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="authors.html"/>
+        </extension>
         <nameUrl value="authors.html"/>
         <title value="Authors"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="background.html"/>
+        </extension>
         <nameUrl value="background.html"/>
         <title value="Background"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="childhood_cancer.html"/>
+        </extension>
         <nameUrl value="childhood_cancer.html"/>
         <title value="Childhood Cancer"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="contact.html"/>
+        </extension>
         <nameUrl value="contact.html"/>
         <title value="Contact"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ehr.html"/>
+        </extension>
         <nameUrl value="ehr.html"/>
         <title value="Ehr"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="family.html"/>
+        </extension>
         <nameUrl value="family.html"/>
         <title value="Family"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="FHIR_Basics.html"/>
+        </extension>
+        <nameUrl value="FHIR_Basics.html"/>
+        <title value="FHIR Basics"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="files.html"/>
+        </extension>
         <nameUrl value="files.html"/>
         <title value="Files"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="finding_a_research_study.html"/>
+        </extension>
         <nameUrl value="finding_a_research_study.html"/>
         <title value="Finding a Research Study"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ig_versioning.html"/>
+        </extension>
+        <nameUrl value="ig_versioning.html"/>
+        <title value="Ig Versioning"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modular_ig.html"/>
+        </extension>
+        <nameUrl value="modular_ig.html"/>
+        <title value="Modular Ig"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ncpi.html"/>
+        </extension>
         <nameUrl value="ncpi.html"/>
         <title value="Ncpi"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="participant.html"/>
+        </extension>
         <nameUrl value="participant.html"/>
         <title value="Participant"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="performing_a_genomic_analysis.html"/>
+        </extension>
         <nameUrl value="performing_a_genomic_analysis.html"/>
         <title value="Performing a Genomic Analysis"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="rare_disease.html"/>
+        </extension>
         <nameUrl value="rare_disease.html"/>
         <title value="Rare Disease"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="research_study.html"/>
+        </extension>
         <nameUrl value="research_study.html"/>
         <title value="Research Study"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="study_metadata.html"/>
+        </extension>
+        <nameUrl value="study_metadata.html"/>
+        <title value="Study Metadata"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="study_summary.html"/>
+        </extension>
+        <nameUrl value="study_summary.html"/>
+        <title value="Study Summary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="tabular.html"/>
+        </extension>
         <nameUrl value="tabular.html"/>
         <title value="Tabular"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="use_cases.html"/>
+        </extension>
         <nameUrl value="use_cases.html"/>
         <title value="Use Cases"/>
         <generation value="markdown"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="using_source_data.html"/>
+        </extension>
         <nameUrl value="using_source_data.html"/>
         <title value="Using Source Data"/>
         <generation value="markdown"/>

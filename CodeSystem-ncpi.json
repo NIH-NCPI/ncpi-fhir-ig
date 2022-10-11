@@ -3,7 +3,7 @@
   "id": "ncpi",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Consortium<a name=\"ncpi-Consortium\"> </a></td><td>Study Consortium</td></tr><tr><td style=\"white-space:nowrap\">StudyCohort<a name=\"ncpi-StudyCohort\"> </a></td><td>Study Cohort</td></tr><tr><td style=\"white-space:nowrap\">Summary<a name=\"ncpi-Summary\"> </a></td><td>Summary Data</td></tr><tr><td style=\"white-space:nowrap\">CohortCount<a name=\"ncpi-CohortCount\"> </a></td><td>Number of Cohorts</td></tr><tr><td style=\"white-space:nowrap\">SampleCount<a name=\"ncpi-SampleCount\"> </a></td><td>Number of Samples</td></tr><tr><td style=\"white-space:nowrap\">Participant<a name=\"ncpi-Participant\"> </a></td><td>Number of Participants</td></tr><tr><td style=\"white-space:nowrap\">StorageSize<a name=\"ncpi-StorageSize\"> </a></td><td>Size on Disk</td></tr><tr><td style=\"white-space:nowrap\">ConsentCodes<a name=\"ncpi-ConsentCodes\"> </a></td><td>Consent Codes</td></tr><tr><td style=\"white-space:nowrap\">TerraWorkspace<a name=\"ncpi-TerraWorkspace\"> </a></td><td>Terra Workspace Name</td></tr><tr><td style=\"white-space:nowrap\">PrimaryDisease<a name=\"ncpi-PrimaryDisease\"> </a></td><td>Primary Disease</td></tr><tr><td style=\"white-space:nowrap\">AccessType<a name=\"ncpi-AccessType\"> </a></td><td>Access Type</td></tr><tr><td style=\"white-space:nowrap\">StudyDesign<a name=\"ncpi-StudyDesign\"> </a></td><td>Study Design</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Consortium<a name=\"ncpi-Consortium\"> </a></td><td>Study Consortium</td></tr><tr><td style=\"white-space:nowrap\">StudyCohort<a name=\"ncpi-StudyCohort\"> </a></td><td>Study Cohort</td></tr><tr><td style=\"white-space:nowrap\">ConsentGroup<a name=\"ncpi-ConsentGroup\"> </a></td><td>Study Consent Group</td></tr><tr><td style=\"white-space:nowrap\">Summary<a name=\"ncpi-Summary\"> </a></td><td>Summary Data</td></tr><tr><td style=\"white-space:nowrap\">CohortCount<a name=\"ncpi-CohortCount\"> </a></td><td>Number of Cohorts</td></tr><tr><td style=\"white-space:nowrap\">SampleCount<a name=\"ncpi-SampleCount\"> </a></td><td>Number of Samples</td></tr><tr><td style=\"white-space:nowrap\">Participant<a name=\"ncpi-Participant\"> </a></td><td>Number of Participants</td></tr><tr><td style=\"white-space:nowrap\">StorageSize<a name=\"ncpi-StorageSize\"> </a></td><td>Size on Disk</td></tr><tr><td style=\"white-space:nowrap\">ConsentCodes<a name=\"ncpi-ConsentCodes\"> </a></td><td>Consent Codes</td></tr><tr><td style=\"white-space:nowrap\">TerraWorkspace<a name=\"ncpi-TerraWorkspace\"> </a></td><td>Terra Workspace Name</td></tr><tr><td style=\"white-space:nowrap\">PrimaryDisease<a name=\"ncpi-PrimaryDisease\"> </a></td><td>Primary Disease</td></tr><tr><td style=\"white-space:nowrap\">AccessType<a name=\"ncpi-AccessType\"> </a></td><td>Access Type</td></tr><tr><td style=\"white-space:nowrap\">StudyDesign<a name=\"ncpi-StudyDesign\"> </a></td><td>Study Design</td></tr></table></div>"
   },
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig",
   "version": "0.2.0",
@@ -11,7 +11,7 @@
   "title": "NCPI FHIR Codes",
   "status": "active",
   "experimental": false,
-  "date": "2022-09-13T16:54:38+00:00",
+  "date": "2022-10-11T14:45:04+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -44,6 +44,10 @@
     {
       "code": "StudyCohort",
       "display": "Study Cohort"
+    },
+    {
+      "code": "ConsentGroup",
+      "display": "Study Consent Group"
     },
     {
       "code": "Summary",

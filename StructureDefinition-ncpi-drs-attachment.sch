@@ -10,13 +10,6 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
-    <sch:title>Attachment</sch:title>
-    <sch:rule context="f:Attachment">
-      <sch:assert test="not(exists(f:data)) or exists(f:contentType)">If the Attachment has data, it SHALL have a contentType (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>Attachment.extension</sch:title>
     <sch:rule context="f:Attachment/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>

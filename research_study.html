@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"15"}
-    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <style type="text/css">h2{--heading-prefix:"18"}
+    h3,h4,h5,h6{--heading-prefix:"18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -91,6 +91,12 @@
         <a href="ncpi.html">NCPI</a>
       </li>
       <li>
+        <a href="ig_versioning.html">Profile Versioning</a>
+      </li>
+      <li>
+        <a href="FHIR_Basics.html">FHIR Basics</a>
+      </li>
+      <li>
         <a href="authors.html">Authors</a>
       </li>
       <li>
@@ -104,7 +110,16 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="research_study.html">Research Study Summary</a>
+        <a href="modular_ig.html">Modular IG Overview</a>
+      </li>
+      <li>
+        <a href="research_study.html">Research Study</a>
+      </li>
+      <li>
+        <a href="study_metadata.html">Study Metadata</a>
+      </li>
+      <li>
+        <a href="study_summary.html">Study Summary</a>
       </li>
       <li>
         <a href="participant.html">Participant-level Data</a>
@@ -211,27 +226,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#research-study-summaries" id="markdown-toc-research-study-summaries">Research Study Summaries</a></li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
   <li><a href="#conventions" id="markdown-toc-conventions">Conventions</a></li>
   <li><a href="#relevant-artifacts" id="markdown-toc-relevant-artifacts">Relevant Artifacts</a></li>
+  <li><a href="#tbd" id="markdown-toc-tbd">TBD</a></li>
 </ul>
 
 </div>
-<h3 id="research-study-summaries">Research Study Summaries</h3>
-
-<h4 id="overview">Overview</h4>
-<p>This module describes the tools used for a public representation of a Research Study, including optional content and study summary data (corresponding to existing dbGaP data dictionaries and variable summary reports).</p>
+<h3 id="overview">Overview</h3>
+<p>This module describes the tools used for a public representation of a Research Study. The Research Study represents the umbrella under which all related information can be found. Because of its central role in data aggregation, the Research Study resource should be present, even on public servers providing only summary information.</p>
 
 <h4 id="researchstudy">ResearchStudy</h4>
-<p>NCPI uses the ResearchStudy resource to share data about Research Studies themselves. In the NCPI setting, these resources are focused on retrieving information about the study and data from the study and not on operating a research study. Additionally, we’ve acknowledged some of the weaknesses of the R4 ResearchStudy and have included some extensions that map to the R5 version.</p>
+<p>The <a href="StructureDefinition-ncpi-research-study.html">NCPI ResearchStudy</a> profile is used to share data about Research Studies themselves. In the NCPI setting, these resources are focused on retrieving information about the study and data from the study and not on operating a research study. Additionally, we’ve acknowledged some of the weaknesses of the R4 ResearchStudy and have included some extensions that map to the R5 version.</p>
 
-<h4 id="study-vocabulary-information">Study Vocabulary Information</h4>
-
-<h4 id="variable-summary-information">Variable Summary Information</h4>
+<p>Patient resources are associated with the study by way of the ResearchSubject resource as well as membership in one or more of the StudyGroup resources.</p>
 
 <h3 id="conventions">Conventions</h3>
+<p>For each NCPI Research Study resource, there <strong>must</strong> be at least one <a href="StructureDefinition-study-group.html">StudyGroup</a>.</p>
+
+<p>For summary level FHIR servers with no patient level information, the Study Group must provide the number of members it represents, but doesn’t have to list the references directly.</p>
+
+<p>For FHIR servers hosting row-level data, each Study Group should provide a complete list of all patients. While there can be more than one Study Group associated with a single Research Study, one of those groups <strong>must</strong> list every single patient enrolled in the study.</p>
+
+<p>In addition to a more comprehensive Study Group, Research Studies that exist alongside row-level data should formally tied to Patients via the <a href="https://hl7.org/fhir/researchsubject.html">ResearchSubject</a> resource. 
+ which describes the number of participants as well as individual patients enrolled in the study if the server hosts row-level data.</p>
 
 <h3 id="relevant-artifacts">Relevant Artifacts</h3>
+<ul>
+  <li><a href="https://hl7.org/fhir/researchstudy.html">ResearchStudy</a> is a base FHIR resource. It is strongly recommended that the following properties be provided:
+    <ul>
+      <li>A clear, meaningful title</li>
+      <li>One or more relevant disease or phenotype associated with the research study’s focus.</li>
+      <li>One or more StudyGroup resources as references in the enrollment property.</li>
+      <li>Study URLs can be attached via the relatedArtifact property.</li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="StructureDefinition-study-group.html">StudyGroup</a> provides information about the study as the number of subjects (quantity) as well as an explicit listing of the Patients as references in the group’s member property when the Study resource is present in a server with row-level data. The can be more than one StudyGroup associated with a given Study.</p>
+  </li>
+  <li><a href="https://hl7.org/fhir/researchsubject.html">ResearchSubject</a> provides the linkage between a Patient and a ResearchStudy.</li>
+</ul>
+
+<h3 id="tbd">TBD</h3>
+<p>The following issues require refinement:</p>
+<ul>
+  <li>DbGAP identifiers. Currently, we have used identifiers to capture this, but this may be better suited as part of the relatedArtificat</li>
+  <li>Does any of the suggested properties warrant being required? Does this need to become a profile?</li>
+</ul>
 
 
 
@@ -257,7 +298,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 13, 2022 16:54+0000">2022-09-13</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 11, 2022 14:45+0000">2022-10-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -10,7 +10,7 @@
   "name": "NCPIFHIRImplementationGuide",
   "title": "NCPI FHIR Implementation Guide",
   "status": "draft",
-  "date": "2022-09-13T16:54:38+00:00",
+  "date": "2022-10-11T14:45:04+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -44,7 +44,7 @@
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "3.1.0"
+      "version": "4.0.0"
     },
     {
       "id": "hl7_fhir_us_core",
@@ -407,6 +407,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/ncpi-research-study"
+        },
+        "name": "NCPI Research Study",
+        "description": "The NCPI Research Study is based upon the core FHIR ResearchStudy resource and shall act as the umbrella under which all study resources can ultimately be found. For the purposes of interoperability, some restrictions have been made to enforce a common mechanism for describing enrollment and provide a simple means for summarizing subject count and consent group membership.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/phenotype"
         },
         "name": "NCPI Phenotype",
@@ -439,6 +453,20 @@
         },
         "name": "Research Task",
         "description": "A FHIR analysis task that takes at least one specimen as input and produces at least one document.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/study-group"
+        },
+        "name": "NCPI Study Group",
+        "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
         "exampleBoolean": false
       },
       {
@@ -823,6 +851,62 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchStudy/ncpi-research-study-01"
+        },
+        "name": "ncpi-research-study-01",
+        "description": "An example research study",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Group"
+          }
+        ],
+        "reference": {
+          "reference": "Group/ncpi-research-study-01-group-01-main"
+        },
+        "name": "ncpi-research-study-01-group-01-main",
+        "description": "Study 01's complete enrollment",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/ncpi-research-study-01-patient-01"
+        },
+        "name": "ncpi-research-study-01-patient-01",
+        "description": "Example of a patient from study 01",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/ncpi-research-study-01-patient-02"
+        },
+        "name": "ncpi-research-study-01-patient-02",
+        "description": "Example of a patient from study 02",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -1019,6 +1103,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-study-01-patient-01"
+        },
+        "name": "research-subject-study-01-patient-01",
+        "description": "Example representation of a research subject",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-study-01-patient-02"
+        },
+        "name": "research-subject-study-01-patient-02",
+        "description": "Example representation of a research subject",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Specimen"
           }
         ],
@@ -1073,96 +1185,265 @@
       }
     ],
     "page": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl": "toc.html"
+        }
+      ],
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "index.html"
+            }
+          ],
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "authors.html"
+            }
+          ],
           "nameUrl": "authors.html",
           "title": "Authors",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "background.html"
+            }
+          ],
           "nameUrl": "background.html",
           "title": "Background",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "childhood_cancer.html"
+            }
+          ],
           "nameUrl": "childhood_cancer.html",
           "title": "Childhood Cancer",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "contact.html"
+            }
+          ],
           "nameUrl": "contact.html",
           "title": "Contact",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "downloads.html"
+            }
+          ],
           "nameUrl": "downloads.html",
           "title": "Downloads",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "ehr.html"
+            }
+          ],
           "nameUrl": "ehr.html",
           "title": "Ehr",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "family.html"
+            }
+          ],
           "nameUrl": "family.html",
           "title": "Family",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "FHIR_Basics.html"
+            }
+          ],
+          "nameUrl": "FHIR_Basics.html",
+          "title": "FHIR Basics",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "files.html"
+            }
+          ],
           "nameUrl": "files.html",
           "title": "Files",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "finding_a_research_study.html"
+            }
+          ],
           "nameUrl": "finding_a_research_study.html",
           "title": "Finding a Research Study",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "ig_versioning.html"
+            }
+          ],
+          "nameUrl": "ig_versioning.html",
+          "title": "Ig Versioning",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "modular_ig.html"
+            }
+          ],
+          "nameUrl": "modular_ig.html",
+          "title": "Modular Ig",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "ncpi.html"
+            }
+          ],
           "nameUrl": "ncpi.html",
           "title": "Ncpi",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "participant.html"
+            }
+          ],
           "nameUrl": "participant.html",
           "title": "Participant",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "performing_a_genomic_analysis.html"
+            }
+          ],
           "nameUrl": "performing_a_genomic_analysis.html",
           "title": "Performing a Genomic Analysis",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "rare_disease.html"
+            }
+          ],
           "nameUrl": "rare_disease.html",
           "title": "Rare Disease",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "research_study.html"
+            }
+          ],
           "nameUrl": "research_study.html",
           "title": "Research Study",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "study_metadata.html"
+            }
+          ],
+          "nameUrl": "study_metadata.html",
+          "title": "Study Metadata",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "study_summary.html"
+            }
+          ],
+          "nameUrl": "study_summary.html",
+          "title": "Study Summary",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "tabular.html"
+            }
+          ],
           "nameUrl": "tabular.html",
           "title": "Tabular",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "use_cases.html"
+            }
+          ],
           "nameUrl": "use_cases.html",
           "title": "Use Cases",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "using_source_data.html"
+            }
+          ],
           "nameUrl": "using_source_data.html",
           "title": "Using Source Data",
           "generation": "markdown"

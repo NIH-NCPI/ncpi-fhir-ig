@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "29115188-3bf5-478a-be71-ba0b67050c13",
+  "id" : "9472f265-89fc-4ff7-955d-dec1d2dcb268",
   "meta" : {
-    "lastUpdated" : "2022-09-13T16:54:38.603+00:00"
+    "lastUpdated" : "2022-10-11T14:45:04.017+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "ConditionInheritanceModeVS",
       "title" : "Condition Inheritance Pattern",
       "status" : "active",
-      "date" : "2022-09-13T16:54:38+00:00",
+      "date" : "2022-10-11T14:45:04+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -44,8 +44,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d9e27dbd-9261-40dd-90fe-26d3fd0ef959",
-        "timestamp" : "2022-09-13T16:55:09+00:00",
+        "identifier" : "urn:uuid:a5d4cf6d-f06d-4096-afa3-06ae6016ceed",
+        "timestamp" : "2022-10-11T14:45:30+00:00",
         "total" : 25,
         "parameter" : [{
           "name" : "excludeNested",
@@ -198,7 +198,7 @@
       "title" : "Disease Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2022-09-13T16:54:38+00:00",
+      "date" : "2022-10-11T14:45:04+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -217,8 +217,8 @@
       }],
       "description" : "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems.",
       "expansion" : {
-        "identifier" : "urn:uuid:d56eadc1-7677-463d-b266-89bd76bc8a12",
-        "timestamp" : "2022-09-13T16:55:09+00:00",
+        "identifier" : "urn:uuid:817cea46-f595-4c85-ad0e-b004b5b4f6a7",
+        "timestamp" : "2022-10-11T14:45:30+00:00",
         "total" : 504,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2786,7 +2786,7 @@
       "title" : "LOINC Answers",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2022-09-13T16:54:38+00:00",
+      "date" : "2022-10-11T14:45:04+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -2805,8 +2805,8 @@
       }],
       "description" : "LOINC ANSWERS used by NCPI resources",
       "expansion" : {
-        "identifier" : "urn:uuid:bd233f37-7b9d-42fa-bf8f-96df98f81bb6",
-        "timestamp" : "2022-09-13T16:55:09+00:00",
+        "identifier" : "urn:uuid:1578ae3a-0a63-435a-9e32-8481e2c99285",
+        "timestamp" : "2022-10-11T14:45:30+00:00",
         "total" : 24,
         "parameter" : [{
           "name" : "excludeNested",
@@ -2946,14 +2946,14 @@
       "id" : "ncpi-vs",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on code system fragments: </p><ul><li><a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes v0.2.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-ncpi-data-types.html\">Data Types for NCPI Research v0.2.0 (CodeSystem)</a></li></ul></div><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes v0.2.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-ncpi-data-types.html\">Data Types for NCPI Research v0.2.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-Consortium\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-Consortium\">Consortium</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Study Consortium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-StudyCohort\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-StudyCohort\">StudyCohort</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Study Cohort</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-Summary\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-Summary\">Summary</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Summary Data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CohortCount\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-CohortCount\">CohortCount</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Number of Cohorts</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-SampleCount\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-SampleCount\">SampleCount</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Number of Samples</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-Participant\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-Participant\">Participant</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Number of Participants</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-StorageSize\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-StorageSize\">StorageSize</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Size on Disk</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-ConsentCodes\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-ConsentCodes\">ConsentCodes</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Consent Codes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-TerraWorkspace\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-TerraWorkspace\">TerraWorkspace</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Terra Workspace Name</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-PrimaryDisease\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-PrimaryDisease\">PrimaryDisease</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Primary Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-AccessType\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-AccessType\">AccessType</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Access Type</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-StudyDesign\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-StudyDesign\">StudyDesign</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Study Design</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-Exome\"> </a>  <a href=\"CodeSystem-ncpi-data-types.html#ncpi-data-types-Exome\">Exome</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td><td>Exome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-WholeGenome\"> </a>  <a href=\"CodeSystem-ncpi-data-types.html#ncpi-data-types-WholeGenome\">WholeGenome</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td><td>Whole Genome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-GWAS\"> </a>  <a href=\"CodeSystem-ncpi-data-types.html#ncpi-data-types-GWAS\">GWAS</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td><td>Genome-Wide Association Studies</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 16 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on code system fragments: </p><ul><li><a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes v0.2.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-ncpi-data-types.html\">Data Types for NCPI Research v0.2.0 (CodeSystem)</a></li></ul></div><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-ncpi.html\">NCPI FHIR Codes v0.2.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-ncpi-data-types.html\">Data Types for NCPI Research v0.2.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-Consortium\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-Consortium\">Consortium</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Study Consortium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-StudyCohort\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-StudyCohort\">StudyCohort</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Study Cohort</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-ConsentGroup\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-ConsentGroup\">ConsentGroup</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Study Consent Group</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-Summary\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-Summary\">Summary</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Summary Data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CohortCount\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-CohortCount\">CohortCount</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Number of Cohorts</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-SampleCount\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-SampleCount\">SampleCount</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Number of Samples</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-Participant\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-Participant\">Participant</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Number of Participants</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-StorageSize\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-StorageSize\">StorageSize</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Size on Disk</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-ConsentCodes\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-ConsentCodes\">ConsentCodes</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Consent Codes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-TerraWorkspace\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-TerraWorkspace\">TerraWorkspace</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Terra Workspace Name</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-PrimaryDisease\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-PrimaryDisease\">PrimaryDisease</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Primary Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-AccessType\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-AccessType\">AccessType</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Access Type</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-StudyDesign\"> </a>  <a href=\"CodeSystem-ncpi.html#ncpi-StudyDesign\">StudyDesign</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig</td><td>Study Design</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-Exome\"> </a>  <a href=\"CodeSystem-ncpi-data-types.html#ncpi-data-types-Exome\">Exome</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td><td>Exome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-WholeGenome\"> </a>  <a href=\"CodeSystem-ncpi-data-types.html#ncpi-data-types-WholeGenome\">WholeGenome</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td><td>Whole Genome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-datatypes-GWAS\"> </a>  <a href=\"CodeSystem-ncpi-data-types.html#ncpi-data-types-GWAS\">GWAS</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</td><td>Genome-Wide Association Studies</td></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs",
       "version" : "0.2.0",
       "name" : "Ncpi_VS",
       "title" : "NCPI FHIR Codes",
       "status" : "draft",
-      "date" : "2022-09-13T16:54:38+00:00",
+      "date" : "2022-10-11T14:45:04+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -2972,9 +2972,9 @@
       }],
       "description" : "Codes that would apply to NCPI projects",
       "expansion" : {
-        "identifier" : "urn:uuid:9fabf1e8-d672-4d7b-a7a3-901d29ac7f02",
-        "timestamp" : "2022-09-13T16:55:09+00:00",
-        "total" : 15,
+        "identifier" : "urn:uuid:98ba86aa-4f29-43c9-8c48-e985d7510d09",
+        "timestamp" : "2022-10-11T14:45:30+00:00",
+        "total" : 16,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -3004,6 +3004,11 @@
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig",
           "code" : "StudyCohort",
           "display" : "Study Cohort"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig",
+          "code" : "ConsentGroup",
+          "display" : "Study Consent Group"
         },
         {
           "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig",
@@ -3088,7 +3093,7 @@
       "title" : "Phenotype Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2022-09-13T16:54:38+00:00",
+      "date" : "2022-10-11T14:45:04+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -3107,8 +3112,8 @@
       }],
       "description" : "This value set includes all codes from Human Phenotype Ontology.",
       "expansion" : {
-        "identifier" : "urn:uuid:577d91bf-e5f6-4145-abfe-48156de9516c",
-        "timestamp" : "2022-09-13T16:55:09+00:00",
+        "identifier" : "urn:uuid:cbca4cba-400d-43b9-9919-dc0ae8a9c009",
+        "timestamp" : "2022-10-11T14:45:30+00:00",
         "total" : 1880,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12562,8 +12567,8 @@
       }],
       "description" : "This value set includes all TBD Codes",
       "expansion" : {
-        "identifier" : "urn:uuid:a8150aee-5783-445b-9327-b1de85552887",
-        "timestamp" : "2022-09-13T16:55:09+00:00",
+        "identifier" : "urn:uuid:a7f92a1b-4e5d-4744-91b8-3395ff86ad53",
+        "timestamp" : "2022-10-11T14:45:30+00:00",
         "total" : 18,
         "parameter" : [{
           "name" : "excludeNested",
