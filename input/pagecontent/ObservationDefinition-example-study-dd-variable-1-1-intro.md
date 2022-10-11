@@ -1,0 +1,3 @@
+Dataset variable definition, subjectid, is based on the profile, [StudyDdVariable](StructureDefinition-study-dd-variable.html). Based on [ObservationDefinition](https://hl7.org/fhir/observationdefinition.html), The Study DD Variable describes a single variable from one of the Study's data tables. To link the definition across various dataset components, the use of the Study's code representation for that variable is used in the *code" property which is: http://example.org/my-dataset/fhir/codesystem/demographics-table|subjectid in this case. 
+
+To indicate what types of data can be expected to be found, the permittedDataType is used, which in this case is set to "string".

@@ -30,6 +30,7 @@ Alias: $gene = https://www.ncbi.nlm.nih.gov/gene
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $refseq = http://www.ncbi.nlm.nih.gov/refseq
 Alias: $varnomen = http://varnomen.hgvs.org
+Alias: $umls = https://uts.nlm.nih.gov/uts/umls
 
 // ValueSet
 Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
@@ -39,6 +40,10 @@ Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
  Local aliases
  */
 Alias: $supporting-info = http://fhir.ncpi-project-forge.io/StructureDefinition/SupportingInfo
+Alias: $ExampleStudyDatasetCS = http://example.org/my-dataset/fhir/codesystem/dataset
+Alias: $ExampleStudyTableCS = http://example.org/my-dataset/fhir/codesystem/demographics-table
+Alias: $ExampleStudyTableVS = http://example.org/my-dataset/fhir/valueset/demographics-table
+Alias: $ExampleDDCaseControlVS1 = http://example.org/my-dataset/fhir/valueset/case-control
 
 
 // CodeSystem
