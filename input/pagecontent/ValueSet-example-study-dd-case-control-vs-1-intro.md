@@ -1,0 +1,1 @@
+This example ValueSet illustrates the local collection of the enumerated values from a single variable. In this case, those values are simply Case and Control. For this example, we have used codes from the UMLS, however, those codes could have been based solely on the data as it was provided. 

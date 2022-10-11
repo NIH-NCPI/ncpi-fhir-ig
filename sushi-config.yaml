@@ -53,7 +53,9 @@ menu:
     Childhood Cancer: childhood_cancer.html
     Using "Source" Data: using_source_data.html
     EHR Data: ehr.html
-  Artifacts: artifacts.html
+  Artifacts: 
+    All Artifacts: artifacts.html
+    DD Example: example_data_dictionary.html
   Support: 
     FHIR Spec: http://hl7.org/fhir/R4/index.html
     Downloads: downloads.html

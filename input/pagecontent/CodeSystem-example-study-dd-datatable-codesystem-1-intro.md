@@ -1,0 +1,1 @@
+The table CodeSystem enumerates each variable from the specified table. The codes from these tables should be used throughout appropriate resources to link the transformed data back to the underlying source variable. 

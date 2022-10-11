@@ -19,7 +19,7 @@
 CodeSystem: ExampleStudyDDStudyDatasetCS1
 Id: example-study-dd-dataset-codesystem-1
 Title: "Dataset CodeSystem (lists all tables)"
-Description: "Example data-dictionary dataset with 1 table and 4 variables"
+Description: "Example CodeSystem for a data-dictionary dataset with only 1 table."
 * ^url = $ExampleStudyDatasetCS
 * ^content = #complete
 * ^count = 1
@@ -28,7 +28,7 @@ Description: "Example data-dictionary dataset with 1 table and 4 variables"
 CodeSystem: ExampleStudyDDStudyTableCS1
 Id: example-study-dd-datatable-codesystem-1
 Title: "Datatable CodeSystem (lists all variables)"
-Description: "Example data-dictionary data table with 4 variables"
+Description: "Example CodeSystem for a data-dictionary table with 4 variables represented as codes."
 * ^url = $ExampleStudyTableCS
 * ^content = #complete
 * ^count = 5
@@ -41,7 +41,7 @@ Description: "Example data-dictionary data table with 4 variables"
 ValueSet: ExampleStudyDDCaseControlVS1
 Id: example-study-dd-case-control-vs-1
 Title: "Case/Control Vars for 'status' categoricals"
-Description: "Example Study DD Case/Control values"
+Description: "Example ValueSet listing all possible 'values' from the Case/Control variable."
 * ^status = #draft
 * ^url = $ExampleDDCaseControlVS1
 * $umls#C99269 "Case"
