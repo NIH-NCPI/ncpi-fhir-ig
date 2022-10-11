@@ -33,10 +33,15 @@ menu:
   Table of Contents: toc.html
   Background:
     NCPI: ncpi.html
+    Profile Versioning: ig_versioning.html
+    FHIR Basics: FHIR_Basics.html
     Authors: authors.html
     Contact: contact.html
   Modules:
-    Research Study Summary: research_study.html
+    Modular IG Overview: modular_ig.html
+    Research Study: research_study.html
+    Study Metadata: study_metadata.html
+    Study Summary: study_summary.html
     Participant-level Data: participant.html
     Assays and File Data: files.html
     Generic Tabular Data: tabular.html
