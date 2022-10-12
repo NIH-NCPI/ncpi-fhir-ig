@@ -10,7 +10,7 @@ Description: "The Human Phenotype Ontology (HPO) provides a standardized vocabul
 * ^hierarchyMeaning = #is-a
 * ^compositional = false
 * ^versionNeeded = false
-* ^content = #complete
+* ^content = #fragment
 * ^count = 1880
 * ^filter[0].code = #root
 * ^filter[0].operator[0] = #=

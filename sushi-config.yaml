@@ -55,7 +55,7 @@ menu:
     EHR Data: ehr.html
   Artifacts: 
     All Artifacts: artifacts.html
-    DD Example: example_data_dictionary.html
+    DD Example: example_study_metadata.html
   Support: 
     FHIR Spec: http://hl7.org/fhir/R4/index.html
     Downloads: downloads.html

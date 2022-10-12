@@ -19,6 +19,16 @@ For each variable contained within the dataset, a [Study DD Variable](StructureD
 
 The [Study DD Table](StructureDefinition-study-dd-table.html) itself is a simple container where each of the table's variables are referenced in the *observationResultRequirement* property. It too should have the appropriate vocabulary referenced from the dataset's code system for it's *topic*. 
 
+#### Harmonization
+Data harmonization is one of the fundamental objectives when it comes to loading these data into FHIR and a key aspect of that is the use of common vocabularies across all datasets when possible. FHIR provides the resource type, ConceptMap, to provide maps from one CodeSystem to another. 
+
+For the purposes of representing the data-dictionary in FHIR, the concept map can help document the transformations that took place during the ingestion process. Column X from table Y is mapped to Coding Z from Ontology A. By providing a complete mapping of all public terms that were identified during loading, we get the advantage of: 
+
+1. quickly providing details to researchers to understand a bit more about what the original data looked like
+2. provide a baseline for those able to improve the mappings over time
+
+For the [example](ConceptMap-example-study-dd-conceptmap-1.html), a simple dataset contains 5 variables, subjectid, gender, age_at_enrollment, bmi and status all of which are mapped to UMLS terms. For BMI, there is an additional mapping to a LOINC term. Finally, the status variable is mapped to 1 entry from Human Phenotype Ontology term and 2 Mondo terms. 
+
 ### Relevant Artifacts
 #### Dataset Specific CodeSystem
 Codes are a fundamental mechanic for relating things across different resources. To that end, there should be CodeSystems to represent the dataset, its tables and the variables' enumerations. 
@@ -62,4 +72,6 @@ For quantities and any other data type that needs to be accompanied with a unit,
 ###### Variable Enumerations
 When specifying that a variable should consist of a value from a list of possible values, a reference to a ValueSet containing all possible values should be given for the property, **validCodedValueSet**.
 
+#### StudyDdHarmony
+Based on FHIR's [ConceptMap](https://hl7.org/fhir/conceptmap.html), the [StudyDdHarmony](StructureDefinition-study-dd-harmony.html) should be used to indicate any transformations from the values pulled directly from the source data to terms from public ontologies such as LOINC, HPO, Mondo, etc. 
 
