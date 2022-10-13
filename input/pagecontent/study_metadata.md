@@ -29,6 +29,14 @@ For the purposes of representing the data-dictionary in FHIR, the concept map ca
 
 For the [example](ConceptMap-example-study-dd-conceptmap-1.html), a simple dataset contains 5 variables, subjectid, gender, age_at_enrollment, bmi and status all of which are mapped to UMLS terms. For BMI, there is an additional mapping to a LOINC term. Finally, the status variable is mapped to 1 entry from Human Phenotype Ontology term and 2 Mondo terms. 
 
+#### Summary Data
+Summary data provides researchers the information they need to understand what data is available and whether that data is suitable for their specific needs. This data can be harmonized with public ontologies allowing researchers to use common ontological terms to search for datasets that have the numbers suitable for their objectives in sufficient numbers. By providing the summary data in FHIR, researchers can use FHIR capable tools or work directly in FHIR to discover the datasets of interest and, once access has been granted, pull the data down for analysis using the same core framework.
+
+To support summary information in FHIR, NCPI provides two resources: The Study Summary and the Study Variable Summary. 
+
+##### Study Summary
+Based on the FHIR Observation, the study summary provides a single resource to summarize a single Study Group associated with a particular study. This may be the entire study population, or it may be a single subgroup, such as a consent group. The resource itself has 1 or more components describing each of the elements being summarized. These components consist of a code describing what is being summarized, such as the "Number of Cohorts" or "Mean Age of Enrollees" and a value, generally an Integer or Floating point number containing the value of interest. There can be many components associated with a single Summary observation.
+
 ### Relevant Artifacts
 #### Dataset Specific CodeSystem
 Codes are a fundamental mechanic for relating things across different resources. To that end, there should be CodeSystems to represent the dataset, its tables and the variables' enumerations. 
@@ -75,3 +83,8 @@ When specifying that a variable should consist of a value from a list of possibl
 #### StudyDdHarmony
 Based on FHIR's [ConceptMap](https://hl7.org/fhir/conceptmap.html), the [StudyDdHarmony](StructureDefinition-study-dd-harmony.html) should be used to indicate any transformations from the values pulled directly from the source data to terms from public ontologies such as LOINC, HPO, Mondo, etc. 
 
+#### StudySummary
+The [StudySummary](StructureDefinition-study-summary.html) is a refinement of FHIR's [Observation](https://hl7.org/fhir/observation.html) and has "components" indicating each summary values. Each Summary observation has a single "subject" which indicates the population being summarized. 
+
+#### StudyVariableSummary
+The [StudyVariableSummary](StructureDefinition-study-variable-summary.html) is similar to the StudySummary above, except it contains summary information specific to a single variable. Each Summary observation has a single "subject" which indicates the population being summarized. 

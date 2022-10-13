@@ -25,6 +25,7 @@ Alias: $v2-0487 = http://terminology.hl7.org/CodeSystem/v2-0487 // Specimen Type
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $conceptMapEquivalence = http://hl7.org/fhir/concept-map-equivalence.html
+Alias: $administrativeGender = http://hl7.org/fhir/administrative-gender
 
 Alias: $loinc = http://loinc.org
 Alias: $tbd-codes = http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes
