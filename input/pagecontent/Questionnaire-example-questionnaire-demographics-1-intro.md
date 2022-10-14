@@ -1,0 +1,3 @@
+In order to represent data with QuestionnaireResponses, one must provide a Questionnaire to describe the data format. In this example we have a single table, Demographics, which has 5 fields, each of which are described as separate *items*. Each of the items has a type, and for "multiple choice" type values, a ValueSet URL is also provided. 
+
+Note that each of the items links back to the data-dictionary by way of their codes from the [Demographics CodeSystem](CodeSystem-example-study-dd-dataset-codesystem-1.html).
