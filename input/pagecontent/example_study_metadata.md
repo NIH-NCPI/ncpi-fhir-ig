@@ -29,7 +29,7 @@ This would return a bundle with the UMLS term, C1305855, as well as the LOINC te
 Summary information can be used by researchers to inform them of the suitability of the study's data for their own needs. 
 
 ##### Study Summary
-This example of a [Study Summary](Observation-anvil-summary-cmg.html)lists a small number of counts indicating the number of Cohorts that can be found, the number of samples and participants as well as the size of the dataset itself. 
+This example of a [Study Summary](Observation-anvil-summary-cmg.html) lists a small number of counts indicating the number of Cohorts that can be found, the number of samples and participants as well as the size of the dataset itself. 
 
 ##### Variable Summary
 In this example of a [variable summary](Observation-example-study-summary-gender.html) we can see how many males and females participated in the study. In addition to simple demographic counts, a study's summaries could also include counts for individual conditions, labs and measurements such as weight and bmi (Observations) the study's racial and ethnicity makeup, etc. Together, this information can provide researchers with a very clear understanding of the data that can be found within to decide whether or not 
