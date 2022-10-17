@@ -32,10 +32,15 @@ For the [example](ConceptMap-example-study-dd-conceptmap-1.html), a simple datas
 #### Summary Data
 Summary data provides researchers the information they need to understand what data is available and whether that data is suitable for their specific needs. This data can be harmonized with public ontologies allowing researchers to use common ontological terms to search for datasets that have the numbers suitable for their objectives in sufficient numbers. By providing the summary data in FHIR, researchers can use FHIR capable tools or work directly in FHIR to discover the datasets of interest and, once access has been granted, pull the data down for analysis using the same core framework.
 
+While most, if not all, of the summary data itself could be collected directly using FHIR's REST API, doing so would require access to the row level data. One of the big advantages of summary data is to provide those without current access to the data the information to decide if the study contains data suitable to their research needs in order to make an informed decision about whether or not to apply for access, should the data be restricted. 
+
 To support summary information in FHIR, NCPI provides two resources: The Study Summary and the Study Variable Summary. 
 
 ##### Study Summary
 Based on the FHIR Observation, the study summary provides a single resource to summarize a single Study Group associated with a particular study. This may be the entire study population, or it may be a single subgroup, such as a consent group. The resource itself has 1 or more components describing each of the elements being summarized. These components consist of a code describing what is being summarized, such as the "Number of Cohorts" or "Mean Age of Enrollees" and a value, generally an Integer or Floating point number containing the value of interest. There can be many components associated with a single Summary observation.
+
+##### Study Variable Summary
+Based on the FHIR OBservation, the study variable summary provides summary of a single variable within the dataset for a specified population. The summary information for this variable would be contained as entries in the component array. The contents of these entires is dependent on the variable's type. For instance, a variable whose contents are enumerations of a list of possible values, such as Race, would provide the count for each possible enumeration as well as total count and the number of missing. However, for numeric values, there might be minimum and maximum observed values, mean, total N observations and missing count. 
 
 ### Relevant Artifacts
 #### Dataset Specific CodeSystem
