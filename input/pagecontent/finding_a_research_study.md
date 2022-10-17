@@ -22,3 +22,13 @@ The study table collects those variables together in the manner of traditional d
 
 #### NCPI Study DD Variable
 The study variable provides the means to describe each variable as completely as the resource production team can provide. 
+
+#### NCPI Study Summary
+The Study Summary provides summary details about the study across a single population, either the entire study or one of its subpopulations. These summary details are not about specific data inside the study's row data, but about the study itself such number of cohorts, total number of subjects, etc.
+
+This information can be used by the client to understand that types of consents are required for access, the numbers of different cohorts that have participated in the study, the types of data that has been collected, etc. 
+
+#### NCPI Study Variable Summary
+The Study Variable Summary provides summary details about a single variable across a single population within the study, either the entire study population or one of its subpopulations. These can provide a comprehensive description of the study across every data point as well as demographic and disease specific counts. 
+
+When properly harmonized to public ontologies, these summaries can be used by the client to identify datasets that contain the very data needed to facilitate a researcher's particular interest in order to make the decision to apply for access when the particular study is restricted. 
