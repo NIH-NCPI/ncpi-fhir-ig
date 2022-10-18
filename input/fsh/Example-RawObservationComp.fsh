@@ -31,7 +31,6 @@ Description: "Example encounter for use with raw data to help tie different rows
 * class = $ResearchEncounterClassCS#survey "Survey Completed by Subject or someone representing them"
 * subject = Reference(ncpi-research-study-01-patient-01)
 
-
 Instance: example-observation-data-row-1
 InstanceOf: Observation
 Title: "Example of Raw Data"
