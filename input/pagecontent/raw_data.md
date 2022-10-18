@@ -1,3 +1,0 @@
-### Conventions
-
-### Relevant Artifacts

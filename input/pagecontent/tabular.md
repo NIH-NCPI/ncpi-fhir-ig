@@ -23,3 +23,6 @@ For Observations, all non-missing variables from a single *row* of data is kept 
 For Questionnaires, the study should define a Questionnaire resource for each table. Each row in each of those tables is represented as a QuestionnaireResponse. Those responses link back to the appropriate Questionnaire by way of the response's Questionnaire property and the individual values link back to the Questionnaire's item using a common linkId. 
 
 ### Relevant Artifacts
+In addition to reliance upon the terminologies from the Data Dictionary portions of the [study metadata](study_metadata.html), there are three resources that are primarily used to represent raw (source) data: [Observation](https://hl7.org/fhir/observation.html) and [Questionnaires](https://hl7.org/fhir/questionnaire.html) with [QuestionnaireResponses](https://hl7.org/fhir/questionnaireresponse.html). 
+
+Out of the box, the Observations provide a bit more utility thanks to the searchability within those components. 
