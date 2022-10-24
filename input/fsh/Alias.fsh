@@ -42,12 +42,12 @@ Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
  Local aliases
  */
 Alias: $supporting-info = http://fhir.ncpi-project-forge.io/StructureDefinition/SupportingInfo
-Alias: $ExampleStudyDatasetCS = http://example.org/my-dataset/fhir/codesystem/dataset
-Alias: $ExampleStudyTableCS = http://example.org/my-dataset/fhir/codesystem/demographics-table
+Alias: $ExampleStudyDatasetCS = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1
+Alias: $ExampleStudyTableCS = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1
 Alias: $ExampleStudyTableVS = http://example.org/my-dataset/fhir/valueset/demographics-table
 Alias: $ExampleDDCaseControlVS1 = http://example.org/my-dataset/fhir/valueset/case-control
 Alias: $ExampleStudyPublicMappingsVS = http://example.org/my-dataset/fhir/valueset/study-public-mappings
-
+Alias: $ExampleDataDictionaryCaseControlVS1 = http://example.org/my-dataset/fhir/valueset/case-control
 // CodeSystem
 Alias: $hpo = http://purl.obolibrary.org/obo/hp.owl
 Alias: $omim = https://omim.org/
@@ -61,5 +61,5 @@ Alias: $condition-interitanc-codes = http://fhir.ncpi-project-forge.io/ValueSet/
 
 // NCPI Observations
 Alias: $ncpi = https://nih-ncpi.github.io/ncpi-fhir-ig
-Alias: $ncpi_datatypes = https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes
+Alias: $ncpi_datatypes = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types
 Alias: $ucum = http://unitsofmeasure.org
