@@ -44,10 +44,10 @@ Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
 Alias: $supporting-info = http://fhir.ncpi-project-forge.io/StructureDefinition/SupportingInfo
 Alias: $ExampleStudyDatasetCS = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1
 Alias: $ExampleStudyTableCS = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1
-Alias: $ExampleStudyTableVS = http://example.org/my-dataset/fhir/valueset/demographics-table
-Alias: $ExampleDDCaseControlVS1 = http://example.org/my-dataset/fhir/valueset/case-control
-Alias: $ExampleStudyPublicMappingsVS = http://example.org/my-dataset/fhir/valueset/study-public-mappings
-Alias: $ExampleDataDictionaryCaseControlVS1 = http://example.org/my-dataset/fhir/valueset/case-control
+Alias: $ExampleStudyTableVS = https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1
+Alias: $ExampleDataDictionaryCaseControlVS1 = https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1
+Alias: $ExampleStudyPublicMappingsVS = https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1
+
 // CodeSystem
 Alias: $hpo = http://purl.obolibrary.org/obo/hp.owl
 Alias: $omim = https://omim.org/
@@ -60,6 +60,6 @@ Alias: $loinc-answer-codes = http://fhir.ncpi-project-forge.io/ValueSet/loinc-an
 Alias: $condition-interitanc-codes = http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs
 
 // NCPI Observations
-Alias: $ncpi = https://nih-ncpi.github.io/ncpi-fhir-ig
+Alias: $ncpi = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi
 Alias: $ncpi_datatypes = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types
 Alias: $ucum = http://unitsofmeasure.org

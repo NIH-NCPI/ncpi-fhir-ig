@@ -11,6 +11,7 @@ Description: "These codes are currently 'TBD-LOINC' codes. The CG WG is requesti
 * ^contact[0].telecom[0].value = "http://www.hl7.org/Special/committees/clingenomics"
 * ^jurisdiction[0] = $m49.htm#001
 * ^content = #complete
+* ^experimental = true
 * ^count = 18
 * #grouper "grouper" "A means to bundle several observations such as one would find in a genetics test panel."
 * #mode-of-inheritance "mode-of-inheritance" "This is actually LOINC code 79742-3. And the IG will be updated"
