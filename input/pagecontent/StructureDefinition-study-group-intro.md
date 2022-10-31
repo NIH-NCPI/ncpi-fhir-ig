@@ -1,5 +1,4 @@
 
-
 While there can be more than one StudyGroup per study, there **must** be one group representing the entire study enrollment. Patients can be members of more than one StudyGroup.
 
 ### Added Profile Restrictions

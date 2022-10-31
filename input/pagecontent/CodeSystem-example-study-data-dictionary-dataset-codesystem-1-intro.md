@@ -1,0 +1,1 @@
+The dataset CodeSystem enumerates each table that makes up the dataset. The codes from this CodeSystem can be used to refer back to individual tables for those resources where that makes sense (such as the StudyDataDictionaryTable). 

@@ -1,5 +1,0 @@
-### Overview
-
-### Conventions
-
-### Relevant Artifacts
