@@ -42,6 +42,7 @@ menu:
     Research Study: research_study.html
     Study Metadata: study_metadata.html
     Study Summary: study_summary.html
+    Raw Data: raw_data.html
     Participant-level Data: participant.html
     Assays and File Data: files.html
     Generic Tabular Data: tabular.html
@@ -56,6 +57,7 @@ menu:
   Artifacts: 
     All Artifacts: artifacts.html
     Metadata Examples: example_study_metadata.html
+    Raw Data Examples: example_raw_data.html
   Support: 
     FHIR Spec: http://hl7.org/fhir/R4/index.html
     Downloads: downloads.html

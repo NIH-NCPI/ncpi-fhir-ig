@@ -26,6 +26,8 @@ Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $conceptMapEquivalence = http://hl7.org/fhir/concept-map-equivalence.html
 Alias: $administrativeGender = http://hl7.org/fhir/administrative-gender
+Alias: $encounterStatus = http://hl7.org/fhir/encounter-status
+Alias: $encounterClass = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
 Alias: $loinc = http://loinc.org
 Alias: $tbd-codes = http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes
@@ -48,6 +50,8 @@ Alias: $ExampleStudyTableCS = http://example.org/my-dataset/fhir/codesystem/demo
 Alias: $ExampleStudyTableVS = http://example.org/my-dataset/fhir/valueset/demographics-table
 Alias: $ExampleDDCaseControlVS1 = http://example.org/my-dataset/fhir/valueset/case-control
 Alias: $ExampleStudyPublicMappingsVS = http://example.org/my-dataset/fhir/valueset/study-public-mappings
+
+Alias: $ResearchEncounterClassCS = http://example.org/my-dataset/fhir/codesystem/research-encounter-class
 
 // CodeSystem
 Alias: $hpo = http://purl.obolibrary.org/obo/hp.owl
