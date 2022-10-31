@@ -85,3 +85,12 @@ For our uses here, if the healthcare system successfully integrates FHIR, resear
 There are likely to be some challenges still in that many of the organizations doing research on EHR data have worked hard to provide supplementary mappings and knowledge into the EHR data extracts. For example, historic laboratory measures may not have standard LOINC codes attached, making semantic interoperability more of a challenge. However, the scope and challenges here have not been well assessed, and presumably data quality will improve over time as these approaches become more standard.
 
 This IG will mainly serve to provide the ResearchStudy and ResearchSubject resource layer on top of the EHR data as collected. Additional work may need to be done to address the challenges of EHR data interoperability and consistency, but this is within the bounds of any other type of study data.
+
+### Representation of Raw Data 
+There are a number of reasons to support representing raw data in FHIR whether or not it is expected that the data will be fully transformed to meet the appropriate FHIR representation for interoperable data. These include:
+
+* Provide FHIR access for data where there isn't funding to properly transform it to meet the interoperable model.
+* Provide access to all data even if there are items that currently don't fit any of the current FHIR models in use. 
+* Provide data provenance for all of the transformed data using the same API, FHIR as opposed to requiring researchers to step outside FHIR and attempt to trace the origins back to those original data sources. 
+
+For more information, see the [detailed description](use_case_raw_data.html).
