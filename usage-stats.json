@@ -20,8 +20,12 @@
     ],
     "Observation": [
       {
-        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship",
-        "title": "NCPI Family Relationship"
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-summary",
+        "title": "Study Summary"
+      },
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary",
+        "title": "Study Variable Summary"
       }
     ],
     "DocumentReference": [
@@ -44,6 +48,24 @@
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
         "title": "Research Task"
+      }
+    ],
+    "ConceptMap": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony",
+        "title": "NCPI Data Dictionary Harmony"
+      }
+    ],
+    "ActivityDefinition": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table",
+        "title": "NCPI Study Data Dictionary Data Table"
+      }
+    ],
+    "ObservationDefinition": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable",
+        "title": "NCPI Study Data Dictionary Data Variable"
       }
     ],
     "Group": [

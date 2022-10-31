@@ -3,15 +3,15 @@
   "id": "ncpi",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Consortium<a name=\"ncpi-Consortium\"> </a></td><td>Study Consortium</td></tr><tr><td style=\"white-space:nowrap\">StudyCohort<a name=\"ncpi-StudyCohort\"> </a></td><td>Study Cohort</td></tr><tr><td style=\"white-space:nowrap\">ConsentGroup<a name=\"ncpi-ConsentGroup\"> </a></td><td>Study Consent Group</td></tr><tr><td style=\"white-space:nowrap\">Summary<a name=\"ncpi-Summary\"> </a></td><td>Summary Data</td></tr><tr><td style=\"white-space:nowrap\">CohortCount<a name=\"ncpi-CohortCount\"> </a></td><td>Number of Cohorts</td></tr><tr><td style=\"white-space:nowrap\">SampleCount<a name=\"ncpi-SampleCount\"> </a></td><td>Number of Samples</td></tr><tr><td style=\"white-space:nowrap\">Participant<a name=\"ncpi-Participant\"> </a></td><td>Number of Participants</td></tr><tr><td style=\"white-space:nowrap\">StorageSize<a name=\"ncpi-StorageSize\"> </a></td><td>Size on Disk</td></tr><tr><td style=\"white-space:nowrap\">ConsentCodes<a name=\"ncpi-ConsentCodes\"> </a></td><td>Consent Codes</td></tr><tr><td style=\"white-space:nowrap\">TerraWorkspace<a name=\"ncpi-TerraWorkspace\"> </a></td><td>Terra Workspace Name</td></tr><tr><td style=\"white-space:nowrap\">PrimaryDisease<a name=\"ncpi-PrimaryDisease\"> </a></td><td>Primary Disease</td></tr><tr><td style=\"white-space:nowrap\">AccessType<a name=\"ncpi-AccessType\"> </a></td><td>Access Type</td></tr><tr><td style=\"white-space:nowrap\">StudyDesign<a name=\"ncpi-StudyDesign\"> </a></td><td>Study Design</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Consortium<a name=\"ncpi-Consortium\"> </a></td><td>Study Consortium</td></tr><tr><td style=\"white-space:nowrap\">StudyCohort<a name=\"ncpi-StudyCohort\"> </a></td><td>Study Cohort</td></tr><tr><td style=\"white-space:nowrap\">ConsentGroup<a name=\"ncpi-ConsentGroup\"> </a></td><td>Study Consent Group</td></tr><tr><td style=\"white-space:nowrap\">Summary<a name=\"ncpi-Summary\"> </a></td><td>Summary Data</td></tr><tr><td style=\"white-space:nowrap\">CohortCount<a name=\"ncpi-CohortCount\"> </a></td><td>Number of cohorts that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">SubStudyCount<a name=\"ncpi-SubStudyCount\"> </a></td><td>Number of sub-studies that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">SampleCount<a name=\"ncpi-SampleCount\"> </a></td><td>Number of samples that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">Participant<a name=\"ncpi-Participant\"> </a></td><td>Number of participants that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">VariableCount<a name=\"ncpi-VariableCount\"> </a></td><td>Number of variables that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">AnalysesCount<a name=\"ncpi-AnalysesCount\"> </a></td><td>Number of analyses that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">MolecularDatasetCount<a name=\"ncpi-MolecularDatasetCount\"> </a></td><td>Number of molecular datasets that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">PhenotypeDatasetCount<a name=\"ncpi-PhenotypeDatasetCount\"> </a></td><td>Number of phenotype datasets that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">StorageSize<a name=\"ncpi-StorageSize\"> </a></td><td>Size on Disk</td></tr><tr><td style=\"white-space:nowrap\">ConsentCodes<a name=\"ncpi-ConsentCodes\"> </a></td><td>Consent Codes</td></tr><tr><td style=\"white-space:nowrap\">TerraWorkspace<a name=\"ncpi-TerraWorkspace\"> </a></td><td>Terra Workspace Name</td></tr><tr><td style=\"white-space:nowrap\">PrimaryDisease<a name=\"ncpi-PrimaryDisease\"> </a></td><td>Primary Disease</td></tr><tr><td style=\"white-space:nowrap\">AccessType<a name=\"ncpi-AccessType\"> </a></td><td>Access Type</td></tr><tr><td style=\"white-space:nowrap\">StudyDesign<a name=\"ncpi-StudyDesign\"> </a></td><td>Study Design</td></tr></table></div>"
   },
-  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi",
   "version": "0.2.0",
   "name": "Ncpi",
   "title": "NCPI FHIR Codes",
   "status": "active",
   "experimental": false,
-  "date": "2022-10-11T14:47:05+00:00",
+  "date": "2022-10-31T22:46:37+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -55,15 +55,35 @@
     },
     {
       "code": "CohortCount",
-      "display": "Number of Cohorts"
+      "display": "Number of cohorts that are part of this study"
+    },
+    {
+      "code": "SubStudyCount",
+      "display": "Number of sub-studies that are part of this study"
     },
     {
       "code": "SampleCount",
-      "display": "Number of Samples"
+      "display": "Number of samples that are part of this study"
     },
     {
       "code": "Participant",
-      "display": "Number of Participants"
+      "display": "Number of participants that are part of this study"
+    },
+    {
+      "code": "VariableCount",
+      "display": "Number of variables that are part of this study"
+    },
+    {
+      "code": "AnalysesCount",
+      "display": "Number of analyses that are part of this study"
+    },
+    {
+      "code": "MolecularDatasetCount",
+      "display": "Number of molecular datasets that are part of this study"
+    },
+    {
+      "code": "PhenotypeDatasetCount",
+      "display": "Number of phenotype datasets that are part of this study"
     },
     {
       "code": "StorageSize",

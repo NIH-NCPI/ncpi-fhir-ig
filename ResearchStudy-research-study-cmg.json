@@ -18,7 +18,7 @@
     {
       "coding": [
         {
-          "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+          "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi",
           "code": "Consortium",
           "display": "Study Consortium"
         }

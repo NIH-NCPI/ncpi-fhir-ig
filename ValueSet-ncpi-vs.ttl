@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "ncpi-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncpi.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncpi-data-types.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncpi.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncpi-data-types.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs"];
   fhir:ValueSet.version [ fhir:value "0.2.0"];
   fhir:ValueSet.name [ fhir:value "Ncpi_VS"];
   fhir:ValueSet.title [ fhir:value "NCPI FHIR Codes"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-10-11T14:47:05+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-10-31T22:46:37+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -41,10 +41,10 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi" ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types" ]
      ]
   ] .
 

@@ -16,7 +16,7 @@
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig" ];
+       fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi" ];
        fhir:Coding.code [ fhir:value "Summary" ];
        fhir:Coding.display [ fhir:value "Variable Summary" ]
      ]
@@ -31,7 +31,7 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig" ];
+         fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi" ];
          fhir:Coding.code [ fhir:value "SampleCount" ];
          fhir:Coding.display [ fhir:value "Number of Samples" ]
        ]
@@ -42,7 +42,7 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig" ];
+         fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi" ];
          fhir:Coding.code [ fhir:value "Participant" ];
          fhir:Coding.display [ fhir:value "Number of Participants" ]
        ]

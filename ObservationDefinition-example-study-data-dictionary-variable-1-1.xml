@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+  <id value="example-study-data-dictionary-variable-1-1"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ObservationDefinition</b><a name="example-study-data-dictionary-variable-1-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ObservationDefinition "example-study-data-dictionary-variable-1-1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-study-data-dictionary-variable.html">NCPI Study Data Dictionary Data Variable</a></p></div><p><b>code</b>: Subject's Unique Identifier <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html">Datatable CodeSystem (lists all variables)</a>#subjectid)</span></p><p><b>permittedDataType</b>: string</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+      <code value="subjectid"/>
+    </coding>
+  </code>
+  <permittedDataType value="string"/>
+</ObservationDefinition>

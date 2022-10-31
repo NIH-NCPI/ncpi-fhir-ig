@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DRSAttachment"];
   fhir:StructureDefinition.title [ fhir:value "DRS Attachment"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-11T14:47:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-10-31T22:46:37+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

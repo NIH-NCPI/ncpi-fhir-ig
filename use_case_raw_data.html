@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>NCPI-FHIR-IMPLEMENTATION-GUIDE\Use Case Raw Data - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"25"}
+    h3,h4,h5,h6{--heading-prefix:"25"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">NCPI FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ncpi.html">NCPI</a>
+      </li>
+      <li>
+        <a href="ig_versioning.html">Profile Versioning</a>
+      </li>
+      <li>
+        <a href="FHIR_Basics.html">FHIR Basics</a>
+      </li>
+      <li>
+        <a href="authors.html">Authors</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modules
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="modular_ig.html">Modular IG Overview</a>
+      </li>
+      <li>
+        <a href="research_study.html">Research Study</a>
+      </li>
+      <li>
+        <a href="study_metadata.html">Study Metadata</a>
+      </li>
+      <li><a name="l211">​</a>
+        <a href="study_summary.html">Study Summary</a>
+      </li>
+      <li><a name="l217">​</a>
+        <a href="raw_data.html">Raw Data</a>
+      </li>
+      <li>
+        <a href="participant.html">Participant-level Data</a>
+      </li>
+      <li>
+        <a href="files.html">Assays and File Data</a>
+      </li>
+      <li>
+        <a href="tabular.html">Generic Tabular Data</a>
+      </li>
+      <li>
+        <a href="family.html">Family Relationships</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Case Guides
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="finding_a_research_study.html">Finding a Research Study</a>
+      </li>
+      <li>
+        <a href="performing_a_genomic_analysis.html">Genomic Analysis</a>
+      </li>
+      <li>
+        <a href="rare_disease.html">Rare Disease</a>
+      </li>
+      <li>
+        <a href="childhood_cancer.html">Childhood Cancer</a>
+      </li>
+      <li>
+        <a href="using_source_data.html">Using "Source" Data</a>
+      </li>
+      <li>
+        <a href="ehr.html">EHR Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li>
+        <a href="example_study_metadata.html">Metadata Examples</a>
+      </li>
+      <li>
+        <a href="example_raw_data.html">Raw Data Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Use Case Raw Data</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">NCPI FHIR Implementation Guide - Local Development build (v0.2.0). See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Use Case Raw Data</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h3 id="representing-raw-data-in-fhir">Representing Raw Data in FHIR</h3>
+<p>There are a number of reasons to support representing raw data in FHIR whether or not it is expected that the data will be fully transformed to meet the appropriate FHIR representation for interoperable data. These include:</p>
+
+<ul>
+  <li>Provide FHIR access for data where there isn’t funding to properly transform it to meet the interoperable model.</li>
+  <li>Provide access to all data even if there are items that currently don’t fit any of the current FHIR models in use.</li>
+  <li>Provide data provenance for all of the transformed data using the same API, FHIR as opposed to requiring researchers to step outside FHIR and attempt to trace the origins back to those original data sources.</li>
+</ul>
+
+<h4 id="raw-data-as-observations-with-components">Raw Data as Observations (with components)</h4>
+<p><img src="raw-data-as-observations.png" width="100%" alt="Raw Data as Observations"/>
+FHIR Observations are rich resource structures that provide a direct link to a <em>subject</em>, which can be a Patient or a group of Patients) and an optional <em>focus</em> which can point to any other resource. There is also the possibility to link the observation to an <em>encounter</em>. Each observation can have 0 or more <em>component</em> entries.</p>
+
+<h5 id="component-composition">Component Composition</h5>
+<p>Components can contain only a small number of properties of which we’ll use only a few.</p>
+
+<ul>
+  <li>Code - The code associated with each component <em>MUST</em> be the corresponding code associated with that column from the table’s data-dictionary <em>CodeSystem</em>. This is how consumers will be able to identify what each component represents.</li>
+  <li>value[x] - The data-dictionary for each table should describe the type of each of the columns. This can be exploited to provide baseline casting when storing the column’s contents into FHIR. As such, a column noted as being an integer, will be represented as a <em>valueInteger</em>, while a column with a list of possible values will be a <em>valueCodeableConcept</em>. It should be noted that, while “decimal” values will be represented as <em>valueQuantity</em>, those will only have a unit if the data-dictionary is defined to provide this (currently not supported by NCPI Whistler, but can be added in the future). For quantities whose unit is expressed in a separate column, those should not be expected to ever get linked together except by an end user.</li>
+</ul>
+
+<h5 id="subject">Subject</h5>
+<p>In general, each row will always refer to a single subject. This is true even for rows that describe something like a sample which may have been extracted from a subject–ultimately, one can trace that sample back to the original source, which would be the subject. The <em>Observation’s</em> subject property is a reference, which we’ll assume will point to the appropriate <em>Patient</em> resource.</p>
+
+<p>Having a subject present for these resources makes it possible for FHIR users to collect all of the raw data for a given patient.</p>
+
+<p>When attempting to automate the construction of these resources, it is possible that the actual subject’s ID will not be present in the table. For instance, we have received files where the patient’s ID was able to extracted from the sample ID, so only the sample ID was provided. For these scenarios, NCPI whistler is not able to link those rows back to the patient.</p>
+
+<h5 id="advantages-of-observations-with-components">Advantages of Observations with Components</h5>
+<p>There are a number of advantages of using Observations with components to represent raw data:</p>
+
+<ul>
+  <li>Keeping the entire row together makes it much easier for the consumer to establish relationships between any given column and those on the same row. If the columns of a table were considered to be semantically related by those providing the data to be loaded, then their relationship is not lost during, at least, not at the raw level.</li>
+  <li>Components are searchable by default in the current version of FHIR.</li>
+  <li>Data representation is flexible due to the value[x]. The type can be defined by the type in the data dictionary as well as typing on the fly (such as assigning a code for NaN in place of a numeric when the value is “NA”, or possibly capturing numeric fields as strings when they have characters like “&lt;” in them.)</li>
+  <li>Easy to automate given an accurate and complete data-dictionary that matches the expectations of the author of the tools used to generate the resources.</li>
+</ul>
+
+<h5 id="future-considerations">Future Considerations</h5>
+<p>Beyond linking back to the subject, it is possible that we might want to link back to slightly more specific resources as well.</p>
+
+<p>It should be noted that NCPI Whistler does not support either of these and there may not be plans to support them in the future.</p>
+
+<h6 id="specimen-vcf-etc">Specimen, VCF, etc</h6>
+<p>For data like a file that contains data related specifically to a sample or is the result of processing done on a VCF, it is reasonable to suggest one could link a given row back to the original source. For samples, this would mean that, in addition to having a valid <em>subject</em>, the <em>focus</em> could point back to the appropriate <em>Specimen</em> resource. Out from a process run, may have a <em>focus</em> that points either to the <em>DocumentReference</em> or possible the <em>Task</em> related to the data’s origins.</p>
+
+<p>In the case of many task related output, there may not really be a single <em>Patient</em>. In these cases, <em>subject</em> may point to a <em>group</em> of <em>Patients</em> or just be missing altogether.</p>
+
+<h6 id="encounters">Encounters</h6>
+<p>For some data tables, it is easy to imagine they are describing the outcome of a single encounter which will be realized by during a transformation. It seems reasonable that such a relationship could be captured for these resources.</p>
+
+<h4 id="raw-data-as-questionnaires-and-questionnaireresponses">Raw Data as Questionnaires and QuestionnaireResponses</h4>
+<p><img src="raw-data-as-questionnaires.png" width="100%" alt="Raw Data as Questionnaires"/>
+FHIR R4 natively provides 2 resources to support survey instruments in FHIR along with their responses: <em>Questionnaire</em> and <em>QuestionnaireResponse</em>. These are rich resources intended to support the types of surveys that may be used during routine medical care. As a result, these fit nicely alongside our objectives for capturing raw research data.</p>
+
+<p>There are two components to this model:</p>
+<h5 id="questionnaire">Questionnaire</h5>
+<p>Each questionnaire will represent the “blue print” associated with a single dataset table where each of the table’s columns are represented as individual <em>items</em>. Each of these <em>items</em> has a single <em>type</em> property which defines the actual type of data that is expected from the matching responses. A string property, <em>linkId</em>, is used to differentiate each column in a given Questionnaire from the others. For items of type, <em>choice</em>, an additional property, <em>answerValueSet</em>, is used to define a list of codes which can be assigned in the responses.</p>
+
+<p>For the code, we can link back to the data-dictionary’s entry for the table in the dataset CodeSystem.</p>
+
+<p>Each Questionnaire must have a unique URL.</p>
+
+<h5 id="questionnaireresponse">QuestionnaireResponse</h5>
+<p>Each response represents a single row from the table their corresponding Questionnaire represents. The response refers back to the questionnaire by way of providing the property, <em>questionnaire</em>, the value from the corresponding Questionnaire’s <em>url</em> property.</p>
+
+<p>Each item must have a linkId that matches one of the linkIds from the Questionnaire and their valueX must correspond to the type specified by the item’s <em>type</em> definition. This will fail during FHIR validation if the data type is not what the Questionnaire specified it should be.</p>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 22:46+0000">2022-10-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

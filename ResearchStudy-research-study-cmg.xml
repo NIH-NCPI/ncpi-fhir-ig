@@ -14,7 +14,7 @@
   </primaryPurposeType>
   <category>
     <coding>
-      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"/>
       <code value="Consortium"/>
       <display value="Study Consortium"/>
     </coding>

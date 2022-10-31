@@ -17,6 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "TbdCodes"];
   fhir:CodeSystem.title [ fhir:value "ToBeDeterminedCodes ('TbdCodes')"];
   fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.date [ fhir:value "2020-11-12T19:37:28+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:CodeSystem.contact [

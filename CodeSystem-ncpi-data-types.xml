@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="ncpi-data-types"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</code> defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Exome<a name="ncpi-data-types-Exome"> </a></td><td>Exome Sequence Data</td></tr><tr><td style="white-space:nowrap">WholeGenome<a name="ncpi-data-types-WholeGenome"> </a></td><td>Whole Genome Sequence Data</td></tr><tr><td style="white-space:nowrap">GWAS<a name="ncpi-data-types-GWAS"> </a></td><td>Genome-Wide Association Studies</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types</code> defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Exome<a name="ncpi-data-types-Exome"> </a></td><td>Exome Sequence Data</td></tr><tr><td style="white-space:nowrap">WholeGenome<a name="ncpi-data-types-WholeGenome"> </a></td><td>Whole Genome Sequence Data</td></tr><tr><td style="white-space:nowrap">GWAS<a name="ncpi-data-types-GWAS"> </a></td><td>Genome-Wide Association Studies</td></tr></table></div>
   </text>
-  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes"/>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types"/>
   <version value="0.2.0"/>
   <name value="NcpiDataTypes"/>
   <title value="Data Types for NCPI Research"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-10-11T14:47:05+00:00"/>
+  <date value="2022-10-31T22:46:37+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>

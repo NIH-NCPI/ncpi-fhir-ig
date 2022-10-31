@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "NCPIFHIRImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "NCPI FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-11T14:47:05+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-31T22:46:37+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -93,11 +93,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+         fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -109,11 +109,23 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
        fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -125,7 +137,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -137,7 +149,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -149,7 +161,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -161,7 +173,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -173,7 +185,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -185,7 +197,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -197,7 +209,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -209,7 +221,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -221,7 +233,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -233,7 +245,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -245,7 +257,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -257,7 +269,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -269,7 +281,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -281,7 +293,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -293,7 +305,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -305,7 +317,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -317,11 +329,311 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
          fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
@@ -421,6 +733,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/raw-data-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/raw-data-observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Raw Data Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Representation for a row of data from one of the dataset's tables." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ncpi-research-document-reference" ]
        ];
@@ -428,7 +754,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A FHIR Document Reference created by an analysis task. Context.related = Task " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -442,7 +768,49 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A FHIR analysis task that takes at least one specimen as input and produces at least one document." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/study-data-dictionary-harmony" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI Data Dictionary Harmony" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Based on the FHIR resource type, ConceptMap, the StudyDataDictionaryHarmony resource provides insight into the transformations made during the ETL from source data into FHIR allowing clients to use the $translate function to discover all of the public codes that were mapped from one of the study's actual vocabulary." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/study-data-dictionary-table" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI Study Data Dictionary Data Table" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Aggregates Variable Details associated with a single dataset table that are represented in FHIR as as list of references to StudyDataDictionaryVariables in the *observationResultRequirement* property." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/study-data-dictionary-variable" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI Study Data Dictionary Data Variable" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "FHIR profile used to describe single variable from the dataset. This resource should be as complete as possible including details such as *description*, *data-type*, *permitted enumerations*, *quantity units*, etc." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -456,7 +824,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-summary>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/study-summary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Study Summary" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation containing summary information about a study in it's entirety or one of it's subpopulations." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/study-variable-summary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Study Variable Summary" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An observation containing summary data associated with research data from FHIR." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -470,7 +866,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Additional information relevant to interpreting/understanding the report." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -484,7 +880,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Set for specific ttransmission patterns of a condition in a pedigree" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -498,7 +894,49 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1>;
+         fhir:Reference.reference [ fhir:value "ValueSet/example-study-data-dictionary-case-control-vs-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Case/Control Vars for 'status' categoricals" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example ValueSet listing all possible 'values' from the Case/Control variable." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1>;
+         fhir:Reference.reference [ fhir:value "ValueSet/datatable-mappings-valueset-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Harmonized ValueSet for data table" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Public codes mapped from example dataset\n\nThe codes used below were chosen purely for example's sake and are in no way an endorsement or suggestion for terms that should be used in a real data-dictionary." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1>;
+         fhir:Reference.reference [ fhir:value "ValueSet/datatable-valueset-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Table ValueSet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Data Table with 4 variables" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -512,7 +950,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC ANSWERS used by NCPI resources" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -526,7 +964,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes that would apply to NCPI projects" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -540,7 +978,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set includes all codes from Human Phenotype Ontology." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -554,7 +992,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set includes all TBD Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -568,7 +1006,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A set of terms that describe the transmission pattern of a condition in a pedigree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/example-study-data-dictionary-dataset-codesystem-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dataset CodeSystem (lists all tables)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example CodeSystem for a data-dictionary dataset with only 1 table." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/example-study-data-dictionary-datatable-codesystem-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Datatable CodeSystem (lists all variables)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example CodeSystem for a data-dictionary table with 4 variables represented as codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -582,7 +1048,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Please see license of HPO at http://www.human-phenotype-ontology.org" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -596,7 +1062,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.\n\nHGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX|1|CWE|48004-6^DNA Sequence Variation^LN||c.1129C>T^^HGVS|\n\nVersioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007\n\nHGVS nomenclatures can be used freely by the public." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -610,7 +1076,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC ANSWERS used by NCPI resources" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -624,7 +1090,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the latin word 'mundus' and means 'for the world.'" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -638,7 +1104,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -652,7 +1118,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes that would apply to NCPI projects" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -666,7 +1132,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data Types for NCPI Research" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -680,7 +1146,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An online database that describes the function and phenotypes associated with human genes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -694,7 +1160,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "These codes are currently 'TBD-LOINC' codes. The CG WG is requesting formal LOINC codes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -708,7 +1174,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Summary detail for Center for Mendelian Genomics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -722,7 +1188,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -736,7 +1202,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example representation of a known variant found during genetic testing" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -750,7 +1216,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a DiagnosticReport which aggregates genetic findings for a given test or run" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -767,7 +1233,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -784,7 +1250,216 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Encounter/example-encounter-study-01-patient-01>;
+         fhir:Reference.reference [ fhir:value "Encounter/example-encounter-study-01-patient-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Encounter Study 01 Patient 01" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example encounter for use with raw data to help tie different rows associated with the same event together." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/example-observation-data-row-1>;
+         fhir:Reference.reference [ fhir:value "Observation/example-observation-data-row-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of Raw Data" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Observation representing a single row of raw data from an single data table." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Questionnaire/example-questionnaire-demographics-1>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/example-questionnaire-demographics-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of a Questionnaire to Represent Raw Data" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Questionnaire that is used to describe the individual rows of data that are to be stored as QuestionnaireResponses" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/QuestionnaireResponse/example-questionnaire-demographics-response-1>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/example-questionnaire-demographics-response-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example of a QuestionnaireResponse to Represent Raw Data" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Single row of data represented in FHIR as a QuestionnaireResponse" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ConceptMap/example-study-data-dictionary-conceptmap-1>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/example-study-data-dictionary-conceptmap-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Concept Map showing representing harmonization mappings" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Data Harmonization for example dataset" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony>
+       ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ActivityDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ActivityDefinition/example-study-data-dictionary-table-1>;
+         fhir:Reference.reference [ fhir:value "ActivityDefinition/example-study-data-dictionary-table-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data-Dictionary Table" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Study Data Dictionary Data Table definition" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table>
+       ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-1>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/example-study-data-dictionary-variable-1-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Study Data Dictionary Variable subjectid" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Participant's Unique Identifier (example of simple variable)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>
+       ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-2>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/example-study-data-dictionary-variable-1-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Study Data Dictionary Variable gender" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's gender" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>
+       ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-3>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/example-study-data-dictionary-variable-1-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Study Data Dictionary Variable age_at_enrollment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's Age at Enrollment (Example with a range of 30-40 years of age)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>
+       ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-4>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/example-study-data-dictionary-variable-1-4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Study Data Dictionary Variable bmi" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's BMI at Enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>
+       ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-5>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/example-study-data-dictionary-variable-1-5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data Dictionary Variable status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's Case/Control Status" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>
+       ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/example-study-summary-gender>;
+         fhir:Reference.reference [ fhir:value "Observation/example-study-summary-gender" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Variable Summary with categories (gender)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary>
+       ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Group" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Group/example-summary-group-1>;
+         fhir:Reference.reference [ fhir:value "Group/example-summary-group-1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Group used for Summary Results" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Just an example group for demonstrational purposes" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group";
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group>
+       ]
+     ], [
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -801,7 +1476,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -818,7 +1493,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -835,7 +1510,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -852,7 +1527,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
        ]
      ], [
-       fhir:index 36;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -869,7 +1544,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -886,7 +1561,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -900,7 +1575,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient from study 01" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -914,7 +1589,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient from study 02" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 40;
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/ncpi-research-study-01-specimen-01>;
+         fhir:Reference.reference [ fhir:value "Specimen/ncpi-research-study-01-specimen-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NCPI Research Study 01 Specimen 01" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example Specimen used to indicate which sample a row of raw data is associated with." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -928,7 +1617,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Organization." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 41;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -942,7 +1631,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 42;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -956,7 +1645,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -970,7 +1659,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -987,7 +1676,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype>
        ]
      ], [
-       fhir:index 45;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1001,7 +1690,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Practitioner." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 46;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1015,7 +1704,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Practitioner Role." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 47;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1032,7 +1721,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference>
        ]
      ], [
-       fhir:index 48;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1046,7 +1735,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Center for Mendelian Genomics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 49;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1060,7 +1749,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Study." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 50;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1074,7 +1763,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Baylor Hopkins Center for Mendelian Genomics (BH CMG)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 51;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1088,7 +1777,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 52;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1102,7 +1791,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 53;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1116,7 +1805,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1130,7 +1819,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example representation of a research subject" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1144,7 +1833,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example representation of a research subject" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 56;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1158,7 +1847,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Specimen." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 57;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1172,7 +1861,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Task." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 58;
+       fhir:index 83;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1189,7 +1878,7 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task>
        ]
      ], [
-       fhir:index 59;
+       fhir:index 84;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1287,13 +1976,33 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "example_raw_data.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example_raw_data.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Example Raw Data" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 8;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "example_study_metadata.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "example_study_metadata.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Example Study Metadata" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 9;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
            fhir:Extension.valueUrl [ fhir:value "family.html" ]
          ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "family.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Family" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 8;
+         fhir:index 10;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1303,7 +2012,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "FHIR Basics" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 9;
+         fhir:index 11;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1313,7 +2022,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Files" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 10;
+         fhir:index 12;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1323,7 +2032,17 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Finding a Research Study" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 11;
+         fhir:index 13;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "harmonization.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "harmonization.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Harmonization" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 14;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1333,7 +2052,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Ig Versioning" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 12;
+         fhir:index 15;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1343,7 +2062,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Modular Ig" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 13;
+         fhir:index 16;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1353,7 +2072,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Ncpi" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 14;
+         fhir:index 17;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1363,7 +2082,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Participant" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 15;
+         fhir:index 18;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1373,7 +2092,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Performing a Genomic Analysis" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 16;
+         fhir:index 19;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1383,7 +2102,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Rare Disease" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 17;
+         fhir:index 20;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1393,7 +2112,17 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Research Study" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 18;
+         fhir:index 21;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "StructureDefinition-study-data-dictionary-variable-note.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-study-data-dictionary-variable-note.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Structure Definition Study Data Dictionary Variable Note" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 22;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1403,17 +2132,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Study Metadata" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 19;
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
-           fhir:Extension.valueUrl [ fhir:value "study_summary.html" ]
-         ];
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "study_summary.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Study Summary" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 20;
+         fhir:index 23;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1423,7 +2142,17 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Tabular" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 21;
+         fhir:index 24;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "use_case_raw_data.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use_case_raw_data.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case Raw Data" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 25;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -1433,7 +2162,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 22;
+         fhir:index 26;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];

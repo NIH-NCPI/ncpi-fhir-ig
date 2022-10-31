@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-2> a fhir:ObservationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-study-data-dictionary-variable-1-2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable";
+       fhir:index 0;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b><a name=\"example-study-data-dictionary-variable-1-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ObservationDefinition \"example-study-data-dictionary-variable-1-2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-study-data-dictionary-variable.html\">NCPI Study Data Dictionary Data Variable</a></p></div><p><b>code</b>: Gender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#gender)</span></p><p><b>permittedDataType</b>: CodeableConcept</p><p><b>validCodedValueSet</b>: <a href=\"http://hl7.org/fhir/ValueSet/administrative-gender\">http://hl7.org/fhir/ValueSet/administrative-gender</a> \"AdministrativeGender\"</p></div>"
+  ];
+  fhir:ObservationDefinition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1" ];
+       fhir:Coding.code [ fhir:value "gender" ]
+     ]
+  ];
+  fhir:ObservationDefinition.permittedDataType [
+     fhir:value "CodeableConcept";
+     fhir:index 0
+  ];
+  fhir:ObservationDefinition.validCodedValueSet [
+     fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender>;
+     fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/administrative-gender" ]
+  ] .
+
+<http://hl7.org/fhir/ValueSet/administrative-gender> a fhir:ValueSet .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -17,7 +17,7 @@
   </primaryPurposeType>
   <category>
     <coding>
-      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"/>
       <code value="StudyCohort"/>
       <display value="Study Cohort"/>
     </coding>

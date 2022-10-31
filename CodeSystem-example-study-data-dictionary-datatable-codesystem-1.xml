@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="example-study-data-dictionary-datatable-codesystem-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">subjectid<a name="example-study-data-dictionary-datatable-codesystem-1-subjectid"> </a></td><td>Subject's Unique Identifier</td></tr><tr><td style="white-space:nowrap">gender<a name="example-study-data-dictionary-datatable-codesystem-1-gender"> </a></td><td>Gender</td></tr><tr><td style="white-space:nowrap">age_at_enrollment<a name="example-study-data-dictionary-datatable-codesystem-1-age_at_enrollment"> </a></td><td>Subject's Age at Enrollment in days</td></tr><tr><td style="white-space:nowrap">bmi<a name="example-study-data-dictionary-datatable-codesystem-1-bmi"> </a></td><td>Subject's BMI, Measured at Enrollment</td></tr><tr><td style="white-space:nowrap">status<a name="example-study-data-dictionary-datatable-codesystem-1-status"> </a></td><td>Subject's status (Case or Control)</td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+  <version value="0.2.0"/>
+  <name value="ExampleStudyDataDictionaryStudyTableCS1"/>
+  <title value="Datatable CodeSystem (lists all variables)"/>
+  <status value="active"/>
+  <date value="2022-10-31T22:46:37+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-ncpi"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Example CodeSystem for a data-dictionary table with 4 variables represented as codes."/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="subjectid"/>
+    <display value="Subject's Unique Identifier"/>
+  </concept>
+  <concept>
+    <code value="gender"/>
+    <display value="Gender"/>
+  </concept>
+  <concept>
+    <code value="age_at_enrollment"/>
+    <display value="Subject's Age at Enrollment in days"/>
+  </concept>
+  <concept>
+    <code value="bmi"/>
+    <display value="Subject's BMI, Measured at Enrollment"/>
+  </concept>
+  <concept>
+    <code value="status"/>
+    <display value="Subject's status (Case or Control)"/>
+  </concept>
+</CodeSystem>

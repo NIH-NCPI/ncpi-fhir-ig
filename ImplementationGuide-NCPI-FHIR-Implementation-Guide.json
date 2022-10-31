@@ -10,7 +10,7 @@
   "name": "NCPIFHIRImplementationGuide",
   "title": "NCPI FHIR Implementation Guide",
   "status": "draft",
-  "date": "2022-10-11T14:47:05+00:00",
+  "date": "2022-10-31T22:46:37+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -77,6 +77,19 @@
           {
             "url": "value",
             "valueString": "ci-build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -340,6 +353,331 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "tabbed-snapshots"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2021+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "ci-build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "output"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "https://nih-ncpi.github.io/ncpi-fhir-ig/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "tabbed-snapshots"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -435,6 +773,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/raw-data-observation"
+        },
+        "name": "Raw Data Observation",
+        "description": "Representation for a row of data from one of the dataset's tables.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/ncpi-research-document-reference"
         },
         "name": "Research Document Reference",
@@ -463,10 +815,80 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/study-data-dictionary-harmony"
+        },
+        "name": "NCPI Data Dictionary Harmony",
+        "description": "Based on the FHIR resource type, ConceptMap, the StudyDataDictionaryHarmony resource provides insight into the transformations made during the ETL from source data into FHIR allowing clients to use the $translate function to discover all of the public codes that were mapped from one of the study's actual vocabulary.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/study-data-dictionary-table"
+        },
+        "name": "NCPI Study Data Dictionary Data Table",
+        "description": "Aggregates Variable Details associated with a single dataset table that are represented in FHIR as as list of references to StudyDataDictionaryVariables in the *observationResultRequirement* property.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/study-data-dictionary-variable"
+        },
+        "name": "NCPI Study Data Dictionary Data Variable",
+        "description": "FHIR profile used to describe single variable from the dataset. This resource should be as complete as possible including details such as *description*, *data-type*, *permitted enumerations*, *quantity units*, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/study-group"
         },
         "name": "NCPI Study Group",
         "description": "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/study-summary"
+        },
+        "name": "Study Summary",
+        "description": "An observation containing summary information about a study in it's entirety or one of it's subpopulations.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/study-variable-summary"
+        },
+        "name": "Study Variable Summary",
+        "description": "An observation containing summary data associated with research data from FHIR.",
         "exampleBoolean": false
       },
       {
@@ -509,6 +931,48 @@
         },
         "name": "Disease Codes",
         "description": "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/example-study-data-dictionary-case-control-vs-1"
+        },
+        "name": "Case/Control Vars for 'status' categoricals",
+        "description": "Example ValueSet listing all possible 'values' from the Case/Control variable.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/datatable-mappings-valueset-1"
+        },
+        "name": "Harmonized ValueSet for data table",
+        "description": "Public codes mapped from example dataset\n\nThe codes used below were chosen purely for example's sake and are in no way an endorsement or suggestion for terms that should be used in a real data-dictionary.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/datatable-valueset-1"
+        },
+        "name": "Table ValueSet",
+        "description": "Example Data Table with 4 variables",
         "exampleBoolean": false
       },
       {
@@ -579,6 +1043,34 @@
         },
         "name": "Condition Inheritance Pattern",
         "description": "A set of terms that describe the transmission pattern of a condition in a pedigree.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/example-study-data-dictionary-dataset-codesystem-1"
+        },
+        "name": "Dataset CodeSystem (lists all tables)",
+        "description": "Example CodeSystem for a data-dictionary dataset with only 1 table.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/example-study-data-dictionary-datatable-codesystem-1"
+        },
+        "name": "Datatable CodeSystem (lists all variables)",
+        "description": "Example CodeSystem for a data-dictionary table with 4 variables represented as codes.",
         "exampleBoolean": false
       },
       {
@@ -795,6 +1287,188 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/example-encounter-study-01-patient-01"
+        },
+        "name": "Example Encounter Study 01 Patient 01",
+        "description": "Example encounter for use with raw data to help tie different rows associated with the same event together.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-observation-data-row-1"
+        },
+        "name": "Example of Raw Data",
+        "description": "Example Observation representing a single row of raw data from an single data table.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/example-questionnaire-demographics-1"
+        },
+        "name": "Example of a Questionnaire to Represent Raw Data",
+        "description": "An example Questionnaire that is used to describe the individual rows of data that are to be stored as QuestionnaireResponses",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/example-questionnaire-demographics-response-1"
+        },
+        "name": "Example of a QuestionnaireResponse to Represent Raw Data",
+        "description": "A Single row of data represented in FHIR as a QuestionnaireResponse",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/example-study-data-dictionary-conceptmap-1"
+        },
+        "name": "Concept Map showing representing harmonization mappings",
+        "description": "Data Harmonization for example dataset",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ActivityDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ActivityDefinition/example-study-data-dictionary-table-1"
+        },
+        "name": "Data-Dictionary Table",
+        "description": "Example Study Data Dictionary Data Table definition",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/example-study-data-dictionary-variable-1-1"
+        },
+        "name": "Example Study Data Dictionary Variable subjectid",
+        "description": "Participant's Unique Identifier (example of simple variable)",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/example-study-data-dictionary-variable-1-2"
+        },
+        "name": "Example Study Data Dictionary Variable gender",
+        "description": "Subject's gender",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/example-study-data-dictionary-variable-1-3"
+        },
+        "name": "Example Study Data Dictionary Variable age_at_enrollment",
+        "description": "Subject's Age at Enrollment (Example with a range of 30-40 years of age)",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/example-study-data-dictionary-variable-1-4"
+        },
+        "name": "Example Study Data Dictionary Variable bmi",
+        "description": "Subject's BMI at Enrollment",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/example-study-data-dictionary-variable-1-5"
+        },
+        "name": "Data Dictionary Variable status",
+        "description": "Subject's Case/Control Status",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-study-summary-gender"
+        },
+        "name": "Example Variable Summary with categories (gender)",
+        "description": "Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Group"
+          }
+        ],
+        "reference": {
+          "reference": "Group/example-summary-group-1"
+        },
+        "name": "Example Group used for Summary Results",
+        "description": "Just an example group for demonstrational purposes",
+        "exampleCanonical": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -901,6 +1575,20 @@
         },
         "name": "ncpi-research-study-01-patient-02",
         "description": "Example of a patient from study 02",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/ncpi-research-study-01-specimen-01"
+        },
+        "name": "NCPI Research Study 01 Specimen 01",
+        "description": "An example Specimen used to indicate which sample a row of raw data is associated with.",
         "exampleBoolean": true
       },
       {
@@ -1276,6 +1964,28 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "example_raw_data.html"
+            }
+          ],
+          "nameUrl": "example_raw_data.html",
+          "title": "Example Raw Data",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "example_study_metadata.html"
+            }
+          ],
+          "nameUrl": "example_study_metadata.html",
+          "title": "Example Study Metadata",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
               "valueUrl": "family.html"
             }
           ],
@@ -1314,6 +2024,17 @@
           ],
           "nameUrl": "finding_a_research_study.html",
           "title": "Finding a Research Study",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "harmonization.html"
+            }
+          ],
+          "nameUrl": "harmonization.html",
+          "title": "Harmonization",
           "generation": "markdown"
         },
         {
@@ -1397,6 +2118,17 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "StructureDefinition-study-data-dictionary-variable-note.html"
+            }
+          ],
+          "nameUrl": "StructureDefinition-study-data-dictionary-variable-note.html",
+          "title": "Structure Definition Study Data Dictionary Variable Note",
+          "generation": "markdown"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
               "valueUrl": "study_metadata.html"
             }
           ],
@@ -1408,22 +2140,22 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl": "study_summary.html"
+              "valueUrl": "tabular.html"
             }
           ],
-          "nameUrl": "study_summary.html",
-          "title": "Study Summary",
+          "nameUrl": "tabular.html",
+          "title": "Tabular",
           "generation": "markdown"
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl": "tabular.html"
+              "valueUrl": "use_case_raw_data.html"
             }
           ],
-          "nameUrl": "tabular.html",
-          "title": "Tabular",
+          "nameUrl": "use_case_raw_data.html",
+          "title": "Use Case Raw Data",
           "generation": "markdown"
         },
         {

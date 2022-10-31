@@ -1,5 +1,11 @@
 [
   {
+    "id": "example-study-data-dictionary-conceptmap-1",
+    "type": "ConceptMap",
+    "url": "http://example.org/my-dataset/fhir/conceptmap/data-to-public",
+    "version": "0.2.0"
+  },
+  {
     "id": "tbd-codes",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes",
@@ -45,11 +51,10 @@
     ]
   },
   {
-    "id": "ncpi",
-    "type": "CodeSystem",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig",
-    "version": "0.2.0",
-    "name": "Ncpi"
+    "id": "example-study-data-dictionary-table-1",
+    "type": "ActivityDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ActivityDefinition/example-study-data-dictionary-table-1",
+    "version": "0.2.0"
   },
   {
     "id": "ConditionInheritanceMode",
@@ -57,6 +62,34 @@
     "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode",
     "version": "0.2.0",
     "name": "ConditionInheritanceMode"
+  },
+  {
+    "id": "example-study-data-dictionary-dataset-codesystem-1",
+    "type": "CodeSystem",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1",
+    "version": "0.2.0",
+    "name": "ExampleStudyDataDictionaryStudyDatasetCS1"
+  },
+  {
+    "id": "example-study-data-dictionary-datatable-codesystem-1",
+    "type": "CodeSystem",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+    "version": "0.2.0",
+    "name": "ExampleStudyDataDictionaryStudyTableCS1"
+  },
+  {
+    "id": "ncpi",
+    "type": "CodeSystem",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi",
+    "version": "0.2.0",
+    "name": "Ncpi"
+  },
+  {
+    "id": "ncpi-data-types",
+    "type": "CodeSystem",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types",
+    "version": "0.2.0",
+    "name": "NcpiDataTypes"
   },
   {
     "id": "NCPI-FHIR-Implementation-Guide",
@@ -122,11 +155,53 @@
     "name": "Phenotype"
   },
   {
+    "id": "raw-data-observation",
+    "type": "StructureDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/raw-data-observation",
+    "version": "0.2.0",
+    "name": "RawDataObservation"
+  },
+  {
+    "id": "study-data-dictionary-harmony",
+    "type": "StructureDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony",
+    "version": "0.2.0",
+    "name": "StudyDataDictionaryHarmony"
+  },
+  {
+    "id": "study-data-dictionary-table",
+    "type": "StructureDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table",
+    "version": "0.2.0",
+    "name": "StudyDataDictionaryTable"
+  },
+  {
+    "id": "study-data-dictionary-variable",
+    "type": "StructureDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable",
+    "version": "0.2.0",
+    "name": "StudyDataDictionaryVariable"
+  },
+  {
     "id": "study-group",
     "type": "StructureDefinition",
     "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group",
     "version": "0.2.0",
     "name": "StudyGroup"
+  },
+  {
+    "id": "study-summary",
+    "type": "StructureDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-summary",
+    "version": "0.2.0",
+    "name": "StudySummary"
+  },
+  {
+    "id": "study-variable-summary",
+    "type": "StructureDefinition",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary",
+    "version": "0.2.0",
+    "name": "StudyVariableSummary"
   },
   {
     "id": "supporting-info",
@@ -143,11 +218,32 @@
     "name": "ConditionInheritanceModeVS"
   },
   {
+    "id": "datatable-mappings-valueset-1",
+    "type": "ValueSet",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1",
+    "version": "0.2.0",
+    "name": "ExampleStudyTableMappingsVS1"
+  },
+  {
+    "id": "datatable-valueset-1",
+    "type": "ValueSet",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1",
+    "version": "0.2.0",
+    "name": "ExampleStudyTableVS1"
+  },
+  {
     "id": "disease-codes",
     "type": "ValueSet",
     "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
     "version": "0.2.0",
     "name": "DiseaseCodes"
+  },
+  {
+    "id": "example-study-data-dictionary-case-control-vs-1",
+    "type": "ValueSet",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1",
+    "version": "0.2.0",
+    "name": "ExampleStudyDataDictionaryCaseControlVS1"
   },
   {
     "id": "loinc-answers",
@@ -171,11 +267,11 @@
     "name": "PhenotypeCodes"
   },
   {
-    "id": "ncpi-data-types",
-    "type": "CodeSystem",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes",
+    "id": "example-questionnaire-demographics-1",
+    "type": "Questionnaire",
+    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/data-dictionary/study-name/demographics",
     "version": "0.2.0",
-    "name": "NcpiDataTypes"
+    "name": "Demographcs"
   },
   {
     "id": "omim",

@@ -1,0 +1,90 @@
+{
+  "resourceType": "Observation",
+  "id": "example-observation-data-row-1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-observation-data-row-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"example-observation-data-row-1\" </p></div><p><b>status</b>: final</p><p><b>code</b>: demographics <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-dataset-codesystem-1.html\">Dataset CodeSystem (lists all tables)</a>#demographics)</span></p><p><b>subject</b>: <a href=\"Patient-ncpi-research-study-01-patient-01.html\">Patient/ncpi-research-study-01-patient-01</a></p><p><b>specimen</b>: <a href=\"Specimen-ncpi-research-study-01-specimen-01.html\">Specimen/ncpi-research-study-01-specimen-01</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Subject's Unique Identifier <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#subjectid)</span></p><p><b>value</b>: SUB0001</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Gender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#gender)</span></p><p><b>value</b>: female <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender</a>#female)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Subject's BMI, Measured at Enrollment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#bmi)</span></p><p><b>value</b>: 34.1 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Subject's status (Case or Control) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#status)</span></p><p><b>value</b>: Case <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (umls#C99269)</span></p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1",
+        "code": "demographics"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ncpi-research-study-01-patient-01"
+  },
+  "specimen": {
+    "reference": "Specimen/ncpi-research-study-01-specimen-01"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+            "code": "subjectid"
+          }
+        ]
+      },
+      "valueString": "SUB0001"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+            "code": "gender"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "female",
+            "display": "female"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+            "code": "bmi"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 34.1,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+            "code": "status"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C99269",
+            "display": "Case"
+          }
+        ]
+      }
+    }
+  ]
+}

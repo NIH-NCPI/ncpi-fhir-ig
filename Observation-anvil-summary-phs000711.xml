@@ -8,7 +8,7 @@
   <status value="final"/>
   <code>
     <coding>
-      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"/>
       <code value="Summary"/>
       <display value="Variable Summary"/>
     </coding>
@@ -19,7 +19,7 @@
   <component>
     <code>
       <coding>
-        <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+        <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"/>
         <code value="SampleCount"/>
         <display value="Number of Samples"/>
       </coding>
@@ -29,7 +29,7 @@
   <component>
     <code>
       <coding>
-        <system value="https://nih-ncpi.github.io/ncpi-fhir-ig"/>
+        <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"/>
         <code value="Participant"/>
         <display value="Number of Participants"/>
       </coding>

@@ -1,41 +1,37 @@
-<!-- get modelType -->
-
-
-
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>NCPI-FHIR-IMPLEMENTATION-GUIDE\NCPI Disease - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -43,11 +39,11 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"24.2"}
-    h3,h4,h5,h6{--heading-prefix:"24.2"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
-        <!-- Placeholder for child template header declarations -->
+    <style type="text/css">h2{--heading-prefix:"28.2"}
+    h3,h4,h5,h6{--heading-prefix:"28.2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
@@ -59,27 +55,27 @@
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li>
     <a href="index.html">IG Home</a>
   </li>
@@ -122,8 +118,11 @@
       <li>
         <a href="study_metadata.html">Study Metadata</a>
       </li>
-      <li>
+      <li><a name="l212">​</a>
         <a href="study_summary.html">Study Summary</a>
+      </li>
+      <li><a name="l218">​</a>
+        <a href="raw_data.html">Raw Data</a>
       </li>
       <li>
         <a href="participant.html">Participant-level Data</a>
@@ -164,8 +163,21 @@
       </li>
     </ul>
   </li>
-  <li>
-    <a href="artifacts.html">Artifacts</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li>
+        <a href="example_study_metadata.html">Metadata Examples</a>
+      </li>
+      <li>
+        <a href="example_raw_data.html">Raw Data Examples</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
@@ -181,31 +193,31 @@
     </ul>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NCPI Disease</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>NCPI Disease</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide - Local Development build (v0.2.0). See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+    <!-- ReleaseHeader --><p id="publish-box">NCPI FHIR Implementation Guide - Local Development build (v0.2.0). See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -286,7 +298,7 @@
         
           Draft
           
-            as of 2022-10-11
+            as of 2022-10-31
           
         
       </td>
@@ -297,12 +309,117 @@
 
 <p>Definitions for the disease resource profile.</p>
 
-  <!-- insert intro if present -->
+    <!-- insert intro if present -->
   
 
 
 
-  <table class="dict">
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs-diff">Differential Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-key">Key Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snap">Snapshot Elements Table</a>
+      </li>
+    </ul>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      <table class="dict">
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Condition"> </a><span style="color: grey">1.</span> <b>Condition</b><a href="#Condition" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Condition.code"> </a><span style="color: grey">2.</span> <b>Condition.code</b><a href="#Condition.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-disease-codes.html">Disease Codes</a>; other codes may be used where these codes are not suitable<span style="color:DarkGray;text-decoration:line-through">For example codes, see <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a></span></td></tr>
+</table>
+
+    </div>
+    <a name="tabs-key"> </a>
+    <div id="tabs-key">
+      <table class="dict">
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Condition"> </a><span style="color: grey">1.</span> <b>Condition</b><a href="#Condition" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><span style="color:DarkGray"><p>A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">*</span></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">con-3</b>: <span style="color:DarkGray">Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item</span> (: <span style="color:DarkGray">clinicalStatus.exists() or verificationStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/condition-ver-status' and code = 'entered-in-error').exists() or category.select($this='problem-list-item').empty()</span>)<br/><b title="Formal Invariant Identifier">con-4</b>: <span style="color:DarkGray">If condition is abated, then clinicalStatus must be either inactive, resolved, or remission</span> (: <span style="color:DarkGray">abatement.empty() or clinicalStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/condition-clinical' and (code='resolved' or code='remission' or code='inactive')).exists()</span>)<br/><b title="Formal Invariant Identifier">con-5</b>: <span style="color:DarkGray">Condition.clinicalStatus SHALL NOT be present if verification Status is entered-in-error</span> (: <span style="color:DarkGray">verificationStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/condition-ver-status' and code='entered-in-error').empty() or clinicalStatus.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-2</b>: <span style="color:DarkGray">If the resource is contained in another resource, it SHALL NOT contain nested Resources</span> (: <span style="color:DarkGray">contained.contained.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-3</b>: <span style="color:DarkGray">If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource</span> (: <span style="color:DarkGray">contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</span>)<br/><b title="Formal Invariant Identifier">dom-4</b>: <span style="color:DarkGray">If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</span> (: <span style="color:DarkGray">contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-5</b>: <span style="color:DarkGray">If a resource is contained in another resource, it SHALL NOT have a security label</span> (: <span style="color:DarkGray">contained.meta.security.empty()</span>)<br/><b title="Formal Invariant Identifier">dom-6</b>: <span style="color:DarkGray">A resource should have narrative for robust management</span> (: <span style="color:DarkGray">text.`div`.exists()</span>)</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Condition.implicitRules"> </a><span style="color: grey">2.</span> <b>Condition.implicitRules</b><a href="#Condition.implicitRules" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><span style="color:DarkGray"><p>A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">1</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><span style="color:DarkGray"><p>Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.</p>
+</span></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: <span style="color:DarkGray">All FHIR elements must have a @value or children</span> (: <span style="color:DarkGray">hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Condition.modifierExtension"> </a><span style="color: grey">3.</span> <b>Condition.modifierExtension</b><a href="#Condition.modifierExtension" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><span style="color:DarkGray"><p>May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</p>
+<p>Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">*</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><span style="color:DarkGray"><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
+</span></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style="color:DarkGray">extensions</span>, <span style="color:DarkGray">user content</span></td></tr>
+  <tr><td>Comments</td><td><span style="color:DarkGray"><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
+</span></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: <span style="color:DarkGray">All FHIR elements must have a @value or children</span> (: <span style="color:DarkGray">hasValue() or (children().count() &gt; id.count())</span>)<br/><b title="Formal Invariant Identifier">ext-1</b>: <span style="color:DarkGray">Must have either extensions or value[x], not both</span> (: <span style="color:DarkGray">extension.exists() != value.exists()</span>)</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Condition.clinicalStatus"> </a><span style="color: grey">4.</span> <b>Condition.clinicalStatus</b><a href="#Condition.clinicalStatus" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><span style="color:DarkGray"><p>The clinical status of the condition.</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">1</span> This element is affected by the following invariants: <span style="color:DarkGray">con-3</span>, <span style="color:DarkGray">con-4</span>, <span style="color:DarkGray">con-5</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style="color:DarkGray">The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a></span><br/><span style="color:DarkGray"><p>The clinical status of the condition or diagnosis.</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><span style="color:DarkGray"><p>The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.</p>
+</span></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: <span style="color:DarkGray">All FHIR elements must have a @value or children</span> (: <span style="color:DarkGray">hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Condition.verificationStatus"> </a><span style="color: grey">5.</span> <b>Condition.verificationStatus</b><a href="#Condition.verificationStatus" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><span style="color:DarkGray"><p>The verification status to support the clinical status of the condition.</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">1</span> This element is affected by the following invariants: <span style="color:DarkGray">con-3</span>, <span style="color:DarkGray">con-5</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style="color:DarkGray">The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a></span><br/><span style="color:DarkGray"><p>The verification status to support or decline the clinical status of the condition or diagnosis.</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><span style="color:DarkGray"><p>verificationStatus is not required.  For example, when a patient has abdominal pain in the ED, there is not likely going to be a verification status.
+The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.</p>
+</span></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: <span style="color:DarkGray">All FHIR elements must have a @value or children</span> (: <span style="color:DarkGray">hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Condition.code"> </a><span style="color: grey">6.</span> <b>Condition.code</b><a href="#Condition.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><span style="color:DarkGray"><p>Identification of the condition, problem or diagnosis.</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">0</span>..<span style="color:DarkGray">1</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-disease-codes.html">Disease Codes</a>; other codes may be used where these codes are not suitable<span style="color:DarkGray;text-decoration:line-through">For example codes, see <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
+  <tr><td>Requirements</td><td><span style="color:DarkGray"><p>0..1 to account for primarily narrative only resources.</p>
+</span></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style="color:DarkGray">type</span></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: <span style="color:DarkGray">All FHIR elements must have a @value or children</span> (: <span style="color:DarkGray">hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Condition.subject"> </a><span style="color: grey">7.</span> <b>Condition.subject</b><a href="#Condition.subject" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><span style="color:DarkGray"><p>Indicates the patient or group who the condition record is associated with.</p>
+</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style="color:DarkGray">1</span>..<span style="color:DarkGray">1</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a></span>|<span style="color:DarkGray"><a href="http://hl7.org/fhir/R4/group.html" title="http://hl7.org/fhir/StructureDefinition/Group">Group</a></span>))</td></tr>
+  <tr><td>Requirements</td><td><span style="color:DarkGray"><p>Group is typically used for veterinary or public health use cases.</p>
+</span></td></tr>
+  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td><span style="color:DarkGray">patient</span></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: <span style="color:DarkGray">All FHIR elements must have a @value or children</span> (: <span style="color:DarkGray">hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
+</table>
+
+    </div>
+    <a name="tabs-snap"> </a>
+    <div id="tabs-snap">
+      <table class="dict">
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Condition"> </a><span style="color: grey">1.</span> <b>Condition</b><a href="#Condition" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.</p>
 </td></tr>
@@ -344,12 +461,12 @@ A human language
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Condition.text"> </a><span style="color: grey">6.</span> <b>Condition.text</b><a href="#Condition.text" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</p>
+  <tr><td>Definition</td><td><p>A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it "clinically safe" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Narrative">Narrative</a></td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>narrativehtmlxhtmldisplay</td></tr>
-  <tr><td>Comments</td><td><p>Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded information is added later.</p>
+  <tr><td>Comments</td><td><p>Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a "text blob" or where text is additionally entered raw or narrated and encoded information is added later.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -486,7 +603,7 @@ Codes describing anatomical locations. May include laterality
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/R4/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a>))</td></tr>
-  <tr><td>Comments</td><td><p>This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. This record indicates the encounter this particular record is associated with.  In the case of a &quot;new&quot; diagnosis reflecting ongoing/revised information about the condition, this might be distinct from the first encounter in which the underlying condition was first &quot;known&quot;.</p>
+  <tr><td>Comments</td><td><p>This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. This record indicates the encounter this particular record is associated with.  In the case of a "new" diagnosis reflecting ongoing/revised information about the condition, this might be distinct from the first encounter in which the underlying condition was first "known".</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
@@ -501,7 +618,7 @@ Codes describing anatomical locations. May include laterality
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Condition.abatement[x]"> </a><a name="Condition.abatementDateTime"> </a><a name="Condition.abatement[x]:abatementDateTime"> </a><a name="Condition.abatementAge"> </a><a name="Condition.abatement[x]:abatementAge"> </a><a name="Condition.abatementPeriod"> </a><a name="Condition.abatement[x]:abatementPeriod"> </a><a name="Condition.abatementRange"> </a><a name="Condition.abatement[x]:abatementRange"> </a><a name="Condition.abatementString"> </a><a name="Condition.abatement[x]:abatementString"> </a><span style="color: grey">20.</span> <b>Condition.abatement[x]</b><a href="#Condition.abatement[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>The date or estimated date that the condition resolved or went into remission. This is called &quot;abatement&quot; because of the many overloaded connotations associated with &quot;remission&quot; or &quot;resolution&quot; - Conditions are never really resolved, but they can abate.</p>
+  <tr><td>Definition</td><td><p>The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - Conditions are never really resolved, but they can abate.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: con-4</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
@@ -569,7 +686,7 @@ Codes describing anatomical locations. May include laterality
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Condition.stage.summary"> </a><span style="color: grey">28.</span> <b>Condition.stage.summary</b><a href="#Condition.stage.summary" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>A simple summary of the stage such as &quot;Stage 3&quot;. The determination of the stage is disease-specific.</p>
+  <tr><td>Definition</td><td><p>A simple summary of the stage such as "Stage 3". The determination of the stage is disease-specific.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: con-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
@@ -660,21 +777,23 @@ Codes that describe the manifestation or symptoms of a condition
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
 </table>
 
+    </div>
+  </div>
 
-  <!-- insert notes if present -->
+    <!-- insert notes if present -->
   
 
 
 
 </div>
 
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
   <script type="text/javascript">
     try {
@@ -707,50 +826,49 @@ Codes that describe the manifestation or symptoms of a condition
     });
   </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 11, 2022 14:47+0000">2022-10-11</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 22:46+0000">2022-10-31</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
           </span>
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
   
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
 
 
 
-<!-- / feedback form  -->
+  <!-- / feedback form -->
 
-  <!-- Analytics Below
+    <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
-

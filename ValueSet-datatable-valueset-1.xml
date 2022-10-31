@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="datatable-valueset-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</code></a></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1"/>
+  <version value="0.2.0"/>
+  <name value="ExampleStudyTableVS1"/>
+  <title value="Table ValueSet"/>
+  <status value="draft"/>
+  <date value="2022-10-31T22:46:37+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-ncpi"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Example Data Table with 4 variables"/>
+  <compose>
+    <include>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+    </include>
+  </compose>
+</ValueSet>

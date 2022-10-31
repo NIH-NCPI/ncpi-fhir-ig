@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="example-study-data-dictionary-dataset-codesystem-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">demographics<a name="example-study-data-dictionary-dataset-codesystem-1-demographics"> </a></td></tr></table></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1"/>
+  <version value="0.2.0"/>
+  <name value="ExampleStudyDataDictionaryStudyDatasetCS1"/>
+  <title value="Dataset CodeSystem (lists all tables)"/>
+  <status value="active"/>
+  <date value="2022-10-31T22:46:37+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-ncpi"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Example CodeSystem for a data-dictionary dataset with only 1 table."/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="demographics"/>
+  </concept>
+</CodeSystem>

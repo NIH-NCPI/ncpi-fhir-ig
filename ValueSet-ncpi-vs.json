@@ -3,14 +3,14 @@
   "id": "ncpi-vs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncpi.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncpi-data-types.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncpi.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncpi-data-types.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types</code></a></li></ul></div>"
   },
   "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs",
   "version": "0.2.0",
   "name": "Ncpi_VS",
   "title": "NCPI FHIR Codes",
   "status": "draft",
-  "date": "2022-10-11T14:47:05+00:00",
+  "date": "2022-10-31T22:46:37+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -37,10 +37,10 @@
   "compose": {
     "include": [
       {
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig"
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"
       },
       {
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes"
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types"
       }
     ]
   }

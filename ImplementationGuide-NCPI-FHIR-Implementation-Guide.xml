@@ -11,7 +11,7 @@
   <name value="NCPIFHIRImplementationGuide"/>
   <title value="NCPI FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-10-11T14:47:05+00:00"/>
+  <date value="2022-10-31T22:46:37+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -57,6 +57,14 @@
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -219,6 +227,206 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://nih-ncpi.github.io/ncpi-fhir-ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
@@ -290,6 +498,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/raw-data-observation"/>
+      </reference>
+      <name value="Raw Data Observation"/>
+      <description value="Representation for a row of data from one of the dataset's tables."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ncpi-research-document-reference"/>
       </reference>
       <name value="Research Document Reference"/>
@@ -312,10 +531,65 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/study-data-dictionary-harmony"/>
+      </reference>
+      <name value="NCPI Data Dictionary Harmony"/>
+      <description value="Based on the FHIR resource type, ConceptMap, the StudyDataDictionaryHarmony resource provides insight into the transformations made during the ETL from source data into FHIR allowing clients to use the $translate function to discover all of the public codes that were mapped from one of the study's actual vocabulary."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-data-dictionary-table"/>
+      </reference>
+      <name value="NCPI Study Data Dictionary Data Table"/>
+      <description value="Aggregates Variable Details associated with a single dataset table that are represented in FHIR as as list of references to StudyDataDictionaryVariables in the *observationResultRequirement* property."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-data-dictionary-variable"/>
+      </reference>
+      <name value="NCPI Study Data Dictionary Data Variable"/>
+      <description value="FHIR profile used to describe single variable from the dataset. This resource should be as complete as possible including details such as *description*, *data-type*, *permitted enumerations*, *quantity units*, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/study-group"/>
       </reference>
       <name value="NCPI Study Group"/>
       <description value="Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc. "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-summary"/>
+      </reference>
+      <name value="Study Summary"/>
+      <description value="An observation containing summary information about a study in it's entirety or one of it's subpopulations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/study-variable-summary"/>
+      </reference>
+      <name value="Study Variable Summary"/>
+      <description value="An observation containing summary data associated with research data from FHIR."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -349,6 +623,39 @@
       </reference>
       <name value="Disease Codes"/>
       <description value="This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/example-study-data-dictionary-case-control-vs-1"/>
+      </reference>
+      <name value="Case/Control Vars for 'status' categoricals"/>
+      <description value="Example ValueSet listing all possible 'values' from the Case/Control variable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/datatable-mappings-valueset-1"/>
+      </reference>
+      <name value="Harmonized ValueSet for data table"/>
+      <description value="Public codes mapped from example dataset&#xA;&#xA;The codes used below were chosen purely for example's sake and are in no way an endorsement or suggestion for terms that should be used in a real data-dictionary."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/datatable-valueset-1"/>
+      </reference>
+      <name value="Table ValueSet"/>
+      <description value="Example Data Table with 4 variables"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -404,6 +711,28 @@
       </reference>
       <name value="Condition Inheritance Pattern"/>
       <description value="A set of terms that describe the transmission pattern of a condition in a pedigree."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/example-study-data-dictionary-dataset-codesystem-1"/>
+      </reference>
+      <name value="Dataset CodeSystem (lists all tables)"/>
+      <description value="Example CodeSystem for a data-dictionary dataset with only 1 table."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+      </reference>
+      <name value="Datatable CodeSystem (lists all variables)"/>
+      <description value="Example CodeSystem for a data-dictionary table with 4 variables represented as codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -573,6 +902,149 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/example-encounter-study-01-patient-01"/>
+      </reference>
+      <name value="Example Encounter Study 01 Patient 01"/>
+      <description value="Example encounter for use with raw data to help tie different rows associated with the same event together."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-observation-data-row-1"/>
+      </reference>
+      <name value="Example of Raw Data"/>
+      <description value="Example Observation representing a single row of raw data from an single data table."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/example-questionnaire-demographics-1"/>
+      </reference>
+      <name value="Example of a Questionnaire to Represent Raw Data"/>
+      <description value="An example Questionnaire that is used to describe the individual rows of data that are to be stored as QuestionnaireResponses"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/example-questionnaire-demographics-response-1"/>
+      </reference>
+      <name value="Example of a QuestionnaireResponse to Represent Raw Data"/>
+      <description value="A Single row of data represented in FHIR as a QuestionnaireResponse"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/example-study-data-dictionary-conceptmap-1"/>
+      </reference>
+      <name value="Concept Map showing representing harmonization mappings"/>
+      <description value="Data Harmonization for example dataset"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/example-study-data-dictionary-table-1"/>
+      </reference>
+      <name value="Data-Dictionary Table"/>
+      <description value="Example Study Data Dictionary Data Table definition"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-1"/>
+      </reference>
+      <name value="Example Study Data Dictionary Variable subjectid"/>
+      <description value="Participant's Unique Identifier (example of simple variable)"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-2"/>
+      </reference>
+      <name value="Example Study Data Dictionary Variable gender"/>
+      <description value="Subject's gender"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-3"/>
+      </reference>
+      <name value="Example Study Data Dictionary Variable age_at_enrollment"/>
+      <description value="Subject's Age at Enrollment (Example with a range of 30-40 years of age)"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-4"/>
+      </reference>
+      <name value="Example Study Data Dictionary Variable bmi"/>
+      <description value="Subject's BMI at Enrollment"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-5"/>
+      </reference>
+      <name value="Data Dictionary Variable status"/>
+      <description value="Subject's Case/Control Status"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-study-summary-gender"/>
+      </reference>
+      <name value="Example Variable Summary with categories (gender)"/>
+      <description value="Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/example-summary-group-1"/>
+      </reference>
+      <name value="Example Group used for Summary Results"/>
+      <description value="Just an example group for demonstrational purposes"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -657,6 +1129,17 @@
       </reference>
       <name value="ncpi-research-study-01-patient-02"/>
       <description value="Example of a patient from study 02"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/ncpi-research-study-01-specimen-01"/>
+      </reference>
+      <name value="NCPI Research Study 01 Specimen 01"/>
+      <description value="An example Specimen used to indicate which sample a row of raw data is associated with."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -944,6 +1427,22 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="example_raw_data.html"/>
+        </extension>
+        <nameUrl value="example_raw_data.html"/>
+        <title value="Example Raw Data"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="example_study_metadata.html"/>
+        </extension>
+        <nameUrl value="example_study_metadata.html"/>
+        <title value="Example Study Metadata"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="family.html"/>
         </extension>
         <nameUrl value="family.html"/>
@@ -972,6 +1471,14 @@
         </extension>
         <nameUrl value="finding_a_research_study.html"/>
         <title value="Finding a Research Study"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="harmonization.html"/>
+        </extension>
+        <nameUrl value="harmonization.html"/>
+        <title value="Harmonization"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1032,6 +1539,14 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="StructureDefinition-study-data-dictionary-variable-note.html"/>
+        </extension>
+        <nameUrl value="StructureDefinition-study-data-dictionary-variable-note.html"/>
+        <title value="Structure Definition Study Data Dictionary Variable Note"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="study_metadata.html"/>
         </extension>
         <nameUrl value="study_metadata.html"/>
@@ -1040,18 +1555,18 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="study_summary.html"/>
-        </extension>
-        <nameUrl value="study_summary.html"/>
-        <title value="Study Summary"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="tabular.html"/>
         </extension>
         <nameUrl value="tabular.html"/>
         <title value="Tabular"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="use_case_raw_data.html"/>
+        </extension>
+        <nameUrl value="use_case_raw_data.html"/>
+        <title value="Use Case Raw Data"/>
         <generation value="markdown"/>
       </page>
       <page>

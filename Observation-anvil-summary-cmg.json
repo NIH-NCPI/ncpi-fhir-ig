@@ -9,7 +9,7 @@
   "code": {
     "coding": [
       {
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi",
         "code": "Summary",
         "display": "Variable Summary"
       }
@@ -36,7 +36,7 @@
       "code": {
         "coding": [
           {
-            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi",
             "code": "SampleCount",
             "display": "Number of Samples"
           }
@@ -48,7 +48,7 @@
       "code": {
         "coding": [
           {
-            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig",
+            "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi",
             "code": "Participant",
             "display": "Number of Participants"
           }

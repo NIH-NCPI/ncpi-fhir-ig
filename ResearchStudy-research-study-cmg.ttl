@@ -24,7 +24,7 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig" ];
+       fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi" ];
        fhir:Coding.code [ fhir:value "Consortium" ];
        fhir:Coding.display [ fhir:value "Study Consortium" ]
      ]

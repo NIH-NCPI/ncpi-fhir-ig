@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="example-study-data-dictionary-table-1"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ActivityDefinition</b><a name="example-study-data-dictionary-table-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ActivityDefinition "example-study-data-dictionary-table-1" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-study-data-dictionary-table.html">NCPI Study Data Dictionary Data Table</a></p></div><p><b>url</b>: <code>https://nih-ncpi.github.io/ncpi-fhir-ig/ActivityDefinition/example-study-data-dictionary-table-1</code></p><p><b>version</b>: 0.2.0</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-31 10:46:37+0000</p><p><b>publisher</b>: NCPI FHIR Working Group</p><p><b>contact</b>: NCPI FHIR Working Group: <a href="https://github.com/nih-ncpi">https://github.com/nih-ncpi</a>, Meen Chul Kim: <a href="mailto:meenchul@d3b.center">meenchul@d3b.center</a></p><p><b>topic</b>: Research <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (umls#C0035168)</span></p><p><b>code</b>: Demographic data <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-example-study-data-dictionary-dataset-codesystem-1.html">Dataset CodeSystem (lists all tables)</a>#demographics)</span></p><p><b>observationResultRequirement</b>: </p><ul><li><a href="ObservationDefinition-example-study-data-dictionary-variable-1-1.html">ObservationDefinition/example-study-data-dictionary-variable-1-1</a></li><li><a href="ObservationDefinition-example-study-data-dictionary-variable-1-2.html">ObservationDefinition/example-study-data-dictionary-variable-1-2</a></li><li><a href="ObservationDefinition-example-study-data-dictionary-variable-1-3.html">ObservationDefinition/example-study-data-dictionary-variable-1-3</a></li><li><a href="ObservationDefinition-example-study-data-dictionary-variable-1-4.html">ObservationDefinition/example-study-data-dictionary-variable-1-4</a></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/ActivityDefinition/example-study-data-dictionary-table-1"/>
+  <version value="0.2.0"/>
+  <status value="active"/>
+  <date value="2022-10-31T22:46:37+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-ncpi"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <topic>
+    <coding>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C0035168"/>
+      <display value="Research"/>
+    </coding>
+  </topic>
+  <code>
+    <coding>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1"/>
+      <code value="demographics"/>
+      <display value="Demographic data"/>
+    </coding>
+  </code>
+  <observationResultRequirement>
+    <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-1"/>
+  </observationResultRequirement>
+  <observationResultRequirement>
+    <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-2"/>
+  </observationResultRequirement>
+  <observationResultRequirement>
+    <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-3"/>
+  </observationResultRequirement>
+  <observationResultRequirement>
+    <reference value="ObservationDefinition/example-study-data-dictionary-variable-1-4"/>
+  </observationResultRequirement>
+</ActivityDefinition>

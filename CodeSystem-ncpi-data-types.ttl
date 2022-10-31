@@ -10,15 +10,15 @@
   fhir:Resource.id [ fhir:value "ncpi-data-types"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Exome<a name=\"ncpi-data-types-Exome\"> </a></td><td>Exome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\">WholeGenome<a name=\"ncpi-data-types-WholeGenome\"> </a></td><td>Whole Genome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\">GWAS<a name=\"ncpi-data-types-GWAS\"> </a></td><td>Genome-Wide Association Studies</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Exome<a name=\"ncpi-data-types-Exome\"> </a></td><td>Exome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\">WholeGenome<a name=\"ncpi-data-types-WholeGenome\"> </a></td><td>Whole Genome Sequence Data</td></tr><tr><td style=\"white-space:nowrap\">GWAS<a name=\"ncpi-data-types-GWAS\"> </a></td><td>Genome-Wide Association Studies</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/datatypes"];
+  fhir:CodeSystem.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types"];
   fhir:CodeSystem.version [ fhir:value "0.2.0"];
   fhir:CodeSystem.name [ fhir:value "NcpiDataTypes"];
   fhir:CodeSystem.title [ fhir:value "Data Types for NCPI Research"];
   fhir:CodeSystem.status [ fhir:value "active"];
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-10-11T14:47:05+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-31T22:46:37+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
