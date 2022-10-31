@@ -54,7 +54,7 @@ Description: "An example Questionnaire that is used to describe the individual r
   * code = $ExampleStudyTableCS#status
   * text = "Subject's status (Case or Control)"
   * type = http://hl7.org/fhir/item-type#choice
-  * answerValueSet = $ExampleDDCaseControlVS1
+  * answerValueSet = $ExampleDataDictionaryCaseControlVS1
 
 Instance: example-questionnaire-demographics-response-1
 InstanceOf: QuestionnaireResponse
