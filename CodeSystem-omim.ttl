@@ -18,7 +18,7 @@
   fhir:CodeSystem.title [ fhir:value "Online Mendelian Inheritance in Man"];
   fhir:CodeSystem.status [ fhir:value "draft"];
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-10-31T22:46:37+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-31T22:46:57+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;
