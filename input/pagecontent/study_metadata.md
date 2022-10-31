@@ -1,7 +1,7 @@
 ### Overview
 The data-dictionary acts as the key to the dataset itself. Traditionally, this file is delivered alongside the data itself as flat files that contain column names, descriptions along with other details to help the individuals doing analysis to understand how they are expected to use the data. FHIR provides descriptive resource types that can be used for the purposes of describing the variables that are found within a given dataset even more completely than many data-dictionaries themselves.
 
-<img width="100%" src="ncpi-dd.png" alt="DD Resource Overview" />
+<img width="100%" src="ncpi-dd.png" alt="Data Dictionary Resource Overview" />
 
 There should be no identifiable data contained within the data-dictionary resources and as such, these should be well suited to be hosted on an unrestricted server even if the dataset itself is restricted. However, even if there is a public server hosting a given study's metadata, it still may be advisable to provide the metadata alongside the data itself for the convenience of those using the data, especially if the data itself has not been fully transformed into an interoperable form.
 
@@ -15,9 +15,9 @@ There should be no identifiable data contained within the data-dictionary resour
 Together, these CodeSystems provide a highly specific vocabulary with terms that can be dropped into any appropriate Coding in the various transformed resources to provide linkage between the transformed data and the original source of the data.
 
 #### Tables and Variables
-For each variable contained within the dataset, a [Study DD Variable](StructureDefinition-study-dd-variable.html) should be defined describing in as great of detail as possible. At a minimum, there should be the data type (permittedDataType), the variable's entry from the table's CodeSystem (code) and a corresponding reference to a ValueSet (validCodedValueSet) when the variable represents an enumerated data type. Additional details are helpful but are data type specific such as the units associated with a Quantity data type, numeric type limits, etc. 
+For each variable contained within the dataset, a [Study Data Dictionary Variable](StructureDefinition-study-data-dictionary-variable.html) should be defined describing in as great of detail as possible. At a minimum, there should be the data type (permittedDataType), the variable's entry from the table's CodeSystem (code) and a corresponding reference to a ValueSet (validCodedValueSet) when the variable represents an enumerated data type. Additional details are helpful but are data type specific such as the units associated with a Quantity data type, numeric type limits, etc. 
 
-The [Study DD Table](StructureDefinition-study-dd-table.html) itself is a simple container where each of the table's variables are referenced in the *observationResultRequirement* property. It too should have the appropriate vocabulary referenced from the dataset's code system for it's *topic*. 
+The [Study Data Dictionary Table](StructureDefinition-study-data-dictionary-table.html) itself is a simple container where each of the table's variables are referenced in the *observationResultRequirement* property. It too should have the appropriate vocabulary referenced from the dataset's code system for it's *topic*. 
 
 #### Harmonization
 Data harmonization is one of the fundamental objectives when it comes to loading these data into FHIR and a key aspect of that is the use of common vocabularies across all datasets when possible. FHIR provides the resource type, ConceptMap, to provide maps from one CodeSystem to another. 
@@ -27,7 +27,10 @@ For the purposes of representing the data-dictionary in FHIR, the concept map ca
 1. quickly providing details to researchers to understand a bit more about what the original data looked like
 2. provide a baseline for those able to improve the mappings over time
 
-For the [example](ConceptMap-example-study-dd-conceptmap-1.html), a simple dataset contains 5 variables, subjectid, gender, age_at_enrollment, bmi and status all of which are mapped to UMLS terms. For BMI, there is an additional mapping to a LOINC term. Finally, the status variable is mapped to 1 entry from Human Phenotype Ontology term and 2 Mondo terms. 
+For the [example](ConceptMap-example-study-data-dictionary-conceptmap-1.html), a simple dataset contains 5 variables, subjectid, gender, age_at_enrollment, bmi and status all of which are mapped to UMLS terms. For BMI, there is an additional mapping to a LOINC term. Finally, the status variable is mapped to 1 entry from Human Phenotype Ontology term and 2 Mondo terms. 
+
+#### Summary Data
+TBD
 
 #### Summary Data
 Summary data provides researchers the information they need to understand what data is available and whether that data is suitable for their specific needs. This data can be harmonized with public ontologies allowing researchers to use common ontological terms to search for datasets that have the numbers suitable for their objectives in sufficient numbers. By providing the summary data in FHIR, researchers can use FHIR capable tools or work directly in FHIR to discover the datasets of interest and, once access has been granted, pull the data down for analysis using the same core framework.
@@ -52,8 +55,8 @@ A single [CodeSystem](https://hl7.org/fhir/R4/codesystem.html) should be defined
 #### Variable Specific Codes 
 Each table itself will be represented as its own CodeSystem where each variable represented in FHIR will have a corresponding code. 
 
-#### Study DD Data Table
-Based on the FHIR ResourceType, [ActivityDefinition](https://hl7.org/fhir/R4/activitydefinition.html), The [data table](StructureDefinition-study-dd-table.html) represents a single table within the dataset and contains references to the individual data variable details. 
+#### Study Data Dictionary Data Table
+Based on the FHIR ResourceType, [ActivityDefinition](https://hl7.org/fhir/R4/activitydefinition.html), The [data table](StructureDefinition-study-data-dictionary-table.html) represents a single table within the dataset and contains references to the individual data variable details. 
 
 Some key parameters that can help identify the table and provide context and necessary clarity on the table's purpose would be: 
 * name
@@ -64,7 +67,7 @@ One of the **code.coding** properties should point to the table's Code from with
 
 Individual variable definitions will be attached as references within the **observationResultRequirement** property.
 
-#### Study DD Data Variable
+#### Study Data Dictionary Data Variable
 Data variables describe a single column within the data table. The descriptive components used will depend on the type of data represented in the variable itself and maybe be very simple (basic string data), or moderately complex, depending on the data that is known about the variable itself. 
 
 ##### Coding Identity
@@ -77,7 +80,7 @@ One fundamental aspect of a good data dictionary is a comprehensive description 
 Strings, boolean values and integer all represent very simple data types that can be expressed, possibly with no additional details, though, in some cases, additional details may also be permitted (such as a min/max range for an integer value, or possible a ValueSet containing the codes that can be found for special cases). 
 
 ###### Ranges
-For Quantity, Integer and any other type that can be bound within a range, this should be specified using **qualifiedInterval[x].range** (or age/genestationalAge should those be more appropriate). 
+For Quantity, Integer and any other type that can be bound within a range, this should be specified using **qualifiedInterval[x].range** (or age/gestationalAge should those be more appropriate). 
 
 ###### Units 
 For quantities and any other data type that needs to be accompanied with a unit, this should be specified using **quantitativeDetails.unit**. 
@@ -85,8 +88,8 @@ For quantities and any other data type that needs to be accompanied with a unit,
 ###### Variable Enumerations
 When specifying that a variable should consist of a value from a list of possible values, a reference to a ValueSet containing all possible values should be given for the property, **validCodedValueSet**.
 
-#### StudyDdHarmony
-Based on FHIR's [ConceptMap](https://hl7.org/fhir/conceptmap.html), the [StudyDdHarmony](StructureDefinition-study-dd-harmony.html) should be used to indicate any transformations from the values pulled directly from the source data to terms from public ontologies such as LOINC, HPO, Mondo, etc. 
+#### StudyDataDictionaryHarmony
+Based on FHIR's [ConceptMap](https://hl7.org/fhir/conceptmap.html), the [StudyDataDictionaryHarmony](StructureDefinition-study-data-dictionary-harmony.html) should be used to indicate any transformations from the values pulled directly from the source data to terms from public ontologies such as LOINC, HPO, Mondo, etc. 
 
 #### StudySummary
 The [StudySummary](StructureDefinition-study-summary.html) is a refinement of FHIR's [Observation](https://hl7.org/fhir/observation.html) and has "components" indicating each summary values. Each Summary observation has a single "subject" which indicates the population being summarized. 

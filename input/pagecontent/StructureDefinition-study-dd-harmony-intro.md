@@ -1,4 +1,0 @@
-### Key Guidelines for Usage
-The mechanics of the [ConceptMap](https://hl7.org/fhir/conceptmap.html), upon which the StudyDdHarmony is based is simple. A single vocabulary (ValueSet) is required for each the source and the target and for each code in the source an element is created which identifies the target codes. Clients can query these ConceptMap resources via the [$translate](https://hl7.org/fhir/conceptmap-operation-translate.html) operation. 
-
-There will be a single StudyDdHarmony resource for a study where all codes that are mapped to one or more public ontologies are captured along with their target mappings. This represents the *documentation* describing the transformations performed on the FHIR resources in use. 

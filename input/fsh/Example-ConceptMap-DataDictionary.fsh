@@ -27,8 +27,8 @@ The codes used below were chosen purely for example's sake and are in no way an 
 * $mondo#0017705 "congenital pulmonary venous return anomaly"
 * $mondo#0007130 "congenital total pulmonary venous return anomaly"
 
-Instance: example-study-dd-conceptmap-1
-InstanceOf: StudyDdHarmony
+Instance: example-study-data-dictionary-conceptmap-1
+InstanceOf: StudyDataDictionaryHarmony
 Title: "Concept Map showing representing harmonization mappings"
 Description: "Data Harmonization for example dataset"
 * status = #active

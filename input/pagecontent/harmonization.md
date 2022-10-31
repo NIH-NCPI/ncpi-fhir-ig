@@ -7,4 +7,4 @@ For the purposes of representing the data-dictionary in FHIR, the concept map ca
 1. quickly providing details to researchers to understand a bit more about what the original data looked like
 2. provide a baseline for those able to improve the mappings over time
 
-For the [example](ConceptMap-example-study-dd-conceptmap-1.html), a simple dataset contains 5 variables, subjectid, gender, age_at_enrollment, bmi and status all of which are mapped to UMLS terms. For BMI, there is an additional mapping to a LOINC term. Finally, the status variable is mapped to 1 entry from Human Phenotype Ontology term and 2 Mondo terms. 
+For the [example](ConceptMap-example-study-data-dictionary-conceptmap-1.html), a simple dataset contains 5 variables, subjectid, gender, age_at_enrollment, bmi and status all of which are mapped to UMLS terms. For BMI, there is an additional mapping to a LOINC term. Finally, the status variable is mapped to 1 entry from Human Phenotype Ontology term and 2 Mondo terms. 
