@@ -118,12 +118,6 @@
       <li>
         <a href="study_metadata.html">Study Metadata</a>
       </li>
-      <li><a name="l211">​</a>
-        <a href="study_summary.html">Study Summary</a>
-      </li>
-      <li><a name="l217">​</a>
-        <a href="raw_data.html">Raw Data</a>
-      </li>
       <li>
         <a href="participant.html">Participant-level Data</a>
       </li>
@@ -259,7 +253,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table>
   <tbody>
     <tr>
-      <td><a name="l466">​</a>The first thing to note is that we’ve set the Observation’s code to the table’s code from the study’s <a href="CodeSystem-example-study-dd-dataset-codesystem-1.html">dataset CodeSystem</a>. In this case, it’s the code, <em>demographics</em>. While not absolutely required, it is highly recommended that the subject be set to the corresponding Patient resource so that these observations can be easily found using basic FHIR queries. In this case, such a query might look like: *Observation?code=http://example.org/my-dataset/fhir/codesystem/dataset</td>
+      <td><a name="l454">​</a>The first thing to note is that we’ve set the Observation’s code to the table’s code from the study’s <a href="CodeSystem-example-study-dd-dataset-codesystem-1.html">dataset CodeSystem</a>. In this case, it’s the code, <em>demographics</em>. While not absolutely required, it is highly recommended that the subject be set to the corresponding Patient resource so that these observations can be easily found using basic FHIR queries. In this case, such a query might look like: *Observation?code=http://example.org/my-dataset/fhir/codesystem/dataset</td>
       <td>demographics&amp;subject=Patient/ncpi-research-study-01-patient-01*.</td>
     </tr>
   </tbody>
@@ -269,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Finally, each of the variables is captured as a component within the Observation’s component array. Here, you will see that each of the components has a code that originates from the study’s demographics table indicating which variable is being represented. Then, for each of those components, the appropriate value[X] provides the variable’s value for that row. So, for the first component, the code indicates that is is the “subjectid” variable with a value of “SUB0001”.</p>
 
-<p><a name="l487">​</a>To provide context about a given variable’s content, the data-dictionary resources should also be present in order to provide type information via the permittedDataType property as well as potential details about min/max, units and others that may have been provided in the Data Dictionary variable resources. For instance, <a href="ObservationDefinition-example-study-dd-variable-1-1.json.html">subjectid</a> is formally defined to be of type, <em>string</em>. Whereas <a href="ObservationDefinition-example-study-dd-variable-1-2.json.html">gender</a> is defined to be of type <em>CodeableConcept</em> with the possible values specified by this <a href="http://hl7.org/fhir/ValueSet/administrative-gender">ValueSet</a>. That information agrees with the contents of this example’s resource’s components.</p>
+<p><a name="l475">​</a>To provide context about a given variable’s content, the data-dictionary resources should also be present in order to provide type information via the permittedDataType property as well as potential details about min/max, units and others that may have been provided in the Data Dictionary variable resources. For instance, <a href="ObservationDefinition-example-study-dd-variable-1-1.json.html">subjectid</a> is formally defined to be of type, <em>string</em>. Whereas <a href="ObservationDefinition-example-study-dd-variable-1-2.json.html">gender</a> is defined to be of type <em>CodeableConcept</em> with the possible values specified by this <a href="http://hl7.org/fhir/ValueSet/administrative-gender">ValueSet</a>. That information agrees with the contents of this example’s resource’s components.</p>
 
 <table>
   <tbody>
@@ -284,7 +278,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="tabular-data-as-questionnaires-and-questionnaireresponses">Tabular Data as Questionnaires and QuestionnaireResponses</h3>
 <p>We provide the same example representing data using Questionnaires and QuestionnaireResponses.</p>
 
-<p><a name="l532">​</a>The <a href="Questionnaire-example-questionnaire-demographics-1.html">Questionnaire</a> defines the structure of how the responses are to be formatted, basically providing details about each of the variables that may be found within a response. The <a href="QuestionnaireResponse-example-questionnaire-demographics-response-1.html">QuestionnaireResponse</a> simply provides the values for those variables. Similarly to the Observation approach, the code for the Questionnaire links back to the study’s data dictionary code for the relevant table, in the case it’s <a href="CodeSystem-example-study-dd-dataset-codesystem-1.html">demographics</a>. To tie each of the variables back to the appropriate table, their code entry is used for each of the Questionnaire’s item’s code. Thus, the code for bmi links back to the bmi entry in the study’s demographics table’s <a href="CodeSystem-example-study-dd-datatable-codesystem-1.html">CodeSystem</a>.</p>
+<p><a name="l520">​</a>The <a href="Questionnaire-example-questionnaire-demographics-1.html">Questionnaire</a> defines the structure of how the responses are to be formatted, basically providing details about each of the variables that may be found within a response. The <a href="QuestionnaireResponse-example-questionnaire-demographics-response-1.html">QuestionnaireResponse</a> simply provides the values for those variables. Similarly to the Observation approach, the code for the Questionnaire links back to the study’s data dictionary code for the relevant table, in the case it’s <a href="CodeSystem-example-study-dd-dataset-codesystem-1.html">demographics</a>. To tie each of the variables back to the appropriate table, their code entry is used for each of the Questionnaire’s item’s code. Thus, the code for bmi links back to the bmi entry in the study’s demographics table’s <a href="CodeSystem-example-study-dd-datatable-codesystem-1.html">CodeSystem</a>.</p>
 
 <p>The QuestionnaireResponse’s data links back to the relevant variable by way of a common linkId. So, the item associated with the linkId of “gender” is described by the Questionnaire’s item with the same linkId.</p>
 
@@ -316,7 +310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 22:46+0000">2022-10-31</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 28, 2022 21:06+0000">2022-11-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

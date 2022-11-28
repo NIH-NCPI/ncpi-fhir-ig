@@ -21,7 +21,7 @@
      fhir:value "ResearchSubject";
      fhir:index 0
   ];
-  fhir:Questionnaire.date [ fhir:value "2022-10-31T22:46:57+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.date [ fhir:value "2022-11-28T21:06:44+00:00"^^xsd:dateTime];
   fhir:Questionnaire.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:Questionnaire.contact [
      fhir:index 0;

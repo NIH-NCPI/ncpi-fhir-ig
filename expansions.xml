@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e8757121-e904-4fb2-8c1a-50ca13733fb7"/>
+  <id value="aefd81e2-6703-4f50-8eaf-834b628249fb"/>
   <meta>
-    <lastUpdated value="2022-10-31T22:46:57.628+00:00"/>
+    <lastUpdated value="2022-11-28T21:06:44.318+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -225,7 +225,7 @@
         <name value="Ncpi_VS"/>
         <title value="NCPI FHIR Codes"/>
         <status value="draft"/>
-        <date value="2022-10-31T22:46:57+00:00"/>
+        <date value="2022-11-28T21:06:44+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -244,8 +244,8 @@
         </contact>
         <description value="Codes that would apply to NCPI projects"/>
         <expansion>
-          <identifier value="urn:uuid:f35a2562-71f5-407f-a435-098771585e75"/>
-          <timestamp value="2022-10-31T22:47:27+00:00"/>
+          <identifier value="urn:uuid:2857a3f0-5c91-49f6-bd15-03654649db95"/>
+          <timestamp value="2022-11-28T21:07:15+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -371,169 +371,6 @@
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types"/>
             <code value="GWAS"/>
             <display value="Genome-Wide Association Studies"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1"/>
-    <resource>
-      <ValueSet>
-        <id value="datatable-valueset-1"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html">Datatable CodeSystem (lists all variables) v0.2.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>
-                    <a href="ValueSet-datatable-mappings-valueset-1.html">ConceptMap[http://example.org/my-dataset/fhir/conceptmap/data-to-public]</a>
-                  </b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-subjectid"> </a>  
-                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-subjectid">subjectid</a>
-                </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
-                <td>Subject's Unique Identifier</td>
-                <td>
-                  <span title="EQUIVALENT">~</span>C2348584
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-gender"> </a>  
-                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-gender">gender</a>
-                </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
-                <td>Gender</td>
-                <td>
-                  <span title="EQUIVALENT">~</span>C0079399
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-age-at-enrollment"> </a>  
-                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-age_at_enrollment">age_at_enrollment</a>
-                </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
-                <td>Subject's Age at Enrollment in days</td>
-                <td>
-                  <span title="EQUIVALENT">~</span>C168843
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-bmi"> </a>  
-                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-bmi">bmi</a>
-                </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
-                <td>Subject's BMI, Measured at Enrollment</td>
-                <td>
-                  <span title="SOURCEISNARROWERTHANTARGET">&lt;</span>C1305855
-                  <br/>
-                  <span title="SOURCEISNARROWERTHANTARGET">&lt;</span>
-                  <a href="http://details.loinc.org/LOINC/LP35925-4.html">LP35925-4</a>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-status"> </a>  
-                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-status">status</a>
-                </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
-                <td>Subject's status (Case or Control)</td>
-                <td>
-                  <span title="EQUIVALENT">~</span>C0872128
-                  <br/>
-                  <span title="EQUIVALENT">~</span>
-                  <a href="CodeSystem-hpo.html#hpo-HP.580010772">HP:0010772</a>
-                  <br/>
-                  <span title="EQUIVALENT">~</span>
-                  <a href="CodeSystem-mondo.html#mondo-MONDO.580017705">MONDO:0017705</a>
-                  <br/>
-                  <span title="EQUIVALENT">~</span>
-                  <a href="CodeSystem-mondo.html#mondo-MONDO.580007130">MONDO:0007130</a>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1"/>
-        <version value="0.2.0"/>
-        <name value="ExampleStudyTableVS1"/>
-        <title value="Table ValueSet"/>
-        <status value="draft"/>
-        <date value="2022-10-31T22:46:57+00:00"/>
-        <publisher value="NCPI FHIR Working Group"/>
-        <contact>
-          <name value="NCPI FHIR Working Group"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://github.com/nih-ncpi"/>
-          </telecom>
-        </contact>
-        <contact>
-          <name value="Meen Chul Kim"/>
-          <telecom>
-            <system value="email"/>
-            <value value="meenchul@d3b.center"/>
-            <use value="work"/>
-          </telecom>
-        </contact>
-        <description value="Example Data Table with 4 variables"/>
-        <expansion>
-          <identifier value="urn:uuid:e5223b47-3a1e-47ea-b439-8e3bba876529"/>
-          <timestamp value="2022-10-31T22:47:31+00:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1|0.2.0"/>
-          </parameter>
-          <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
-            <code value="subjectid"/>
-            <display value="Subject's Unique Identifier"/>
-          </contains>
-          <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
-            <code value="gender"/>
-            <display value="Gender"/>
-          </contains>
-          <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
-            <code value="age_at_enrollment"/>
-            <display value="Subject's Age at Enrollment in days"/>
-          </contains>
-          <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
-            <code value="bmi"/>
-            <display value="Subject's BMI, Measured at Enrollment"/>
-          </contains>
-          <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
-            <code value="status"/>
-            <display value="Subject's status (Case or Control)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -15615,7 +15452,7 @@
         <title value="Phenotype Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2022-10-31T22:46:57+00:00"/>
+        <date value="2022-11-28T21:06:44+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -15634,8 +15471,8 @@
         </contact>
         <description value="This value set includes all codes from Human Phenotype Ontology."/>
         <expansion>
-          <identifier value="urn:uuid:1587f9f0-0628-4ed5-a083-c02ddad08530"/>
-          <timestamp value="2022-10-31T22:47:33+00:00"/>
+          <identifier value="urn:uuid:e87217ea-5b31-4d51-98eb-97c1618ed27e"/>
+          <timestamp value="2022-11-28T21:07:15+00:00"/>
           <total value="1880"/>
           <parameter>
             <name value="excludeNested"/>
@@ -25054,16 +24891,16 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs"/>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/loinc-answers"/>
     <resource>
       <ValueSet>
-        <id value="condition-inheritance-vs"/>
+        <id value="loinc-answers"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 25 concepts</p>
+            <p>This value set contains 24 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-ConditionInheritanceMode.html">Condition Inheritance Pattern v0.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-loinc-answers.html">LOINC Answers v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -25079,213 +24916,206 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-GENO-0000143"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-GENO.580000143">GENO:0000143</a>
+                  <a name="ncpi-loinc-answers-LA21254-0"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21254-0">LA21254-0</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Codominant inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 1</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-GENO-0000889"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-GENO.580000889">GENO:0000889</a>
+                  <a name="ncpi-loinc-answers-LA21255-7"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21255-7">LA21255-7</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Unknown inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 2</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-GENO-0000892"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-GENO.580000892">GENO:0000892</a>
+                  <a name="ncpi-loinc-answers-LA21256-5"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21256-5">LA21256-5</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Mitochondrial inheritance (primarily or exclusively heteroplasmic)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 3</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-GENO-0000893"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-GENO.580000893">GENO:0000893</a>
+                  <a name="ncpi-loinc-answers-LA21257-3"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21257-3">LA21257-3</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Mitochondrial inheritance (primarily or exclusively homoplasmic)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 4</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0000006"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580000006">HP:0000006</a>
+                  <a name="ncpi-loinc-answers-LA21258-1"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21258-1">LA21258-1</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal dominant inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 5</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0000007"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580000007">HP:0000007</a>
+                  <a name="ncpi-loinc-answers-LA21259-9"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21259-9">LA21259-9</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal recessive inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 6</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001417"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001417">HP:0001417</a>
+                  <a name="ncpi-loinc-answers-LA21260-7"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21260-7">LA21260-7</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>X-linked inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 7</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001419"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001419">HP:0001419</a>
+                  <a name="ncpi-loinc-answers-LA21261-5"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21261-5">LA21261-5</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>X-linked inheritance (recessive)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 8</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001423"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001423">HP:0001423</a>
+                  <a name="ncpi-loinc-answers-LA21262-3"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21262-3">LA21262-3</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>X-linked inheritance (dominant)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 9</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001426"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001426">HP:0001426</a>
+                  <a name="ncpi-loinc-answers-LA21263-1"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21263-1">LA21263-1</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Multifactorial inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 10</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001427"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001427">HP:0001427</a>
+                  <a name="ncpi-loinc-answers-LA21264-9"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21264-9">LA21264-9</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Mitochondrial inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 11</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001428"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001428">HP:0001428</a>
+                  <a name="ncpi-loinc-answers-LA21265-6"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21265-6">LA21265-6</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Somatic mutation</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 12</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001450"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001450">HP:0001450</a>
+                  <a name="ncpi-loinc-answers-LA21266-4"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21266-4">LA21266-4</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Y-linked inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 13</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001470"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001470">HP:0001470</a>
+                  <a name="ncpi-loinc-answers-LA21267-2"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21267-2">LA21267-2</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal dominant inheritance (sex-limited)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 14</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0003743"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580003743">HP:0003743</a>
+                  <a name="ncpi-loinc-answers-LA21268-0"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21268-0">LA21268-0</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Genetic anticipation</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 15</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0003745"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580003745">HP:0003745</a>
+                  <a name="ncpi-loinc-answers-LA21269-8"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21269-8">LA21269-8</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Sporadic</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 16</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0010983"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580010983">HP:0010983</a>
+                  <a name="ncpi-loinc-answers-LA21270-6"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21270-6">LA21270-6</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Oligogenic</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 17</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0012274"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580012274">HP:0012274</a>
+                  <a name="ncpi-loinc-answers-LA21271-4"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21271-4">LA21271-4</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal dominant inheritance (with paternal imprinting)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 18</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0012275"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580012275">HP:0012275</a>
+                  <a name="ncpi-loinc-answers-LA21272-2"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21272-2">LA21272-2</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal dominant inheritance (with maternal imprinting)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 19</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0025352"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580025352">HP:0025352</a>
+                  <a name="ncpi-loinc-answers-LA21273-0"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21273-0">LA21273-0</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal dominant inheritance (primarily or exclusively de novo)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 20</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0031362"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580031362">HP:0031362</a>
+                  <a name="ncpi-loinc-answers-LA21274-8"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21274-8">LA21274-8</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal recessive inheritance (sex-limited)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 21</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-SEPIO-CG-97020"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-SEPIO-CG.5897020">SEPIO-CG:97020</a>
+                  <a name="ncpi-loinc-answers-LA21275-5"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21275-5">LA21275-5</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Semidominant inheritance</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome 22</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-SEPIO-CG-97021"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-SEPIO-CG.5897021">SEPIO-CG:97021</a>
+                  <a name="ncpi-loinc-answers-LA21276-3"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21276-3">LA21276-3</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>X-linked inheritance (primarily recessive with milder female expression)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome X</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-SEPIO-CG-97022"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-SEPIO-CG.5897022">SEPIO-CG:97022</a>
+                  <a name="ncpi-loinc-answers-LA21277-1"> </a>  
+                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21277-1">LA21277-1</a>
                 </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal dominant inheritance (with genetic anticipation)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-SEPIO-CG-97023"> </a>  
-                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-SEPIO-CG.5897023">SEPIO-CG:97023</a>
-                </td>
-                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
-                <td>Autosomal recessive inheritance (with genetic anticipation)</td>
+                <td>ncpi:loinc-answers</td>
+                <td>Chromosome Y</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs"/>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/loinc-answers"/>
         <version value="0.2.0"/>
-        <name value="ConditionInheritanceModeVS"/>
-        <title value="Condition Inheritance Pattern"/>
-        <status value="active"/>
-        <date value="2022-10-31T22:46:57+00:00"/>
+        <name value="LoincAnswers"/>
+        <title value="LOINC Answers"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2022-11-28T21:06:44+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -25302,149 +25132,138 @@
             <use value="work"/>
           </telecom>
         </contact>
-        <description value="Value Set for specific ttransmission patterns of a condition in a pedigree"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
+        <description value="LOINC ANSWERS used by NCPI resources"/>
         <expansion>
-          <identifier value="urn:uuid:27797222-8c92-46cb-ae54-a59ffc5e2d43"/>
-          <timestamp value="2022-10-31T22:47:34+00:00"/>
-          <total value="25"/>
+          <identifier value="urn:uuid:16951c1f-387a-4f86-9ce8-ea952cdc0492"/>
+          <timestamp value="2022-11-28T21:07:18+00:00"/>
+          <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode|0.2.0"/>
+            <valueUri value="ncpi:loinc-answers|0.2.0"/>
           </parameter>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="GENO:0000143"/>
-            <display value="Codominant inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21254-0"/>
+            <display value="Chromosome 1"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="GENO:0000889"/>
-            <display value="Unknown inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21255-7"/>
+            <display value="Chromosome 2"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="GENO:0000892"/>
-            <display value="Mitochondrial inheritance (primarily or exclusively heteroplasmic)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21256-5"/>
+            <display value="Chromosome 3"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="GENO:0000893"/>
-            <display value="Mitochondrial inheritance (primarily or exclusively homoplasmic)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21257-3"/>
+            <display value="Chromosome 4"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0000006"/>
-            <display value="Autosomal dominant inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21258-1"/>
+            <display value="Chromosome 5"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0000007"/>
-            <display value="Autosomal recessive inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21259-9"/>
+            <display value="Chromosome 6"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0001417"/>
-            <display value="X-linked inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21260-7"/>
+            <display value="Chromosome 7"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0001419"/>
-            <display value="X-linked inheritance (recessive)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21261-5"/>
+            <display value="Chromosome 8"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0001423"/>
-            <display value="X-linked inheritance (dominant)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21262-3"/>
+            <display value="Chromosome 9"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0001426"/>
-            <display value="Multifactorial inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21263-1"/>
+            <display value="Chromosome 10"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0001427"/>
-            <display value="Mitochondrial inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21264-9"/>
+            <display value="Chromosome 11"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0001428"/>
-            <display value="Somatic mutation"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21265-6"/>
+            <display value="Chromosome 12"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0001450"/>
-            <display value="Y-linked inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21266-4"/>
+            <display value="Chromosome 13"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0001470"/>
-            <display value="Autosomal dominant inheritance (sex-limited)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21267-2"/>
+            <display value="Chromosome 14"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0003743"/>
-            <display value="Genetic anticipation"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21268-0"/>
+            <display value="Chromosome 15"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0003745"/>
-            <display value="Sporadic"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21269-8"/>
+            <display value="Chromosome 16"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0010983"/>
-            <display value="Oligogenic"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21270-6"/>
+            <display value="Chromosome 17"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0012274"/>
-            <display value="Autosomal dominant inheritance (with paternal imprinting)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21271-4"/>
+            <display value="Chromosome 18"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0012275"/>
-            <display value="Autosomal dominant inheritance (with maternal imprinting)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21272-2"/>
+            <display value="Chromosome 19"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0025352"/>
-            <display value="Autosomal dominant inheritance (primarily or exclusively de novo)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21273-0"/>
+            <display value="Chromosome 20"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="HP:0031362"/>
-            <display value="Autosomal recessive inheritance (sex-limited)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21274-8"/>
+            <display value="Chromosome 21"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="SEPIO-CG:97020"/>
-            <display value="Semidominant inheritance"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21275-5"/>
+            <display value="Chromosome 22"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="SEPIO-CG:97021"/>
-            <display value="X-linked inheritance (primarily recessive with milder female expression)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21276-3"/>
+            <display value="Chromosome X"/>
           </contains>
           <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="SEPIO-CG:97022"/>
-            <display value="Autosomal dominant inheritance (with genetic anticipation)"/>
-          </contains>
-          <contains>
-            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
-            <code value="SEPIO-CG:97023"/>
-            <display value="Autosomal recessive inheritance (with genetic anticipation)"/>
+            <system value="ncpi:loinc-answers"/>
+            <code value="LA21277-1"/>
+            <display value="Chromosome Y"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -25529,7 +25348,9 @@
                 </td>
                 <td>http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes</td>
                 <td>Medication Efficacy</td>
-                <td/>
+                <td>
+                  <div/>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -25538,7 +25359,9 @@
                 </td>
                 <td>http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes</td>
                 <td>Medication Metabolism</td>
-                <td/>
+                <td>
+                  <div/>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -25547,7 +25370,9 @@
                 </td>
                 <td>http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes</td>
                 <td>Medication Transporter Function</td>
-                <td/>
+                <td>
+                  <div/>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -25556,7 +25381,9 @@
                 </td>
                 <td>http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes</td>
                 <td>High Risk Allele</td>
-                <td/>
+                <td>
+                  <div/>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -25579,7 +25406,9 @@
                 </td>
                 <td>http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes</td>
                 <td>associated-cancer</td>
-                <td/>
+                <td>
+                  <div/>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -25738,8 +25567,8 @@
         </contact>
         <description value="This value set includes all TBD Codes"/>
         <expansion>
-          <identifier value="urn:uuid:a533ed04-a3c8-4fbf-87f0-466cd13832c7"/>
-          <timestamp value="2022-10-31T22:47:39+00:00"/>
+          <identifier value="urn:uuid:ed1f42fe-0117-4e95-b580-d6602122977c"/>
+          <timestamp value="2022-11-28T21:07:20+00:00"/>
           <total value="18"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29933,7 +29762,7 @@
         <title value="Disease Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2022-10-31T22:46:57+00:00"/>
+        <date value="2022-11-28T21:06:44+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -29952,8 +29781,8 @@
         </contact>
         <description value="This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems."/>
         <expansion>
-          <identifier value="urn:uuid:0640be1b-6f4c-474c-a446-128cab66594f"/>
-          <timestamp value="2022-10-31T22:47:41+00:00"/>
+          <identifier value="urn:uuid:d3979218-3606-4f25-9d9b-1532fe5f45a5"/>
+          <timestamp value="2022-11-28T21:07:20+00:00"/>
           <total value="504"/>
           <parameter>
             <name value="excludeNested"/>
@@ -32508,16 +32337,16 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/loinc-answers"/>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs"/>
     <resource>
       <ValueSet>
-        <id value="loinc-answers"/>
+        <id value="condition-inheritance-vs"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 24 concepts</p>
+            <p>This value set contains 25 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-loinc-answers.html">LOINC Answers v0.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-ConditionInheritanceMode.html">Condition Inheritance Pattern v0.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -32533,206 +32362,213 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21254-0"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21254-0">LA21254-0</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-GENO-0000143"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-GENO.580000143">GENO:0000143</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 1</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Codominant inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21255-7"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21255-7">LA21255-7</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-GENO-0000889"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-GENO.580000889">GENO:0000889</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 2</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Unknown inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21256-5"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21256-5">LA21256-5</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-GENO-0000892"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-GENO.580000892">GENO:0000892</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 3</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Mitochondrial inheritance (primarily or exclusively heteroplasmic)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21257-3"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21257-3">LA21257-3</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-GENO-0000893"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-GENO.580000893">GENO:0000893</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 4</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Mitochondrial inheritance (primarily or exclusively homoplasmic)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21258-1"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21258-1">LA21258-1</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0000006"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580000006">HP:0000006</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 5</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal dominant inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21259-9"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21259-9">LA21259-9</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0000007"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580000007">HP:0000007</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 6</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal recessive inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21260-7"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21260-7">LA21260-7</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001417"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001417">HP:0001417</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 7</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>X-linked inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21261-5"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21261-5">LA21261-5</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001419"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001419">HP:0001419</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 8</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>X-linked inheritance (recessive)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21262-3"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21262-3">LA21262-3</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001423"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001423">HP:0001423</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 9</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>X-linked inheritance (dominant)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21263-1"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21263-1">LA21263-1</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001426"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001426">HP:0001426</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 10</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Multifactorial inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21264-9"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21264-9">LA21264-9</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001427"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001427">HP:0001427</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 11</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Mitochondrial inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21265-6"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21265-6">LA21265-6</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001428"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001428">HP:0001428</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 12</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Somatic mutation</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21266-4"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21266-4">LA21266-4</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001450"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001450">HP:0001450</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 13</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Y-linked inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21267-2"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21267-2">LA21267-2</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0001470"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580001470">HP:0001470</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 14</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal dominant inheritance (sex-limited)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21268-0"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21268-0">LA21268-0</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0003743"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580003743">HP:0003743</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 15</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Genetic anticipation</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21269-8"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21269-8">LA21269-8</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0003745"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580003745">HP:0003745</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 16</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Sporadic</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21270-6"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21270-6">LA21270-6</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0010983"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580010983">HP:0010983</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 17</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Oligogenic</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21271-4"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21271-4">LA21271-4</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0012274"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580012274">HP:0012274</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 18</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal dominant inheritance (with paternal imprinting)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21272-2"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21272-2">LA21272-2</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0012275"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580012275">HP:0012275</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 19</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal dominant inheritance (with maternal imprinting)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21273-0"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21273-0">LA21273-0</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0025352"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580025352">HP:0025352</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 20</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal dominant inheritance (primarily or exclusively de novo)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21274-8"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21274-8">LA21274-8</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-HP-0031362"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-HP.580031362">HP:0031362</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 21</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal recessive inheritance (sex-limited)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21275-5"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21275-5">LA21275-5</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-SEPIO-CG-97020"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-SEPIO-CG.5897020">SEPIO-CG:97020</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome 22</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Semidominant inheritance</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21276-3"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21276-3">LA21276-3</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-SEPIO-CG-97021"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-SEPIO-CG.5897021">SEPIO-CG:97021</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome X</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>X-linked inheritance (primarily recessive with milder female expression)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="ncpi-loinc-answers-LA21277-1"> </a>  
-                  <a href="CodeSystem-loinc-answers.html#loinc-answers-LA21277-1">LA21277-1</a>
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-SEPIO-CG-97022"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-SEPIO-CG.5897022">SEPIO-CG:97022</a>
                 </td>
-                <td>ncpi:loinc-answers</td>
-                <td>Chromosome Y</td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal dominant inheritance (with genetic anticipation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-ConditionInheritanceMode-SEPIO-CG-97023"> </a>  
+                  <a href="CodeSystem-ConditionInheritanceMode.html#ConditionInheritanceMode-SEPIO-CG.5897023">SEPIO-CG:97023</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</td>
+                <td>Autosomal recessive inheritance (with genetic anticipation)</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/loinc-answers"/>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs"/>
         <version value="0.2.0"/>
-        <name value="LoincAnswers"/>
-        <title value="LOINC Answers"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2022-10-31T22:46:57+00:00"/>
+        <name value="ConditionInheritanceModeVS"/>
+        <title value="Condition Inheritance Pattern"/>
+        <status value="active"/>
+        <date value="2022-11-28T21:06:44+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -32749,138 +32585,312 @@
             <use value="work"/>
           </telecom>
         </contact>
-        <description value="LOINC ANSWERS used by NCPI resources"/>
+        <description value="Value Set for specific ttransmission patterns of a condition in a pedigree"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a545083d-45c2-4656-9a9c-32145b098a72"/>
-          <timestamp value="2022-10-31T22:47:43+00:00"/>
-          <total value="24"/>
+          <identifier value="urn:uuid:874db695-c48e-488c-8ec3-94575b86fc64"/>
+          <timestamp value="2022-11-28T21:07:23+00:00"/>
+          <total value="25"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="ncpi:loinc-answers|0.2.0"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode|0.2.0"/>
           </parameter>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21254-0"/>
-            <display value="Chromosome 1"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="GENO:0000143"/>
+            <display value="Codominant inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21255-7"/>
-            <display value="Chromosome 2"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="GENO:0000889"/>
+            <display value="Unknown inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21256-5"/>
-            <display value="Chromosome 3"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="GENO:0000892"/>
+            <display value="Mitochondrial inheritance (primarily or exclusively heteroplasmic)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21257-3"/>
-            <display value="Chromosome 4"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="GENO:0000893"/>
+            <display value="Mitochondrial inheritance (primarily or exclusively homoplasmic)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21258-1"/>
-            <display value="Chromosome 5"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0000006"/>
+            <display value="Autosomal dominant inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21259-9"/>
-            <display value="Chromosome 6"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0000007"/>
+            <display value="Autosomal recessive inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21260-7"/>
-            <display value="Chromosome 7"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0001417"/>
+            <display value="X-linked inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21261-5"/>
-            <display value="Chromosome 8"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0001419"/>
+            <display value="X-linked inheritance (recessive)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21262-3"/>
-            <display value="Chromosome 9"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0001423"/>
+            <display value="X-linked inheritance (dominant)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21263-1"/>
-            <display value="Chromosome 10"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0001426"/>
+            <display value="Multifactorial inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21264-9"/>
-            <display value="Chromosome 11"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0001427"/>
+            <display value="Mitochondrial inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21265-6"/>
-            <display value="Chromosome 12"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0001428"/>
+            <display value="Somatic mutation"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21266-4"/>
-            <display value="Chromosome 13"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0001450"/>
+            <display value="Y-linked inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21267-2"/>
-            <display value="Chromosome 14"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0001470"/>
+            <display value="Autosomal dominant inheritance (sex-limited)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21268-0"/>
-            <display value="Chromosome 15"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0003743"/>
+            <display value="Genetic anticipation"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21269-8"/>
-            <display value="Chromosome 16"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0003745"/>
+            <display value="Sporadic"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21270-6"/>
-            <display value="Chromosome 17"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0010983"/>
+            <display value="Oligogenic"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21271-4"/>
-            <display value="Chromosome 18"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0012274"/>
+            <display value="Autosomal dominant inheritance (with paternal imprinting)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21272-2"/>
-            <display value="Chromosome 19"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0012275"/>
+            <display value="Autosomal dominant inheritance (with maternal imprinting)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21273-0"/>
-            <display value="Chromosome 20"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0025352"/>
+            <display value="Autosomal dominant inheritance (primarily or exclusively de novo)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21274-8"/>
-            <display value="Chromosome 21"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="HP:0031362"/>
+            <display value="Autosomal recessive inheritance (sex-limited)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21275-5"/>
-            <display value="Chromosome 22"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="SEPIO-CG:97020"/>
+            <display value="Semidominant inheritance"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21276-3"/>
-            <display value="Chromosome X"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="SEPIO-CG:97021"/>
+            <display value="X-linked inheritance (primarily recessive with milder female expression)"/>
           </contains>
           <contains>
-            <system value="ncpi:loinc-answers"/>
-            <code value="LA21277-1"/>
-            <display value="Chromosome Y"/>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="SEPIO-CG:97022"/>
+            <display value="Autosomal dominant inheritance (with genetic anticipation)"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode"/>
+            <code value="SEPIO-CG:97023"/>
+            <display value="Autosomal recessive inheritance (with genetic anticipation)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1"/>
+    <resource>
+      <ValueSet>
+        <id value="datatable-valueset-1"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html">Datatable CodeSystem (lists all variables) v0.2.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>
+                    <a href="ValueSet-datatable-mappings-valueset-1.html">ConceptMap[http://example.org/my-dataset/fhir/conceptmap/data-to-public]</a>
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-subjectid"> </a>  
+                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-subjectid">subjectid</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
+                <td>Subject's Unique Identifier</td>
+                <td>
+                  <span title="EQUIVALENT">~</span>C2348584
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-gender"> </a>  
+                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-gender">gender</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
+                <td>Gender</td>
+                <td>
+                  <span title="EQUIVALENT">~</span>C0079399
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-age-at-enrollment"> </a>  
+                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-age_at_enrollment">age_at_enrollment</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
+                <td>Subject's Age at Enrollment in days</td>
+                <td>
+                  <span title="EQUIVALENT">~</span>C168843
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-bmi"> </a>  
+                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-bmi">bmi</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
+                <td>Subject's BMI, Measured at Enrollment</td>
+                <td>
+                  <span title="SOURCEISNARROWERTHANTARGET">&lt;</span>C1305855
+                  <br/>
+                  <span title="SOURCEISNARROWERTHANTARGET">&lt;</span>
+                  <a href="https://loinc.org/LP35925-4/">LP35925-4</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-status"> </a>  
+                  <a href="CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-status">status</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td>
+                <td>Subject's status (Case or Control)</td>
+                <td>
+                  <span title="EQUIVALENT">~</span>C0872128
+                  <br/>
+                  <span title="EQUIVALENT">~</span>
+                  <a href="CodeSystem-hpo.html#hpo-HP.580010772">HP:0010772</a>
+                  <br/>
+                  <span title="EQUIVALENT">~</span>
+                  <a href="CodeSystem-mondo.html#mondo-MONDO.580017705">MONDO:0017705</a>
+                  <br/>
+                  <span title="EQUIVALENT">~</span>
+                  <a href="CodeSystem-mondo.html#mondo-MONDO.580007130">MONDO:0007130</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1"/>
+        <version value="0.2.0"/>
+        <name value="ExampleStudyTableVS1"/>
+        <title value="Table ValueSet"/>
+        <status value="draft"/>
+        <date value="2022-11-28T21:06:44+00:00"/>
+        <publisher value="NCPI FHIR Working Group"/>
+        <contact>
+          <name value="NCPI FHIR Working Group"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://github.com/nih-ncpi"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Meen Chul Kim"/>
+          <telecom>
+            <system value="email"/>
+            <value value="meenchul@d3b.center"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
+        <description value="Example Data Table with 4 variables"/>
+        <expansion>
+          <identifier value="urn:uuid:4995d389-312c-4548-86a8-68109c5217ba"/>
+          <timestamp value="2022-11-28T21:07:24+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+            <code value="subjectid"/>
+            <display value="Subject's Unique Identifier"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+            <code value="gender"/>
+            <display value="Gender"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+            <code value="age_at_enrollment"/>
+            <display value="Subject's Age at Enrollment in days"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+            <code value="bmi"/>
+            <display value="Subject's BMI, Measured at Enrollment"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"/>
+            <code value="status"/>
+            <display value="Subject's status (Case or Control)"/>
           </contains>
         </expansion>
       </ValueSet>

@@ -3,9 +3,9 @@
   "name": "NCPIFHIRImplementationGuide",
   "package-id": "NCPI-FHIR-Implementation-Guide",
   "ig-ver": "0.2.0",
-  "date": "Mon, 31 Oct, 2022 22:46:57 +0000",
+  "date": "Mon, 28 Nov, 2022 21:06:44 +0000",
   "errs": 22,
-  "warnings": 49,
+  "warnings": 50,
   "hints": 26,
   "version": "4.0.1",
   "tool": "5.0.0-ballot (3)"

@@ -10,7 +10,7 @@
   "name": "NCPIFHIRImplementationGuide",
   "title": "NCPI FHIR Implementation Guide",
   "status": "draft",
-  "date": "2022-10-31T22:46:57+00:00",
+  "date": "2022-11-28T21:06:44+00:00",
   "publisher": "NCPI FHIR Working Group",
   "contact": [
     {
@@ -42,9 +42,15 @@
   "dependsOn": [
     {
       "id": "hl7tx",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+          "valueMarkdown": "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+        }
+      ],
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "4.0.0"
+      "version": "5.0.0"
     },
     {
       "id": "hl7_fhir_us_core",

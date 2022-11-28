@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "research-subject-study-01-patient-02"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchSubject</b><a name=\"research-subject-study-01-patient-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchSubject \"research-subject-study-01-patient-02\" </p></div><p><b>status</b>: on-study</p><p><b>study</b>: <a href=\"ResearchStudy-ncpi-research-study-01.html\">ResearchStudy/ncpi-research-study-01</a></p><p><b>individual</b>: <a href=\"Patient-ncpi-research-study-01-patient-02.html\">Patient/ncpi-research-study-01-patient-02</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchSubject</b><a name=\"research-subject-study-01-patient-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchSubject &quot;research-subject-study-01-patient-02&quot; </p></div><p><b>status</b>: on-study</p><p><b>study</b>: <a href=\"ResearchStudy-ncpi-research-study-01.html\">ResearchStudy/ncpi-research-study-01</a></p><p><b>individual</b>: <a href=\"Patient-ncpi-research-study-01-patient-02.html\">Patient/ncpi-research-study-01-patient-02</a></p></div>"
   ];
   fhir:ResearchSubject.status [ fhir:value "on-study"];
   fhir:ResearchSubject.study [
