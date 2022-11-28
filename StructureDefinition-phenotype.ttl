@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "Phenotype"];
   fhir:StructureDefinition.title [ fhir:value "NCPI Phenotype"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-28T21:06:44+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-28T21:07:57+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

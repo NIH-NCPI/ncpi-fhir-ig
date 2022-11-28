@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "ExampleStudyTableMappingsVS1"];
   fhir:ValueSet.title [ fhir:value "Harmonized ValueSet for data table"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-11-28T21:06:44+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-11-28T21:07:57+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
