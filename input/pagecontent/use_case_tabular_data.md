@@ -1,12 +1,12 @@
-### Representing Raw Data in FHIR
-There are a number of reasons to support representing raw data in FHIR whether or not it is expected that the data will be fully transformed to meet the appropriate FHIR representation for interoperable data. These include:
+### Representing Tabular Data in FHIR
+There are a number of reasons to support representing tabular data in FHIR whether or not it is expected that the data will be fully transformed to meet the appropriate FHIR representation for interoperable data. These include:
 
 * Provide FHIR access for data where there isn't funding to properly transform it to meet the interoperable model.
 * Provide access to all data even if there are items that currently don't fit any of the current FHIR models in use. 
 * Provide data provenance for all of the transformed data using the same API, FHIR as opposed to requiring researchers to step outside FHIR and attempt to trace the origins back to those original data sources. 
 
-#### Raw Data as Observations (with components)
-<img width="100%" src="raw-data-as-observations.png" alt="Raw Data as Observations" />
+#### Tabular Data as Observations (with components)
+<img width="100%" src="raw-data-as-observations.png" alt="Tabular Data as Observations" />
 FHIR Observations are rich resource structures that provide a direct link to a *subject*, which can be a Patient or a group of Patients) and an optional *focus* which can point to any other resource. There is also the possibility to link the observation to an *encounter*. Each observation can have 0 or more *component* entries.
 
 ##### Component Composition
@@ -44,7 +44,7 @@ In the case of many task related output, there may not really be a single *Patie
 For some data tables, it is easy to imagine they are describing the outcome of a single encounter which will be realized by during a transformation. It seems reasonable that such a relationship could be captured for these resources. 
 
 #### Raw Data as Questionnaires and QuestionnaireResponses
-<img width="100%" src="raw-data-as-questionnaires.png" alt="Raw Data as Questionnaires" />
+<img width="100%" src="raw-data-as-questionnaires.png" alt="Tabular Data as Questionnaires" />
 FHIR R4 natively provides 2 resources to support survey instruments in FHIR along with their responses: *Questionnaire* and *QuestionnaireResponse*. These are rich resources intended to support the types of surveys that may be used during routine medical care. As a result, these fit nicely alongside our objectives for capturing raw research data. 
 
 There are two components to this model:

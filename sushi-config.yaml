@@ -50,7 +50,7 @@ menu:
     Genomic Analysis: performing_a_genomic_analysis.html
     Rare Disease: rare_disease.html
     Childhood Cancer: childhood_cancer.html
-    Using "Source" Data: using_source_data.html
+    Using "Source" Data: use_case_tabular_data.html
     EHR Data: ehr.html
   Artifacts: 
     All Artifacts: artifacts.html
