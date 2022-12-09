@@ -86,11 +86,11 @@ There are likely to be some challenges still in that many of the organizations d
 
 This IG will mainly serve to provide the ResearchStudy and ResearchSubject resource layer on top of the EHR data as collected. Additional work may need to be done to address the challenges of EHR data interoperability and consistency, but this is within the bounds of any other type of study data.
 
-### Representation of Raw Data 
+### Representation of Tabular Data 
 There are a number of reasons to support representing raw data in FHIR whether or not it is expected that the data will be fully transformed to meet the appropriate FHIR representation for interoperable data. These include:
 
 * Provide FHIR access for data where there isn't funding to properly transform it to meet the interoperable model.
 * Provide access to all data even if there are items that currently don't fit any of the current FHIR models in use. 
 * Provide data provenance for all of the transformed data using the same API, FHIR as opposed to requiring researchers to step outside FHIR and attempt to trace the origins back to those original data sources. 
 
-For more information, see the [detailed description](use_case_raw_data.html).
+For more information, see the [detailed description](use_case_tabular_data.html).
