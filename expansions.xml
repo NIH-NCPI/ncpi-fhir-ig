@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3d406e78-15c6-4c2d-8592-6a8fe14481af"/>
+  <id value="aa3ee620-a0bc-4f9b-bbdd-7d0683039967"/>
   <meta>
-    <lastUpdated value="2022-11-28T21:07:57.188+00:00"/>
+    <lastUpdated value="2022-12-09T17:30:30.064+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -225,7 +225,7 @@
         <name value="Ncpi_VS"/>
         <title value="NCPI FHIR Codes"/>
         <status value="draft"/>
-        <date value="2022-11-28T21:07:57+00:00"/>
+        <date value="2022-12-09T17:30:30+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -244,8 +244,8 @@
         </contact>
         <description value="Codes that would apply to NCPI projects"/>
         <expansion>
-          <identifier value="urn:uuid:4d8609da-197c-40fa-916f-cb829f7071a2"/>
-          <timestamp value="2022-11-28T21:08:41+00:00"/>
+          <identifier value="urn:uuid:827d6782-defd-498f-b240-fc4f3e3fa21c"/>
+          <timestamp value="2022-12-09T17:31:19+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -15452,7 +15452,7 @@
         <title value="Phenotype Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2022-11-28T21:07:57+00:00"/>
+        <date value="2022-12-09T17:30:30+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -15471,8 +15471,8 @@
         </contact>
         <description value="This value set includes all codes from Human Phenotype Ontology."/>
         <expansion>
-          <identifier value="urn:uuid:ffc25d40-3b03-47c3-812a-ea3e060d29fb"/>
-          <timestamp value="2022-11-28T21:08:41+00:00"/>
+          <identifier value="urn:uuid:77583575-d12b-4d49-9112-c68d4b984cb2"/>
+          <timestamp value="2022-12-09T17:31:19+00:00"/>
           <total value="1880"/>
           <parameter>
             <name value="excludeNested"/>
@@ -25115,7 +25115,7 @@
         <title value="LOINC Answers"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2022-11-28T21:07:57+00:00"/>
+        <date value="2022-12-09T17:30:30+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -25134,8 +25134,8 @@
         </contact>
         <description value="LOINC ANSWERS used by NCPI resources"/>
         <expansion>
-          <identifier value="urn:uuid:2ba82914-273e-44eb-b673-fb7b7983bd80"/>
-          <timestamp value="2022-11-28T21:08:45+00:00"/>
+          <identifier value="urn:uuid:18c5f3f8-dec4-4b36-aaf8-9cfddbdfc2e5"/>
+          <timestamp value="2022-12-09T17:31:24+00:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -25567,8 +25567,8 @@
         </contact>
         <description value="This value set includes all TBD Codes"/>
         <expansion>
-          <identifier value="urn:uuid:32830aae-d7a1-4811-a35b-55baf74fce2e"/>
-          <timestamp value="2022-11-28T21:08:47+00:00"/>
+          <identifier value="urn:uuid:a8552c4d-ac28-46c4-bf95-a673c00e5498"/>
+          <timestamp value="2022-12-09T17:31:26+00:00"/>
           <total value="18"/>
           <parameter>
             <name value="excludeNested"/>
@@ -29762,7 +29762,7 @@
         <title value="Disease Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2022-11-28T21:07:57+00:00"/>
+        <date value="2022-12-09T17:30:30+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -29781,8 +29781,8 @@
         </contact>
         <description value="This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems."/>
         <expansion>
-          <identifier value="urn:uuid:f5034d41-6efd-48df-b617-e6eda365533b"/>
-          <timestamp value="2022-11-28T21:08:47+00:00"/>
+          <identifier value="urn:uuid:c161fd2d-96c1-4a12-b99d-26557c7140a8"/>
+          <timestamp value="2022-12-09T17:31:26+00:00"/>
           <total value="504"/>
           <parameter>
             <name value="excludeNested"/>
@@ -32568,7 +32568,7 @@
         <name value="ConditionInheritanceModeVS"/>
         <title value="Condition Inheritance Pattern"/>
         <status value="active"/>
-        <date value="2022-11-28T21:07:57+00:00"/>
+        <date value="2022-12-09T17:30:30+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -32593,8 +32593,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:90eb2e74-2972-49d5-9d36-2556303e7cbd"/>
-          <timestamp value="2022-11-28T21:08:51+00:00"/>
+          <identifier value="urn:uuid:1e39a66d-6e13-4a21-ae8a-da4e76e24a64"/>
+          <timestamp value="2022-12-09T17:31:30+00:00"/>
           <total value="25"/>
           <parameter>
             <name value="excludeNested"/>
@@ -32758,7 +32758,7 @@
                 </td>
                 <td>
                   <b>
-                    <a href="ValueSet-datatable-mappings-valueset-1.html">ConceptMap[http://example.org/my-dataset/fhir/conceptmap/data-to-public]</a>
+                    <a href="ValueSet-datatable-mappings-valueset-1.html">ConceptMap[http://example.org/my-dataset/fhir/conceptmap/data-to-public|0.2.0]</a>
                   </b>
                 </td>
               </tr>
@@ -32837,7 +32837,7 @@
         <name value="ExampleStudyTableVS1"/>
         <title value="Table ValueSet"/>
         <status value="draft"/>
-        <date value="2022-11-28T21:07:57+00:00"/>
+        <date value="2022-12-09T17:30:30+00:00"/>
         <publisher value="NCPI FHIR Working Group"/>
         <contact>
           <name value="NCPI FHIR Working Group"/>
@@ -32856,8 +32856,8 @@
         </contact>
         <description value="Example Data Table with 4 variables"/>
         <expansion>
-          <identifier value="urn:uuid:8931958d-d663-4f34-a8f3-129051a8c4f6"/>
-          <timestamp value="2022-11-28T21:08:53+00:00"/>
+          <identifier value="urn:uuid:bc4ce203-1abd-44e3-913d-78f4926dd82e"/>
+          <timestamp value="2022-12-09T17:31:32+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

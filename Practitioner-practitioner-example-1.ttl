@@ -7,12 +7,12 @@
 
 <https://nih-ncpi.github.io/ncpi-fhir-ig/Practitioner/practitioner-example-1> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "practitioner-example-1"];
+  fhir:Resource.id [ fhir:value "practitioner-example-1"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-example-1&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: Jane Samantha Smith(OFFICIAL)</p><p><b>telecom</b>: ph: (555) 555-5555(WORK)</p><p><b>address</b>: 3401 Civic Center Blvd., Philadelphia, PA 19104(WORK)</p><p><b>gender</b>: female</p></div>"
-  ];
-  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+  ]; # 
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean]; # 
   fhir:Practitioner.name [
      fhir:index 0;
      fhir:HumanName.use [ fhir:value "official" ];
@@ -25,14 +25,14 @@
        fhir:value "Samantha";
        fhir:index 1
      ]
-  ];
+  ]; # 
   fhir:Practitioner.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(555) 555-5555" ];
      fhir:ContactPoint.use [ fhir:value "work" ];
      fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
-  ];
+  ]; # 
   fhir:Practitioner.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "work" ];
@@ -45,8 +45,8 @@
      fhir:Address.city [ fhir:value "Philadelphia" ];
      fhir:Address.state [ fhir:value "PA" ];
      fhir:Address.postalCode [ fhir:value "19104" ]
-  ];
-  fhir:Practitioner.gender [ fhir:value "female"] .
+  ]; # 
+  fhir:Practitioner.gender [ fhir:value "female"] . # 
 
 # - ontology header ------------------------------------------------------------
 

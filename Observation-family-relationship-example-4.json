@@ -1,46 +1,38 @@
 {
-  "resourceType": "Observation",
-  "id": "family-relationship-example-4",
-  "meta": {
-    "profile": [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship"
-    ]
+  "resourceType" : "Observation",
+  "id" : "family-relationship-example-4",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"family-relationship-example-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;family-relationship-example-4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-family-relationship.html\">NCPI Family Relationship</a></p></div><p><b>status</b>: final</p><p><b>code</b>: family member <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FAMMEMB)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-3.html\">Patient/patient-example-3</a> &quot; SMITH&quot;</p><p><b>focus</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>value</b>: Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#PRN &quot;parent&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH &quot;father&quot;)</span></p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"family-relationship-example-4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;family-relationship-example-4&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-family-relationship.html\">NCPI Family Relationship</a></p></div><p><b>status</b>: final</p><p><b>code</b>: family member <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FAMMEMB)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-3.html\">Patient/patient-example-3</a> &quot; SMITH&quot;</p><p><b>focus</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>value</b>: Father <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#PRN &quot;parent&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FTH &quot;father&quot;)</span></p></div>"
   },
-  "status": "final",
-  "code": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-        "code": "FAMMEMB",
-        "display": "family member"
-      }
-    ]
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code" : "FAMMEMB",
+      "display" : "family member"
+    }]
   },
-  "subject": {
-    "reference": "Patient/patient-example-3"
+  "subject" : {
+    "reference" : "Patient/patient-example-3"
   },
-  "focus": [
+  "focus" : [{
+    "reference" : "Patient/patient-example-1"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code" : "PRN",
+      "display" : "parent"
+    },
     {
-      "reference": "Patient/patient-example-1"
-    }
-  ],
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-        "code": "PRN",
-        "display": "parent"
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-        "code": "FTH",
-        "display": "father"
-      }
-    ],
-    "text": "Father"
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code" : "FTH",
+      "display" : "father"
+    }],
+    "text" : "Father"
   }
 }

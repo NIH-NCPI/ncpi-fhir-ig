@@ -7,20 +7,20 @@
 
 <https://nih-ncpi.github.io/ncpi-fhir-ig/PractitionerRole/practitioner-role-example-1> a fhir:PractitionerRole;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "practitioner-role-example-1"];
+  fhir:Resource.id [ fhir:value "practitioner-role-example-1"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"practitioner-role-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;practitioner-role-example-1&quot; </p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-practitioner-example-1.html\">Practitioner/practitioner-example-1</a> &quot; SMITH&quot;</p><p><b>organization</b>: <a href=\"Organization-organization-example-1.html\">Organization/organization-example-1</a> &quot;Amazing Children's Hospital&quot;</p><p><b>code</b>: Principal Investigator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-practitioner-role.html\">Practitioner role</a>#researcher &quot;Researcher&quot;)</span></p><p><b>telecom</b>: ph: (555) 555-5555(WORK)</p></div>"
-  ];
-  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  ]; # 
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean]; # 
   fhir:PractitionerRole.practitioner [
      fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Practitioner/practitioner-example-1>;
      fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example-1" ]
-  ];
+  ]; # 
   fhir:PractitionerRole.organization [
      fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Organization/organization-example-1>;
      fhir:Reference.reference [ fhir:value "Organization/organization-example-1" ]
-  ];
+  ]; # 
   fhir:PractitionerRole.code [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -30,14 +30,14 @@
        fhir:Coding.display [ fhir:value "Researcher" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Principal Investigator" ]
-  ];
+  ]; # 
   fhir:PractitionerRole.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(555) 555-5555" ];
      fhir:ContactPoint.use [ fhir:value "work" ];
      fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -1,290 +1,288 @@
 [
   {
-    "id": "example-study-data-dictionary-conceptmap-1",
-    "type": "ConceptMap",
-    "url": "http://example.org/my-dataset/fhir/conceptmap/data-to-public",
-    "version": "0.2.0"
+    "id" : "example-study-data-dictionary-conceptmap-1",
+    "type" : "ConceptMap",
+    "url" : "http://example.org/my-dataset/fhir/conceptmap/data-to-public",
+    "version" : "0.2.0"
   },
   {
-    "id": "tbd-codes",
-    "type": "CodeSystem",
-    "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes",
-    "version": "0.2.0",
-    "name": "TbdCodes"
+    "id" : "tbd-codes",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes",
+    "version" : "0.2.0",
+    "name" : "TbdCodes"
   },
   {
-    "id": "tbd-codes",
-    "type": "ValueSet",
-    "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes",
-    "version": "0.2.0",
-    "name": "ToBeDeterminedCodes"
+    "id" : "tbd-codes",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes",
+    "version" : "0.2.0",
+    "name" : "ToBeDeterminedCodes"
   },
   {
-    "id": "hpo",
-    "type": "CodeSystem",
-    "url": "http://purl.obolibrary.org/obo/hp.owl",
-    "version": "0.2.0",
-    "name": "HPO"
+    "id" : "hpo",
+    "type" : "CodeSystem",
+    "url" : "http://purl.obolibrary.org/obo/hp.owl",
+    "version" : "0.2.0",
+    "name" : "HPO"
   },
   {
-    "id": "mondo",
-    "type": "CodeSystem",
-    "url": "http://purl.obolibrary.org/obo/mondo.owl",
-    "version": "0.2.0",
-    "name": "Mondo"
+    "id" : "mondo",
+    "type" : "CodeSystem",
+    "url" : "http://purl.obolibrary.org/obo/mondo.owl",
+    "version" : "0.2.0",
+    "name" : "Mondo"
   },
   {
-    "id": "ncit",
-    "type": "CodeSystem",
-    "url": "http://purl.obolibrary.org/obo/ncit.owl",
-    "version": "0.2.0",
-    "name": "NCIt"
+    "id" : "ncit",
+    "type" : "CodeSystem",
+    "url" : "http://purl.obolibrary.org/obo/ncit.owl",
+    "version" : "0.2.0",
+    "name" : "NCIt"
   },
   {
-    "id": "v3-hgvs",
-    "type": "CodeSystem",
-    "url": "http://varnomen.hgvs.org",
-    "version": "0.2.0",
-    "name": "Hgvs",
-    "oids": [
-      "2.16.840.1.113883.6.282"
-    ]
+    "id" : "v3-hgvs",
+    "type" : "CodeSystem",
+    "url" : "http://varnomen.hgvs.org",
+    "version" : "0.2.0",
+    "name" : "Hgvs",
+    "oids" : ["2.16.840.1.113883.6.282"]
   },
   {
-    "id": "example-study-data-dictionary-table-1",
-    "type": "ActivityDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ActivityDefinition/example-study-data-dictionary-table-1",
-    "version": "0.2.0"
+    "id" : "example-study-data-dictionary-table-1",
+    "type" : "ActivityDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ActivityDefinition/example-study-data-dictionary-table-1",
+    "version" : "0.2.0"
   },
   {
-    "id": "ConditionInheritanceMode",
-    "type": "CodeSystem",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode",
-    "version": "0.2.0",
-    "name": "ConditionInheritanceMode"
+    "id" : "ConditionInheritanceMode",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode",
+    "version" : "0.2.0",
+    "name" : "ConditionInheritanceMode"
   },
   {
-    "id": "example-study-data-dictionary-dataset-codesystem-1",
-    "type": "CodeSystem",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1",
-    "version": "0.2.0",
-    "name": "ExampleStudyDataDictionaryStudyDatasetCS1"
+    "id" : "example-study-data-dictionary-dataset-codesystem-1",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1",
+    "version" : "0.2.0",
+    "name" : "ExampleStudyDataDictionaryStudyDatasetCS1"
   },
   {
-    "id": "example-study-data-dictionary-datatable-codesystem-1",
-    "type": "CodeSystem",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
-    "version": "0.2.0",
-    "name": "ExampleStudyDataDictionaryStudyTableCS1"
+    "id" : "example-study-data-dictionary-datatable-codesystem-1",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+    "version" : "0.2.0",
+    "name" : "ExampleStudyDataDictionaryStudyTableCS1"
   },
   {
-    "id": "ncpi",
-    "type": "CodeSystem",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi",
-    "version": "0.2.0",
-    "name": "Ncpi"
+    "id" : "ncpi",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi",
+    "version" : "0.2.0",
+    "name" : "Ncpi"
   },
   {
-    "id": "ncpi-data-types",
-    "type": "CodeSystem",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types",
-    "version": "0.2.0",
-    "name": "NcpiDataTypes"
+    "id" : "ncpi-data-types",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types",
+    "version" : "0.2.0",
+    "name" : "NcpiDataTypes"
   },
   {
-    "id": "NCPI-FHIR-Implementation-Guide",
-    "type": "ImplementationGuide",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide",
-    "version": "0.2.0",
-    "name": "NCPIFHIRImplementationGuide"
+    "id" : "NCPI-FHIR-Implementation-Guide",
+    "type" : "ImplementationGuide",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ImplementationGuide/NCPI-FHIR-Implementation-Guide",
+    "version" : "0.2.0",
+    "name" : "NCPIFHIRImplementationGuide"
   },
   {
-    "id": "disease",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease",
-    "version": "0.2.0",
-    "name": "Disease"
+    "id" : "disease",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease",
+    "version" : "0.2.0",
+    "name" : "Disease"
   },
   {
-    "id": "family-relationship",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship",
-    "version": "0.2.0",
-    "name": "FamilyRelationship"
+    "id" : "family-relationship",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship",
+    "version" : "0.2.0",
+    "name" : "FamilyRelationship"
   },
   {
-    "id": "ncpi-drs-attachment",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment",
-    "version": "0.2.0",
-    "name": "DRSAttachment"
+    "id" : "ncpi-drs-attachment",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-attachment",
+    "version" : "0.2.0",
+    "name" : "DRSAttachment"
   },
   {
-    "id": "ncpi-drs-document-reference",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference",
-    "version": "0.2.0",
-    "name": "DRSDocumentReference"
+    "id" : "ncpi-drs-document-reference",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-drs-document-reference",
+    "version" : "0.2.0",
+    "name" : "DRSDocumentReference"
   },
   {
-    "id": "ncpi-research-document-reference",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference",
-    "version": "0.2.0",
-    "name": "ResearchDocumentReference"
+    "id" : "ncpi-research-document-reference",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-document-reference",
+    "version" : "0.2.0",
+    "name" : "ResearchDocumentReference"
   },
   {
-    "id": "ncpi-research-study",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study",
-    "version": "0.2.0",
-    "name": "NcpiResearchStudy"
+    "id" : "ncpi-research-study",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-research-study",
+    "version" : "0.2.0",
+    "name" : "NcpiResearchStudy"
   },
   {
-    "id": "ncpi-specimen-task",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
-    "version": "0.2.0",
-    "name": "SpecimenTask"
+    "id" : "ncpi-specimen-task",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/ncpi-specimen-task",
+    "version" : "0.2.0",
+    "name" : "SpecimenTask"
   },
   {
-    "id": "phenotype",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
-    "version": "0.2.0",
-    "name": "Phenotype"
+    "id" : "phenotype",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/phenotype",
+    "version" : "0.2.0",
+    "name" : "Phenotype"
   },
   {
-    "id": "raw-data-observation",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/raw-data-observation",
-    "version": "0.2.0",
-    "name": "RawDataObservation"
+    "id" : "raw-data-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/raw-data-observation",
+    "version" : "0.2.0",
+    "name" : "RawDataObservation"
   },
   {
-    "id": "study-data-dictionary-harmony",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony",
-    "version": "0.2.0",
-    "name": "StudyDataDictionaryHarmony"
+    "id" : "study-data-dictionary-harmony",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony",
+    "version" : "0.2.0",
+    "name" : "StudyDataDictionaryHarmony"
   },
   {
-    "id": "study-data-dictionary-table",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table",
-    "version": "0.2.0",
-    "name": "StudyDataDictionaryTable"
+    "id" : "study-data-dictionary-table",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-table",
+    "version" : "0.2.0",
+    "name" : "StudyDataDictionaryTable"
   },
   {
-    "id": "study-data-dictionary-variable",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable",
-    "version": "0.2.0",
-    "name": "StudyDataDictionaryVariable"
+    "id" : "study-data-dictionary-variable",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable",
+    "version" : "0.2.0",
+    "name" : "StudyDataDictionaryVariable"
   },
   {
-    "id": "study-group",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group",
-    "version": "0.2.0",
-    "name": "StudyGroup"
+    "id" : "study-group",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group",
+    "version" : "0.2.0",
+    "name" : "StudyGroup"
   },
   {
-    "id": "study-summary",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-summary",
-    "version": "0.2.0",
-    "name": "StudySummary"
+    "id" : "study-summary",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-summary",
+    "version" : "0.2.0",
+    "name" : "StudySummary"
   },
   {
-    "id": "study-variable-summary",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary",
-    "version": "0.2.0",
-    "name": "StudyVariableSummary"
+    "id" : "study-variable-summary",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-variable-summary",
+    "version" : "0.2.0",
+    "name" : "StudyVariableSummary"
   },
   {
-    "id": "supporting-info",
-    "type": "StructureDefinition",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info",
-    "version": "0.2.0",
-    "name": "SupportingInformation"
+    "id" : "supporting-info",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/supporting-info",
+    "version" : "0.2.0",
+    "name" : "SupportingInformation"
   },
   {
-    "id": "condition-inheritance-vs",
-    "type": "ValueSet",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs",
-    "version": "0.2.0",
-    "name": "ConditionInheritanceModeVS"
+    "id" : "condition-inheritance-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs",
+    "version" : "0.2.0",
+    "name" : "ConditionInheritanceModeVS"
   },
   {
-    "id": "datatable-mappings-valueset-1",
-    "type": "ValueSet",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1",
-    "version": "0.2.0",
-    "name": "ExampleStudyTableMappingsVS1"
+    "id" : "datatable-mappings-valueset-1",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1",
+    "version" : "0.2.0",
+    "name" : "ExampleStudyTableMappingsVS1"
   },
   {
-    "id": "datatable-valueset-1",
-    "type": "ValueSet",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1",
-    "version": "0.2.0",
-    "name": "ExampleStudyTableVS1"
+    "id" : "datatable-valueset-1",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1",
+    "version" : "0.2.0",
+    "name" : "ExampleStudyTableVS1"
   },
   {
-    "id": "disease-codes",
-    "type": "ValueSet",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
-    "version": "0.2.0",
-    "name": "DiseaseCodes"
+    "id" : "disease-codes",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
+    "version" : "0.2.0",
+    "name" : "DiseaseCodes"
   },
   {
-    "id": "example-study-data-dictionary-case-control-vs-1",
-    "type": "ValueSet",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1",
-    "version": "0.2.0",
-    "name": "ExampleStudyDataDictionaryCaseControlVS1"
+    "id" : "example-study-data-dictionary-case-control-vs-1",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1",
+    "version" : "0.2.0",
+    "name" : "ExampleStudyDataDictionaryCaseControlVS1"
   },
   {
-    "id": "loinc-answers",
-    "type": "ValueSet",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/loinc-answers",
-    "version": "0.2.0",
-    "name": "LoincAnswers"
+    "id" : "loinc-answers",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/loinc-answers",
+    "version" : "0.2.0",
+    "name" : "LoincAnswers"
   },
   {
-    "id": "ncpi-vs",
-    "type": "ValueSet",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs",
-    "version": "0.2.0",
-    "name": "Ncpi_VS"
+    "id" : "ncpi-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs",
+    "version" : "0.2.0",
+    "name" : "Ncpi_VS"
   },
   {
-    "id": "phenotype-codes",
-    "type": "ValueSet",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes",
-    "version": "0.2.0",
-    "name": "PhenotypeCodes"
+    "id" : "phenotype-codes",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/phenotype-codes",
+    "version" : "0.2.0",
+    "name" : "PhenotypeCodes"
   },
   {
-    "id": "example-questionnaire-demographics-1",
-    "type": "Questionnaire",
-    "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/data-dictionary/study-name/demographics",
-    "version": "0.2.0",
-    "name": "Demographcs"
+    "id" : "example-questionnaire-demographics-1",
+    "type" : "Questionnaire",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/data-dictionary/study-name/demographics",
+    "version" : "0.2.0",
+    "name" : "Demographcs"
   },
   {
-    "id": "omim",
-    "type": "CodeSystem",
-    "url": "https://omim.org/",
-    "version": "0.2.0",
-    "name": "OMIM"
+    "id" : "omim",
+    "type" : "CodeSystem",
+    "url" : "https://omim.org/",
+    "version" : "0.2.0",
+    "name" : "OMIM"
   },
   {
-    "id": "loinc-answers",
-    "type": "CodeSystem",
-    "url": "ncpi:loinc-answers",
-    "version": "0.2.0",
-    "name": "LoincAnswers"
+    "id" : "loinc-answers",
+    "type" : "CodeSystem",
+    "url" : "ncpi:loinc-answers",
+    "version" : "0.2.0",
+    "name" : "LoincAnswers"
   }
 ]

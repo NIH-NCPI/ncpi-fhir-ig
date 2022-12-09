@@ -1,54 +1,44 @@
 {
-  "resourceType": "ValueSet",
-  "id": "example-study-data-dictionary-case-control-vs-1",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://uts.nlm.nih.gov/uts/umls</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C99269</td><td>Case</td></tr><tr><td>C99270</td><td>Control</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "example-study-data-dictionary-case-control-vs-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://uts.nlm.nih.gov/uts/umls</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C99269</td><td>Case</td></tr><tr><td>C99270</td><td>Control</td></tr></table></li></ul></div>"
   },
-  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1",
-  "version": "0.2.0",
-  "name": "ExampleStudyDataDictionaryCaseControlVS1",
-  "title": "Case/Control Vars for 'status' categoricals",
-  "status": "draft",
-  "date": "2022-11-28T21:07:57+00:00",
-  "publisher": "NCPI FHIR Working Group",
-  "contact": [
-    {
-      "name": "NCPI FHIR Working Group",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://github.com/nih-ncpi"
-        }
-      ]
-    },
-    {
-      "name": "Meen Chul Kim",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "meenchul@d3b.center",
-          "use": "work"
-        }
-      ]
-    }
-  ],
-  "description": "Example ValueSet listing all possible 'values' from the Case/Control variable.",
-  "compose": {
-    "include": [
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1",
+  "version" : "0.2.0",
+  "name" : "ExampleStudyDataDictionaryCaseControlVS1",
+  "title" : "Case/Control Vars for 'status' categoricals",
+  "status" : "draft",
+  "date" : "2022-12-09T17:30:30+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/nih-ncpi"
+    }]
+  },
+  {
+    "name" : "Meen Chul Kim",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "meenchul@d3b.center",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Example ValueSet listing all possible 'values' from the Case/Control variable.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://uts.nlm.nih.gov/uts/umls",
+      "concept" : [{
+        "code" : "C99269",
+        "display" : "Case"
+      },
       {
-        "system": "https://uts.nlm.nih.gov/uts/umls",
-        "concept": [
-          {
-            "code": "C99269",
-            "display": "Case"
-          },
-          {
-            "code": "C99270",
-            "display": "Control"
-          }
-        ]
-      }
-    ]
+        "code" : "C99270",
+        "display" : "Control"
+      }]
+    }]
   }
 }

@@ -150,7 +150,7 @@
         <a href="childhood_cancer.html">Childhood Cancer</a>
       </li>
       <li>
-        <a href="using_source_data.html">Using &quot;Source&quot; Data</a>
+        <a href="use_case_tabular_data.html">Using &quot;Source&quot; Data</a>
       </li>
       <li>
         <a href="ehr.html">EHR Data</a>
@@ -260,16 +260,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>While most of the ingestion of study data into FHIR today is being done at the study level, it is conceivable that in the near future there could be applications that can find these raw, tabular only sources and provide an interface for performing transformations on a more “ad-hoc” level. This could enable researchers with money to fund the partial lifting of these older studies into a more highly interoperable form that suits their own particular research needs.</p>
 
 <h3 id="conventions">Conventions</h3>
-<p>For most study data, using a single Observation for each row of data is appropriate, given the presence of the data dictionary components for the study are also available in FHIR. For those studies where the original sources are questionnaires, then the FHIR Questionnaire resource is appropriate.</p>
+<p>For most research data, the <a href="StructureDefinition-raw-data-observation.html">Raw Data Observation</a> profile should be used to represent individual rows from each of the dataset’s tables. These resources when coupled with the study metadata resources provide a comprehensive representation of the original data. For those studies where the original sources are questionnaires, then the FHIR Questionnaire and QuestionnaireResponse resources are appropriate.</p>
 
-<p>For Observations, all non-missing variables from a single <em>row</em> of data is kept together as separate elements in the Observation’s component array. Each of those components have the variable’s data-dictionary code entry for the code, and the value[X] is represented as is defined in the data-dictionary’s type for that variable, with some exceptions. For numeric values where <em>Not a Number</em> is a real possibility, storing that as a valueCodeableConcept is appropriate as opposed to valueQuantity. The same applies for string values where normally a number would be expected, such as the case for values like “&lt; 1 ml” where the instrument is unable to record the correct number, and instead, provides a meaningful substitute.</p>
+<p>For <em>Raw Data Observation</em>, all non-missing variables from a single <em>row</em> of data is kept together as separate elements in the Observation’s component array. Each of those components have the variable’s data-dictionary code entry for the code, and the value[X] is represented as is defined in the data-dictionary’s type for that variable, with some exceptions. For numeric values where <em>Not a Number</em> is a real possibility, storing that as a valueCodeableConcept is appropriate as opposed to valueQuantity. The same applies for string values where normally a number would be expected, such as the case for values like “&lt; 1 ml” where the instrument is unable to record the correct number, and instead, provides a meaningful substitute.</p>
 
 <p>For Questionnaires, the study should define a Questionnaire resource for each table. Each row in each of those tables is represented as a QuestionnaireResponse. Those responses link back to the appropriate Questionnaire by way of the response’s Questionnaire property and the individual values link back to the Questionnaire’s item using a common linkId.</p>
 
 <h3 id="relevant-artifacts">Relevant Artifacts</h3>
-<p>In addition to reliance upon the terminologies from the Data Dictionary portions of the <a href="study_metadata.html">study metadata</a>, there are three resources that are primarily used to represent raw (source) data: <a href="https://hl7.org/fhir/observation.html">Observation</a> and <a href="https://hl7.org/fhir/questionnaire.html">Questionnaires</a> with <a href="https://hl7.org/fhir/questionnaireresponse.html">QuestionnaireResponses</a>.</p>
+<p>In addition to reliance upon the terminologies from the Data Dictionary portions of the <a href="study_metadata.html">study metadata</a>, NCPI recommends the use of the profile, <a href="StructureDefinition-raw-data-observation.html">Raw Data Observation</a>. However, for those studies where a Questionnaire makes better sense, standard FHIR <a href="https://hl7.org/fhir/questionnaire.html">Questionnaires</a> with <a href="https://hl7.org/fhir/questionnaireresponse.html">QuestionnaireResponses</a> make good sense.</p>
 
-<p>Out of the box, the Observations provide a bit more utility thanks to the searchability within those components.</p>
+<p>Out of the box, the Observation, upon which the Raw Data Observation is based, provide a bit more utility thanks to the searchability within those components.</p>
 
 
 
@@ -295,7 +295,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 28, 2022 21:07+0000">2022-11-28</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 9, 2022 17:30+0000">2022-12-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

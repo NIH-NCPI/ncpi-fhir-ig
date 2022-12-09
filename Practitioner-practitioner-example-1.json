@@ -1,42 +1,32 @@
 {
-  "resourceType": "Practitioner",
-  "id": "practitioner-example-1",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-example-1&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: Jane Samantha Smith(OFFICIAL)</p><p><b>telecom</b>: ph: (555) 555-5555(WORK)</p><p><b>address</b>: 3401 Civic Center Blvd., Philadelphia, PA 19104(WORK)</p><p><b>gender</b>: female</p></div>"
+  "resourceType" : "Practitioner",
+  "id" : "practitioner-example-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-example-1&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: Jane Samantha Smith(OFFICIAL)</p><p><b>telecom</b>: ph: (555) 555-5555(WORK)</p><p><b>address</b>: 3401 Civic Center Blvd., Philadelphia, PA 19104(WORK)</p><p><b>gender</b>: female</p></div>"
   },
-  "active": true,
-  "name": [
-    {
-      "use": "official",
-      "text": "Jane Samantha Smith",
-      "family": "Smith",
-      "given": [
-        "Jane",
-        "Samantha"
-      ]
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "(555) 555-5555",
-      "use": "work",
-      "rank": 1
-    }
-  ],
-  "address": [
-    {
-      "use": "work",
-      "type": "both",
-      "text": "3401 Civic Center Blvd., Philadelphia, PA 19104",
-      "line": [
-        "3401 Civic Center Blvd."
-      ],
-      "city": "Philadelphia",
-      "state": "PA",
-      "postalCode": "19104"
-    }
-  ],
-  "gender": "female"
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "text" : "Jane Samantha Smith",
+    "family" : "Smith",
+    "given" : ["Jane",
+    "Samantha"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "(555) 555-5555",
+    "use" : "work",
+    "rank" : 1
+  }],
+  "address" : [{
+    "use" : "work",
+    "type" : "both",
+    "text" : "3401 Civic Center Blvd., Philadelphia, PA 19104",
+    "line" : ["3401 Civic Center Blvd."],
+    "city" : "Philadelphia",
+    "state" : "PA",
+    "postalCode" : "19104"
+  }],
+  "gender" : "female"
 }

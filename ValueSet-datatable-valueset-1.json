@@ -1,44 +1,36 @@
 {
-  "resourceType": "ValueSet",
-  "id": "datatable-valueset-1",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "datatable-valueset-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</code></a></li></ul></div>"
   },
-  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1",
-  "version": "0.2.0",
-  "name": "ExampleStudyTableVS1",
-  "title": "Table ValueSet",
-  "status": "draft",
-  "date": "2022-11-28T21:07:57+00:00",
-  "publisher": "NCPI FHIR Working Group",
-  "contact": [
-    {
-      "name": "NCPI FHIR Working Group",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://github.com/nih-ncpi"
-        }
-      ]
-    },
-    {
-      "name": "Meen Chul Kim",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "meenchul@d3b.center",
-          "use": "work"
-        }
-      ]
-    }
-  ],
-  "description": "Example Data Table with 4 variables",
-  "compose": {
-    "include": [
-      {
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"
-      }
-    ]
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1",
+  "version" : "0.2.0",
+  "name" : "ExampleStudyTableVS1",
+  "title" : "Table ValueSet",
+  "status" : "draft",
+  "date" : "2022-12-09T17:30:30+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/nih-ncpi"
+    }]
+  },
+  {
+    "name" : "Meen Chul Kim",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "meenchul@d3b.center",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Example Data Table with 4 variables",
+  "compose" : {
+    "include" : [{
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"
+    }]
   }
 }

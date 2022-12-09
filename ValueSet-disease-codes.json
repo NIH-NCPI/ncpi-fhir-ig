@@ -1,51 +1,43 @@
 {
-  "resourceType": "ValueSet",
-  "id": "disease-codes",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-omim.html\"><code>https://omim.org/</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-mondo.html\"><code>http://purl.obolibrary.org/obo/mondo.owl</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncit.html\"><code>http://purl.obolibrary.org/obo/ncit.owl</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "disease-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-omim.html\"><code>https://omim.org/</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-mondo.html\"><code>http://purl.obolibrary.org/obo/mondo.owl</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncit.html\"><code>http://purl.obolibrary.org/obo/ncit.owl</code></a></li></ul></div>"
   },
-  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
-  "version": "0.2.0",
-  "name": "DiseaseCodes",
-  "title": "Disease Codes",
-  "status": "draft",
-  "experimental": false,
-  "date": "2022-11-28T21:07:57+00:00",
-  "publisher": "NCPI FHIR Working Group",
-  "contact": [
-    {
-      "name": "NCPI FHIR Working Group",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://github.com/nih-ncpi"
-        }
-      ]
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
+  "version" : "0.2.0",
+  "name" : "DiseaseCodes",
+  "title" : "Disease Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2022-12-09T17:30:30+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/nih-ncpi"
+    }]
+  },
+  {
+    "name" : "Meen Chul Kim",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "meenchul@d3b.center",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://omim.org/"
     },
     {
-      "name": "Meen Chul Kim",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "meenchul@d3b.center",
-          "use": "work"
-        }
-      ]
-    }
-  ],
-  "description": "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems.",
-  "compose": {
-    "include": [
-      {
-        "system": "https://omim.org/"
-      },
-      {
-        "system": "http://purl.obolibrary.org/obo/mondo.owl"
-      },
-      {
-        "system": "http://purl.obolibrary.org/obo/ncit.owl"
-      }
-    ]
+      "system" : "http://purl.obolibrary.org/obo/mondo.owl"
+    },
+    {
+      "system" : "http://purl.obolibrary.org/obo/ncit.owl"
+    }]
   }
 }

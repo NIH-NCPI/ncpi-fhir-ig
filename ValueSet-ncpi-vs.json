@@ -1,47 +1,39 @@
 {
-  "resourceType": "ValueSet",
-  "id": "ncpi-vs",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncpi.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncpi-data-types.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types</code></a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "ncpi-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ncpi.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncpi-data-types.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types</code></a></li></ul></div>"
   },
-  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs",
-  "version": "0.2.0",
-  "name": "Ncpi_VS",
-  "title": "NCPI FHIR Codes",
-  "status": "draft",
-  "date": "2022-11-28T21:07:57+00:00",
-  "publisher": "NCPI FHIR Working Group",
-  "contact": [
-    {
-      "name": "NCPI FHIR Working Group",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://github.com/nih-ncpi"
-        }
-      ]
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/ncpi-vs",
+  "version" : "0.2.0",
+  "name" : "Ncpi_VS",
+  "title" : "NCPI FHIR Codes",
+  "status" : "draft",
+  "date" : "2022-12-09T17:30:30+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/nih-ncpi"
+    }]
+  },
+  {
+    "name" : "Meen Chul Kim",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "meenchul@d3b.center",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Codes that would apply to NCPI projects",
+  "compose" : {
+    "include" : [{
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"
     },
     {
-      "name": "Meen Chul Kim",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "meenchul@d3b.center",
-          "use": "work"
-        }
-      ]
-    }
-  ],
-  "description": "Codes that would apply to NCPI projects",
-  "compose": {
-    "include": [
-      {
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"
-      },
-      {
-        "system": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types"
-      }
-    ]
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types"
+    }]
   }
 }

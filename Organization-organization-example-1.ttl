@@ -7,12 +7,12 @@
 
 <https://nih-ncpi.github.io/ncpi-fhir-ig/Organization/organization-example-1> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "organization-example-1"];
+  fhir:Resource.id [ fhir:value "organization-example-1"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"organization-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;organization-example-1&quot; </p></div><p><b>active</b>: true</p><p><b>type</b>: Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html\">Organization type</a>#prov &quot;Healthcare Provider&quot;)</span></p><p><b>name</b>: Amazing Children's Hospital</p><p><b>telecom</b>: ph: (555) 555-5555(WORK)</p><p><b>address</b>: 3401 Civic Center Blvd., Philadelphia, PA 19104(WORK)</p></div>"
-  ];
-  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  ]; # 
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean]; # 
   fhir:Organization.type [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -22,15 +22,15 @@
        fhir:Coding.display [ fhir:value "Healthcare Provider" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Hospital" ]
-  ];
-  fhir:Organization.name [ fhir:value "Amazing Children's Hospital"];
+  ]; # 
+  fhir:Organization.name [ fhir:value "Amazing Children's Hospital"]; # 
   fhir:Organization.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "(555) 555-5555" ];
      fhir:ContactPoint.use [ fhir:value "work" ];
      fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
-  ];
+  ]; # 
   fhir:Organization.address [
      fhir:index 0;
      fhir:Address.use [ fhir:value "work" ];
@@ -43,7 +43,7 @@
      fhir:Address.city [ fhir:value "Philadelphia" ];
      fhir:Address.state [ fhir:value "PA" ];
      fhir:Address.postalCode [ fhir:value "19104" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

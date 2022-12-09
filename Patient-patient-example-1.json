@@ -1,182 +1,144 @@
 {
-  "resourceType": "Patient",
-  "id": "patient-example-1",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Mariah Abigail Smith(OFFICIAL)</b> female, DoB: 2019-06-15</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: (555) 555-5555(HOME)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Parent\">Emergency Contact:</td><td colspan=\"3\"><ul><li>Jane Samantha Smith(OFFICIAL) (female)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li><li>ph: (555) 555-5555(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Parent\">Emergency Contact:</td><td colspan=\"3\"><ul><li>John Samuel Smith(OFFICIAL) (male)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li><li>ph: (555) 555-5555(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2135-2\">Race &amp; Ethnicity - CDC</a> 2135-2: Hispanic or Latino</li><li>detailed: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2148-5\">Race &amp; Ethnicity - CDC</a> 2148-5: Mexican</li><li>text: Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC</a> 2106-3: White</li><li>detailed: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2113-9\">Race &amp; Ethnicity - CDC</a> 2113-9: Irish</li><li>text: White</li></ul></td></tr></table></div>"
+  "resourceType" : "Patient",
+  "id" : "patient-example-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Mariah Abigail Smith(OFFICIAL)</b> female, DoB: 2019-06-15</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: (555) 555-5555(HOME)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Parent\">Emergency Contact:</td><td colspan=\"3\"><ul><li>Jane Samantha Smith(OFFICIAL) (female)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li><li>ph: (555) 555-5555(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Parent\">Emergency Contact:</td><td colspan=\"3\"><ul><li>John Samuel Smith(OFFICIAL) (male)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li><li>ph: (555) 555-5555(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2135-2\">Race &amp; Ethnicity - CDC</a> 2135-2: Hispanic or Latino</li><li>detailed: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2148-5\">Race &amp; Ethnicity - CDC</a> 2148-5: Mexican</li><li>text: Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC</a> 2106-3: White</li><li>detailed: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2113-9\">Race &amp; Ethnicity - CDC</a> 2113-9: Irish</li><li>text: White</li></ul></td></tr></table></div>"
   },
-  "extension": [
-    {
-      "extension": [
-        {
-          "url": "ombCategory",
-          "valueCoding": {
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "code": "2106-3",
-            "display": "White"
-          }
-        },
-        {
-          "url": "detailed",
-          "valueCoding": {
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "code": "2113-9",
-            "display": "Irish"
-          }
-        },
-        {
-          "url": "text",
-          "valueString": "White"
-        }
-      ],
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  "extension" : [{
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2106-3",
+        "display" : "White"
+      }
     },
     {
-      "extension": [
-        {
-          "url": "ombCategory",
-          "valueCoding": {
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "code": "2135-2",
-            "display": "Hispanic or Latino"
-          }
-        },
-        {
-          "url": "detailed",
-          "valueCoding": {
-            "system": "urn:oid:2.16.840.1.113883.6.238",
-            "code": "2148-5",
-            "display": "Mexican"
-          }
-        },
-        {
-          "url": "text",
-          "valueString": "Hispanic or Latino"
-        }
-      ],
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-    }
-  ],
-  "name": [
-    {
-      "use": "official",
-      "text": "Mariah Abigail Smith",
-      "family": "Smith",
-      "given": [
-        "Mariah",
-        "Abigail"
-      ]
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "(555) 555-5555",
-      "use": "home",
-      "rank": 1
-    }
-  ],
-  "gender": "female",
-  "birthDate": "2019-06-15",
-  "address": [
-    {
-      "use": "home",
-      "type": "both",
-      "text": "3401 Civic Center Blvd., Philadelphia, PA 19104",
-      "line": [
-        "3401 Civic Center Blvd."
-      ],
-      "city": "Philadelphia",
-      "state": "PA",
-      "postalCode": "19104"
-    }
-  ],
-  "contact": [
-    {
-      "relationship": [
-        {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
-              "code": "C",
-              "display": "Emergency Contact"
-            }
-          ],
-          "text": "Parent"
-        }
-      ],
-      "name": {
-        "use": "official",
-        "text": "Jane Samantha Smith",
-        "family": "Smith",
-        "given": [
-          "Jane",
-          "Samantha"
-        ]
-      },
-      "telecom": [
-        {
-          "system": "phone",
-          "value": "(555) 555-5555",
-          "use": "home",
-          "rank": 1
-        }
-      ],
-      "address": {
-        "use": "home",
-        "type": "both",
-        "text": "3401 Civic Center Blvd., Philadelphia, PA 19104",
-        "line": [
-          "3401 Civic Center Blvd."
-        ],
-        "city": "Philadelphia",
-        "state": "PA",
-        "postalCode": "19104"
-      },
-      "gender": "female"
+      "url" : "detailed",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2113-9",
+        "display" : "Irish"
+      }
     },
     {
-      "relationship": [
-        {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
-              "code": "C",
-              "display": "Emergency Contact"
-            }
-          ],
-          "text": "Parent"
-        }
-      ],
-      "name": {
-        "use": "official",
-        "text": "John Samuel Smith",
-        "family": "Smith",
-        "given": [
-          "John",
-          "Samuel"
-        ]
-      },
-      "telecom": [
-        {
-          "system": "phone",
-          "value": "(555) 555-5555",
-          "use": "home",
-          "rank": 1
-        }
-      ],
-      "address": {
-        "use": "home",
-        "type": "both",
-        "text": "3401 Civic Center Blvd., Philadelphia, PA 19104",
-        "line": [
-          "3401 Civic Center Blvd."
-        ],
-        "city": "Philadelphia",
-        "state": "PA",
-        "postalCode": "19104"
-      },
-      "gender": "male"
-    }
-  ]
+      "url" : "text",
+      "valueString" : "White"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+  },
+  {
+    "extension" : [{
+      "url" : "ombCategory",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2135-2",
+        "display" : "Hispanic or Latino"
+      }
+    },
+    {
+      "url" : "detailed",
+      "valueCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.6.238",
+        "code" : "2148-5",
+        "display" : "Mexican"
+      }
+    },
+    {
+      "url" : "text",
+      "valueString" : "Hispanic or Latino"
+    }],
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+  }],
+  "name" : [{
+    "use" : "official",
+    "text" : "Mariah Abigail Smith",
+    "family" : "Smith",
+    "given" : ["Mariah",
+    "Abigail"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "(555) 555-5555",
+    "use" : "home",
+    "rank" : 1
+  }],
+  "gender" : "female",
+  "birthDate" : "2019-06-15",
+  "address" : [{
+    "use" : "home",
+    "type" : "both",
+    "text" : "3401 Civic Center Blvd., Philadelphia, PA 19104",
+    "line" : ["3401 Civic Center Blvd."],
+    "city" : "Philadelphia",
+    "state" : "PA",
+    "postalCode" : "19104"
+  }],
+  "contact" : [{
+    "relationship" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "code" : "C",
+        "display" : "Emergency Contact"
+      }],
+      "text" : "Parent"
+    }],
+    "name" : {
+      "use" : "official",
+      "text" : "Jane Samantha Smith",
+      "family" : "Smith",
+      "given" : ["Jane",
+      "Samantha"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "(555) 555-5555",
+      "use" : "home",
+      "rank" : 1
+    }],
+    "address" : {
+      "use" : "home",
+      "type" : "both",
+      "text" : "3401 Civic Center Blvd., Philadelphia, PA 19104",
+      "line" : ["3401 Civic Center Blvd."],
+      "city" : "Philadelphia",
+      "state" : "PA",
+      "postalCode" : "19104"
+    },
+    "gender" : "female"
+  },
+  {
+    "relationship" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "code" : "C",
+        "display" : "Emergency Contact"
+      }],
+      "text" : "Parent"
+    }],
+    "name" : {
+      "use" : "official",
+      "text" : "John Samuel Smith",
+      "family" : "Smith",
+      "given" : ["John",
+      "Samuel"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "(555) 555-5555",
+      "use" : "home",
+      "rank" : 1
+    }],
+    "address" : {
+      "use" : "home",
+      "type" : "both",
+      "text" : "3401 Civic Center Blvd., Philadelphia, PA 19104",
+      "line" : ["3401 Civic Center Blvd."],
+      "city" : "Philadelphia",
+      "state" : "PA",
+      "postalCode" : "19104"
+    },
+    "gender" : "male"
+  }]
 }

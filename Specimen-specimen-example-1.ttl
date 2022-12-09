@@ -8,11 +8,11 @@
 
 <https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1> a fhir:Specimen;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "specimen-example-1"];
+  fhir:Resource.id [ fhir:value "specimen-example-1"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"specimen-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;specimen-example-1&quot; </p></div><p><b>type</b>: Solid Tissue <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0487.html\">specimenType</a>#TISS &quot;Tissue&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>receivedTime</b>: </p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td>*</td><td/><td>50 uL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code uL = 'uL')</span></td><td>Biopsy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129314006 &quot;Biopsy - action&quot;)</span></td><td>Central Nervous System <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#21483005 &quot;Structure of central nervous system&quot;)</span></td></tr></table></div>"
-  ];
+  ]; # 
   fhir:Specimen.type [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -21,11 +21,11 @@
        fhir:Coding.display [ fhir:value "Tissue" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "Solid Tissue" ]
-  ];
+  ]; # 
   fhir:Specimen.subject [
      fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
      fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
-  ];
+  ]; # 
   fhir:Specimen.receivedTime [
      fhir:Element.extension [
        fhir:index 0;
@@ -56,7 +56,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime" ]
      ]
-  ];
+  ]; # 
   fhir:Specimen.collection [
      fhir:Specimen.collection.collectedDateTime [
        fhir:Element.extension [
@@ -114,7 +114,7 @@
        ];
        fhir:CodeableConcept.text [ fhir:value "Central Nervous System" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

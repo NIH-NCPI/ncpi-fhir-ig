@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "3d406e78-15c6-4c2d-8592-6a8fe14481af",
+  "id" : "aa3ee620-a0bc-4f9b-bbdd-7d0683039967",
   "meta" : {
-    "lastUpdated" : "2022-11-28T21:07:57.188+00:00"
+    "lastUpdated" : "2022-12-09T17:30:30.064+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "Ncpi_VS",
       "title" : "NCPI FHIR Codes",
       "status" : "draft",
-      "date" : "2022-11-28T21:07:57+00:00",
+      "date" : "2022-12-09T17:30:30+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -38,8 +38,8 @@
       }],
       "description" : "Codes that would apply to NCPI projects",
       "expansion" : {
-        "identifier" : "urn:uuid:4d8609da-197c-40fa-916f-cb829f7071a2",
-        "timestamp" : "2022-11-28T21:08:41+00:00",
+        "identifier" : "urn:uuid:827d6782-defd-498f-b240-fc4f3e3fa21c",
+        "timestamp" : "2022-12-09T17:31:19+00:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -184,7 +184,7 @@
       "title" : "Phenotype Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2022-11-28T21:07:57+00:00",
+      "date" : "2022-12-09T17:30:30+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -203,8 +203,8 @@
       }],
       "description" : "This value set includes all codes from Human Phenotype Ontology.",
       "expansion" : {
-        "identifier" : "urn:uuid:ffc25d40-3b03-47c3-812a-ea3e060d29fb",
-        "timestamp" : "2022-11-28T21:08:41+00:00",
+        "identifier" : "urn:uuid:77583575-d12b-4d49-9112-c68d4b984cb2",
+        "timestamp" : "2022-12-09T17:31:19+00:00",
         "total" : 1880,
         "parameter" : [{
           "name" : "excludeNested",
@@ -9636,7 +9636,7 @@
       "title" : "LOINC Answers",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2022-11-28T21:07:57+00:00",
+      "date" : "2022-12-09T17:30:30+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -9655,8 +9655,8 @@
       }],
       "description" : "LOINC ANSWERS used by NCPI resources",
       "expansion" : {
-        "identifier" : "urn:uuid:2ba82914-273e-44eb-b673-fb7b7983bd80",
-        "timestamp" : "2022-11-28T21:08:45+00:00",
+        "identifier" : "urn:uuid:18c5f3f8-dec4-4b36-aaf8-9cfddbdfc2e5",
+        "timestamp" : "2022-12-09T17:31:24+00:00",
         "total" : 24,
         "parameter" : [{
           "name" : "excludeNested",
@@ -9830,8 +9830,8 @@
       }],
       "description" : "This value set includes all TBD Codes",
       "expansion" : {
-        "identifier" : "urn:uuid:32830aae-d7a1-4811-a35b-55baf74fce2e",
-        "timestamp" : "2022-11-28T21:08:47+00:00",
+        "identifier" : "urn:uuid:a8552c4d-ac28-46c4-bf95-a673c00e5498",
+        "timestamp" : "2022-12-09T17:31:26+00:00",
         "total" : 18,
         "parameter" : [{
           "name" : "excludeNested",
@@ -9949,7 +9949,7 @@
       "title" : "Disease Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2022-11-28T21:07:57+00:00",
+      "date" : "2022-12-09T17:30:30+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -9968,8 +9968,8 @@
       }],
       "description" : "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems.",
       "expansion" : {
-        "identifier" : "urn:uuid:f5034d41-6efd-48df-b617-e6eda365533b",
-        "timestamp" : "2022-11-28T21:08:47+00:00",
+        "identifier" : "urn:uuid:c161fd2d-96c1-4a12-b99d-26557c7140a8",
+        "timestamp" : "2022-12-09T17:31:26+00:00",
         "total" : 504,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12536,7 +12536,7 @@
       "name" : "ConditionInheritanceModeVS",
       "title" : "Condition Inheritance Pattern",
       "status" : "active",
-      "date" : "2022-11-28T21:07:57+00:00",
+      "date" : "2022-12-09T17:30:30+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -12561,8 +12561,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:90eb2e74-2972-49d5-9d36-2556303e7cbd",
-        "timestamp" : "2022-11-28T21:08:51+00:00",
+        "identifier" : "urn:uuid:1e39a66d-6e13-4a21-ae8a-da4e76e24a64",
+        "timestamp" : "2022-12-09T17:31:30+00:00",
         "total" : 25,
         "parameter" : [{
           "name" : "excludeNested",
@@ -12707,14 +12707,14 @@
       "id" : "datatable-valueset-1",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables) v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-datatable-mappings-valueset-1.html\">ConceptMap[http://example.org/my-dataset/fhir/conceptmap/data-to-public]</a></b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-subjectid\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-subjectid\">subjectid</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Subject's Unique Identifier</td><td><span title=\"EQUIVALENT\">~</span>C2348584</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-gender\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-gender\">gender</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Gender</td><td><span title=\"EQUIVALENT\">~</span>C0079399</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-age-at-enrollment\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-age_at_enrollment\">age_at_enrollment</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Subject's Age at Enrollment in days</td><td><span title=\"EQUIVALENT\">~</span>C168843</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-bmi\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-bmi\">bmi</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Subject's BMI, Measured at Enrollment</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>C1305855<br/><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"https://loinc.org/LP35925-4/\">LP35925-4</a></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-status\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-status\">status</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Subject's status (Case or Control)</td><td><span title=\"EQUIVALENT\">~</span>C0872128<br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-hpo.html#hpo-HP.580010772\">HP:0010772</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-mondo.html#mondo-MONDO.580017705\">MONDO:0017705</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-mondo.html#mondo-MONDO.580007130\">MONDO:0007130</a></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables) v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b><a href=\"ValueSet-datatable-mappings-valueset-1.html\">ConceptMap[http://example.org/my-dataset/fhir/conceptmap/data-to-public|0.2.0]</a></b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-subjectid\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-subjectid\">subjectid</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Subject's Unique Identifier</td><td><span title=\"EQUIVALENT\">~</span>C2348584</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-gender\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-gender\">gender</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Gender</td><td><span title=\"EQUIVALENT\">~</span>C0079399</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-age-at-enrollment\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-age_at_enrollment\">age_at_enrollment</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Subject's Age at Enrollment in days</td><td><span title=\"EQUIVALENT\">~</span>C168843</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-bmi\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-bmi\">bmi</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Subject's BMI, Measured at Enrollment</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>C1305855<br/><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"https://loinc.org/LP35925-4/\">LP35925-4</a></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-CodeSystem-example-study-data-dictionary-datatable-codesystem-1-status\"> </a>  <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html#example-study-data-dictionary-datatable-codesystem-1-status\">status</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</td><td>Subject's status (Case or Control)</td><td><span title=\"EQUIVALENT\">~</span>C0872128<br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-hpo.html#hpo-HP.580010772\">HP:0010772</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-mondo.html#mondo-MONDO.580017705\">MONDO:0017705</a><br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-mondo.html#mondo-MONDO.580007130\">MONDO:0007130</a></td></tr></table></div>"
       },
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1",
       "version" : "0.2.0",
       "name" : "ExampleStudyTableVS1",
       "title" : "Table ValueSet",
       "status" : "draft",
-      "date" : "2022-11-28T21:07:57+00:00",
+      "date" : "2022-12-09T17:30:30+00:00",
       "publisher" : "NCPI FHIR Working Group",
       "contact" : [{
         "name" : "NCPI FHIR Working Group",
@@ -12733,8 +12733,8 @@
       }],
       "description" : "Example Data Table with 4 variables",
       "expansion" : {
-        "identifier" : "urn:uuid:8931958d-d663-4f34-a8f3-129051a8c4f6",
-        "timestamp" : "2022-11-28T21:08:53+00:00",
+        "identifier" : "urn:uuid:bc4ce203-1abd-44e3-913d-78f4926dd82e",
+        "timestamp" : "2022-12-09T17:31:32+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",

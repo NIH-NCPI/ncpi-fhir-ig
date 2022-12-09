@@ -1,161 +1,127 @@
 {
-  "resourceType": "ConceptMap",
-  "id": "example-study-data-dictionary-conceptmap-1",
-  "meta": {
-    "profile": [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony"
-    ]
+  "resourceType" : "ConceptMap",
+  "id" : "example-study-data-dictionary-conceptmap-1",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-harmony"]
   },
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>null (http://example.org/my-dataset/fhir/conceptmap/data-to-public)</h2><p>Mapping from <a href=\"ValueSet-datatable-valueset-1.html\">https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1</a> to <a href=\"ValueSet-datatable-mappings-valueset-1.html\">https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1</a></p><p>ACTIVE. Published on 2022-11-28 09:07:57+0000 by NCPI FHIR Working Group (NCPI FHIR Working Group: <a href=\"https://github.com/nih-ncpi\">https://github.com/nih-ncpi</a>, Meen Chul Kim: <a href=\"mailto:meenchul@d3b.center\">meenchul@d3b.center</a>). </p><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a> to <code>https://uts.nlm.nih.gov/uts/umls</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>subjectid (Subject's Unique Identifier)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>C2348584 (Subject Unique Identifier)</td></tr><tr><td>gender</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>C0079399 (Gender)</td></tr><tr><td>age_at_enrollment (Subject's Age at Enrollment in days)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>C168843 (Age in Days at Enrollment)</td></tr><tr><td>bmi (Subject's BMI, Measured at Enrollment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>C1305855 (Body mass index)</td></tr><tr><td>status (Subject's status (Case or Control))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>C0872128 (case control)</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a> to <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-loinc.html\">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>bmi (Subject's BMI, Measured at Enrollment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>LP35925-4 (Body mass index (BMI))</td></tr></table><hr/><p><b>Group 3</b>Mapping from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a> to <a href=\"CodeSystem-hpo.html\">Human Phenotype Ontology</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>status (Subject's status (Case or Control))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HP:0010772 (Anomalous pulmonary venous return)</td></tr></table><hr/><p><b>Group 4</b>Mapping from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a> to <a href=\"CodeSystem-mondo.html\">Mondo Disease Ontology</a></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\" title=\"https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1\">Datatable CodeSystem (lists all variables)</a></td><td/><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-mondo.html\" title=\"http://purl.obolibrary.org/obo/mondo.owl\">Mondo Disease Ontology</a></td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">status</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Subject's status (Case or Control)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MONDO:0017705</td><td style=\"border-left-width: 0px\">congenital pulmonary venous return anomaly</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MONDO:0007130</td><td style=\"border-left-width: 0px\">congenital total pulmonary venous return anomaly</td></tr></table></div>"
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>null (http://example.org/my-dataset/fhir/conceptmap/data-to-public)</h2><p>Mapping from <a href=\"ValueSet-datatable-valueset-1.html\">https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1</a> to <a href=\"ValueSet-datatable-mappings-valueset-1.html\">https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1</a></p><p>ACTIVE. Published on 2022-12-09 17:30:30+0000 by NCPI FHIR Working Group (NCPI FHIR Working Group: <a href=\"https://github.com/nih-ncpi\">https://github.com/nih-ncpi</a>, Meen Chul Kim: <a href=\"mailto:meenchul@d3b.center\">meenchul@d3b.center</a>). </p><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a> to <code>https://uts.nlm.nih.gov/uts/umls</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>subjectid (Subject's Unique Identifier)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>C2348584 (Subject Unique Identifier)</td></tr><tr><td>gender</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>C0079399 (Gender)</td></tr><tr><td>age_at_enrollment (Subject's Age at Enrollment in days)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>C168843 (Age in Days at Enrollment)</td></tr><tr><td>bmi (Subject's BMI, Measured at Enrollment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>C1305855 (Body mass index)</td></tr><tr><td>status (Subject's status (Case or Control))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>C0872128 (case control)</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a> to <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-loinc.html\">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>bmi (Subject's BMI, Measured at Enrollment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>LP35925-4 (Body mass index (BMI))</td></tr></table><hr/><p><b>Group 3</b>Mapping from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a> to <a href=\"CodeSystem-hpo.html\">Human Phenotype Ontology</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>status (Subject's status (Case or Control))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>HP:0010772 (Anomalous pulmonary venous return)</td></tr></table><hr/><p><b>Group 4</b>Mapping from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a> to <a href=\"CodeSystem-mondo.html\">Mondo Disease Ontology</a></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\" title=\"https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1\">Datatable CodeSystem (lists all variables)</a></td><td/><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-mondo.html\" title=\"http://purl.obolibrary.org/obo/mondo.owl\">Mondo Disease Ontology</a></td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">status</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Subject's status (Case or Control)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MONDO:0017705</td><td style=\"border-left-width: 0px\">congenital pulmonary venous return anomaly</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MONDO:0007130</td><td style=\"border-left-width: 0px\">congenital total pulmonary venous return anomaly</td></tr></table></div>"
   },
-  "url": "http://example.org/my-dataset/fhir/conceptmap/data-to-public",
-  "version": "0.2.0",
-  "status": "active",
-  "date": "2022-11-28T21:07:57+00:00",
-  "publisher": "NCPI FHIR Working Group",
-  "contact": [
-    {
-      "name": "NCPI FHIR Working Group",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://github.com/nih-ncpi"
-        }
-      ]
+  "url" : "http://example.org/my-dataset/fhir/conceptmap/data-to-public",
+  "version" : "0.2.0",
+  "status" : "active",
+  "date" : "2022-12-09T17:30:30+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/nih-ncpi"
+    }]
+  },
+  {
+    "name" : "Meen Chul Kim",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "meenchul@d3b.center",
+      "use" : "work"
+    }]
+  }],
+  "purpose" : "Represent transformations to public codes applied during data ingestion",
+  "sourceUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1",
+  "targetUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1",
+  "group" : [{
+    "source" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+    "target" : "https://uts.nlm.nih.gov/uts/umls",
+    "element" : [{
+      "code" : "subjectid",
+      "display" : "Subject's Unique Identifier",
+      "target" : [{
+        "code" : "C2348584",
+        "display" : "Subject Unique Identifier",
+        "equivalence" : "equivalent"
+      }]
     },
     {
-      "name": "Meen Chul Kim",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "meenchul@d3b.center",
-          "use": "work"
-        }
-      ]
-    }
-  ],
-  "purpose": "Represent transformations to public codes applied during data ingestion",
-  "sourceUri": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-valueset-1",
-  "targetUri": "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1",
-  "group": [
-    {
-      "source": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
-      "target": "https://uts.nlm.nih.gov/uts/umls",
-      "element": [
-        {
-          "code": "subjectid",
-          "display": "Subject's Unique Identifier",
-          "target": [
-            {
-              "code": "C2348584",
-              "display": "Subject Unique Identifier",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "gender",
-          "display": "Gender",
-          "target": [
-            {
-              "code": "C0079399",
-              "display": "Gender",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "age_at_enrollment",
-          "display": "Subject's Age at Enrollment in days",
-          "target": [
-            {
-              "code": "C168843",
-              "display": "Age in Days at Enrollment",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "bmi",
-          "display": "Subject's BMI, Measured at Enrollment",
-          "target": [
-            {
-              "code": "C1305855",
-              "display": "Body mass index",
-              "equivalence": "wider"
-            }
-          ]
-        },
-        {
-          "code": "status",
-          "display": "Subject's status (Case or Control)",
-          "target": [
-            {
-              "code": "C0872128",
-              "display": "case control",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
+      "code" : "gender",
+      "display" : "Gender",
+      "target" : [{
+        "code" : "C0079399",
+        "display" : "Gender",
+        "equivalence" : "equivalent"
+      }]
     },
     {
-      "source": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
-      "target": "http://loinc.org",
-      "element": [
-        {
-          "code": "bmi",
-          "display": "Subject's BMI, Measured at Enrollment",
-          "target": [
-            {
-              "code": "LP35925-4",
-              "display": "Body mass index (BMI)",
-              "equivalence": "wider"
-            }
-          ]
-        }
-      ]
+      "code" : "age_at_enrollment",
+      "display" : "Subject's Age at Enrollment in days",
+      "target" : [{
+        "code" : "C168843",
+        "display" : "Age in Days at Enrollment",
+        "equivalence" : "equivalent"
+      }]
     },
     {
-      "source": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
-      "target": "http://purl.obolibrary.org/obo/hp.owl",
-      "element": [
-        {
-          "code": "status",
-          "display": "Subject's status (Case or Control)",
-          "target": [
-            {
-              "code": "HP:0010772",
-              "display": "Anomalous pulmonary venous return",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
+      "code" : "bmi",
+      "display" : "Subject's BMI, Measured at Enrollment",
+      "target" : [{
+        "code" : "C1305855",
+        "display" : "Body mass index",
+        "equivalence" : "wider"
+      }]
     },
     {
-      "source": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
-      "target": "http://purl.obolibrary.org/obo/mondo.owl",
-      "element": [
-        {
-          "code": "status",
-          "display": "Subject's status (Case or Control)",
-          "target": [
-            {
-              "code": "MONDO:0017705",
-              "display": "congenital pulmonary venous return anomaly",
-              "equivalence": "equivalent"
-            },
-            {
-              "code": "MONDO:0007130",
-              "display": "congenital total pulmonary venous return anomaly",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+      "code" : "status",
+      "display" : "Subject's status (Case or Control)",
+      "target" : [{
+        "code" : "C0872128",
+        "display" : "case control",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+    "target" : "http://loinc.org",
+    "element" : [{
+      "code" : "bmi",
+      "display" : "Subject's BMI, Measured at Enrollment",
+      "target" : [{
+        "code" : "LP35925-4",
+        "display" : "Body mass index (BMI)",
+        "equivalence" : "wider"
+      }]
+    }]
+  },
+  {
+    "source" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+    "target" : "http://purl.obolibrary.org/obo/hp.owl",
+    "element" : [{
+      "code" : "status",
+      "display" : "Subject's status (Case or Control)",
+      "target" : [{
+        "code" : "HP:0010772",
+        "display" : "Anomalous pulmonary venous return",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+    "target" : "http://purl.obolibrary.org/obo/mondo.owl",
+    "element" : [{
+      "code" : "status",
+      "display" : "Subject's status (Case or Control)",
+      "target" : [{
+        "code" : "MONDO:0017705",
+        "display" : "congenital pulmonary venous return anomaly",
+        "equivalence" : "equivalent"
+      },
+      {
+        "code" : "MONDO:0007130",
+        "display" : "congenital total pulmonary venous return anomaly",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
 }

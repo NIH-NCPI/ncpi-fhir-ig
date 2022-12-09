@@ -1,89 +1,73 @@
 {
-  "resourceType": "Condition",
-  "id": "disease-example-1",
-  "meta": {
-    "profile": [
-      "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease"
-    ]
+  "resourceType" : "Condition",
+  "id" : "disease-example-1",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"disease-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;disease-example-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-disease.html\">NCPI Disease</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Affected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed &quot;Confirmed&quot;)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Neuroblastoma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncit.html\">NCI Thesaurus</a>#NCIT:Neuroblastoma)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>recordedDate</b>: </p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"disease-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;disease-example-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-disease.html\">NCPI Disease</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Affected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed &quot;Confirmed&quot;)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Neuroblastoma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncit.html\">NCI Thesaurus</a>#NCIT:Neuroblastoma)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>recordedDate</b>: </p></div>"
   },
-  "clinicalStatus": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code": "active",
-        "display": "Active"
-      }
-    ],
-    "text": "Active"
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }],
+    "text" : "Active"
   },
-  "verificationStatus": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code": "confirmed",
-        "display": "Confirmed"
-      }
-    ],
-    "text": "Affected"
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }],
+    "text" : "Affected"
   },
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "encounter-diagnosis",
-          "display": "Encounter Diagnosis"
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://purl.obolibrary.org/obo/ncit.owl",
+      "code" : "NCIT:Neuroblastoma",
+      "display" : "Neuroblastoma"
+    }],
+    "text" : "Neuroblastoma"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-example-1"
+  },
+  "_recordedDate" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "target",
+        "valueReference" : {
+          "reference" : "Patient/patient-example-1"
         }
-      ]
-    }
-  ],
-  "code": {
-    "coding": [
+      },
       {
-        "system": "http://purl.obolibrary.org/obo/ncit.owl",
-        "code": "NCIT:Neuroblastoma",
-        "display": "Neuroblastoma"
-      }
-    ],
-    "text": "Neuroblastoma"
-  },
-  "subject": {
-    "reference": "Patient/patient-example-1"
-  },
-  "_recordedDate": {
-    "extension": [
+        "url" : "targetPath",
+        "valueString" : "birthDate"
+      },
       {
-        "extension": [
-          {
-            "url": "target",
-            "valueReference": {
-              "reference": "Patient/patient-example-1"
-            }
-          },
-          {
-            "url": "targetPath",
-            "valueString": "birthDate"
-          },
-          {
-            "url": "relationship",
-            "valueCode": "after"
-          },
-          {
-            "url": "offset",
-            "valueDuration": {
-              "value": 25,
-              "unit": "d",
-              "system": "http://unitsofmeasure.org",
-              "code": "days"
-            }
-          }
-        ],
-        "url": "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
-      }
-    ]
+        "url" : "relationship",
+        "valueCode" : "after"
+      },
+      {
+        "url" : "offset",
+        "valueDuration" : {
+          "value" : 25,
+          "unit" : "d",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "days"
+        }
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"
+    }]
   }
 }

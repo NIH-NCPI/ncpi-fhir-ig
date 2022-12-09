@@ -1,61 +1,53 @@
 {
-  "resourceType": "CodeSystem",
-  "id": "example-study-data-dictionary-datatable-codesystem-1",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">subjectid<a name=\"example-study-data-dictionary-datatable-codesystem-1-subjectid\"> </a></td><td>Subject's Unique Identifier</td></tr><tr><td style=\"white-space:nowrap\">gender<a name=\"example-study-data-dictionary-datatable-codesystem-1-gender\"> </a></td><td>Gender</td></tr><tr><td style=\"white-space:nowrap\">age_at_enrollment<a name=\"example-study-data-dictionary-datatable-codesystem-1-age_at_enrollment\"> </a></td><td>Subject's Age at Enrollment in days</td></tr><tr><td style=\"white-space:nowrap\">bmi<a name=\"example-study-data-dictionary-datatable-codesystem-1-bmi\"> </a></td><td>Subject's BMI, Measured at Enrollment</td></tr><tr><td style=\"white-space:nowrap\">status<a name=\"example-study-data-dictionary-datatable-codesystem-1-status\"> </a></td><td>Subject's status (Case or Control)</td></tr></table></div>"
+  "resourceType" : "CodeSystem",
+  "id" : "example-study-data-dictionary-datatable-codesystem-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">subjectid<a name=\"example-study-data-dictionary-datatable-codesystem-1-subjectid\"> </a></td><td>Subject's Unique Identifier</td></tr><tr><td style=\"white-space:nowrap\">gender<a name=\"example-study-data-dictionary-datatable-codesystem-1-gender\"> </a></td><td>Gender</td></tr><tr><td style=\"white-space:nowrap\">age_at_enrollment<a name=\"example-study-data-dictionary-datatable-codesystem-1-age_at_enrollment\"> </a></td><td>Subject's Age at Enrollment in days</td></tr><tr><td style=\"white-space:nowrap\">bmi<a name=\"example-study-data-dictionary-datatable-codesystem-1-bmi\"> </a></td><td>Subject's BMI, Measured at Enrollment</td></tr><tr><td style=\"white-space:nowrap\">status<a name=\"example-study-data-dictionary-datatable-codesystem-1-status\"> </a></td><td>Subject's status (Case or Control)</td></tr></table></div>"
   },
-  "url": "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
-  "version": "0.2.0",
-  "name": "ExampleStudyDataDictionaryStudyTableCS1",
-  "title": "Datatable CodeSystem (lists all variables)",
-  "status": "active",
-  "date": "2022-11-28T21:07:57+00:00",
-  "publisher": "NCPI FHIR Working Group",
-  "contact": [
-    {
-      "name": "NCPI FHIR Working Group",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://github.com/nih-ncpi"
-        }
-      ]
-    },
-    {
-      "name": "Meen Chul Kim",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "meenchul@d3b.center",
-          "use": "work"
-        }
-      ]
-    }
-  ],
-  "description": "Example CodeSystem for a data-dictionary table with 4 variables represented as codes.",
-  "content": "complete",
-  "count": 5,
-  "concept": [
-    {
-      "code": "subjectid",
-      "display": "Subject's Unique Identifier"
-    },
-    {
-      "code": "gender",
-      "display": "Gender"
-    },
-    {
-      "code": "age_at_enrollment",
-      "display": "Subject's Age at Enrollment in days"
-    },
-    {
-      "code": "bmi",
-      "display": "Subject's BMI, Measured at Enrollment"
-    },
-    {
-      "code": "status",
-      "display": "Subject's status (Case or Control)"
-    }
-  ]
+  "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1",
+  "version" : "0.2.0",
+  "name" : "ExampleStudyDataDictionaryStudyTableCS1",
+  "title" : "Datatable CodeSystem (lists all variables)",
+  "status" : "active",
+  "date" : "2022-12-09T17:30:30+00:00",
+  "publisher" : "NCPI FHIR Working Group",
+  "contact" : [{
+    "name" : "NCPI FHIR Working Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/nih-ncpi"
+    }]
+  },
+  {
+    "name" : "Meen Chul Kim",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "meenchul@d3b.center",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Example CodeSystem for a data-dictionary table with 4 variables represented as codes.",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "subjectid",
+    "display" : "Subject's Unique Identifier"
+  },
+  {
+    "code" : "gender",
+    "display" : "Gender"
+  },
+  {
+    "code" : "age_at_enrollment",
+    "display" : "Subject's Age at Enrollment in days"
+  },
+  {
+    "code" : "bmi",
+    "display" : "Subject's BMI, Measured at Enrollment"
+  },
+  {
+    "code" : "status",
+    "display" : "Subject's status (Case or Control)"
+  }]
 }

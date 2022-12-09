@@ -7,19 +7,19 @@
 
 <https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/loinc-answers> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "loinc-answers"];
+  fhir:Resource.id [ fhir:value "loinc-answers"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>ncpi:loinc-answers</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">LA21254-0<a name=\"loinc-answers-LA21254-0\"> </a></td><td>Chromosome 1</td></tr><tr><td style=\"white-space:nowrap\">LA21255-7<a name=\"loinc-answers-LA21255-7\"> </a></td><td>Chromosome 2</td></tr><tr><td style=\"white-space:nowrap\">LA21256-5<a name=\"loinc-answers-LA21256-5\"> </a></td><td>Chromosome 3</td></tr><tr><td style=\"white-space:nowrap\">LA21257-3<a name=\"loinc-answers-LA21257-3\"> </a></td><td>Chromosome 4</td></tr><tr><td style=\"white-space:nowrap\">LA21258-1<a name=\"loinc-answers-LA21258-1\"> </a></td><td>Chromosome 5</td></tr><tr><td style=\"white-space:nowrap\">LA21259-9<a name=\"loinc-answers-LA21259-9\"> </a></td><td>Chromosome 6</td></tr><tr><td style=\"white-space:nowrap\">LA21260-7<a name=\"loinc-answers-LA21260-7\"> </a></td><td>Chromosome 7</td></tr><tr><td style=\"white-space:nowrap\">LA21261-5<a name=\"loinc-answers-LA21261-5\"> </a></td><td>Chromosome 8</td></tr><tr><td style=\"white-space:nowrap\">LA21262-3<a name=\"loinc-answers-LA21262-3\"> </a></td><td>Chromosome 9</td></tr><tr><td style=\"white-space:nowrap\">LA21263-1<a name=\"loinc-answers-LA21263-1\"> </a></td><td>Chromosome 10</td></tr><tr><td style=\"white-space:nowrap\">LA21264-9<a name=\"loinc-answers-LA21264-9\"> </a></td><td>Chromosome 11</td></tr><tr><td style=\"white-space:nowrap\">LA21265-6<a name=\"loinc-answers-LA21265-6\"> </a></td><td>Chromosome 12</td></tr><tr><td style=\"white-space:nowrap\">LA21266-4<a name=\"loinc-answers-LA21266-4\"> </a></td><td>Chromosome 13</td></tr><tr><td style=\"white-space:nowrap\">LA21267-2<a name=\"loinc-answers-LA21267-2\"> </a></td><td>Chromosome 14</td></tr><tr><td style=\"white-space:nowrap\">LA21268-0<a name=\"loinc-answers-LA21268-0\"> </a></td><td>Chromosome 15</td></tr><tr><td style=\"white-space:nowrap\">LA21269-8<a name=\"loinc-answers-LA21269-8\"> </a></td><td>Chromosome 16</td></tr><tr><td style=\"white-space:nowrap\">LA21270-6<a name=\"loinc-answers-LA21270-6\"> </a></td><td>Chromosome 17</td></tr><tr><td style=\"white-space:nowrap\">LA21271-4<a name=\"loinc-answers-LA21271-4\"> </a></td><td>Chromosome 18</td></tr><tr><td style=\"white-space:nowrap\">LA21272-2<a name=\"loinc-answers-LA21272-2\"> </a></td><td>Chromosome 19</td></tr><tr><td style=\"white-space:nowrap\">LA21273-0<a name=\"loinc-answers-LA21273-0\"> </a></td><td>Chromosome 20</td></tr><tr><td style=\"white-space:nowrap\">LA21274-8<a name=\"loinc-answers-LA21274-8\"> </a></td><td>Chromosome 21</td></tr><tr><td style=\"white-space:nowrap\">LA21275-5<a name=\"loinc-answers-LA21275-5\"> </a></td><td>Chromosome 22</td></tr><tr><td style=\"white-space:nowrap\">LA21276-3<a name=\"loinc-answers-LA21276-3\"> </a></td><td>Chromosome X</td></tr><tr><td style=\"white-space:nowrap\">LA21277-1<a name=\"loinc-answers-LA21277-1\"> </a></td><td>Chromosome Y</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "ncpi:loinc-answers"];
-  fhir:CodeSystem.version [ fhir:value "0.2.0"];
-  fhir:CodeSystem.name [ fhir:value "LoincAnswers"];
-  fhir:CodeSystem.title [ fhir:value "LOINC Answers"];
-  fhir:CodeSystem.status [ fhir:value "draft"];
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2022-11-28T21:07:57+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"];
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "ncpi:loinc-answers"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.2.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "LoincAnswers"]; # 
+  fhir:CodeSystem.title [ fhir:value "LOINC Answers"]; # 
+  fhir:CodeSystem.status [ fhir:value "draft"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2022-12-09T17:30:30+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
@@ -37,11 +37,11 @@
        fhir:ContactPoint.value [ fhir:value "meenchul@d3b.center" ];
        fhir:ContactPoint.use [ fhir:value "work" ]
      ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "LOINC ANSWERS used by NCPI resources"];
-  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "24"^^xsd:nonNegativeInteger];
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "LOINC ANSWERS used by NCPI resources"]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "24"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "LA21254-0" ];
@@ -138,7 +138,7 @@
      fhir:index 23;
      fhir:CodeSystem.concept.code [ fhir:value "LA21277-1" ];
      fhir:CodeSystem.concept.display [ fhir:value "Chromosome Y" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

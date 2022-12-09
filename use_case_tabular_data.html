@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NCPI-FHIR-IMPLEMENTATION-GUIDE\Use Case Raw Data - FHIR v4.0.1</title>
+    <title>NCPI-FHIR-IMPLEMENTATION-GUIDE\Use Case Tabular Data - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -150,7 +150,7 @@
         <a href="childhood_cancer.html">Childhood Cancer</a>
       </li>
       <li>
-        <a href="using_source_data.html">Using &quot;Source&quot; Data</a>
+        <a href="use_case_tabular_data.html">Using &quot;Source&quot; Data</a>
       </li>
       <li>
         <a href="ehr.html">EHR Data</a>
@@ -198,7 +198,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Use Case Raw Data</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Use Case Tabular Data</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -219,7 +219,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">NCPI FHIR Implementation Guide - Local Development build (v0.2.0). See the <a href="https://nih-ncpi.github.io/ncpi-fhir-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Use Case Raw Data</h2>
+  <h2>Use Case Tabular Data</h2>
   
 
 
@@ -237,8 +237,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h3 id="representing-raw-data-in-fhir">Representing Raw Data in FHIR</h3>
-<p>There are a number of reasons to support representing raw data in FHIR whether or not it is expected that the data will be fully transformed to meet the appropriate FHIR representation for interoperable data. These include:</p>
+<h3 id="representing-tabular-data-in-fhir">Representing Tabular Data in FHIR</h3>
+<p>There are a number of reasons to support representing tabular data in FHIR whether or not it is expected that the data will be fully transformed to meet the appropriate FHIR representation for interoperable data. These include:</p>
 
 <ul>
   <li>Provide FHIR access for data where there isn’t funding to properly transform it to meet the interoperable model.</li>
@@ -246,8 +246,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Provide data provenance for all of the transformed data using the same API, FHIR as opposed to requiring researchers to step outside FHIR and attempt to trace the origins back to those original data sources.</li>
 </ul>
 
-<h4 id="raw-data-as-observations-with-components">Raw Data as Observations (with components)</h4>
-<p><img width="100%" src="raw-data-as-observations.png" alt="Raw Data as Observations" />
+<h4 id="tabular-data-as-observations-with-components">Tabular Data as Observations (with components)</h4>
+<p><img width="100%" src="raw-data-as-observations.png" alt="Tabular Data as Observations" />
 FHIR Observations are rich resource structures that provide a direct link to a <em>subject</em>, which can be a Patient or a group of Patients) and an optional <em>focus</em> which can point to any other resource. There is also the possibility to link the observation to an <em>encounter</em>. Each observation can have 0 or more <em>component</em> entries.</p>
 
 <h5 id="component-composition">Component Composition</h5>
@@ -289,7 +289,7 @@ FHIR Observations are rich resource structures that provide a direct link to a <
 <p>For some data tables, it is easy to imagine they are describing the outcome of a single encounter which will be realized by during a transformation. It seems reasonable that such a relationship could be captured for these resources.</p>
 
 <h4 id="raw-data-as-questionnaires-and-questionnaireresponses">Raw Data as Questionnaires and QuestionnaireResponses</h4>
-<p><img width="100%" src="raw-data-as-questionnaires.png" alt="Raw Data as Questionnaires" />
+<p><img width="100%" src="raw-data-as-questionnaires.png" alt="Tabular Data as Questionnaires" />
 FHIR R4 natively provides 2 resources to support survey instruments in FHIR along with their responses: <em>Questionnaire</em> and <em>QuestionnaireResponse</em>. These are rich resources intended to support the types of surveys that may be used during routine medical care. As a result, these fit nicely alongside our objectives for capturing raw research data.</p>
 
 <p>There are two components to this model:</p>
@@ -329,7 +329,7 @@ FHIR R4 natively provides 2 resources to support survey instruments in FHIR alon
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 28, 2022 21:07+0000">2022-11-28</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 9, 2022 17:30+0000">2022-12-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
