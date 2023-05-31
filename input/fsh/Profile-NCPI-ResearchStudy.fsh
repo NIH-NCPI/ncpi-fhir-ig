@@ -8,3 +8,4 @@ Description: "The NCPI Research Study is based upon the core FHIR ResearchStudy 
 * category.coding = $ncpi#StudyCohort "Study Cohort"
 * enrollment 1..*
 * enrollment only Reference(StudyGroup) 
+* sponsor only Reference(ResearchConsortium)

@@ -7,6 +7,16 @@
 	* Examples for ResearchSubjects
 	* Examples of Patients
  */
+Instance: ncpi-research-consortium-01
+InstanceOf: ResearchConsortium
+Usage: #example
+Description: "Example Consortium"
+* name = "Example Consortium"
+* alias[0] = "ExCNS"
+* telecom
+  * system = #url
+  * value = "www.consortium-home.org"
+
 
 /**
   * The Research Study 

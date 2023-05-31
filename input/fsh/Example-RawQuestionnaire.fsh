@@ -62,7 +62,7 @@ Title: "Example of a QuestionnaireResponse to Represent Raw Data"
 Description: "A Single row of data represented in FHIR as a QuestionnaireResponse"
 * questionnaire = "https://nih-ncpi.github.io/ncpi-fhir-ig/data-dictionary/study-name/demographics"
 * status = #completed
-* subject = Reference(example-sum-patient-1)
+* subject = Reference(ncpi-research-study-01-patient-01)
 * item
   * linkId = "subjectid"
   * text = "Subject ID"
