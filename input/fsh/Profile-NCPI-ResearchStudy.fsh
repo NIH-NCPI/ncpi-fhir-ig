@@ -6,6 +6,6 @@ Description: "The NCPI Research Study is based upon the core FHIR ResearchStudy 
 * ^version = "0.0.1"
 * ^status = #draft
 * category.coding = $ncpi#StudyCohort "Study Cohort"
-* enrollment 1..*
+* enrollment 1..1
 * enrollment only Reference(StudyGroup) 
 * sponsor only Reference(ResearchConsortium)

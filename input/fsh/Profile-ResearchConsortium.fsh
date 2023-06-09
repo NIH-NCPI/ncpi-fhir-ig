@@ -6,4 +6,3 @@ Description: "A FHIR Organization representing a single consortium of which one 
 * ^version = "0.1.0"
 * ^status = #draft
 * name 1..1
-

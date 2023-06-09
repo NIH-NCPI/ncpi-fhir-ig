@@ -11,3 +11,5 @@ Description: "The Mondo Disease Ontology (Mondo) aims to harmonize disease defin
 * #MONDO:0005072 "neuroblastoma"
 * #MONDO:0002749 "extracranial neuroblastoma"
 * #MONDO:0008542 "tetralogy of fallot"
+* #MONDO:0016054 "cerebral malformation"
+* #MONDO:0016033 "Cornelia de Lange syndrome"

@@ -36,6 +36,7 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $refseq = http://www.ncbi.nlm.nih.gov/refseq
 Alias: $varnomen = http://varnomen.hgvs.org
 Alias: $umls = https://uts.nlm.nih.gov/uts/umls
+Alias: $nihcc = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent
 
 // ValueSet
 Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
@@ -67,4 +68,5 @@ Alias: $condition-interitanc-codes = http://fhir.ncpi-project-forge.io/ValueSet/
 // NCPI Observations
 Alias: $ncpi = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi
 Alias: $ncpi_datatypes = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types
+Alias: $ncpi-study-types = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-study-types
 Alias: $ucum = http://unitsofmeasure.org

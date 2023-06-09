@@ -35,6 +35,34 @@ Description: "An example research study"
     * display = "Study Cohort"
 * enrollment = Reference(ncpi-research-study-01-group-01-main)
 
+Instance: gru-consent
+InstanceOf: ResearchStudyConsent
+Usage: #example
+Description: "Example Consent resource"
+* status = #draft
+* scope = #research
+* category = $nihcc#GRU
+
+Instance: ds-bav-consent
+InstanceOf: ResearchStudyConsent
+Usage: #example
+Description: "Example of Disease Specific Consent resource"
+* status = #draft
+* scope = #research
+* category = $nihcc#DS
+* extension[diseaseAbbreviation].valueString = "DS-BAV"
+
+
+Instance: ncpi-research-study-subject-01
+InstanceOf: ResearchStudySubject
+Usage: #example
+Description: "An example of an R4 Research Study Subject which connects subjects to a research study and their consent"
+* title = "Example research study subject"
+* status = #completed
+* partOf = Reference(ncpi-research-study-01)
+* extension[consent].valueReference = Reference(gru-consent)
+* enrollment = Reference(ncpi-research-study-01-conset-group-01-main)
+
 Instance: ncpi-research-study-01-group-01-main
 InstanceOf: StudyGroup
 Usage: #example
@@ -45,6 +73,19 @@ Description: "Study 01's complete enrollment"
 * type = #person
 * member[0].entity = Reference(ncpi-research-study-01-patient-01)
 * member[+].entity = Reference(ncpi-research-study-01-patient-02)
+
+Instance: ncpi-research-study-01-conset-group-01-main
+InstanceOf: StudyGroup
+Usage: #example
+Description: "Study 01's Group consented under GRU"
+* name = "Study 01's consented participants"
+* quantity = 2
+* actual = true
+* type = #person
+* member[0].entity = Reference(ncpi-research-study-01-patient-01)
+* member[+].entity = Reference(ncpi-research-study-01-patient-02)
+
+
 
 Instance: ncpi-research-study-01-patient-01
 InstanceOf: Patient
