@@ -1,0 +1,1 @@
+The ResearchStudySubject profile provides an R4 proxy for the more flexible R5 ResearchSubject.
