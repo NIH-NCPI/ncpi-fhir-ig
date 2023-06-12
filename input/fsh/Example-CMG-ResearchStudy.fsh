@@ -75,8 +75,8 @@ Usage: #example
 Description: "Consented with Health/Medical/Biomedical + Not for profit use"
 * status = #draft
 * scope = #research
-* category.coding[0] = $nihcc#HMB
-* category.coding[1] = $nihcc#NPU
+* category[+].coding = $nihcc#HMB
+* category[+].coding = $nihcc#NPU
 * category.text = "HMB-NPU"
 
 Instance: cmg-research-study-subject-cmg-hmb-npu
@@ -110,9 +110,9 @@ Usage: #example
 Description: "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use"
 * status = #draft
 * scope = #research
-* category.coding[0] = $nihcc#HMB
-* category.coding[1] = $nihcc#IRB
-* category.coding[2] = $nihcc#NPU
+* category[0].coding = $nihcc#HMB
+* category[+].coding = $nihcc#IRB
+* category[+].coding = $nihcc#NPU
 * category.text = "HMB-IRB-NPU"
 
 Instance: cmg-research-study-subject-cmg-hmb-irb-npu
