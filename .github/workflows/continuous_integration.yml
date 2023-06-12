@@ -8,7 +8,7 @@ on:
 jobs:
   validate:
     name: Validate Implementation Guide
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         node-version: [14, 16]
@@ -25,8 +25,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get -y install ruby-full build-essential zlib1g-dev
-          sudo gem install sass-embedded -v 1.63.3
-          gem update --system
           sudo gem install jekyll bundler
 
       - name: Set up Node.js ${{ matrix.node-version }}
