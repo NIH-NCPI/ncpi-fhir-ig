@@ -25,7 +25,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get -y install ruby-full build-essential zlib1g-dev
-          sudo gem install jekyll --version="~> 4.2.0"
+          ruby --version
+          sudo gem install jekyll --version="~> 4.2.0" bundler
 
       - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
