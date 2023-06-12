@@ -1,1 +1,3 @@
-The ResearchStudySubject profile provides an R4 proxy for the more flexible R5 ResearchSubject.
+Based on the [NCPI Research Study](StructureDefinition-ncpi-research-study.html) profile, this resource **must** have a _partOf_ property which points to the main NcpiResearchStudy resource. It **should** also use the [Research Study Subject Consent extension](StructureDefinition-research-study-subject-consent.html) to point to the corresponding consent resource. 
+
+Because it is derived from the NCPI Research Study profile, the resource's enrollment must contain a single [Study Group](StructureDefinition-study-group.html). 
