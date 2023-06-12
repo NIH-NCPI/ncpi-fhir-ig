@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        node-version: [14, 16]
+        node-version: [10, 12]
     steps:
       - name: Check out branch
         uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
       - name: Set up OpenJDK
         uses: actions/setup-java@v1
         with:
-          java-version: 8
+          java-version: 11
 
       - name: Set up Jekyll
         run: |
