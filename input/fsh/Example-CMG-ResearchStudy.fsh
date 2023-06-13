@@ -75,9 +75,11 @@ Usage: #example
 Description: "Consented with Health/Medical/Biomedical + Not for profit use"
 * status = #draft
 * scope = #research
-* category[+].coding = $nihcc#HMB
-* category[+].coding = $nihcc#NPU
-* category.text = "HMB-NPU"
+* category.coding = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research
+* provision.type = http://hl7.org/fhir/consent-provision-type#permit
+* provision.purpose[+] = $nihcc#HMB
+* provision.purpose[+] = $nihcc#NPU
+//* category.text = "HMB-NPU"
 
 Instance: cmg-research-study-subject-cmg-hmb-npu
 InstanceOf: ResearchStudySubject
@@ -110,10 +112,12 @@ Usage: #example
 Description: "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use"
 * status = #draft
 * scope = #research
-* category[0].coding = $nihcc#HMB
-* category[+].coding = $nihcc#IRB
-* category[+].coding = $nihcc#NPU
-* category.text = "HMB-IRB-NPU"
+* category.coding = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research
+* provision.type = http://hl7.org/fhir/consent-provision-type#permit
+* provision.purpose[+] = $nihcc#HMB
+* provision.purpose[+] = $nihcc#IRB
+* provision.purpose[+] = $nihcc#NPU
+//* category.text = "HMB-IRB-NPU"
 
 Instance: cmg-research-study-subject-cmg-hmb-irb-npu
 InstanceOf: ResearchStudySubject
