@@ -1914,3 +1914,4 @@ Description: "The Human Phenotype Ontology (HPO) provides a standardized vocabul
 * #HP:0002926 "Abnormality of thyroid physiology"
 * #HP:0007970 "Congenital ptosis"
 * #HP:0030853 "Heterotaxy"
+* #HP:0010772 "Anomalous pulmonary venous return"
