@@ -41,7 +41,7 @@ Usage: #example
 Description: "Example Consent resource"
 * status = #draft
 * scope = #research
-* category = $nihcc#GRU
+* provision.purpose[+] = $nihcc#GRU
 
 Instance: ds-bav-consent
 InstanceOf: ResearchStudyConsent
@@ -49,8 +49,9 @@ Usage: #example
 Description: "Example of Disease Specific Consent resource"
 * status = #draft
 * scope = #research
-* category = $nihcc#DS
-* extension[diseaseAbbreviation].valueString = "DS-BAV"
+* provision.purpose[+] = $nihcc#DS
+* provision.extension[diseaseUseLimitation].valueCodeableConcept.coding = $mesh#D000082882 "Bicuspid Aortic Valve Disease"
+//* extension[diseaseAbbreviation].valueString = "DS-BAV"
 
 
 Instance: ncpi-research-study-subject-01

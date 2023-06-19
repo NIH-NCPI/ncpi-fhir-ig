@@ -16,6 +16,14 @@ Description: "Full code string for disease specific consent abbreviations"
 * value[x] only string
 * obeys disease-specific-consent-code
 
+Extension: ResearchDiseaseUseLimitation
+Id: research-disease-use-limitation
+Title: "Research Usage Limitation Disease Code"
+Description: "Coding associated with limitation on what research can be performed this data."
+* value[x] only CodeableConcept 
+* valueCodeableConcept from mesh-terms (example)
+
+
 // The current version of SMILES CDR that we are using doesn't support
 // version 4.3.0 resources, and when generating Consent based profiles with 
 // version 4.0.1 resource, sushi generates invalid profiles. 
@@ -23,14 +31,16 @@ Description: "Full code string for disease specific consent abbreviations"
 // This profile exists in the resources directory until we have migrated all 
 // R4 servers to a more recent version of HAPI. 
 //
-// Profile: ResearchStudyConsent
-// Parent: Consent
-// Id: research-study-consent
-// Title: "Research Study Consent"
-// Description: "A ResearchStudyConsent represents the core NIH Consent properties as they apply when consenting subjects to a research study"
-// * ^version = "0.1.0"
-// * ^status = #draft
-// * category from nih-consent-codes (extensible)
-// * extension contains ResearchConsentDiseaseAbbreviation named diseaseAbbreviation 0..1
-// * extension[diseaseAbbreviation] ^short = "Consent Code Disease Abbreviation"
-// * extension[diseaseAbbreviation].value[x] only string
+//Profile: ResearchStudyConsent
+//Parent: Consent
+//Id: research-study-consent
+//Title: "Research Study Consent"
+//Description: "A ResearchStudyConsent represents the core NIH Consent properties as they apply when consenting subjects to a research study"
+//* ^version = "0.1.0"
+//* ^status = #draft
+//* category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research "Research Information Access" 
+//* provision.purpose from nih-consent-codes (extensible)
+//* provision.extension contains ResearchDiseaseUseLimitation named diseaseUseLimitation 0..1
+//* provision.extension[diseaseUseLimitation] ^short = "Consent Code Disease Abbreviation"
+
+//* extension[diseaseUseLimitation].value[x] only string
