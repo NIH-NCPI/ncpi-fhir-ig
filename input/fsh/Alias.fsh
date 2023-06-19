@@ -59,6 +59,8 @@ Alias: $hpo = http://purl.obolibrary.org/obo/hp.owl
 Alias: $omim = https://omim.org/
 Alias: $mondo = http://purl.obolibrary.org/obo/mondo.owl
 
+Alias: $mesh = urn:oid:2.16.840.1.113883.6.177
+
 // ValueSet
 Alias: $disease-codes = http://fhir.ncpi-project-forge.io/ValueSet/disease-codes
 Alias: $phenotype-codes = http://fhir.ncpi-project-forge.io/ValueSet/phenotype-codes
