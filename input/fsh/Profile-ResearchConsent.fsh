@@ -31,16 +31,16 @@ Description: "Coding associated with limitation on what research can be performe
 // This profile exists in the resources directory until we have migrated all 
 // R4 servers to a more recent version of HAPI. 
 //
-//Profile: ResearchStudyConsent
-//Parent: Consent
-//Id: research-study-consent
-//Title: "Research Study Consent"
-//Description: "A ResearchStudyConsent represents the core NIH Consent properties as they apply when consenting subjects to a research study"
-//* ^version = "0.1.0"
-//* ^status = #draft
-//* category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research "Research Information Access" 
-//* provision.purpose from nih-consent-codes (extensible)
-//* provision.extension contains ResearchDiseaseUseLimitation named diseaseUseLimitation 0..1
-//* provision.extension[diseaseUseLimitation] ^short = "Consent Code Disease Abbreviation"
+// Profile: ResearchStudyConsent
+// Parent: Consent
+// Id: research-study-consent
+// Title: "Research Study Consent"
+// Description: "A ResearchStudyConsent represents the core NIH Consent properties as they apply when consenting subjects to a research study"
+// * ^version = "0.1.0"
+// * ^status = #draft
+// * category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research "Research Information Access" 
+// * provision.purpose from nih-consent-codes (extensible)
+// * provision.extension contains ResearchDiseaseUseLimitation named diseaseUseLimitation 0..1
+// * provision.extension[diseaseUseLimitation] ^short = "Consent Code Disease Abbreviation"
 
 //* extension[diseaseUseLimitation].value[x] only string

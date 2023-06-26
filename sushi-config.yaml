@@ -58,5 +58,6 @@ menu:
     Metadata Examples: example_study_metadata.html
     Raw Data Examples: example_raw_data.html
   Support: 
+    FHIR Versions: fhir_version.html
     FHIR Spec: http://hl7.org/fhir/R4/index.html
     Downloads: downloads.html
