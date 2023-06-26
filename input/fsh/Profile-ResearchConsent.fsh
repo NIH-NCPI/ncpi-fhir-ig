@@ -35,7 +35,7 @@ Description: "Coding associated with limitation on what research can be performe
 // Parent: Consent
 // Id: research-study-consent
 // Title: "Research Study Consent"
-// Description: "A ResearchStudyConsent represents the core NIH Consent properties as they apply when consenting subjects to a research study"
+// Description: "A ResearchStudyConsent represents the core NIH Consent properties as they apply when consenting subjects to a research study."
 // * ^version = "0.1.0"
 // * ^status = #draft
 // * category = http://terminology.hl7.org/CodeSystem/consentcategorycodes#research "Research Information Access" 

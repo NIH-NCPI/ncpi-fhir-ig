@@ -1,7 +1,8 @@
 
+### Key Guidelines
 While there can be more than one StudyGroup per study, there **must** be one group representing the entire study enrollment. Patients can be members of more than one StudyGroup.
 
-### Added Profile Restrictions
+#### Added Profile Restrictions
 In order to ensure consistency across all NCPI research studies represented in FHIR, there are some additional requirements that are to be enforced: 
 
 * The StudyGroup resource **must** be of type *person*.

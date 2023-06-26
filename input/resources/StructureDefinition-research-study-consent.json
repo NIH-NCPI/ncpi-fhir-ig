@@ -27,7 +27,7 @@
       "use" : "work"
     }]
   }],
-  "description" : "A ResearchStudyConsent represents the core NIH Consent properties as they apply when consenting subjects to a research study",
+  "description" : "A ResearchStudyConsent represents the core NIH Consent properties as they apply when consenting subjects to a research study.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
