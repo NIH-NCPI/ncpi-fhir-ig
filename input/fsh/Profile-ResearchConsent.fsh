@@ -4,9 +4,9 @@ Expression: "valueString.matches('DS-[A-Z]+')"
 Severity: #error
 
 //https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-consent-disease-abbreviation
-Invariant: completed-conset-code
+Invariant: completed-consent-code
 Description: "If category is DS then there must be a ResearchConsentDiseaseAbbreviation"
-Expression: "!category.where(coding.where(system&'|'&code = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent|DS').exists()).exists() or  extension.where(url=https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-consent-disease-abbreviation).exists()"
+Expression: "provision.purpose.where(code = 'DS').empty() or provision.extension.where(url='https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-disease-use-limitation').exists()"
 Severity: #error
 
 Extension: ResearchConsentDiseaseAbbreviation
@@ -42,5 +42,5 @@ Description: "Coding associated with limitation on what research can be performe
 // * provision.purpose from nih-consent-codes (extensible)
 // * provision.extension contains ResearchDiseaseUseLimitation named diseaseUseLimitation 0..1
 // * provision.extension[diseaseUseLimitation] ^short = "Consent Code Disease Abbreviation"
-
+// * obeys completed-consent-code
 //* extension[diseaseUseLimitation].value[x] only string
