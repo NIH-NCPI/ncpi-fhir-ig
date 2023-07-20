@@ -8,7 +8,7 @@ To ensure consistency across all NCPI research studies represented in FHIR, ther
 #### The following requirements are true for all NCPI Research Studies:
 * enrollment **must** contain 1 reference of type, [Study Group](StructureDefinition-study-group.html).
 * category **must** contain the Coding from NCPI [StudyCohort](CodeSystem-ncpi.html).
-* each study **should** have its _accession ID_ added as an identifier.
+* each study **should** have its _accession ID_ added as an identifier. This is an identifier provided by DbGAP or other organization which represents a common identifier recognized by similar research groups.
 * each study **should** have its _study name_ as the title. 
 * for those studies which exist as part of a larger study, the parent study **should** be referenced in the study's _partOf_ property. 
 * *principalInvestigator* **must** be of type _Practitioner_ if present. 
@@ -30,4 +30,4 @@ An optional element is one which will help provide additional context to the res
 
 For a more detailed view of these elements as well as the recommended FHIR mappings please see the research study documentation. 
 
-Each NCPI Research must have at least one NCPI Study Group which must, at the very least, indicate the total number of patients enrolled at the time the data was loaded into FHIR. Additional Study Groups can be present indicating relevant groupings of subjects, such as for different consent groups. 
+Each NCPI Research must have at least one NCPI Study Group which must, at the very least, indicate the total number of patients enrolled at the time the data was loaded into FHIR. Additional Study Groups can be present indicating relevant groupings of subjects. 
