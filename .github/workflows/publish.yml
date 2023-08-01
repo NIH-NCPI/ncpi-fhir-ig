@@ -36,7 +36,7 @@ jobs:
 
       - name: Install SUSHI and add FSH definitions
         run: |
-          npm install -g fsh-sushi
+          npm install -g fsh-sushi@v2.10.2
           sushi .
 
       - name: Update IG publisher
