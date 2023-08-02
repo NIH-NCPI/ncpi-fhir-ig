@@ -41,7 +41,6 @@ Description: "The Centers for Mendelian Genomics project uses next-generation se
     * system = $ncpi
     * code = #StudyCohort 
     * display = "Study Cohort"
-* primaryPurposeType = $ncpi-study-types#Mixed "Mixed"
 * focus[+] = $mondo#MONDO:0016054 "cerebral malformation"
 * focus[+] = $hpo#HP:0030853 "Heterotaxy"
 * focus[+] = $mondo#MONDO:0016033 "Cornelia de Lange syndrome"
@@ -56,7 +55,8 @@ Description: "The Centers for Mendelian Genomics project uses next-generation se
   * citation = "Gonzaga-Jauregui C, Lupski JR, Gibbs RA. Human genome sequencing in health and disease. Annu Rev Med. 2012;63:35-61. doi: 10.1146/annurev-med-051010-162644. PMID: 22248320; PMCID: PMC3656720."
   * url = "https://pubmed.ncbi.nlm.nih.gov/22248320/"
 * enrollment = Reference(cmg-research-study-bhcmg-group)
-
+* extension[studyDesign].valueCodeableConcept.coding[0] = $studydesign#Mendelian "Mendelian"
+* extension[studyDesign].valueCodeableConcept.coding[1] = $ncpi-study-types#Mixed "Mixed"
 
 Instance: cmg-research-study-bhcmg-group
 InstanceOf: StudyGroup

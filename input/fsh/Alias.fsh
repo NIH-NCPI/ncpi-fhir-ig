@@ -37,6 +37,7 @@ Alias: $refseq = http://www.ncbi.nlm.nih.gov/refseq
 Alias: $varnomen = http://varnomen.hgvs.org
 Alias: $umls = https://uts.nlm.nih.gov/uts/umls
 Alias: $nihcc = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent
+Alias: $studydesign = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/ResearchStudy-StudyDesign
 
 // ValueSet
 Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
