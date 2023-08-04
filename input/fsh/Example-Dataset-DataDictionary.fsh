@@ -23,7 +23,7 @@ Description: "Example CodeSystem for a data-dictionary dataset with only 1 table
 * ^url = $ExampleStudyDatasetCS
 * ^content = #complete
 * ^count = 1
-* #demographics
+* #demographics "Demographics"
 
 CodeSystem: ExampleStudyDataDictionaryStudyTableCS1
 Id: example-study-data-dictionary-datatable-codesystem-1
@@ -57,7 +57,7 @@ InstanceOf: StudyDataDictionaryTable
 Title: "Data-Dictionary Table"
 Description: "Example Study Data Dictionary Data Table definition"
 * status = #active
-* code.coding = $ExampleStudyDatasetCS#demographics "Demographic data"
+* code.coding = $ExampleStudyDatasetCS#demographics "Demographics"
 * topic.coding = $umls#C0035168 "Research"
 * observationResultRequirement[0] = Reference(example-study-data-dictionary-variable-1-1)
 * observationResultRequirement[1] = Reference(example-study-data-dictionary-variable-1-2)

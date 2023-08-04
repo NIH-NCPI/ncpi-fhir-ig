@@ -8,4 +8,4 @@ Description: "LOINC ANSWERS used by NCPI resources"
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "NCPI Project Forge"
-* include codes from system ncpi:loinc-answers
+* include codes from system https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/loinc-answers
