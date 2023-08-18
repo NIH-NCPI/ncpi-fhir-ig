@@ -42,18 +42,25 @@ Description: "The Centers for Mendelian Genomics project uses next-generation se
     * code = #StudyCohort 
     * display = "Study Cohort"
 * focus[+] = $mondo#MONDO:0016054 "cerebral malformation"
-* focus[+] = $hpo#HP:0030853 "Heterotaxy"
-* focus[+] = $mondo#MONDO:0016033 "Cornelia de Lange syndrome"
+* focus[+].coding[0] = $hpo#HP:0030853 "Heterotaxy"
+* focus[=].coding[1] = $mesh#D059446 "Heterotaxy Syndrome"
+* focus[+].coding[0] = $mondo#MONDO:0016033 "Cornelia de Lange syndrome"
+* focus[=].coding[1] = $mesh#D003635 "De Lange Syndrome"
 // This particular study doesn't have a specific 
 * relatedArtifact[0]
   * type = #derived-from
   * label = "DbGaP"
-  * url = "phs000711"
+  * display = "phs000711"
+  * url = "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000711"
 * relatedArtifact[+]
   * type = #documentation
   * label = "Citation"
   * citation = "Gonzaga-Jauregui C, Lupski JR, Gibbs RA. Human genome sequencing in health and disease. Annu Rev Med. 2012;63:35-61. doi: 10.1146/annurev-med-051010-162644. PMID: 22248320; PMCID: PMC3656720."
-  * url = "https://pubmed.ncbi.nlm.nih.gov/22248320/"
+  * document.url = "https://pubmed.ncbi.nlm.nih.gov/22248320/"
+* relatedArtifact[+]
+  * type = #documentation
+  * label = "Website"
+  * document.url = "https://mendeliangenomics.org/"
 * enrollment = Reference(cmg-research-study-bhcmg-group)
 * extension[studyDesign].valueCodeableConcept.coding[0] = $studydesign#Mendelian "Mendelian"
 * extension[studyDesign].valueCodeableConcept.coding[1] = $ncpi-study-types#Mixed "Mixed"
@@ -86,6 +93,9 @@ InstanceOf: ResearchStudySubject
 Title: "Participants consented under HMB-NPU"
 Usage: #example
 Description: "CMG Consent Group, Health/Medical/Biomedical + Not for profit use"
+* identifier[0]
+  * system = "http://mendelian.org/fhir"
+  * value = "BH-CMG-HMB-NPU"
 * title = "BH-CMG HMB-NPU Consent Study Subject"
 * description = "CMG Consent Group, Health/Medical/Biomedical + Not for profit use"
 * status = #completed
@@ -124,13 +134,16 @@ InstanceOf: ResearchStudySubject
 Title: "Participants consented under HMB-IRB-NPU"
 Usage: #example
 Description: "CMG Consent Group, HMB-IRB-NPU"
+* identifier[0]
+  * system = "http://mendelian.org/fhir"
+  * value = "BH-CMG-HMB-IRB-NPU"
 * title = "BH-CMG HMB-IRB-NPU Consent Study Subject"
 * status = #completed
 * partOf = Reference(cmg-research-study-bhcmg)
 * extension[consent].valueReference = Reference(hmb-irb-npu-consent)
 * enrollment = Reference(cmg-research-study-bhcmg-group-hmb-irb-npu)
 
-Instance: cmg-research-study-bhcmg-group-hmb-irb-npu
+Instance: cmg-research-study-bhcmg-consent-group-hmb-irb-npu
 InstanceOf: StudyGroup
 Title: "Participants consented under HMB-IRB-NPU"
 Usage: #example

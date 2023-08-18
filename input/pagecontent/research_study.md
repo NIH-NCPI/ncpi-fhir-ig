@@ -1,6 +1,8 @@
 ### Overview
 This module describes the tools used for a public representation of a Research Study. The Research Study represents the umbrella under which all related information can be found. Because of its central role in data aggregation, the Research Study resource should be present, even on public servers providing only summary information. 
 
+<img width="100%" src="bh-cmg-research-study-example.png" alt="Example NCPI Research Study Model" />
+
 #### ResearchStudy
 The [NCPI ResearchStudy](StructureDefinition-ncpi-research-study.html) profile is used to share data about Research Studies themselves. In the NCPI setting, these resources are focused on retrieving information about the study and data from the study and not on operating a research study. Additionally, we’ve acknowledged some of the weaknesses of the R4 ResearchStudy and have included some extensions that map to the R5 version.
 

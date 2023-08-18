@@ -25,6 +25,9 @@ Instance: ncpi-research-study-01
 InstanceOf: NcpiResearchStudy
 Usage: #example
 Description: "An example research study"
+* identifier[0]
+  * system = "http://example.com/fhir"
+  * value = "exammple-study"
 * title = "Example research study"
 * status = #completed
 * primaryPurposeType = #diagnostic
@@ -53,11 +56,13 @@ Description: "Example of Disease Specific Consent resource"
 * provision.extension[diseaseUseLimitation].valueCodeableConcept.coding = $mesh#D000082882 "Bicuspid Aortic Valve Disease"
 //* extension[diseaseAbbreviation].valueString = "DS-BAV"
 
-
 Instance: ncpi-research-study-subject-01
 InstanceOf: ResearchStudySubject
 Usage: #example
 Description: "An example of an R4 Research Study Subject which connects subjects to a research study and their consent"
+* identifier[0]
+  * system = "http://example.com/fhir"
+  * value = "Example-Research-Study-Subject-GRU"
 * title = "Example research study subject"
 * status = #completed
 * partOf = Reference(ncpi-research-study-01)
