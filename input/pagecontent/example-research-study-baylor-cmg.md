@@ -4,7 +4,7 @@ For this example, we have taken the [Baylor Hopkins Center for Mendelian Genomic
 
 <img width="100%" src="bh-cmg-research-study-example.png" alt="Baylor Hopkins CMG" />
 
-# ResearchConsortium
+### ResearchConsortium
 To discuss this particular set of research studies, we must first describe the role of the consortium when discussing studies of this type. The consortium, Centers for Mendelian Genomics, is used in the NCPI FHIR Model as a mechanism for aggregating member studies together. In the diagram above, you can see that, in addition to BH-CMG, there are several other centers which would each have their own set of studies. By representing the consortium in this way, we can show their relationship to one another, by association to the Consortium. 
 
 The profile, [ResearchConsortium](StructureDefinition-ncpi-research-consortium.html), is very simple in nature. There is a single attribute that is required specific to this IG, the name. Recommended attributes include any common Acronyms and the URL for the consortium's website. 
@@ -58,7 +58,7 @@ And finally, in order to provide the consortium's website, we provide it using t
 ```
 The system, in this case, is how consumers of this data can properly interpret the value as a website URL. 
 
-# Research Study, Baylor Hopkins, CMG
+### Research Study, Baylor Hopkins, CMG
 In this example, we have a dbGaP study, [BH-CMG](researchstudy-cmg-research-study-bhcmg.html), which has a number of different ways in which participants were consented. We've represented this main study as an [NCPI Research Study](StructureDefinition-ncpi-research-study.html), and will represent each of those consent components as [Research Study Subject](StructureDefinition-research-study-subject.html) resources. 
 
 First, let's take a look at the study itself:
