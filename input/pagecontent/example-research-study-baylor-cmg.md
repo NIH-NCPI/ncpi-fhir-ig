@@ -58,7 +58,7 @@ And finally, in order to provide the consortium's website, we provide it using t
 ```
 The system, in this case, is how consumers of this data can properly interpret the value as a website URL. 
 
-### Research Study, Baylor Hopkins, CMG
+### NCPI Research Study, Baylor Hopkins, CMG
 In this example, we have a dbGaP study, [BH-CMG](researchstudy-cmg-research-study-bhcmg.html), which has a number of different ways in which participants were consented. We've represented this main study as an [NCPI Research Study](StructureDefinition-ncpi-research-study.html), and will represent each of those consent components as [Research Study Subject](StructureDefinition-research-study-subject.html) resources. 
 
 First, let's take a look at the study itself:
@@ -260,7 +260,39 @@ One of the important features for making these studies _findable_ is annotating 
 ```
 For this one, we've included codings from two different ontologies: HPO and MeSH relating to Heterotaxy granting end users greater flexibility in which terms they choose for their searches. 
 
+#### Access Control (Consent Groups, etc)
+Where different aspects of a study are broken into distinct groupings of participants based on study focus (Whole Genome data versus panel datasets) or Consent, we want to capture those key groups in FHIR. To do so, we are modelling the main component of this top level R4 resource, the ResearchStudySubject, after the R5 version of FHIR's ResearchSubject resource. This allows us to tie a single Consent resource to the group and to associate it with the parent ResearchStudy using the *partOf* attribute. 
 
+For the purposes of this example, we've represented two of the consent groups listed in dbGaP for BM-CMG, HMB-NPU and HMB-IRB-NPU. 
+
+##### Research Study Subject, BH-CMG HMB, NPU
+As stated above, the chief goal of the ResearchStudySubject is to associate a portion of Participants whose data is restricted in identical ways. In this case, by the restrictions, *Health/Medical/Biomedical* Research and *Not-for-profit use only*. 
+
+There is a list of participants consented in this way that have been identified in the corresponding [StudyGroup](group-cmg-research-study-bhcmg-consent-group-hmb-npu.html). As well as the actual [Consent](consent-hmb-npu-consent.html) itself. 
+
+###### Research Study Consent, BH-CMG HMB-NPU
+The main purpose of the ResearchStudyConsent is to capture the individual components of the access restrictions and this is done using the provision.purpose attribute: 
+
+```json
+{
+  "provision" : {
+    "type" : "permit",
+    "purpose" : [
+      {
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent",
+        "code" : "HMB",
+        "display" : "Health/Medical/Biomedical"
+      },
+      {
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent",
+        "code" : "NPU",
+        "display" : "Not-for-profit use only"
+      }
+    ]
+  }
+}
+```
+The provision property's attribute, purpose, accepts one or more codings, each of which describes an aspect of the particular consent's restrictions. In this case, we use two codes from the NIH Consent CodeSystem, HMB and NPU. 
 
 * [CMG Consortium](organization-cmg-research-consortium.html)
 * [BH-CMG](researchstudy-cmg-research-study-bhcmg.html)
