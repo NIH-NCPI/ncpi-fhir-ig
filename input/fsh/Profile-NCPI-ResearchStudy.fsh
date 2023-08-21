@@ -44,6 +44,7 @@ Logical: CdeResearchStudy
 Id: common-data-model-research-study
 Title: "CDE Research Study"
 Description: "Common Data Model representation of a research study."
+* consortium 0..1 SU string "Consortium" "Parent organization to which the study is a member."
 * accession 1..1 SU string 
      "Study Accession Number" "Accession number produced by access authority such as dbGaP."
 * name 1..1 SU string "Study Name" "The study's name or title"
