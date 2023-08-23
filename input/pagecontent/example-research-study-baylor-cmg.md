@@ -260,19 +260,69 @@ One of the important features for making these studies _findable_ is annotating 
 ```
 For this one, we've included codings from two different ontologies: HPO and MeSH relating to Heterotaxy granting end users greater flexibility in which terms they choose for their searches. 
 
-#### Access Control (Consent Groups, etc)
-Where different aspects of a study are broken into distinct groupings of participants based on study focus (Whole Genome data versus panel datasets) or Consent, we want to capture those key groups in FHIR. To do so, we are modelling the main component of this top level R4 resource, the ResearchStudySubject, after the R5 version of FHIR's ResearchSubject resource. This allows us to tie a single Consent resource to the group and to associate it with the parent ResearchStudy using the *partOf* attribute. 
+Before getting into the individual sub-studies which represent the different types of consent participants agreed to, we should discuss a few related resources.
 
-For the purposes of this example, we've represented two of the consent groups listed in dbGaP for BM-CMG, HMB-NPU and HMB-IRB-NPU. 
+### Access Control - ResearchStudyConsent
+For the purposes of this implementation guide, when we talk about access control, we are not discussing restricting access to data within FHIR, but about the limitations associated with the research data itself as is defined by the study's principal investigators. There are expected to be appropriate controls in place to restrict access to the data according to those restrictions, but that is not up to the IG to determine how that happens. 
 
-##### Research Study Subject, BH-CMG HMB, NPU
-As stated above, the chief goal of the ResearchStudySubject is to associate a portion of Participants whose data is restricted in identical ways. In this case, by the restrictions, *Health/Medical/Biomedical* Research and *Not-for-profit use only*. 
+What we can discuss is what those restrictions are so that FHIR resource consumers can identify whether the data being described can be used in their research. Once a researcher identifies the data that meets their needs, it is beyond the scope of this IG to determine how they go about getting access to that data. 
 
-There is a list of participants consented in this way that have been identified in the corresponding [StudyGroup](group-cmg-research-study-bhcmg-consent-group-hmb-npu.html). As well as the actual [Consent](consent-hmb-npu-consent.html) itself. 
+While there are likely many ways to describe access control, one of the more common mechanisms used in research is that of consent and a common approach is to aggregate participants together according to the consent they agreed upon. In FHIR, we represent this consent using the profile, [Research Study Consent](StructureDefinition-research-study-consent.html). Our BM-CMG example contains two different consent resources: [HMB-NPU](Consent-hmb-npu-consent.html) and [HMB-IRB-NPU](Consent-hmb-irb-npu-consent.html).
 
-###### Research Study Consent, BH-CMG HMB-NPU
-The main purpose of the ResearchStudyConsent is to capture the individual components of the access restrictions and this is done using the provision.purpose attribute: 
+Because they are very similar, we'll look at one of them in detail. It is important to note that a study may consent participants differently as the study progresses and that each of those different consent configurations should be represented in FHIR. 
 
+```json
+{
+  "resourceType" : "Consent",
+  "id" : "hmb-irb-npu-consent",
+  "meta" : {
+    "profile" : [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-study-consent"
+    ]
+  },
+  "status" : "draft",
+  "scope" : {
+    "coding" : [
+      {
+        "code" : "research"
+      }
+    ]
+  },
+  "category" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+          "code" : "research",
+          "display" : "Research Information Access"
+        }
+      ]
+    }
+  ],
+  "provision" : {
+    "type" : "permit",
+    "purpose" : [
+      {
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent",
+        "code" : "HMB",
+        "display" : "Health/Medical/Biomedical"
+      },
+      {
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent",
+        "code" : "IRB",
+        "display" : "IRB approval required"
+      },
+      {
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent",
+        "code" : "NPU",
+        "display" : "Not-for-profit use only"
+      }
+    ]
+  }
+}
+```
+
+The most important thing to note with this resource is that of the provision: 
 ```json
 {
   "provision" : {
@@ -285,6 +335,11 @@ The main purpose of the ResearchStudyConsent is to capture the individual compon
       },
       {
         "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent",
+        "code" : "IRB",
+        "display" : "IRB approval required"
+      },
+      {
+        "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent",
         "code" : "NPU",
         "display" : "Not-for-profit use only"
       }
@@ -292,6 +347,94 @@ The main purpose of the ResearchStudyConsent is to capture the individual compon
   }
 }
 ```
+Each of those member codes represent a different facet of the consent which, together, represents the complete set of restrictions put into place for researchers intending on using the data for their own research. In this case, researchers can only use this data for health, medical or biomedical research at a non-profit organization after approval by the IRB panel. 
+
+### Participant Groups - StudyGroup
+In FHIR, we use the [StudyGroup](StructureDefinition-study-group.html) profile to establish the population under study. At the top-most level, the StudyGroup would point to the entire population of the research study. For sub-studies such as consent groups, the StudyGroup reflects only the relevant members of that grouping. 
+
+The groups provide two main pieces of information: 
+* Group Population
+* Group Size
+
+The Population itself is only relevant if there is a desire to link the group to the actual participants, such as when the server is hosting Study details as well as patient level data. However, if the purpose of the FHIR server is only to provide information about the studies for the purposes of findability, the population itself is no required to be enumerated. Patients will be enumerated using the member attribute in when linking to the patient data is relevant. 
+
+Group size, on the other hand, is a must. This detail makes it possible to summarize the contents of a study without having access to the row level data. For the purposes of these examples, we'll only provide the group size. 
+
+#### StudyGroup - Examples
+For this particular example, we have 3 different StudyGroups that we need to define. One for the entire study population and 1 for each of the two Consents that we have chosen to represent. These are very similar, so we'll only cover one of the three, but users should feel free to look at each of them: [BM-CMG Study Partipants](Group-cmg-research-study-bhcmg-group.html), [BM-CMG Consented by HMB-NPU](Group-cmg-research-study-bhcmg-consent-group-hmb-npu.html) and [BH-CMG Consented by HMB-IRB-NPU](Group-cmg-research-study-bhcmg-consent-group-hmb-irb-npu.html).
+
+Let's take a look at the HMB-IRB StudyGroup:
+```json
+{
+  "resourceType" : "Group",
+  "id" : "cmg-research-study-bhcmg-consent-group-hmb-irb-npu",
+  "meta" : {
+    "profile" : [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group"
+    ]
+  },
+  "type" : "person",
+  "actual" : true,
+  "name" : "BM-CMG Study HMB-IRB-NPU Participants",
+  "quantity" : 780
+}
+```
+As you can see, there isn't too much there because this example isn't intended to refer to patient level data. As such, we opted to leave the member attribute out of the resource. 
+
+The first and most important thing to note is the quantity: ```"quantity": 780```. As mentioned above, this is vital for summary purposes since the actual membership isn't required. We also require the use of ```"actual": true``` which indicates that the group is describing a specific set of participants as opposed to being a descriptive set of characteristics. The profile also requires that the group's type be that of *person* since our current focus is on Human Research. We indicate this using the type as follows:  ```"type": "person"```.
+
+While it isn't required, we strongly recommend using meaningful names to help clarify to the consumer what the group is for when seen outside the context of other, related resources. In this case, we see the following: ```"name": "BM-CMG Study HMB-IRB-NPU Participants"```
+
+
+
+### Research Study Subject
+While there may be many reasons to tie a subset of the study's entire population to a *sub-study*, such as called whole genomes on a sub-population due to budget, the focus of this profile is to distinguish the members of a common set of data restrictions. Often, this is referred to as the Consent group since the group of participants are consented with the same set of data restrictions. To represent these groups in FHIR, we are modelling the main component of this top level R4 resource, the [ResearchStudySubject](StructureDefinition-research-study-subject.html), after the R5 version of FHIR's ResearchSubject resource. This allows us to tie a single Consent resource to the group and to associate it with the parent ResearchStudy using the *partOf* attribute. 
+
+For the purposes of this example, we've represented two of the consent groups listed in dbGaP for BM-CMG, [HMB-NPU](ResearchStudy-cmg-research-study-subject-cmg-hmb-npu.html) and [HMB-IRB-NPU](ResearchStudy-cmg-research-study-subject-cmg-hmb-irb-npu.html). These two resources are very similar, so we'll only discuss one of them in detail.  
+
+#### Research Study Subject, BH-CMG HMB-IRB-NPU
+As stated above, the chief goal of the ResearchStudySubject is to associate a portion of Participants whose data is restricted in identical ways. In this case, by the restrictions, *Health/Medical/Biomedical* Research, "IRB approval required" and *Not-for-profit use only*. These restrictions specify the limits any researcher is bound to when using the data consented in this way. 
+
+```json
+{
+  "resourceType" : "ResearchStudy",
+  "id" : "cmg-research-study-subject-cmg-hmb-irb-npu",
+  "meta" : {
+    "profile" : [
+      "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-study-subject"
+    ]
+  },
+  "extension" : [
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-study-subject-consent",
+      "valueReference" : {
+        "reference" : "Consent/hmb-irb-npu-consent"
+      }
+    }
+  ],
+  "identifier" : [
+    {
+      "system" : "http://mendelian.org/fhir",
+      "value" : "BH-CMG-HMB-IRB-NPU"
+    }
+  ],
+  "title" : "BH-CMG HMB-IRB-NPU Consent Study Subject",
+  "partOf" : [
+    {
+      "reference" : "ResearchStudy/cmg-research-study-bhcmg"
+    }
+  ],
+  "status" : "completed",
+  "enrollment" : [
+    {
+      "reference" : "cmg-research-study-bhcmg-group-hmb-irb-npu"
+    }
+  ]
+}
+```
+
+
+
 The provision property's attribute, purpose, accepts one or more codings, each of which describes an aspect of the particular consent's restrictions. In this case, we use two codes from the NIH Consent CodeSystem, HMB and NPU. 
 
 * [CMG Consortium](organization-cmg-research-consortium.html)
