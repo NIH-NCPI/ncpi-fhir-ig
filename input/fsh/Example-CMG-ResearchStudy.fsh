@@ -110,6 +110,9 @@ InstanceOf: StudyGroup
 Title: "Participants consented under HMB-NPU"
 Usage: #example
 Description: "BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use"
+* identifier[0]
+  * system = "http://mendelian.org/fhir/Group"
+  * value = "HMB-NPU-Participants"
 * name = "BM-CMG Study HMB-NPU Participants"
 * quantity = 1665
 * actual = true

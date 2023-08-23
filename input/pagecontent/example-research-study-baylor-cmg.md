@@ -5,7 +5,7 @@ For this example, we have taken the [Baylor Hopkins Center for Mendelian Genomic
 <img width="100%" src="bh-cmg-research-study-example.png" alt="Baylor Hopkins CMG" />
 
 ### ResearchConsortium
-To discuss this particular set of research studies, we must first describe the role of the consortium when discussing studies of this type. The consortium, Centers for Mendelian Genomics, is used in the NCPI FHIR Model as a mechanism for aggregating member studies together. In the diagram above, you can see that, in addition to BH-CMG, there are several other centers which would each have their own set of studies. By representing the consortium in this way, we can show their relationship to one another, by association to the Consortium. 
+To discuss this particular set of research studies, we must first describe the role of the consortium when discussing studies of this type. The consortium, Centers for Mendelian Genomics, is used in the NCPI FHIR Model as a mechanism for aggregating member studies together. In the diagram above, you can see that, in addition to BH-CMG, there are several other centers which would each have their own set of studies. By representing the consortium in this way, we can show their relationship to one another by association to the Consortium. 
 
 The profile, [ResearchConsortium](StructureDefinition-ncpi-research-consortium.html), is very simple in nature. There is a single attribute that is required specific to this IG, the name. Recommended attributes include any common Acronyms and the URL for the consortium's website. 
 
@@ -59,7 +59,7 @@ And finally, in order to provide the consortium's website, we provide it using t
 The system, in this case, is how consumers of this data can properly interpret the value as a website URL. 
 
 ### NCPI Research Study, Baylor Hopkins, CMG
-In this example, we have a dbGaP study, [BH-CMG](researchstudy-cmg-research-study-bhcmg.html), which has a number of different ways in which participants were consented. We've represented this main study as an [NCPI Research Study](StructureDefinition-ncpi-research-study.html), and will represent each of those consent components as [Research Study Subject](StructureDefinition-research-study-subject.html) resources. 
+In this example, we have a dbGaP study, [BH-CMG](researchstudy-cmg-research-study-bhcmg.html), which has two ways in which participants were consented. We've represented this main study as an [NCPI Research Study](StructureDefinition-ncpi-research-study.html) and will represent each of those consent components as [Research Study Subject](StructureDefinition-research-study-subject.html) resources. 
 
 First, let's take a look at the study itself:
 ```json
@@ -187,9 +187,9 @@ We defined the consortium to which this study belongs above. To associate this s
     }
 }
 ```
-This provides a way to search for research studies who are sponsored by the consortium of interest. 
+This provides a way to search for research studies who are sponsored by the consortium of interest. Perhaps even more importantly, this reference is actually a valid path to the entity being referred to. In this case, it's a local reference to the Organization, *CMG Research Consortium* and is a valid Path to that specific resource. 
 
-Another key component is participant data. We'll define the actual study group below, but it is an important part of the Study and is, therefore, required. We've added restrictions to require enrollment to have a single StudyGroup. We've done this to enforce proper implementation of the model itself. If there are different combinations of participant enrollment, those should be captured as substudies whose "partOf" property points to this study. For this particular study's enrollment, we expect that StudyGroup to consist of the entire population associated with the study at hand. 
+Another key component is participant data. We'll define the actual study group below, but it is an important part of the Study and is, therefore, required. We've added restrictions to require enrollment to have a single StudyGroup. We've done this to enforce proper implementation of the model itself. If there are different combinations of participant enrollment, those should be captured as substudies whose "partOf" property points to this study. For this particular study's enrollment, we expect that particular StudyGroup to consist of the entire population associated with the study at hand. 
 
 ```json
 {
@@ -200,6 +200,7 @@ Another key component is participant data. We'll define the actual study group b
   ]
 }
 ```
+As stated above, this reference should be a valid path to the relevant resource. 
 
 While it isn't required, it is strongly recommended that each study resource have a complete and meaningful description that can be provided to researchers who may be interested in accessing the data from this study. For that, we use the *description* attribute: ```"description" : "The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.",```
 
@@ -425,6 +426,17 @@ As stated above, the chief goal of the ResearchStudySubject is to associate a po
     }
   ],
   "status" : "completed",
+  "enrollment" : [
+    {
+      "reference" : "cmg-research-study-bhcmg-group-hmb-irb-npu"
+    }
+  ]
+}
+```
+
+The first thing to note is the reference to the appropriate StudyGroup in the enrollment attribute: 
+```json
+{
   "enrollment" : [
     {
       "reference" : "cmg-research-study-bhcmg-group-hmb-irb-npu"
