@@ -428,26 +428,51 @@ As stated above, the chief goal of the ResearchStudySubject is to associate a po
   "status" : "completed",
   "enrollment" : [
     {
-      "reference" : "cmg-research-study-bhcmg-group-hmb-irb-npu"
+      "reference" : "Group/cmg-research-study-bhcmg-consent-group-hmb-irb-npu"
     }
   ]
 }
 ```
 
-The first thing to note is the reference to the appropriate StudyGroup in the enrollment attribute: 
+The first thing to note is the reference to the parent study by way of the *partOf* attribute:
+```json
+{
+  "partOf" : [
+    {
+      "reference" : "ResearchStudy/cmg-research-study-bhcmg"
+    }
+  ]
+}
+```
+This ties the other StudyGroup associated with this portion of the study back to the parent study. 
+
+Next notice the reference to the appropriate StudyGroup in the enrollment attribute: 
 ```json
 {
   "enrollment" : [
     {
-      "reference" : "cmg-research-study-bhcmg-group-hmb-irb-npu"
+      "reference" : "Group/cmg-research-study-bhcmg-consent-group-hmb-irb-npu"
     }
   ]
 }
 ```
+This links the ResearchStudySubject to the StudyGroup which describes the participants consented under the HMB, IRB and NPU consent. 
 
+Finally, we link the link to the actual consent resource using the extension, [research-study-subject-consent](structuredefinition-research-study-subject-consent.html).
+```json
+{
+  "extension" : [
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/research-study-subject-consent",
+      "valueReference" : {
+        "reference" : "Consent/hmb-irb-npu-consent"
+      }
+    }
+  ]
+}
+```
+This is a feature of the R5 version of ResearchStudy that allows us to match all members of the one StudyGroup to a single consent. 
 
-
-The provision property's attribute, purpose, accepts one or more codings, each of which describes an aspect of the particular consent's restrictions. In this case, we use two codes from the NIH Consent CodeSystem, HMB and NPU. 
 
 * [CMG Consortium](organization-cmg-research-consortium.html)
 * [BH-CMG](researchstudy-cmg-research-study-bhcmg.html)

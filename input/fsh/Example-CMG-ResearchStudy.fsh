@@ -151,6 +151,9 @@ InstanceOf: StudyGroup
 Title: "Participants consented under HMB-IRB-NPU"
 Usage: #example
 Description: "BH-CMG study's population consented under Health/Medical/Biomedical + IRB Approval Required + Not for profit use"
+* identifier[0]
+  * system = "http://mendelian.org/fhir/Group"
+  * value = "HMB-IRB-NPU-Participants"
 * name = "BM-CMG Study HMB-IRB-NPU Participants"
 * quantity = 780
 * actual = true

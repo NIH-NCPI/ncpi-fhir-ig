@@ -40,10 +40,10 @@ Description: "The NCPI Research Study is based upon the core HL7 FHIR ResearchSt
 * extension contains ResearchStudyDesign named studyDesign 0..*
 * extension[studyDesign] ^short = "Study Design and Study Type"
 
-Logical: CdeResearchStudy
+Logical: CdmResearchStudy
 Id: common-data-model-research-study
-Title: "CDE Research Study"
-Description: "Common Data Model representation of a research study."
+Title: "CDM Research Study"
+Description: "The *CDM Research Study* is a logical model intended to represent the real world concept of a scientific research study to be used when describing NCPI Profiles and how their attributes are mapped to actual study properties."
 * consortium 0..1 SU string "Consortium" "Parent organization to which the study is a member."
 * accession 1..1 SU string 
      "Study Accession Number" "Accession number produced by access authority such as dbGaP."
@@ -58,11 +58,4 @@ Description: "Common Data Model representation of a research study."
 * citation 0..* string "Citation(s) associated with this study" "Citations associated with this study."
 * study_documents 0..* string "Study Documents"
 
-Mapping: NcpiResearchStudyToCdeResearchStudy
-Source: NcpiResearchStudy
-Target: "StructureDefinition-common-data-model-research-study.html"
-Id: cde-research-study-to-ncpi-research-study
-Title: "NCPI Research Study Mappings"
-* identifier -> "accession"
-* title -> "name"
 
