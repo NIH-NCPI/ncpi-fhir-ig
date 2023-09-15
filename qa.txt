@@ -3,7 +3,7 @@
 
 err = 38, warn = 79, info = 27
 IG Publisher Version: 1.4.5
-Generated Fri Sep 15 21:01:39 UTC 2023. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.2.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig)
+Generated Fri Sep 15 21:02:31 UTC 2023. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.2.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig)
  Build Errors : 11 / 4 / 0
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ActivityDefinition-example-study-data-dictionary-table-1 : 1 / 0 / 2
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ConditionInheritanceMode : 0 / 2 / 2

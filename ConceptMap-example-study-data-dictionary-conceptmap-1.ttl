@@ -21,7 +21,7 @@
   fhir:url [ fhir:v "http://example.org/my-dataset/fhir/conceptmap/data-to-public"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-09-15T20:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-15T21:00:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

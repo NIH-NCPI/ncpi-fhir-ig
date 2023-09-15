@@ -144,4 +144,4 @@ NCPIFHIRImplementationGuide : Validation Results
 
 err = 38, warn = 79, info = 27
 IG Publisher Version: 1.4.5
-Generated Fri Sep 15 21:01:39 UTC 2023. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.2.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig)
+Generated Fri Sep 15 21:02:31 UTC 2023. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.2.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig)
