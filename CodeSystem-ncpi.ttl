@@ -5,119 +5,92 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ncpi"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Consortium<a name=\"ncpi-Consortium\"> </a></td><td>Study Consortium</td></tr><tr><td style=\"white-space:nowrap\">StudyCohort<a name=\"ncpi-StudyCohort\"> </a></td><td>Study Cohort</td></tr><tr><td style=\"white-space:nowrap\">ConsentGroup<a name=\"ncpi-ConsentGroup\"> </a></td><td>Study Consent Group</td></tr><tr><td style=\"white-space:nowrap\">Summary<a name=\"ncpi-Summary\"> </a></td><td>Summary Data</td></tr><tr><td style=\"white-space:nowrap\">CohortCount<a name=\"ncpi-CohortCount\"> </a></td><td>Number of cohorts that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">SubStudyCount<a name=\"ncpi-SubStudyCount\"> </a></td><td>Number of sub-studies that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">SampleCount<a name=\"ncpi-SampleCount\"> </a></td><td>Number of samples that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">Participant<a name=\"ncpi-Participant\"> </a></td><td>Number of participants that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">VariableCount<a name=\"ncpi-VariableCount\"> </a></td><td>Number of variables that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">AnalysesCount<a name=\"ncpi-AnalysesCount\"> </a></td><td>Number of analyses that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">MolecularDatasetCount<a name=\"ncpi-MolecularDatasetCount\"> </a></td><td>Number of molecular datasets that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">PhenotypeDatasetCount<a name=\"ncpi-PhenotypeDatasetCount\"> </a></td><td>Number of phenotype datasets that are part of this study</td></tr><tr><td style=\"white-space:nowrap\">StorageSize<a name=\"ncpi-StorageSize\"> </a></td><td>Size on Disk</td></tr><tr><td style=\"white-space:nowrap\">ConsentCodes<a name=\"ncpi-ConsentCodes\"> </a></td><td>Consent Codes</td></tr><tr><td style=\"white-space:nowrap\">TerraWorkspace<a name=\"ncpi-TerraWorkspace\"> </a></td><td>Terra Workspace Name</td></tr><tr><td style=\"white-space:nowrap\">PrimaryDisease<a name=\"ncpi-PrimaryDisease\"> </a></td><td>Primary Disease</td></tr><tr><td style=\"white-space:nowrap\">AccessType<a name=\"ncpi-AccessType\"> </a></td><td>Access Type</td></tr><tr><td style=\"white-space:nowrap\">StudyDesign<a name=\"ncpi-StudyDesign\"> </a></td><td>Study Design</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "Ncpi"]; # 
-  fhir:CodeSystem.title [ fhir:value "NCPI FHIR Codes"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-09T17:30:30+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-ncpi" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Meen Chul Kim" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "meenchul@d3b.center" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "Codes that would apply to NCPI projects"]; # 
-  fhir:CodeSystem.content [ fhir:value "fragment"]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "Consortium" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Study Consortium" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "StudyCohort" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Study Cohort" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "ConsentGroup" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Study Consent Group" ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "Summary" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Summary Data" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "CohortCount" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Number of cohorts that are part of this study" ]
-  ], [
-     fhir:index 5;
-     fhir:CodeSystem.concept.code [ fhir:value "SubStudyCount" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Number of sub-studies that are part of this study" ]
-  ], [
-     fhir:index 6;
-     fhir:CodeSystem.concept.code [ fhir:value "SampleCount" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Number of samples that are part of this study" ]
-  ], [
-     fhir:index 7;
-     fhir:CodeSystem.concept.code [ fhir:value "Participant" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Number of participants that are part of this study" ]
-  ], [
-     fhir:index 8;
-     fhir:CodeSystem.concept.code [ fhir:value "VariableCount" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Number of variables that are part of this study" ]
-  ], [
-     fhir:index 9;
-     fhir:CodeSystem.concept.code [ fhir:value "AnalysesCount" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Number of analyses that are part of this study" ]
-  ], [
-     fhir:index 10;
-     fhir:CodeSystem.concept.code [ fhir:value "MolecularDatasetCount" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Number of molecular datasets that are part of this study" ]
-  ], [
-     fhir:index 11;
-     fhir:CodeSystem.concept.code [ fhir:value "PhenotypeDatasetCount" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Number of phenotype datasets that are part of this study" ]
-  ], [
-     fhir:index 12;
-     fhir:CodeSystem.concept.code [ fhir:value "StorageSize" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Size on Disk" ]
-  ], [
-     fhir:index 13;
-     fhir:CodeSystem.concept.code [ fhir:value "ConsentCodes" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Consent Codes" ]
-  ], [
-     fhir:index 14;
-     fhir:CodeSystem.concept.code [ fhir:value "TerraWorkspace" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Terra Workspace Name" ]
-  ], [
-     fhir:index 15;
-     fhir:CodeSystem.concept.code [ fhir:value "PrimaryDisease" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Primary Disease" ]
-  ], [
-     fhir:index 16;
-     fhir:CodeSystem.concept.code [ fhir:value "AccessType" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Access Type" ]
-  ], [
-     fhir:index 17;
-     fhir:CodeSystem.concept.code [ fhir:value "StudyDesign" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Study Design" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ncpi"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "Ncpi"] ; # 
+  fhir:title [ fhir:v "NCPI FHIR Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-15T20:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/nih-ncpi" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Meen Chul Kim" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "meenchul@d3b.center" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes that would apply to NCPI projects"] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Consortium" ] ;
+     fhir:display [ fhir:v "Study Consortium" ]
+  ] [
+     fhir:code [ fhir:v "StudyCohort" ] ;
+     fhir:display [ fhir:v "Study Cohort" ]
+  ] [
+     fhir:code [ fhir:v "ConsentGroup" ] ;
+     fhir:display [ fhir:v "Study Consent Group" ]
+  ] [
+     fhir:code [ fhir:v "Summary" ] ;
+     fhir:display [ fhir:v "Summary Data" ]
+  ] [
+     fhir:code [ fhir:v "CohortCount" ] ;
+     fhir:display [ fhir:v "Number of cohorts that are part of this study" ]
+  ] [
+     fhir:code [ fhir:v "SubStudyCount" ] ;
+     fhir:display [ fhir:v "Number of sub-studies that are part of this study" ]
+  ] [
+     fhir:code [ fhir:v "SampleCount" ] ;
+     fhir:display [ fhir:v "Number of samples that are part of this study" ]
+  ] [
+     fhir:code [ fhir:v "Participant" ] ;
+     fhir:display [ fhir:v "Number of participants that are part of this study" ]
+  ] [
+     fhir:code [ fhir:v "VariableCount" ] ;
+     fhir:display [ fhir:v "Number of variables that are part of this study" ]
+  ] [
+     fhir:code [ fhir:v "AnalysesCount" ] ;
+     fhir:display [ fhir:v "Number of analyses that are part of this study" ]
+  ] [
+     fhir:code [ fhir:v "MolecularDatasetCount" ] ;
+     fhir:display [ fhir:v "Number of molecular datasets that are part of this study" ]
+  ] [
+     fhir:code [ fhir:v "PhenotypeDatasetCount" ] ;
+     fhir:display [ fhir:v "Number of phenotype datasets that are part of this study" ]
+  ] [
+     fhir:code [ fhir:v "StorageSize" ] ;
+     fhir:display [ fhir:v "Size on Disk" ]
+  ] [
+     fhir:code [ fhir:v "ConsentCodes" ] ;
+     fhir:display [ fhir:v "Consent Codes" ]
+  ] [
+     fhir:code [ fhir:v "TerraWorkspace" ] ;
+     fhir:display [ fhir:v "Terra Workspace Name" ]
+  ] [
+     fhir:code [ fhir:v "PrimaryDisease" ] ;
+     fhir:display [ fhir:v "Primary Disease" ]
+  ] [
+     fhir:code [ fhir:v "AccessType" ] ;
+     fhir:display [ fhir:v "Access Type" ]
+  ] [
+     fhir:code [ fhir:v "StudyDesign" ] ;
+     fhir:display [ fhir:v "Study Design" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

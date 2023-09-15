@@ -5,36 +5,26 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-1> a fhir:ObservationDefinition;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-study-data-dictionary-variable-1-1"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable";
-       fhir:index 0;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-1> a fhir:ObservationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-study-data-dictionary-variable-1-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"^^xsd:anyURI ;
        fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b><a name=\"example-study-data-dictionary-variable-1-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ObservationDefinition &quot;example-study-data-dictionary-variable-1-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-study-data-dictionary-variable.html\">NCPI Study Data Dictionary Data Variable</a></p></div><p><b>code</b>: Subject's Unique Identifier <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#subjectid)</span></p><p><b>permittedDataType</b>: string</p></div>"
-  ]; # 
-  fhir:ObservationDefinition.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1" ];
-       fhir:Coding.code [ fhir:value "subjectid" ]
-     ]
-  ]; # 
-  fhir:ObservationDefinition.permittedDataType [
-     fhir:value "string";
-     fhir:index 0
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b><a name=\"example-study-data-dictionary-variable-1-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ObservationDefinition &quot;example-study-data-dictionary-variable-1-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-study-data-dictionary-variable.html\">NCPI Study Data Dictionary Data Variable</a></p></div><p><b>code</b>: Subject's Unique Identifier <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#subjectid)</span></p><p><b>permittedDataType</b>: string</p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "subjectid" ]
+     ] )
+  ] ; # 
+  fhir:permittedDataType ( [ fhir:v "string"] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -5,57 +5,48 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/family-relationship-example-3> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "family-relationship-example-3"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship";
-       fhir:index 0;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/family-relationship-example-3> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "family-relationship-example-3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship"^^xsd:anyURI ;
        fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/family-relationship>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"family-relationship-example-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;family-relationship-example-3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-family-relationship.html\">NCPI Family Relationship</a></p></div><p><b>status</b>: final</p><p><b>code</b>: family member <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FAMMEMB)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-2.html\">Patient/patient-example-2</a> &quot; SMITH&quot;</p><p><b>focus</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>value</b>: Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#PRN &quot;parent&quot;; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH &quot;mother&quot;)</span></p></div>"
-  ]; # 
-  fhir:Observation.status [ fhir:value "final"]; # 
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
-       fhir:Coding.code [ fhir:value "FAMMEMB" ];
-       fhir:Coding.display [ fhir:value "family member" ]
-     ]
-  ]; # 
-  fhir:Observation.subject [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-2>;
-     fhir:Reference.reference [ fhir:value "Patient/patient-example-2" ]
-  ]; # 
-  fhir:Observation.focus [
-     fhir:index 0;
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
-     fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
-  ]; # 
-  fhir:Observation.valueCodeableConcept [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
-       fhir:Coding.code [ fhir:value "PRN" ];
-       fhir:Coding.display [ fhir:value "parent" ]
-     ], [
-       fhir:index 1;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
-       fhir:Coding.code [ fhir:value "MTH" ];
-       fhir:Coding.display [ fhir:value "mother" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "Mother" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"family-relationship-example-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;family-relationship-example-3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-family-relationship.html\">NCPI Family Relationship</a></p></div><p><b>status</b>: final</p><p><b>code</b>: family member <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#FAMMEMB)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-2.html\">Patient/patient-example-2</a> &quot; SMITH&quot;</p><p><b>focus</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>value</b>: Mother <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#PRN &quot;parent&quot;; <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#MTH &quot;mother&quot;)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FAMMEMB" ] ;
+       fhir:display [ fhir:v "family member" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-2> ;
+     fhir:reference [ fhir:v "Patient/patient-example-2" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1> ;
+     fhir:reference [ fhir:v "Patient/patient-example-1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PRN" ] ;
+       fhir:display [ fhir:v "parent" ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "MTH" ] ;
+       fhir:display [ fhir:v "mother" ]
+     ] ) ;
+     fhir:text [ fhir:v "Mother" ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/family-relationship-example-3.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

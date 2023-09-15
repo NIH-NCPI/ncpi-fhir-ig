@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="mondo"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://purl.obolibrary.org/obo/mondo.owl</code> defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">MONDO:0005072<a name="mondo-MONDO.580005072"> </a></td><td>neuroblastoma</td></tr><tr><td style="white-space:nowrap">MONDO:0002749<a name="mondo-MONDO.580002749"> </a></td><td>extracranial neuroblastoma</td></tr><tr><td style="white-space:nowrap">MONDO:0008542<a name="mondo-MONDO.580008542"> </a></td><td>tetralogy of fallot</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="http://purl.obolibrary.org/obo/mondo.owl"/>
   <version value="0.2.0"/>
@@ -11,7 +11,7 @@
   <title value="Mondo Disease Ontology"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-12-09T17:30:30+00:00"/>
+  <date value="2023-09-15T20:59:49+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>

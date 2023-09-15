@@ -5,61 +5,49 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncit> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ncit"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://purl.obolibrary.org/obo/ncit.owl</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">C3270<a name=\"ncit-C3270\"> </a></td><td>Neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">C5437<a name=\"ncit-C5437\"> </a></td><td>Extracranial Neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">C84505<a name=\"ncit-C84505\"> </a></td><td>Tetralogy of Fallot</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://purl.obolibrary.org/obo/ncit.owl"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "NCIt"]; # 
-  fhir:CodeSystem.title [ fhir:value "NCI Thesaurus"]; # 
-  fhir:CodeSystem.status [ fhir:value "draft"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-09T17:30:30+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-ncpi" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Meen Chul Kim" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "meenchul@d3b.center" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities."]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "fragment"]; # 
-  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "C3270" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Neuroblastoma" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "C5437" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Extracranial Neuroblastoma" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "C84505" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Tetralogy of Fallot" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncit.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncit> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ncit"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://purl.obolibrary.org/obo/ncit.owl"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "NCIt"] ; # 
+  fhir:title [ fhir:v "NCI Thesaurus"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-15T20:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/nih-ncpi" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Meen Chul Kim" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "meenchul@d3b.center" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "NCI Thesaurus (NCIt) provides reference terminology for many NCI and other systems. It covers vocabulary for clinical care, translational and basic research, and public information and administrative activities."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "C3270" ] ;
+     fhir:display [ fhir:v "Neuroblastoma" ]
+  ] [
+     fhir:code [ fhir:v "C5437" ] ;
+     fhir:display [ fhir:v "Extracranial Neuroblastoma" ]
+  ] [
+     fhir:code [ fhir:v "C84505" ] ;
+     fhir:display [ fhir:v "Tetralogy of Fallot" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

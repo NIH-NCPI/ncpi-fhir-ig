@@ -3,7 +3,7 @@
   "id" : "disease-codes",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-omim.html\"><code>https://omim.org/</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-mondo.html\"><code>http://purl.obolibrary.org/obo/mondo.owl</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncit.html\"><code>http://purl.obolibrary.org/obo/ncit.owl</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes",
   "version" : "0.2.0",
@@ -11,7 +11,7 @@
   "title" : "Disease Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2022-12-09T17:30:30+00:00",
+  "date" : "2023-09-15T20:59:49+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",

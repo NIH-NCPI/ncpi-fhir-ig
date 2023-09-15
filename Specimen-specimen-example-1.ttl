@@ -6,120 +6,107 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1> a fhir:Specimen;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "specimen-example-1"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"specimen-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;specimen-example-1&quot; </p></div><p><b>type</b>: Solid Tissue <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0487.html\">specimenType</a>#TISS &quot;Tissue&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>receivedTime</b>: </p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td>*</td><td/><td>50 uL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code uL = 'uL')</span></td><td>Biopsy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129314006 &quot;Biopsy - action&quot;)</span></td><td>Central Nervous System <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#21483005 &quot;Structure of central nervous system&quot;)</span></td></tr></table></div>"
-  ]; # 
-  fhir:Specimen.type [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0487" ];
-       fhir:Coding.code [ fhir:value "TISS" ];
-       fhir:Coding.display [ fhir:value "Tissue" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "Solid Tissue" ]
-  ]; # 
-  fhir:Specimen.subject [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
-     fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
-  ]; # 
-  fhir:Specimen.receivedTime [
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "target" ];
-         fhir:Extension.valueReference [
-           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
-           fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "specimen-example-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"specimen-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;specimen-example-1&quot; </p></div><p><b>type</b>: Solid Tissue <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0487.html\">specimenType</a>#TISS &quot;Tissue&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>receivedTime</b>: </p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Quantity</b></td><td><b>Method</b></td><td><b>BodySite</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>50 uL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code uL = 'uL')</span></td><td>Biopsy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#129314006 &quot;Biopsy - action&quot;)</span></td><td>Central Nervous System <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#21483005 &quot;Structure of central nervous system&quot;)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0487"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TISS" ] ;
+       fhir:display [ fhir:v "Tissue" ]
+     ] ) ;
+     fhir:text [ fhir:v "Solid Tissue" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1> ;
+     fhir:reference [ fhir:v "Patient/patient-example-1" ]
+  ] ; # 
+  fhir:receivedTime [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "target"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Reference ;
+           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1> ;
+           fhir:reference [ fhir:v "Patient/patient-example-1" ]
          ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "targetPath" ];
-         fhir:Extension.valueString [ fhir:value "birthDate" ]
-       ], [
-         fhir:index 2;
-         fhir:Extension.url [ fhir:value "relationship" ];
-         fhir:Extension.valueCode [ fhir:value "after" ]
-       ], [
-         fhir:index 3;
-         fhir:Extension.url [ fhir:value "offset" ];
-         fhir:Extension.valueDuration [
-           fhir:Quantity.value [ fhir:value "366"^^xsd:decimal ];
-           fhir:Quantity.unit [ fhir:value "d" ];
-           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-           fhir:Quantity.code [ fhir:value "days" ]
+       ] [
+         fhir:url [ fhir:v "targetPath"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "birthDate" ]
+       ] [
+         fhir:url [ fhir:v "relationship"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "after" ]
+       ] [
+         fhir:url [ fhir:v "offset"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "366"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "d" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "days" ]
          ]
-       ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime" ]
-     ]
-  ]; # 
-  fhir:Specimen.collection [
-     fhir:Specimen.collection.collectedDateTime [
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Element.extension [
-           fhir:index 0;
-           fhir:Extension.url [ fhir:value "target" ];
-           fhir:Extension.valueReference [
-             fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
-             fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"^^xsd:anyURI ]
+     ] )
+  ] ; # 
+  fhir:collection [
+     fhir:collected [
+       a fhir:dateTime ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "target"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1> ;
+             fhir:reference [ fhir:v "Patient/patient-example-1" ]
            ]
-         ], [
-           fhir:index 1;
-           fhir:Extension.url [ fhir:value "targetPath" ];
-           fhir:Extension.valueString [ fhir:value "birthDate" ]
-         ], [
-           fhir:index 2;
-           fhir:Extension.url [ fhir:value "relationship" ];
-           fhir:Extension.valueCode [ fhir:value "after" ]
-         ], [
-           fhir:index 3;
-           fhir:Extension.url [ fhir:value "offset" ];
-           fhir:Extension.valueDuration [
-             fhir:Quantity.value [ fhir:value "366"^^xsd:decimal ];
-             fhir:Quantity.unit [ fhir:value "d" ];
-             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-             fhir:Quantity.code [ fhir:value "days" ]
+         ] [
+           fhir:url [ fhir:v "targetPath"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "birthDate" ]
+         ] [
+           fhir:url [ fhir:v "relationship"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "after" ]
+         ] [
+           fhir:url [ fhir:v "offset"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Duration ;
+             fhir:value [ fhir:v "366"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "d" ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "days" ]
            ]
-         ];
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime" ]
-       ]
-     ];
-     fhir:Specimen.collection.quantity [
-       fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ];
-       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-       fhir:Quantity.code [ fhir:value "uL" ]
-     ];
-     fhir:Specimen.collection.method [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a sct:129314006;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "129314006" ];
-         fhir:Coding.display [ fhir:value "Biopsy - action" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "Biopsy" ]
-     ];
-     fhir:Specimen.collection.bodySite [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a sct:21483005;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "21483005" ];
-         fhir:Coding.display [ fhir:value "Structure of central nervous system" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "Central Nervous System" ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"^^xsd:anyURI ]
+       ] )
+     ] ;
+     fhir:quantity [
+       fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "uL" ]
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         a sct:129314006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "129314006" ] ;
+         fhir:display [ fhir:v "Biopsy - action" ]
+       ] ) ;
+       fhir:text [ fhir:v "Biopsy" ]
+     ] ;
+     fhir:bodySite [
+       fhir:coding ( [
+         a sct:21483005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21483005" ] ;
+         fhir:display [ fhir:v "Structure of central nervous system" ]
+       ] ) ;
+       fhir:text [ fhir:v "Central Nervous System" ]
      ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

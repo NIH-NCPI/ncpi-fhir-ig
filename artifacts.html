@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NCPI-FHIR-IMPLEMENTATION-GUIDE\Artifacts Summary - FHIR v4.0.1</title>
+    <title>Artifacts Summary - NCPI FHIR Implementation Guide v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -29,10 +29,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -273,6 +273,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-study-data-dictionary-harmony.html"
+                     title="StructureDefinition/study-data-dictionary-harmony">NCPI Data Dictionary Harmony</a>
+               </td>
+               <td>
+<p>Based on the FHIR resource type, ConceptMap, the StudyDataDictionaryHarmony resource provides insight into the transformations made during the ETL from source data into FHIR allowing clients to use the $translate function to discover all of the public codes that were mapped from one of the study’s actual vocabulary.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-disease.html"
                      title="StructureDefinition/disease">NCPI Disease</a>
                </td>
@@ -291,15 +300,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ncpi-research-study.html"
-                     title="StructureDefinition/ncpi-research-study">NCPI Research Study</a>
-               </td>
-               <td>
-<p>The NCPI Research Study is based upon the core FHIR ResearchStudy resource and shall act as the umbrella under which all study resources can ultimately be found. For the purposes of interoperability, some restrictions have been made to enforce a common mechanism for describing enrollment and provide a simple means for summarizing subject count and consent group membership.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-phenotype.html"
                      title="StructureDefinition/phenotype">NCPI Phenotype</a>
                </td>
@@ -309,38 +309,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-raw-data-observation.html"
-                     title="StructureDefinition/raw-data-observation">Raw Data Observation</a>
+                  <a href="StructureDefinition-ncpi-research-study.html"
+                     title="StructureDefinition/ncpi-research-study">NCPI Research Study</a>
                </td>
                <td>
-<p>Representation for a row of data from one of the dataset’s tables.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ncpi-research-document-reference.html"
-                     title="StructureDefinition/ncpi-research-document-reference">Research Document Reference</a>
-               </td>
-               <td>
-<p>A FHIR Document Reference created by an analysis task. Context.related = Task</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ncpi-specimen-task.html"
-                     title="StructureDefinition/ncpi-specimen-task">Research Task</a>
-               </td>
-               <td>
-<p>A FHIR analysis task that takes at least one specimen as input and produces at least one document.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-study-data-dictionary-harmony.html"
-                     title="StructureDefinition/study-data-dictionary-harmony">NCPI Data Dictionary Harmony</a>
-               </td>
-               <td>
-<p>Based on the FHIR resource type, ConceptMap, the StudyDataDictionaryHarmony resource provides insight into the transformations made during the ETL from source data into FHIR allowing clients to use the $translate function to discover all of the public codes that were mapped from one of the study’s actual vocabulary.</p>
+<p>The NCPI Research Study is based upon the core FHIR ResearchStudy resource and shall act as the umbrella under which all study resources can ultimately be found. For the purposes of interoperability, some restrictions have been made to enforce a common mechanism for describing enrollment and provide a simple means for summarizing subject count and consent group membership.</p>
 </td>
             </tr>
             <tr>
@@ -368,6 +341,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as <em>All Participants</em> or <em>Participants From a Particular Consent Group</em>, etc.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-raw-data-observation.html"
+                     title="StructureDefinition/raw-data-observation">Raw Data Observation</a>
+               </td>
+               <td>
+<p>Representation for a row of data from one of the dataset’s tables.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncpi-research-document-reference.html"
+                     title="StructureDefinition/ncpi-research-document-reference">Research Document Reference</a>
+               </td>
+               <td>
+<p>A FHIR Document Reference created by an analysis task. Context.related = Task</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ncpi-specimen-task.html"
+                     title="StructureDefinition/ncpi-specimen-task">Research Task</a>
+               </td>
+               <td>
+<p>A FHIR analysis task that takes at least one specimen as input and produces at least one document.</p>
 </td>
             </tr>
             <tr>
@@ -444,6 +444,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-example-study-data-dictionary-case-control-vs-1.html"
+                     title="ValueSet/example-study-data-dictionary-case-control-vs-1">Case/Control Vars for 'status' categoricals</a>
+               </td>
+               <td>
+<p>Example ValueSet listing all possible ‘values’ from the Case/Control variable.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-condition-inheritance-vs.html"
                      title="ValueSet/condition-inheritance-vs">Condition Inheritance Pattern</a>
                </td>
@@ -461,15 +470,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-example-study-data-dictionary-case-control-vs-1.html"
-                     title="ValueSet/example-study-data-dictionary-case-control-vs-1">Case/Control Vars for 'status' categoricals</a>
-               </td>
-               <td>
-<p>Example ValueSet listing all possible ‘values’ from the Case/Control variable.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="ValueSet-datatable-mappings-valueset-1.html"
                      title="ValueSet/datatable-mappings-valueset-1">Harmonized ValueSet for data table</a>
                </td>
@@ -477,15 +477,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Public codes mapped from example dataset</p>
 
 <p>The codes used below were chosen purely for example’s sake and are in no way an endorsement or suggestion for terms that should be used in a real data-dictionary.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-datatable-valueset-1.html"
-                     title="ValueSet/datatable-valueset-1">Table ValueSet</a>
-               </td>
-               <td>
-<p>Example Data Table with 4 variables</p>
 </td>
             </tr>
             <tr>
@@ -510,6 +501,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>This value set includes all codes from Human Phenotype Ontology.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-datatable-valueset-1.html"
+                     title="ValueSet/datatable-valueset-1">Table ValueSet</a>
+               </td>
+               <td>
+<p>Example Data Table with 4 variables</p>
 </td>
             </tr>
             <tr>
@@ -543,6 +543,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-ncpi-data-types.html"
+                     title="CodeSystem/ncpi-data-types">Data Types for NCPI Research</a>
+               </td>
+               <td>
+<p>Data Types for NCPI Research</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-example-study-data-dictionary-dataset-codesystem-1.html"
                      title="CodeSystem/example-study-data-dictionary-dataset-codesystem-1">Dataset CodeSystem (lists all tables)</a>
                </td>
@@ -557,14 +566,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Example CodeSystem for a data-dictionary table with 4 variables represented as codes.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-hpo.html" title="CodeSystem/hpo">Human Phenotype Ontology</a>
-               </td>
-               <td>
-<p>The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Please see license of HPO at http://www.human-phenotype-ontology.org</p>
 </td>
             </tr>
             <tr>
@@ -590,6 +591,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Versioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007</p>
 
 <p>HGVS nomenclatures can be used freely by the public.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-hpo.html" title="CodeSystem/hpo">Human Phenotype Ontology</a>
+               </td>
+               <td>
+<p>The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Please see license of HPO at http://www.human-phenotype-ontology.org</p>
 </td>
             </tr>
             <tr>
@@ -626,15 +635,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-ncpi-data-types.html"
-                     title="CodeSystem/ncpi-data-types">Data Types for NCPI Research</a>
-               </td>
-               <td>
-<p>Data Types for NCPI Research</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-omim.html" title="CodeSystem/omim">Online Mendelian Inheritance in Man</a>
                </td>
                <td>
@@ -663,20 +663,146 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-anvil-summary-cmg.html"
-                     title="Observation/anvil-summary-cmg">Summary detail for Center for Mendelian Genomics</a>
-               </td>
-               <td>
-<p>Summary detail for Center for Mendelian Genomics</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Observation-anvil-summary-phs000711.html"
                      title="Observation/anvil-summary-phs000711">Baylor Hopkins Center for Mendelian Genomics (BH CMG)</a>
                </td>
                <td>
 <p>Baylor Hopkins Center for Mendelian Genomics (BH CMG)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ConceptMap-example-study-data-dictionary-conceptmap-1.html"
+                     title="ConceptMap/example-study-data-dictionary-conceptmap-1">Concept Map showing representing harmonization mappings</a>
+               </td>
+               <td>
+<p>Data Harmonization for example dataset</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-5.html"
+                     title="ObservationDefinition/example-study-data-dictionary-variable-1-5">Data Dictionary Variable status</a>
+               </td>
+               <td>
+<p>Subject’s Case/Control Status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-example-study-data-dictionary-table-1.html"
+                     title="ActivityDefinition/example-study-data-dictionary-table-1">Data-Dictionary Table</a>
+               </td>
+               <td>
+<p>Example Study Data Dictionary Data Table definition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-example-encounter-study-01-patient-01.html"
+                     title="Encounter/example-encounter-study-01-patient-01">Example Encounter Study 01 Patient 01</a>
+               </td>
+               <td>
+<p>Example encounter for use with raw data to help tie different rows associated with the same event together.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Group-example-summary-group-1.html"
+                     title="Group/example-summary-group-1">Example Group used for Summary Results</a>
+               </td>
+               <td>
+<p>Just an example group for demonstrational purposes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-3.html"
+                     title="ObservationDefinition/example-study-data-dictionary-variable-1-3">Example Study Data Dictionary Variable age_at_enrollment</a>
+               </td>
+               <td>
+<p>Subject’s Age at Enrollment (Example with a range of 30-40 years of age)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-4.html"
+                     title="ObservationDefinition/example-study-data-dictionary-variable-1-4">Example Study Data Dictionary Variable bmi</a>
+               </td>
+               <td>
+<p>Subject’s BMI at Enrollment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-2.html"
+                     title="ObservationDefinition/example-study-data-dictionary-variable-1-2">Example Study Data Dictionary Variable gender</a>
+               </td>
+               <td>
+<p>Subject’s gender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-1.html"
+                     title="ObservationDefinition/example-study-data-dictionary-variable-1-1">Example Study Data Dictionary Variable subjectid</a>
+               </td>
+               <td>
+<p>Participant’s Unique Identifier (example of simple variable)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-study-summary-gender.html"
+                     title="Observation/example-study-summary-gender">Example Variable Summary with categories (gender)</a>
+               </td>
+               <td>
+<p>Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-observation-data-row-1.html"
+                     title="Observation/example-observation-data-row-1">Example of Raw Data</a>
+               </td>
+               <td>
+<p>Example Observation representing a single row of raw data from an single data table.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-example-questionnaire-demographics-1.html"
+                     title="Questionnaire/example-questionnaire-demographics-1">Example of a Questionnaire to Represent Raw Data</a>
+               </td>
+               <td>
+<p>An example Questionnaire that is used to describe the individual rows of data that are to be stored as QuestionnaireResponses</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-example-questionnaire-demographics-response-1.html"
+                     title="QuestionnaireResponse/example-questionnaire-demographics-response-1">Example of a QuestionnaireResponse to Represent Raw Data</a>
+               </td>
+               <td>
+<p>A Single row of data represented in FHIR as a QuestionnaireResponse</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Specimen-ncpi-research-study-01-specimen-01.html"
+                     title="Specimen/ncpi-research-study-01-specimen-01">NCPI Research Study 01 Specimen 01</a>
+               </td>
+               <td>
+<p>An example Specimen used to indicate which sample a row of raw data is associated with.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-anvil-summary-cmg.html"
+                     title="Observation/anvil-summary-cmg">Summary detail for Center for Mendelian Genomics</a>
+               </td>
+               <td>
+<p>Summary detail for Center for Mendelian Genomics</p>
 </td>
             </tr>
             <tr>
@@ -713,123 +839,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Example of the representation of DRS Document Reference.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Encounter-example-encounter-study-01-patient-01.html"
-                     title="Encounter/example-encounter-study-01-patient-01">Example Encounter Study 01 Patient 01</a>
-               </td>
-               <td>
-<p>Example encounter for use with raw data to help tie different rows associated with the same event together.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-example-observation-data-row-1.html"
-                     title="Observation/example-observation-data-row-1">Example of Raw Data</a>
-               </td>
-               <td>
-<p>Example Observation representing a single row of raw data from an single data table.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Questionnaire-example-questionnaire-demographics-1.html"
-                     title="Questionnaire/example-questionnaire-demographics-1">Example of a Questionnaire to Represent Raw Data</a>
-               </td>
-               <td>
-<p>An example Questionnaire that is used to describe the individual rows of data that are to be stored as QuestionnaireResponses</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-example-questionnaire-demographics-response-1.html"
-                     title="QuestionnaireResponse/example-questionnaire-demographics-response-1">Example of a QuestionnaireResponse to Represent Raw Data</a>
-               </td>
-               <td>
-<p>A Single row of data represented in FHIR as a QuestionnaireResponse</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ConceptMap-example-study-data-dictionary-conceptmap-1.html"
-                     title="ConceptMap/example-study-data-dictionary-conceptmap-1">Concept Map showing representing harmonization mappings</a>
-               </td>
-               <td>
-<p>Data Harmonization for example dataset</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ActivityDefinition-example-study-data-dictionary-table-1.html"
-                     title="ActivityDefinition/example-study-data-dictionary-table-1">Data-Dictionary Table</a>
-               </td>
-               <td>
-<p>Example Study Data Dictionary Data Table definition</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-1.html"
-                     title="ObservationDefinition/example-study-data-dictionary-variable-1-1">Example Study Data Dictionary Variable subjectid</a>
-               </td>
-               <td>
-<p>Participant’s Unique Identifier (example of simple variable)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-2.html"
-                     title="ObservationDefinition/example-study-data-dictionary-variable-1-2">Example Study Data Dictionary Variable gender</a>
-               </td>
-               <td>
-<p>Subject’s gender</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-3.html"
-                     title="ObservationDefinition/example-study-data-dictionary-variable-1-3">Example Study Data Dictionary Variable age_at_enrollment</a>
-               </td>
-               <td>
-<p>Subject’s Age at Enrollment (Example with a range of 30-40 years of age)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-4.html"
-                     title="ObservationDefinition/example-study-data-dictionary-variable-1-4">Example Study Data Dictionary Variable bmi</a>
-               </td>
-               <td>
-<p>Subject’s BMI at Enrollment</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ObservationDefinition-example-study-data-dictionary-variable-1-5.html"
-                     title="ObservationDefinition/example-study-data-dictionary-variable-1-5">Data Dictionary Variable status</a>
-               </td>
-               <td>
-<p>Subject’s Case/Control Status</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Observation-example-study-summary-gender.html"
-                     title="Observation/example-study-summary-gender">Example Variable Summary with categories (gender)</a>
-               </td>
-               <td>
-<p>Simple example of a VariableSummary using components to capture counts of different categories (male, female and missing)</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Group-example-summary-group-1.html"
-                     title="Group/example-summary-group-1">Example Group used for Summary Results</a>
-               </td>
-               <td>
-<p>Just an example group for demonstrational purposes</p>
 </td>
             </tr>
             <tr>
@@ -902,15 +911,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Example of a patient from study 02</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Specimen-ncpi-research-study-01-specimen-01.html"
-                     title="Specimen/ncpi-research-study-01-specimen-01">NCPI Research Study 01 Specimen 01</a>
-               </td>
-               <td>
-<p>An example Specimen used to indicate which sample a row of raw data is associated with.</p>
 </td>
             </tr>
             <tr>
@@ -1115,7 +1115,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 9, 2022 17:30+0000">2022-12-09</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-ncpi">NCPI FHIR Working Group</a>.  Package NCPI-FHIR-Implementation-Guide#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 15, 2023 20:59+0000">2023-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

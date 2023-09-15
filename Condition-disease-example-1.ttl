@@ -5,96 +5,82 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Condition/disease-example-1> a fhir:Condition;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "disease-example-1"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease";
-       fhir:index 0;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Condition/disease-example-1> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "disease-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease"^^xsd:anyURI ;
        fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/disease>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"disease-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;disease-example-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-disease.html\">NCPI Disease</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Affected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed &quot;Confirmed&quot;)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Neuroblastoma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncit.html\">NCI Thesaurus</a>#NCIT:Neuroblastoma)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>recordedDate</b>: </p></div>"
-  ]; # 
-  fhir:Condition.clinicalStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
-       fhir:Coding.code [ fhir:value "active" ];
-       fhir:Coding.display [ fhir:value "Active" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "Active" ]
-  ]; # 
-  fhir:Condition.verificationStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
-       fhir:Coding.code [ fhir:value "confirmed" ];
-       fhir:Coding.display [ fhir:value "Confirmed" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "Affected" ]
-  ]; # 
-  fhir:Condition.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
-       fhir:Coding.code [ fhir:value "encounter-diagnosis" ];
-       fhir:Coding.display [ fhir:value "Encounter Diagnosis" ]
-     ]
-  ]; # 
-  fhir:Condition.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://purl.obolibrary.org/obo/ncit.owl" ];
-       fhir:Coding.code [ fhir:value "NCIT:Neuroblastoma" ];
-       fhir:Coding.display [ fhir:value "Neuroblastoma" ]
-     ];
-     fhir:CodeableConcept.text [ fhir:value "Neuroblastoma" ]
-  ]; # 
-  fhir:Condition.subject [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
-     fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
-  ]; # 
-  fhir:Condition.recordedDate [
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "target" ];
-         fhir:Extension.valueReference [
-           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1>;
-           fhir:Reference.reference [ fhir:value "Patient/patient-example-1" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"disease-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;disease-example-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-disease.html\">NCPI Disease</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Affected <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed &quot;Confirmed&quot;)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Neuroblastoma <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncit.html\">NCI Thesaurus</a>#NCIT:Neuroblastoma)</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-1.html\">Patient/patient-example-1</a> &quot; SMITH&quot;</p><p><b>recordedDate</b>: </p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] ) ;
+     fhir:text [ fhir:v "Active" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Affected" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/ncit.owl"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NCIT:Neuroblastoma" ] ;
+       fhir:display [ fhir:v "Neuroblastoma" ]
+     ] ) ;
+     fhir:text [ fhir:v "Neuroblastoma" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1> ;
+     fhir:reference [ fhir:v "Patient/patient-example-1" ]
+  ] ; # 
+  fhir:recordedDate [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "target"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Reference ;
+           fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-1> ;
+           fhir:reference [ fhir:v "Patient/patient-example-1" ]
          ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "targetPath" ];
-         fhir:Extension.valueString [ fhir:value "birthDate" ]
-       ], [
-         fhir:index 2;
-         fhir:Extension.url [ fhir:value "relationship" ];
-         fhir:Extension.valueCode [ fhir:value "after" ]
-       ], [
-         fhir:index 3;
-         fhir:Extension.url [ fhir:value "offset" ];
-         fhir:Extension.valueDuration [
-           fhir:Quantity.value [ fhir:value "25"^^xsd:decimal ];
-           fhir:Quantity.unit [ fhir:value "d" ];
-           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
-           fhir:Quantity.code [ fhir:value "days" ]
+       ] [
+         fhir:url [ fhir:v "targetPath"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "birthDate" ]
+       ] [
+         fhir:url [ fhir:v "relationship"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "after" ]
+       ] [
+         fhir:url [ fhir:v "offset"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "25"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "d" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "days" ]
          ]
-       ];
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime" ]
-     ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"^^xsd:anyURI ]
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Condition/disease-example-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

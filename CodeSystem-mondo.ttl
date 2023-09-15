@@ -5,61 +5,49 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/mondo> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "mondo"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://purl.obolibrary.org/obo/mondo.owl</code> defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">MONDO:0005072<a name=\"mondo-MONDO.580005072\"> </a></td><td>neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">MONDO:0002749<a name=\"mondo-MONDO.580002749\"> </a></td><td>extracranial neuroblastoma</td></tr><tr><td style=\"white-space:nowrap\">MONDO:0008542<a name=\"mondo-MONDO.580008542\"> </a></td><td>tetralogy of fallot</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://purl.obolibrary.org/obo/mondo.owl"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.2.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "Mondo"]; # 
-  fhir:CodeSystem.title [ fhir:value "Mondo Disease Ontology"]; # 
-  fhir:CodeSystem.status [ fhir:value "draft"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2022-12-09T17:30:30+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-ncpi" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Meen Chul Kim" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "meenchul@d3b.center" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the latin word 'mundus' and means 'for the world.'"]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "fragment"]; # 
-  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "MONDO:0005072" ];
-     fhir:CodeSystem.concept.display [ fhir:value "neuroblastoma" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "MONDO:0002749" ];
-     fhir:CodeSystem.concept.display [ fhir:value "extracranial neuroblastoma" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "MONDO:0008542" ];
-     fhir:CodeSystem.concept.display [ fhir:value "tetralogy of fallot" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/mondo.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/mondo> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mondo"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://purl.obolibrary.org/obo/mondo.owl"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "Mondo"] ; # 
+  fhir:title [ fhir:v "Mondo Disease Ontology"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-15T20:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/nih-ncpi" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Meen Chul Kim" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "meenchul@d3b.center" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. The name Mondo comes from the latin word 'mundus' and means 'for the world.'"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "MONDO:0005072" ] ;
+     fhir:display [ fhir:v "neuroblastoma" ]
+  ] [
+     fhir:code [ fhir:v "MONDO:0002749" ] ;
+     fhir:display [ fhir:v "extracranial neuroblastoma" ]
+  ] [
+     fhir:code [ fhir:v "MONDO:0008542" ] ;
+     fhir:display [ fhir:v "tetralogy of fallot" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

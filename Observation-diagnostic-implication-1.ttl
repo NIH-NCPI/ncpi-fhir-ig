@@ -1,84 +1,71 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/diagnostic-implication-1> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "diagnostic-implication-1"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"diagnostic-implication-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;diagnostic-implication-1&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Diagnostic Implication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tbd-codes.html\">ToBeDeterminedCodes ('TbdCodes')</a>#diagnostic-implication)</span></p><p><b>derivedFrom</b>: <a href=\"Observation-variant-example-1.html\">Observation/variant-example-1</a></p><blockquote><p><b>component</b></p><p><b>code</b>: mode-of-inheritance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tbd-codes.html\">ToBeDeterminedCodes ('TbdCodes')</a>#mode-of-inheritance)</span></p><p><b>value</b>: Autosomal recessive inheritance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (condition-inheritance-vs#HP:0000007)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genetic variation clinical significance [Imp] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#53037-8)</span></p><p><b>value</b>: Unknown Significance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6682-4)</span></p></blockquote></div>"
-  ]; # 
-  fhir:Observation.status [ fhir:value "final"]; # 
-  fhir:Observation.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
-       fhir:Coding.code [ fhir:value "laboratory" ]
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/diagnostic-implication-1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "diagnostic-implication-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"diagnostic-implication-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;diagnostic-implication-1&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Diagnostic Implication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tbd-codes.html\">ToBeDeterminedCodes ('TbdCodes')</a>#diagnostic-implication)</span></p><p><b>derivedFrom</b>: <a href=\"Observation-variant-example-1.html\">Observation/variant-example-1</a></p><blockquote><p><b>component</b></p><p><b>code</b>: mode-of-inheritance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tbd-codes.html\">ToBeDeterminedCodes ('TbdCodes')</a>#mode-of-inheritance)</span></p><p><b>value</b>: Autosomal recessive inheritance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (condition-inheritance-vs#HP:0000007)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genetic variation clinical significance [Imp] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#53037-8)</span></p><p><b>value</b>: Unknown Significance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6682-4)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "diagnostic-implication" ] ;
+       fhir:display [ fhir:v "Diagnostic Implication" ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/variant-example-1> ;
+     fhir:reference [ fhir:v "Observation/variant-example-1" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mode-of-inheritance" ] ;
+         fhir:display [ fhir:v "mode-of-inheritance" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HP:0000007" ] ;
+         fhir:display [ fhir:v "Autosomal recessive inheritance" ]
+       ] )
      ]
-  ]; # 
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes" ];
-       fhir:Coding.code [ fhir:value "diagnostic-implication" ];
-       fhir:Coding.display [ fhir:value "Diagnostic Implication" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:53037-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "53037-8" ] ;
+         fhir:display [ fhir:v "Genetic variation clinical significance [Imp]" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA6682-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA6682-4" ] ;
+         fhir:display [ fhir:v "Unknown Significance" ]
+       ] )
      ]
-  ]; # 
-  fhir:Observation.derivedFrom [
-     fhir:index 0;
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/variant-example-1>;
-     fhir:Reference.reference [ fhir:value "Observation/variant-example-1" ]
-  ]; # 
-  fhir:Observation.component [
-     fhir:index 0;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes" ];
-         fhir:Coding.code [ fhir:value "mode-of-inheritance" ];
-         fhir:Coding.display [ fhir:value "mode-of-inheritance" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs" ];
-         fhir:Coding.code [ fhir:value "HP:0000007" ];
-         fhir:Coding.display [ fhir:value "Autosomal recessive inheritance" ]
-       ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:53037-8;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "53037-8" ];
-         fhir:Coding.display [ fhir:value "Genetic variation clinical significance [Imp]" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:LA6682-4;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "LA6682-4" ];
-         fhir:Coding.display [ fhir:value "Unknown Significance" ]
-       ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/diagnostic-implication-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

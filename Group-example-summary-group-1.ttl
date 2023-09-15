@@ -5,28 +5,22 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Group/example-summary-group-1> a fhir:Group;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-summary-group-1"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group";
-       fhir:index 0;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Group/example-summary-group-1> a fhir:Group ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-summary-group-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group"^^xsd:anyURI ;
        fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-group>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"example-summary-group-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group &quot;example-summary-group-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-study-group.html\">NCPI Study Group</a></p></div><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>quantity</b>: 400</p></div>"
-  ]; # 
-  fhir:Group.type [ fhir:value "person"]; # 
-  fhir:Group.actual [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:Group.quantity [ fhir:value "400"^^xsd:nonNegativeInteger] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Group/example-summary-group-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"example-summary-group-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group &quot;example-summary-group-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-study-group.html\">NCPI Study Group</a></p></div><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>quantity</b>: 400</p></div>"
+  ] ; # 
+  fhir:type [ fhir:v "person"] ; # 
+  fhir:actual [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:quantity [ fhir:v "400"^^xsd:nonNegativeInteger] . # 
 
 # -------------------------------------------------------------------------------------
 

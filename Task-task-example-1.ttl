@@ -5,40 +5,35 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Task/task-example-1> a fhir:Task;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "task-example-1"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"task-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;task-example-1&quot; </p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><h3>Inputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1</a></td></tr></table><h3>Outputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>DocumentReference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"DocumentReference-drs-document-reference-example-1.html\">DocumentReference/drs-document-reference-example-1</a></td></tr></table></div>"
-  ]; # 
-  fhir:Task.status [ fhir:value "completed"]; # 
-  fhir:Task.intent [ fhir:value "order"]; # 
-  fhir:Task.input [
-     fhir:index 0;
-     fhir:Task.input.type [
-       fhir:CodeableConcept.text [ fhir:value "Specimen" ]
-     ];
-     fhir:Task.input.valueReference [
-       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1>;
-       fhir:Reference.reference [ fhir:value "Specimen/specimen-example-1" ]
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Task/task-example-1> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "task-example-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"task-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;task-example-1&quot; </p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1</a></td></tr></table><h3>Outputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>DocumentReference <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"DocumentReference-drs-document-reference-example-1.html\">DocumentReference/drs-document-reference-example-1</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:text [ fhir:v "Specimen" ]
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1> ;
+       fhir:reference [ fhir:v "Specimen/specimen-example-1" ]
      ]
-  ]; # 
-  fhir:Task.output [
-     fhir:index 0;
-     fhir:Task.output.type [
-       fhir:CodeableConcept.text [ fhir:value "DocumentReference" ]
-     ];
-     fhir:Task.output.valueReference [
-       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/DocumentReference/drs-document-reference-example-1>;
-       fhir:Reference.reference [ fhir:value "DocumentReference/drs-document-reference-example-1" ]
+  ] ) ; # 
+  fhir:output ( [
+     fhir:type [
+       fhir:text [ fhir:v "DocumentReference" ]
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/DocumentReference/drs-document-reference-example-1> ;
+       fhir:reference [ fhir:v "DocumentReference/drs-document-reference-example-1" ]
      ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Task/task-example-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

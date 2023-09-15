@@ -1,25 +1,25 @@
 ﻿NCPIFHIRImplementationGuide : Validation Results
 =========================================
 
-err = 22, warn = 50, info = 26
-IG Publisher Version: 1.2.22
-Generated Fri Dec 09 17:32:06 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.2.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig)
- Build Errors : 15 / 4 / 0
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ActivityDefinition-example-study-data-dictionary-table-1 : 0 / 1 / 2
+err = 38, warn = 79, info = 27
+IG Publisher Version: 1.4.5
+Generated Fri Sep 15 21:01:39 UTC 2023. FHIR version 4.0.1 for NCPI-FHIR-Implementation-Guide#0.2.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig)
+ Build Errors : 11 / 4 / 0
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ActivityDefinition-example-study-data-dictionary-table-1 : 1 / 0 / 2
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ConditionInheritanceMode : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-example-study-data-dictionary-dataset-codesystem-1 : 0 / 2 / 2
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-example-study-data-dictionary-datatable-codesystem-1 : 0 / 2 / 2
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-hpo : 2 / 1 / 3
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-hpo : 2 / 2 / 3
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-loinc-answers : 2 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-mondo : 2 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncit : 2 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-mondo : 2 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncit : 2 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncpi : 0 / 1 / 2
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncpi-data-types : 0 / 1 / 2
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-omim : 2 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-omim : 2 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-tbd-codes : 3 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-v3-hgvs : 2 / 1 / 2
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ConceptMap-example-study-data-dictionary-conceptmap-1 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-disease-example-1 : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ConceptMap-example-study-data-dictionary-conceptmap-1 : 7 / 5 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-disease-example-1 : 1 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Condition-phenotype-example-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/DiagnosticReport-diagnostic-report-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/DocumentReference-drs-document-reference-example-1 : 0 / 0 / 1
@@ -27,17 +27,17 @@ Generated Fri Dec 09 17:32:06 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Impleme
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Encounter-example-encounter-study-01-patient-01 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Group-example-summary-group-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Group-ncpi-research-study-01-group-01-main : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide : 0 / 2 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-anvil-summary-cmg : 0 / 5 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-anvil-summary-phs000711 : 0 / 10 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-diagnostic-implication-1 : 0 / 0 / 2
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-example-observation-data-row-1 : 0 / 0 / 2
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-example-study-summary-gender : 0 / 0 / 4
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-1 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-2 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-3 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-4 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-variant-example-1 : 0 / 1 / 4
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-anvil-summary-cmg : 3 / 5 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-anvil-summary-phs000711 : 3 / 10 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-diagnostic-implication-1 : 0 / 3 / 2
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-example-observation-data-row-1 : 0 / 2 / 2
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-example-study-summary-gender : 0 / 2 / 4
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-1 : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-2 : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-3 : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-family-relationship-example-4 : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Observation-variant-example-1 : 0 / 4 / 4
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ObservationDefinition-example-study-data-dictionary-variable-1-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ObservationDefinition-example-study-data-dictionary-variable-1-2 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ObservationDefinition-example-study-data-dictionary-variable-1-3 : 0 / 0 / 1
@@ -52,7 +52,7 @@ Generated Fri Dec 09 17:32:06 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Impleme
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Practitioner-practitioner-example-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/PractitionerRole-practitioner-role-example-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Questionnaire-example-questionnaire-demographics-1 : 1 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/QuestionnaireResponse-example-questionnaire-demographics-response-1 : 2 / 0 / 3
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/QuestionnaireResponse-example-questionnaire-demographics-response-1 : 1 / 1 / 3
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchStudy-ncpi-research-study-01 : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchStudy-research-study-cmg : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchStudy-research-study-example-1 : 0 / 0 / 1
@@ -62,11 +62,11 @@ Generated Fri Dec 09 17:32:06 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Impleme
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-example-3 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-study-01-patient-01 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ResearchSubject-research-subject-study-01-patient-02 : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Specimen-ncpi-research-study-01-specimen-01 : 0 / 1 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Specimen-ncpi-research-study-01-specimen-01 : 1 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Specimen-specimen-example-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-disease : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-family-relationship : 0 / 0 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-attachment : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-attachment : 1 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-drs-document-reference : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-research-document-reference : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-ncpi-research-study : 0 / 0 / 2
@@ -79,30 +79,26 @@ Generated Fri Dec 09 17:32:06 UTC 2022. FHIR version 4.0.1 for NCPI-FHIR-Impleme
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-study-group : 2 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-study-summary : 0 / 1 / 4
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-study-variable-summary : 0 / 0 / 4
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-supporting-info : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/StructureDefinition-supporting-info : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Task-task-example-1 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/Task-task-example-2 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-condition-inheritance-vs : 0 / 1 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-datatable-mappings-valueset-1 : 0 / 3 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-datatable-mappings-valueset-1 : 0 / 4 / 2
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-datatable-valueset-1 : 0 / 1 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-disease-codes : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-disease-codes : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-example-study-data-dictionary-case-control-vs-1 : 0 / 3 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-loinc-answers : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-ncpi-vs : 0 / 1 / 1
- /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-phenotype-codes : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-phenotype-codes : 0 / 1 / 1
  /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes : 2 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/Observation-example-observation-data-row-1.html#/html/body/div/div/div/div/div/div/p/a at Line 288, column 130: The link 'CodeSystem-example-study-dd-dataset-codesystem-1.html' for "demographics" cannot be resolved
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/Observation-example-observation-data-row-1.html#/html/body/div/div/div/div/div/div/p/a at Line 288, column 389: The link 'CodeSystem-example-study-dd-datatable-codesystem-1.html' for "CodeSystem" cannot be resolved
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/Observation-example-study-summary-gender.html#/html/body/div/div/div/div/div/div/p/a at Line 286, column 653: The link 'CodeSystem-example-study-dd-datatable-codesystem-1.html' for "demographics-table" cannot be resolved
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/Questionnaire-example-questionnaire-demographics-1.html#/html/body/div/div/div/div/div/div/p/a at Line 311, column 98: The link 'CodeSystem-example-study-dd-dataset-codesystem-1.html' for "Demographics CodeSystem" cannot be resolved
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/ValueSet-datatable-mappings-valueset-1.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 322, column 1106: The link 'CodeSystem-hpo.html#hpo-HP.580010772' for "HP:0010772" cannot be resolved (valid targets: 1893 targets)
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/ValueSet-datatable-mappings-valueset-1.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 322, column 1466: The link 'CodeSystem-mondo.html#mondo-0017705' for "0017705" cannot be resolved (valid targets: [mondo-MONDO.580008542, segment-header, publish-box, bottom, segment-post-footer, codesystem-mondo-disease-ontology, mondo-MONDO.580005072, ig-status, mondo-MONDO.580002749, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/ValueSet-datatable-mappings-valueset-1.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 322, column 1592: The link 'CodeSystem-mondo.html#mondo-0007130' for "0007130" cannot be resolved (valid targets: [mondo-MONDO.580008542, segment-header, publish-box, bottom, segment-post-footer, codesystem-mondo-disease-ontology, mondo-MONDO.580005072, ig-status, mondo-MONDO.580002749, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/ValueSet-datatable-valueset-1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 326, column 3418: The link 'CodeSystem-hpo.html#hpo-HP.580010772' for "HP:0010772" cannot be resolved (valid targets: 1893 targets)
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/ValueSet-datatable-valueset-1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 326, column 3517: The link 'CodeSystem-mondo.html#mondo-MONDO.580017705' for "MONDO:0017705" cannot be resolved (valid targets: [mondo-MONDO.580008542, segment-header, publish-box, bottom, segment-post-footer, codesystem-mondo-disease-ontology, mondo-MONDO.580005072, ig-status, mondo-MONDO.580002749, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/ValueSet-datatable-valueset-1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 326, column 3626: The link 'CodeSystem-mondo.html#mondo-MONDO.580007130' for "MONDO:0007130" cannot be resolved (valid targets: [mondo-MONDO.580008542, segment-header, publish-box, bottom, segment-post-footer, codesystem-mondo-disease-ontology, mondo-MONDO.580005072, ig-status, mondo-MONDO.580002749, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/Observation-example-observation-data-row-1.html#/html/body/div/div/div/div/div/div/p/a at Line 275, column 130: The link 'CodeSystem-example-study-dd-dataset-codesystem-1.html' for "demographics" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/Observation-example-observation-data-row-1.html#/html/body/div/div/div/div/div/div/p/a at Line 275, column 389: The link 'CodeSystem-example-study-dd-datatable-codesystem-1.html' for "CodeSystem" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/Observation-example-study-summary-gender.html#/html/body/div/div/div/div/div/div/p/a at Line 273, column 653: The link 'CodeSystem-example-study-dd-datatable-codesystem-1.html' for "demographics-table" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/Questionnaire-example-questionnaire-demographics-1.html#/html/body/div/div/div/div/div/div/p/a at Line 310, column 98: The link 'CodeSystem-example-study-dd-dataset-codesystem-1.html' for "Demographics CodeSystem" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/ValueSet-datatable-mappings-valueset-1.html#/html/body/div/div/div/div/div/div/ul/li/table/tr/td/a at Line 321, column 1106: The link 'CodeSystem-hpo.html#hpo-HP.580010772' for "HP:0010772" cannot be resolved (valid targets: 1893 targets)
+ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/ValueSet-datatable-valueset-1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 325, column 3429: The link 'CodeSystem-hpo.html#hpo-HP.580010772' for "HP:0010772" cannot be resolved (valid targets: 1893 targets)
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/example_raw_data.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 256, column 114: The link 'CodeSystem-example-study-dd-dataset-codesystem-1.html' for "dataset CodeSystem" cannot be resolved
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/example_raw_data.html#/html/body/div/div/div/div/div/p/a at Line 266, column 329: The link 'ObservationDefinition-example-study-dd-variable-1-1.json.html' for "subjectid" cannot be resolved
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/output/example_raw_data.html#/html/body/div/div/div/div/div/p/a at Line 266, column 475: The link 'ObservationDefinition-example-study-dd-variable-1-2.json.html' for "gender" cannot be resolved
@@ -114,56 +110,73 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ActivityDefinition-example-study-data-dictionary-table-1.json ==
 INFORMATION: ActivityDefinition/example-study-data-dictionary-table-1: ActivityDefinition.topic[0].coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
-WARNING: ActivityDefinition/example-study-data-dictionary-table-1: ActivityDefinition.code.coding[0]: Display Name for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1#demographics should be one of 0 choices from '', not 'Demographic data' for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1#demographics'
+ERROR: ActivityDefinition/example-study-data-dictionary-table-1: ActivityDefinition.code.coding[0]: The CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1 is unknown (from Tx-Server) for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1#demographics'
 == fsh-generated/resources/CodeSystem-ConditionInheritanceMode.json ==
 INFORMATION: CodeSystem/ConditionInheritanceMode: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/ConditionInheritanceMode: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/ConditionInheritanceMode: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ConditionInheritanceMode: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/ConditionInheritanceMode: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-example-study-data-dictionary-dataset-codesystem-1.json ==
 INFORMATION: CodeSystem/example-study-data-dictionary-dataset-codesystem-1: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/example-study-data-dictionary-dataset-codesystem-1: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/example-study-data-dictionary-dataset-codesystem-1: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/example-study-data-dictionary-dataset-codesystem-1: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/example-study-data-dictionary-dataset-codesystem-1: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-example-study-data-dictionary-datatable-codesystem-1.json ==
 INFORMATION: CodeSystem/example-study-data-dictionary-datatable-codesystem-1: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/example-study-data-dictionary-datatable-codesystem-1: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/example-study-data-dictionary-datatable-codesystem-1: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/example-study-data-dictionary-datatable-codesystem-1: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/example-study-data-dictionary-datatable-codesystem-1: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-hpo.json ==
 ERROR: CodeSystem.where(url = 'http://purl.obolibrary.org/obo/hp.owl'): Conformance resource /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-hpo.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/hpo) does not match the URL (http://purl.obolibrary.org/obo/hp.owl)
 INFORMATION: CodeSystem/hpo: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/hpo: CodeSystem.count: The code system is a fragment/example, but the number of concepts (1,880) exceeds or matches the stated total number (1,880)
 INFORMATION: CodeSystem/hpo: CodeSystem: Review the All Codes Value Set - incomplete CodeSystems generally should not have an all codes value set specified
-WARNING: CodeSystem/hpo: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/hpo: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-hpo: URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/hpo vs http://purl.obolibrary.org/obo/hp.owl
 == fsh-generated/resources/CodeSystem-loinc-answers.json ==
 ERROR: CodeSystem.where(url = 'ncpi:loinc-answers'): Conformance resource /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-loinc-answers.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/loinc-answers) does not match the URL (ncpi:loinc-answers)
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-loinc-answers: URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/loinc-answers vs ncpi:loinc-answers
 == fsh-generated/resources/CodeSystem-mondo.json ==
 ERROR: CodeSystem.where(url = 'http://purl.obolibrary.org/obo/mondo.owl'): Conformance resource /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-mondo.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/mondo) does not match the URL (http://purl.obolibrary.org/obo/mondo.owl)
+WARNING: CodeSystem/mondo: CodeSystem.count: The code system is a fragment/example, but the number of concepts (3) exceeds or matches the stated total number (3)
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-mondo: URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/mondo vs http://purl.obolibrary.org/obo/mondo.owl
 == fsh-generated/resources/CodeSystem-ncit.json ==
 ERROR: CodeSystem.where(url = 'http://purl.obolibrary.org/obo/ncit.owl'): Conformance resource /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncit.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncit) does not match the URL (http://purl.obolibrary.org/obo/ncit.owl)
+WARNING: CodeSystem/ncit: CodeSystem.count: The code system is a fragment/example, but the number of concepts (3) exceeds or matches the stated total number (3)
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-ncit: URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncit vs http://purl.obolibrary.org/obo/ncit.owl
 == fsh-generated/resources/CodeSystem-ncpi.json ==
 INFORMATION: CodeSystem/ncpi: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/ncpi: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ncpi: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-ncpi-data-types.json ==
 INFORMATION: CodeSystem/ncpi-data-types: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/ncpi-data-types: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ncpi-data-types: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-omim.json ==
 ERROR: CodeSystem.where(url = 'https://omim.org/'): Conformance resource /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-omim.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/omim) does not match the URL (https://omim.org/)
+WARNING: CodeSystem/omim: CodeSystem.count: The code system is a fragment/example, but the number of concepts (498) exceeds or matches the stated total number (497)
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-omim: URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/omim vs https://omim.org/
 == fsh-generated/resources/CodeSystem-tbd-codes.json ==
 ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes'): Conformance resource /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-tbd-codes.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/tbd-codes) does not match the URL (http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes)
 WARNING: CodeSystem/tbd-codes: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-ERROR: CodeSystem/tbd-codes: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not found. HL7 Published code systems SHALL conform to the ShareableCodeSystem profile
+ERROR: CodeSystem/tbd-codes: CodeSystem: Published code systems SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-tbd-codes: URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/tbd-codes vs http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes
 == fsh-generated/resources/CodeSystem-v3-hgvs.json ==
 ERROR: CodeSystem.where(url = 'http://varnomen.hgvs.org'): Conformance resource /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-v3-hgvs.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/v3-hgvs) does not match the URL (http://varnomen.hgvs.org)
 INFORMATION: CodeSystem/v3-hgvs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/v3-hgvs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/v3-hgvs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/CodeSystem-v3-hgvs: URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/v3-hgvs vs http://varnomen.hgvs.org
 == fsh-generated/resources/ConceptMap-example-study-data-dictionary-conceptmap-1.json ==
+WARNING: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap.group[2].target: Target Code System http://purl.obolibrary.org/obo/hp.owl doesn't have all content (content = fragment), so the target codes cannot be checked
+WARNING: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.title is mandatory, but it is not present
+WARNING: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.name should be present, but it is not
+WARNING: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
+WARNING: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.description is mandatory, but it is not present
+ERROR: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap.group[0].element[0].target[0].code: The code 'C2348584' in the system https://uts.nlm.nih.gov/uts/umls is not valid in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1'
+ERROR: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap.group[0].element[1].target[0].code: The code 'C0079399' in the system https://uts.nlm.nih.gov/uts/umls is not valid in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1'
+ERROR: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap.group[0].element[2].target[0].code: The code 'C168843' in the system https://uts.nlm.nih.gov/uts/umls is not valid in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1'
+ERROR: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap.group[0].element[3].target[0].code: The code 'C1305855' in the system https://uts.nlm.nih.gov/uts/umls is not valid in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1'
+ERROR: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap.group[0].element[4].target[0].code: The code 'C0872128' in the system https://uts.nlm.nih.gov/uts/umls is not valid in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1'
+ERROR: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap.group[3].element[0].target[0].code: The code 'MONDO:0017705' in the system http://purl.obolibrary.org/obo/mondo.owl is not valid in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1'
+ERROR: ConceptMap/example-study-data-dictionary-conceptmap-1: ConceptMap.group[3].element[0].target[1].code: The code 'MONDO:0007130' in the system http://purl.obolibrary.org/obo/mondo.owl is not valid in the value set 'https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/datatable-mappings-valueset-1'
 == fsh-generated/resources/Condition-disease-example-1.json ==
-WARNING: Condition/disease-example-1: Condition.code.coding[0]: Unknown Code http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma in http://purl.obolibrary.org/obo/ncit.owl - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma'
+ERROR: Condition/disease-example-1: Condition.code.coding[0]: Unknown Code 'NCIT:Neuroblastoma' in the system 'http://purl.obolibrary.org/obo/ncit.owl|0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: Condition/disease-example-1: Condition.code.coding[0]: Unknown Code 'NCIT:Neuroblastoma' in the system 'http://purl.obolibrary.org/obo/ncit.owl|0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment for 'http://purl.obolibrary.org/obo/ncit.owl#NCIT:Neuroblastoma'
 == fsh-generated/resources/Condition-phenotype-example-1.json ==
 == fsh-generated/resources/DiagnosticReport-diagnostic-report-1.json ==
 == fsh-generated/resources/DocumentReference-drs-document-reference-example-1.json ==
@@ -172,18 +185,19 @@ WARNING: Condition/disease-example-1: Condition.code.coding[0]: Unknown Code htt
 == fsh-generated/resources/Group-example-summary-group-1.json ==
 == fsh-generated/resources/Group-ncpi-research-study-01-group-01-main.json ==
 == fsh-generated/resources/ImplementationGuide-NCPI-FHIR-Implementation-Guide.json ==
-WARNING: ImplementationGuide/NCPI-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[7].description: value should not start or finish with whitespace 'A...Task '
-WARNING: ImplementationGuide/NCPI-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[12].description: value should not start or finish with whitespace 'Grouping...etc. '
 == fsh-generated/resources/Observation-anvil-summary-cmg.json ==
-WARNING: Observation/anvil-summary-cmg: Observation.code.coding[0]: Display Name for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Summary should be 'Summary Data', not 'Variable Summary' for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Summary'
+ERROR: Observation/anvil-summary-cmg: Observation.code.coding[0]: Wrong Display Name 'Variable Summary' for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Summary - should be 'Summary Data' (for the language(s) '--') for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Summary'
 WARNING: Observation/anvil-summary-cmg: Observation.component[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Observation/anvil-summary-cmg: Observation.component[1].code.coding[0]: Display Name for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#SampleCount should be 'Number of samples that are part of this study', not 'Number of Samples' for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#SampleCount'
-WARNING: Observation/anvil-summary-cmg: Observation.component[2].code.coding[0]: Display Name for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Participant should be 'Number of participants that are part of this study', not 'Number of Participants' for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Participant'
+ERROR: Observation/anvil-summary-cmg: Observation.component[1].code.coding[0]: Wrong Display Name 'Number of Samples' for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#SampleCount - should be 'Number of samples that are part of this study' (for the language(s) '--') for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#SampleCount'
+ERROR: Observation/anvil-summary-cmg: Observation.component[2].code.coding[0]: Wrong Display Name 'Number of Participants' for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Participant - should be 'Number of participants that are part of this study' (for the language(s) '--') for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Participant'
 WARNING: Observation/anvil-summary-cmg: Observation.component[3].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Observation/anvil-summary-cmg: Observation: All observations should have a subject
+WARNING: Observation/anvil-summary-cmg: Observation: All observations should have a performer
+WARNING: Observation/anvil-summary-cmg: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-anvil-summary-phs000711.json ==
-WARNING: Observation/anvil-summary-phs000711: Observation.code.coding[0]: Display Name for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Summary should be 'Summary Data', not 'Variable Summary' for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Summary'
-WARNING: Observation/anvil-summary-phs000711: Observation.component[0].code.coding[0]: Display Name for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#SampleCount should be 'Number of samples that are part of this study', not 'Number of Samples' for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#SampleCount'
-WARNING: Observation/anvil-summary-phs000711: Observation.component[1].code.coding[0]: Display Name for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Participant should be 'Number of participants that are part of this study', not 'Number of Participants' for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Participant'
+ERROR: Observation/anvil-summary-phs000711: Observation.code.coding[0]: Wrong Display Name 'Variable Summary' for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Summary - should be 'Summary Data' (for the language(s) '--') for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Summary'
+ERROR: Observation/anvil-summary-phs000711: Observation.component[0].code.coding[0]: Wrong Display Name 'Number of Samples' for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#SampleCount - should be 'Number of samples that are part of this study' (for the language(s) '--') for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#SampleCount'
+ERROR: Observation/anvil-summary-phs000711: Observation.component[1].code.coding[0]: Wrong Display Name 'Number of Participants' for https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Participant - should be 'Number of participants that are part of this study' (for the language(s) '--') for 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi#Participant'
 WARNING: Observation/anvil-summary-phs000711: Observation.component[2].code.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Observation/anvil-summary-phs000711: Observation.component[3].code.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Observation/anvil-summary-phs000711: Observation.component[4].code.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -191,23 +205,44 @@ WARNING: Observation/anvil-summary-phs000711: Observation.component[5].code.codi
 WARNING: Observation/anvil-summary-phs000711: Observation.component[6].code.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Observation/anvil-summary-phs000711: Observation.component[7].code.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Observation/anvil-summary-phs000711: Observation.component[8].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Observation/anvil-summary-phs000711: Observation: All observations should have a subject
+WARNING: Observation/anvil-summary-phs000711: Observation: All observations should have a performer
+WARNING: Observation/anvil-summary-phs000711: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-diagnostic-implication-1.json ==
 INFORMATION: Observation/diagnostic-implication-1: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://fhir.ncpi-project-forge.io/ValueSet/condition-inheritance-vs' is unknown so the code cannot be validated
+WARNING: Observation/diagnostic-implication-1: Observation: All observations should have a subject
+WARNING: Observation/diagnostic-implication-1: Observation: All observations should have a performer
+WARNING: Observation/diagnostic-implication-1: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-example-observation-data-row-1.json ==
 INFORMATION: Observation/example-observation-data-row-1: Observation.component[3].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+WARNING: Observation/example-observation-data-row-1: Observation: All observations should have a performer
+WARNING: Observation/example-observation-data-row-1: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-example-study-summary-gender.json ==
 INFORMATION: Observation/example-study-summary-gender: Observation.code.coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: Observation/example-study-summary-gender: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: Observation/example-study-summary-gender: Observation.component[2].code.coding[0]: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
+WARNING: Observation/example-study-summary-gender: Observation: All observations should have a performer
+WARNING: Observation/example-study-summary-gender: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-family-relationship-example-1.json ==
+WARNING: Observation/family-relationship-example-1: Observation: All observations should have a performer
+WARNING: Observation/family-relationship-example-1: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-family-relationship-example-2.json ==
+WARNING: Observation/family-relationship-example-2: Observation: All observations should have a performer
+WARNING: Observation/family-relationship-example-2: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-family-relationship-example-3.json ==
+WARNING: Observation/family-relationship-example-3: Observation: All observations should have a performer
+WARNING: Observation/family-relationship-example-3: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-family-relationship-example-4.json ==
+WARNING: Observation/family-relationship-example-4: Observation: All observations should have a performer
+WARNING: Observation/family-relationship-example-4: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/Observation-variant-example-1.json ==
 INFORMATION: Observation/variant-example-1: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.ncbi.nlm.nih.gov/gene' is unknown so the code cannot be validated
 INFORMATION: Observation/variant-example-1: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers' is unknown so the code cannot be validated
-INFORMATION: Observation/variant-example-1: Observation.component[7].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://www.ncbi.nlm.nih.gov/refseq' is unknown so the code cannot be validated
-WARNING: Observation/variant-example-1: Observation.component[8].value.ofType(CodeableConcept).coding[0]: Local Error: Resolved system http://varnomen.hgvs.org (v2.0.1), but the definition is not complete. Server Error: Error from server: Error parsing JSON source: Unexpected char "<" in json stream at Line 0 (path=[])
+INFORMATION: Observation/variant-example-1: Observation.component[7].value.ofType(CodeableConcept).coding[0]: The definition for the Code System with URI 'http://www.ncbi.nlm.nih.gov/refseq' doesnt provide any codes so the code cannot be validated
+WARNING: Observation/variant-example-1: Observation.component[8].value.ofType(CodeableConcept).coding[0]: Error from server: HGVS is not supported at this time
+WARNING: Observation/variant-example-1: Observation: All observations should have a subject
+WARNING: Observation/variant-example-1: Observation: All observations should have a performer
+WARNING: Observation/variant-example-1: Observation: All observations should have an effectiveDateTime or an effectivePeriod
 == fsh-generated/resources/ObservationDefinition-example-study-data-dictionary-variable-1-1.json ==
 == fsh-generated/resources/ObservationDefinition-example-study-data-dictionary-variable-1-2.json ==
 == fsh-generated/resources/ObservationDefinition-example-study-data-dictionary-variable-1-3.json ==
@@ -227,7 +262,7 @@ ERROR: Questionnaire.url: Resource id/url mismatch: example-questionnaire-demogr
 ERROR: QuestionnaireResponse/example-questionnaire-demographics-response-1: QuestionnaireResponse.subject: Unable to resolve resource with reference 'example-sum-patient-1'
 INFORMATION: QuestionnaireResponse/example-questionnaire-demographics-response-1: QuestionnaireResponse.item[3].answer[0].value.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/example-questionnaire-demographics-response-1: QuestionnaireResponse.item[1].answer[0]: Cannot validate string answer option because no option list is provided
-ERROR: QuestionnaireResponse/example-questionnaire-demographics-response-1: QuestionnaireResponse.item[3].answer[0]: The value provided (https://uts.nlm.nih.gov/uts/umls::C99269) is not in the options value set in the questionnaire
+WARNING: QuestionnaireResponse/example-questionnaire-demographics-response-1: QuestionnaireResponse.item[3].answer[0]: The code provided C99269 cannot be validated in the options value set (Case/Control Vars for 'status' categoricals) in the questionnaire because the system https://uts.nlm.nih.gov/uts/umls is unknown
 == fsh-generated/resources/ResearchStudy-ncpi-research-study-01.json ==
 WARNING: ResearchStudy/ncpi-research-study-01: ResearchStudy.primaryPurposeType.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ResearchStudy-research-study-cmg.json ==
@@ -241,11 +276,13 @@ WARNING: ResearchStudy/research-study-phs000711: ResearchStudy.primaryPurposeTyp
 == fsh-generated/resources/ResearchSubject-research-subject-study-01-patient-01.json ==
 == fsh-generated/resources/ResearchSubject-research-subject-study-01-patient-02.json ==
 == fsh-generated/resources/Specimen-ncpi-research-study-01-specimen-01.json ==
-WARNING: Specimen/ncpi-research-study-01-specimen-01: Specimen.type.coding[0]: Unknown Code http://purl.obolibrary.org/obo/ncit.owl#C17610 in http://purl.obolibrary.org/obo/ncit.owl - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://purl.obolibrary.org/obo/ncit.owl#C17610'
+ERROR: Specimen/ncpi-research-study-01-specimen-01: Specimen.type.coding[0]: Unknown Code 'C17610' in the system 'http://purl.obolibrary.org/obo/ncit.owl|0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: Specimen/ncpi-research-study-01-specimen-01: Specimen.type.coding[0]: Unknown Code 'C17610' in the system 'http://purl.obolibrary.org/obo/ncit.owl|0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment for 'http://purl.obolibrary.org/obo/ncit.owl#C17610'
 == fsh-generated/resources/Specimen-specimen-example-1.json ==
 == fsh-generated/resources/StructureDefinition-disease.json ==
 == fsh-generated/resources/StructureDefinition-family-relationship.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-drs-attachment.json ==
+ERROR: StructureDefinition/ncpi-drs-attachment: StructureDefinition.snapshot.element[0].constraint[2]: Error in constraint 'must-be-drs-uri' with expression '$this.url.matches('^drs://.*')': Error evaluating FHIRPath expression: The function matches can only be used on string, uri, code, id but found [http://hl7.org/fhir/StructureDefinition/url] (@char 1)
 == fsh-generated/resources/StructureDefinition-ncpi-drs-document-reference.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-research-document-reference.json ==
 == fsh-generated/resources/StructureDefinition-ncpi-research-study.json ==
@@ -258,8 +295,8 @@ WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-i
 == fsh-generated/resources/StructureDefinition-study-data-dictionary-table.json ==
 == fsh-generated/resources/StructureDefinition-study-data-dictionary-variable.json ==
 == fsh-generated/resources/StructureDefinition-study-group.json ==
-ERROR: StructureDefinition/study-group: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0]: Local Error: Resolved system http://snomed.info/sct, but the definition is not complete. Server Error: Unable to find code 44807982 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220731); The code "44807982" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#44807982) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#44807982'
-ERROR: StructureDefinition/study-group: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: Local Error: Resolved system http://snomed.info/sct, but the definition is not complete. Server Error: Unable to find code 44807982 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20220731); The code "44807982" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#44807982) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#44807982'
+ERROR: StructureDefinition/study-group: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept).coding[0]: Unable to find code 44807982 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code '44807982' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#44807982' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://snomed.info/sct#44807982'
+ERROR: StructureDefinition/study-group: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: Unable to find code 44807982 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code '44807982' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#44807982' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://snomed.info/sct#44807982'
 == fsh-generated/resources/StructureDefinition-study-summary.json ==
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/study-summary: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
@@ -270,25 +307,30 @@ INFORMATION: StructureDefinition/study-variable-summary: StructureDefinition.sna
 INFORMATION: StructureDefinition/study-variable-summary: StructureDefinition.differential.element[1].pattern.ofType(Coding): Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/study-variable-summary: StructureDefinition.snapshot.element[17].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-supporting-info.json ==
+WARNING: StructureDefinition/supporting-info: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/Task-task-example-1.json ==
 == fsh-generated/resources/Task-task-example-2.json ==
 == fsh-generated/resources/ValueSet-condition-inheritance-vs.json ==
-WARNING: ValueSet/condition-inheritance-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/condition-inheritance-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-datatable-mappings-valueset-1.json ==
-WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet.compose[0].include[0]: Unknown System 'https://uts.nlm.nih.gov/uts/umls' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://uts.nlm.nih.gov/uts/umls. Server Error: The code system 'https://uts.nlm.nih.gov/uts/umls' is not known (encountered paired with code = 'C2348584'); The code provided (https://uts.nlm.nih.gov/uts/umls#C2348584) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
-WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet.compose.include[0]: Unknown System 'https://uts.nlm.nih.gov/uts/umls' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://uts.nlm.nih.gov/uts/umls is unknown (from Tx-Server))
+INFORMATION: ValueSet/datatable-mappings-valueset-1: ValueSet.compose.include[2].concept[0]: Unknown Code 'HP:0010772' in the system 'http://purl.obolibrary.org/obo/hp.owl|0.2.0' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet.compose.include[3]: Unknown System 'http://purl.obolibrary.org/obo/mondo.owl' specified, so Concepts and Filters can't be checked (Details: The CodeSystem http://purl.obolibrary.org/obo/mondo.owl is unknown (from Tx-Server))
+WARNING: ValueSet/datatable-mappings-valueset-1: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'datatable-mappings-valueset-1'): Error from server: Unable to provide support for code system https://uts.nlm.nih.gov/uts/umls
 == fsh-generated/resources/ValueSet-datatable-valueset-1.json ==
-WARNING: ValueSet/datatable-valueset-1: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/datatable-valueset-1: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-disease-codes.json ==
+WARNING: ValueSet.where(id = 'disease-codes'): Error from server: Unable to provide support for code system http://purl.obolibrary.org/obo/mondo.owl
 == fsh-generated/resources/ValueSet-example-study-data-dictionary-case-control-vs-1.json ==
-WARNING: ValueSet/example-study-data-dictionary-case-control-vs-1: ValueSet.compose[0].include[0]: Unknown System 'https://uts.nlm.nih.gov/uts/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated)
-WARNING: ValueSet/example-study-data-dictionary-case-control-vs-1: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/example-study-data-dictionary-case-control-vs-1: ValueSet.compose.include[0]: Unknown System 'https://uts.nlm.nih.gov/uts/umls' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://uts.nlm.nih.gov/uts/umls' is unknown so the code cannot be validated)
+WARNING: ValueSet/example-study-data-dictionary-case-control-vs-1: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'example-study-data-dictionary-case-control-vs-1'): Error from server: Unable to provide support for code system https://uts.nlm.nih.gov/uts/umls
 == fsh-generated/resources/ValueSet-loinc-answers.json ==
 == fsh-generated/resources/ValueSet-ncpi-vs.json ==
-WARNING: ValueSet/ncpi-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/ncpi-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-phenotype-codes.json ==
+WARNING: ValueSet.where(id = 'phenotype-codes'): Error from server: Unable to provide support for code system http://purl.obolibrary.org/obo/hp.owl
 == fsh-generated/resources/ValueSet-tbd-codes.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes'): Conformance resource /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/tbd-codes) does not match the URL (http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes)
 ERROR: /home/runner/work/ncpi-fhir-ig/ncpi-fhir-ig/fsh-generated/resources/ValueSet-tbd-codes: URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/tbd-codes vs http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes

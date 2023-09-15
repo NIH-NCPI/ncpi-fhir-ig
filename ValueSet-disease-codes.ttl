@@ -5,57 +5,45 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "disease-codes"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-omim.html\"><code>https://omim.org/</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-mondo.html\"><code>http://purl.obolibrary.org/obo/mondo.owl</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ncit.html\"><code>http://purl.obolibrary.org/obo/ncit.owl</code></a></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes"]; # 
-  fhir:ValueSet.version [ fhir:value "0.2.0"]; # 
-  fhir:ValueSet.name [ fhir:value "DiseaseCodes"]; # 
-  fhir:ValueSet.title [ fhir:value "Disease Codes"]; # 
-  fhir:ValueSet.status [ fhir:value "draft"]; # 
-  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2022-12-09T17:30:30+00:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "NCPI FHIR Working Group"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-ncpi" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Meen Chul Kim" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "meenchul@d3b.center" ];
-       fhir:ContactPoint.use [ fhir:value "work" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems."]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://omim.org/" ]
-     ], [
-       fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://purl.obolibrary.org/obo/mondo.owl" ]
-     ], [
-       fhir:index 2;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://purl.obolibrary.org/obo/ncit.owl" ]
-     ]
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "disease-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "DiseaseCodes"] ; # 
+  fhir:title [ fhir:v "Disease Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-15T20:59:49+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/nih-ncpi" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Meen Chul Kim" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "meenchul@d3b.center" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set includes all codes from this FHIR server's representation of OMIM, Mondo and NICt CodeSystems."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://omim.org/"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/mondo.owl"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/ncit.owl"^^xsd:anyURI ]
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/disease-codes.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

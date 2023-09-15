@@ -5,24 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchStudy/research-study-example-1> a fhir:ResearchStudy;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "research-study-example-1"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchStudy</b><a name=\"research-study-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchStudy &quot;research-study-example-1&quot; </p></div><p><b>title</b>: NCPI Research Study Example 1</p><p><b>status</b>: completed</p><p><b>principalInvestigator</b>: <a href=\"PractitionerRole-practitioner-role-example-1.html\">PractitionerRole/practitioner-role-example-1</a></p></div>"
-  ]; # 
-  fhir:ResearchStudy.title [ fhir:value "NCPI Research Study Example 1"]; # 
-  fhir:ResearchStudy.status [ fhir:value "completed"]; # 
-  fhir:ResearchStudy.principalInvestigator [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/PractitionerRole/practitioner-role-example-1>;
-     fhir:Reference.reference [ fhir:value "PractitionerRole/practitioner-role-example-1" ]
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchStudy/research-study-example-1> a fhir:ResearchStudy ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "research-study-example-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchStudy</b><a name=\"research-study-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchStudy &quot;research-study-example-1&quot; </p></div><p><b>title</b>: NCPI Research Study Example 1</p><p><b>status</b>: completed</p><p><b>principalInvestigator</b>: <a href=\"PractitionerRole-practitioner-role-example-1.html\">PractitionerRole/practitioner-role-example-1</a></p></div>"
+  ] ; # 
+  fhir:title [ fhir:v "NCPI Research Study Example 1"] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:principalInvestigator [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/PractitionerRole/practitioner-role-example-1> ;
+     fhir:reference [ fhir:v "PractitionerRole/practitioner-role-example-1" ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/ResearchStudy/research-study-example-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

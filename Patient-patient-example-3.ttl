@@ -5,138 +5,104 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-3> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "patient-example-3"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>John Samuel Smith(OFFICIAL)</b> male, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: (555) 555-5555(HOME)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Spouse\">Emergency Contact:</td><td colspan=\"3\"><ul><li>Jane Samantha Smith(OFFICIAL) (female)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li><li>ph: (555) 555-5555(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC</a> 2106-3: White</li><li>detailed: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2113-9\">Race &amp; Ethnicity - CDC</a> 2113-9: Irish</li><li>text: White</li></ul></td></tr></table></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "ombCategory" ];
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
-         fhir:Coding.code [ fhir:value "2106-3" ];
-         fhir:Coding.display [ fhir:value "White" ]
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-3> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-example-3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>John Samuel Smith(OFFICIAL)</b> male, DoB Unknown</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: (555) 555-5555(HOME)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Spouse\">Emergency Contact:</td><td colspan=\"3\"><ul><li>Jane Samantha Smith(OFFICIAL) (female)</li><li>3401 Civic Center Blvd., Philadelphia, PA 19104(HOME)</li><li>ph: (555) 555-5555(HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC</a> 2106-3: White</li><li>detailed: <a href=\"http://hl7.org/fhir/us/core/STU3.1.1/CodeSystem-cdcrec.html#cdcrec-2113-9\">Race &amp; Ethnicity - CDC</a> 2113-9: Irish</li><li>text: White</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ] ;
+         fhir:display [ fhir:v "White" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "detailed" ];
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
-         fhir:Coding.code [ fhir:value "2113-9" ];
-         fhir:Coding.display [ fhir:value "Irish" ]
+     ] [
+       fhir:url [ fhir:v "detailed"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2113-9" ] ;
+         fhir:display [ fhir:v "Irish" ]
        ]
-     ], [
-       fhir:index 2;
-       fhir:Extension.url [ fhir:value "text" ];
-       fhir:Extension.valueString [ fhir:value "White" ]
-     ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race" ]
-  ], [
-     fhir:index 1;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "ombCategory" ];
-       fhir:Extension.valueCoding [
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
-         fhir:Coding.code [ fhir:value "2186-5" ];
-         fhir:Coding.display [ fhir:value "Not Hispanic or Latino" ]
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "White" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "ombCategory"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.6.238"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2186-5" ] ;
+         fhir:display [ fhir:v "Not Hispanic or Latino" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "text" ];
-       fhir:Extension.valueString [ fhir:value "Not Hispanic or Latino" ]
-     ];
-     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity" ]
-  ]; # 
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.text [ fhir:value "John Samuel Smith" ];
-     fhir:HumanName.family [ fhir:value "Smith" ];
-     fhir:HumanName.given [
-       fhir:value "Jone";
-       fhir:index 0
-     ], [
-       fhir:value "Samuel";
-       fhir:index 1
-     ]
-  ]; # 
-  fhir:Patient.telecom [
-     fhir:index 0;
-     fhir:ContactPoint.system [ fhir:value "phone" ];
-     fhir:ContactPoint.value [ fhir:value "(555) 555-5555" ];
-     fhir:ContactPoint.use [ fhir:value "home" ];
-     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
-  ]; # 
-  fhir:Patient.gender [ fhir:value "male"]; # 
-  fhir:Patient.address [
-     fhir:index 0;
-     fhir:Address.use [ fhir:value "home" ];
-     fhir:Address.type [ fhir:value "both" ];
-     fhir:Address.text [ fhir:value "3401 Civic Center Blvd., Philadelphia, PA 19104" ];
-     fhir:Address.line [
-       fhir:value "3401 Civic Center Blvd.";
-       fhir:index 0
-     ];
-     fhir:Address.city [ fhir:value "Philadelphia" ];
-     fhir:Address.state [ fhir:value "PA" ];
-     fhir:Address.postalCode [ fhir:value "19104" ]
-  ]; # 
-  fhir:Patient.contact [
-     fhir:index 0;
-     fhir:Patient.contact.relationship [
-       fhir:index 0;
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131" ];
-         fhir:Coding.code [ fhir:value "C" ];
-         fhir:Coding.display [ fhir:value "Emergency Contact" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "Spouse" ]
-     ];
-     fhir:Patient.contact.name [
-       fhir:HumanName.use [ fhir:value "official" ];
-       fhir:HumanName.text [ fhir:value "Jane Samantha Smith" ];
-       fhir:HumanName.family [ fhir:value "Smith" ];
-       fhir:HumanName.given [
-         fhir:value "Jane";
-         fhir:index 0
-       ], [
-         fhir:value "Samantha";
-         fhir:index 1
-       ]
-     ];
-     fhir:Patient.contact.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "phone" ];
-       fhir:ContactPoint.value [ fhir:value "(555) 555-5555" ];
-       fhir:ContactPoint.use [ fhir:value "home" ];
-       fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
-     ];
-     fhir:Patient.contact.address [
-       fhir:Address.use [ fhir:value "home" ];
-       fhir:Address.type [ fhir:value "both" ];
-       fhir:Address.text [ fhir:value "3401 Civic Center Blvd., Philadelphia, PA 19104" ];
-       fhir:Address.line [
-         fhir:value "3401 Civic Center Blvd.";
-         fhir:index 0
-       ];
-       fhir:Address.city [ fhir:value "Philadelphia" ];
-       fhir:Address.state [ fhir:value "PA" ];
-       fhir:Address.postalCode [ fhir:value "19104" ]
-     ];
-     fhir:Patient.contact.gender [ fhir:value "female" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/patient-example-3.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] [
+       fhir:url [ fhir:v "text"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Not Hispanic or Latino" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "John Samuel Smith" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Jone" ] [ fhir:v "Samuel" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(555) 555-5555" ] ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "both" ] ;
+     fhir:text [ fhir:v "3401 Civic Center Blvd., Philadelphia, PA 19104" ] ;
+     fhir:line ( [ fhir:v "3401 Civic Center Blvd." ] ) ;
+     fhir:city [ fhir:v "Philadelphia" ] ;
+     fhir:state [ fhir:v "PA" ] ;
+     fhir:postalCode [ fhir:v "19104" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C" ] ;
+         fhir:display [ fhir:v "Emergency Contact" ]
+       ] ) ;
+       fhir:text [ fhir:v "Spouse" ]
+     ] ) ;
+     fhir:name [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:text [ fhir:v "Jane Samantha Smith" ] ;
+       fhir:family [ fhir:v "Smith" ] ;
+       fhir:given ( [ fhir:v "Jane" ] [ fhir:v "Samantha" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "(555) 555-5555" ] ;
+       fhir:use [ fhir:v "home" ] ;
+       fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:address [
+       fhir:use [ fhir:v "home" ] ;
+       fhir:type [ fhir:v "both" ] ;
+       fhir:text [ fhir:v "3401 Civic Center Blvd., Philadelphia, PA 19104" ] ;
+       fhir:line ( [ fhir:v "3401 Civic Center Blvd." ] ) ;
+       fhir:city [ fhir:v "Philadelphia" ] ;
+       fhir:state [ fhir:v "PA" ] ;
+       fhir:postalCode [ fhir:v "19104" ]
+     ] ;
+     fhir:gender [ fhir:v "female" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

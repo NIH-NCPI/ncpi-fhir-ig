@@ -3,14 +3,14 @@
   "id" : "example-study-data-dictionary-dataset-codesystem-1",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">demographics<a name=\"example-study-data-dictionary-dataset-codesystem-1-demographics\"> </a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-dataset-codesystem-1",
   "version" : "0.2.0",
   "name" : "ExampleStudyDataDictionaryStudyDatasetCS1",
   "title" : "Dataset CodeSystem (lists all tables)",
   "status" : "active",
-  "date" : "2022-12-09T17:30:30+00:00",
+  "date" : "2023-09-15T20:59:49+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",

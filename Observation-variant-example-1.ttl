@@ -1,223 +1,197 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/variant-example-1> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "variant-example-1"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"variant-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;variant-example-1&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genetic variant assessment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69548-6)</span></p><p><b>value</b>: Present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA9633-4)</span></p><p><b>method</b>: Sequencing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA26398-0)</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1: Specimen</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Gene studied ID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></p><p><b>value</b>: HGNC:6518 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (gene#LBR)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Cytogenetic (chromosome) location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48001-2)</span></p><p><b>value</b>: Chr1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (loinc-answers#LA21254-0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Variant exact start and end <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tbd-codes.html\">ToBeDeterminedCodes ('TbdCodes')</a>#exact-start-end)</span></p><p><b>value</b>: 225592153-?</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic ref allele [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69547-8)</span></p><p><b>value</b>: T</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic alt allele [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69551-0)</span></p><p><b>value</b>: C</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Allelic state <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#53034-5)</span></p><p><b>value</b>: Heterozygous <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6706-1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Human reference sequence assembly version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#62374-4)</span></p><p><b>value</b>: GRCh37 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA14029-5)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Transcript reference sequence [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#51958-7)</span></p><p><b>value</b>: NM_002296.3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-refSeq.html\">Gene Reference Sequence Collection</a>#NM_002296.3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DNA change (c.HGVS) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48004-6)</span></p><p><b>value</b>: c.1640A&gt;G <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-hgvs.html\">Human Genome Variation Society nomenclature</a>#c.1640A&gt;G)</span></p></blockquote></div>"
-  ]; # 
-  fhir:Observation.status [ fhir:value "final"]; # 
-  fhir:Observation.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
-       fhir:Coding.code [ fhir:value "laboratory" ]
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/variant-example-1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "variant-example-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"variant-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;variant-example-1&quot; </p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Genetic variant assessment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69548-6)</span></p><p><b>value</b>: Present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA9633-4)</span></p><p><b>method</b>: Sequencing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA26398-0)</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen-example-1.html\">Specimen/specimen-example-1: Specimen</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Gene studied ID <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48018-6)</span></p><p><b>value</b>: HGNC:6518 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (gene#LBR)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Cytogenetic (chromosome) location <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48001-2)</span></p><p><b>value</b>: Chr1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (loinc-answers#LA21254-0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Variant exact start and end <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-tbd-codes.html\">ToBeDeterminedCodes ('TbdCodes')</a>#exact-start-end)</span></p><p><b>value</b>: 225592153-?</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic ref allele [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69547-8)</span></p><p><b>value</b>: T</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Genomic alt allele [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#69551-0)</span></p><p><b>value</b>: C</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Allelic state <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#53034-5)</span></p><p><b>value</b>: Heterozygous <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA6706-1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Human reference sequence assembly version <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#62374-4)</span></p><p><b>value</b>: GRCh37 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA14029-5)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Transcript reference sequence [ID] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#51958-7)</span></p><p><b>value</b>: NM_002296.3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-refSeq.html\">Gene Reference Sequence Collection</a>#NM_002296.3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: DNA change (c.HGVS) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#48004-6)</span></p><p><b>value</b>: c.1640A&gt;G <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-hgvs.html\">Human Genome Variation Society nomenclature</a>#c.1640A&gt;G)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:69548-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "69548-6" ] ;
+       fhir:display [ fhir:v "Genetic variant assessment" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a loinc:LA9633-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LA9633-4" ] ;
+       fhir:display [ fhir:v "Present" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a loinc:LA26398-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LA26398-0" ] ;
+       fhir:display [ fhir:v "Sequencing" ]
+     ] )
+  ] ; # 
+  fhir:specimen [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1> ;
+     fhir:reference [ fhir:v "Specimen/specimen-example-1" ] ;
+     fhir:display [ fhir:v "Specimen" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48018-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48018-6" ] ;
+         fhir:display [ fhir:v "Gene studied ID" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.ncbi.nlm.nih.gov/gene"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LBR" ] ;
+         fhir:display [ fhir:v "HGNC:6518" ]
+       ] )
      ]
-  ]; # 
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:69548-6;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "69548-6" ];
-       fhir:Coding.display [ fhir:value "Genetic variant assessment" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48001-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48001-2" ] ;
+         fhir:display [ fhir:v "Cytogenetic (chromosome) location" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA21254-0" ] ;
+         fhir:display [ fhir:v "Chr1" ]
+       ] ) ;
+       fhir:text [ fhir:v "Chr1" ]
      ]
-  ]; # 
-  fhir:Observation.valueCodeableConcept [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:LA9633-4;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "LA9633-4" ];
-       fhir:Coding.display [ fhir:value "Present" ]
-     ]
-  ]; # 
-  fhir:Observation.method [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:LA26398-0;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "LA26398-0" ];
-       fhir:Coding.display [ fhir:value "Sequencing" ]
-     ]
-  ]; # 
-  fhir:Observation.specimen [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/specimen-example-1>;
-     fhir:Reference.reference [ fhir:value "Specimen/specimen-example-1" ];
-     fhir:Reference.display [ fhir:value "Specimen" ]
-  ]; # 
-  fhir:Observation.component [
-     fhir:index 0;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:48018-6;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "48018-6" ];
-         fhir:Coding.display [ fhir:value "Gene studied ID" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/gene" ];
-         fhir:Coding.code [ fhir:value "LBR" ];
-         fhir:Coding.display [ fhir:value "HGNC:6518" ]
-       ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:48001-2;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "48001-2" ];
-         fhir:Coding.display [ fhir:value "Cytogenetic (chromosome) location" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://fhir.ncpi-project-forge.io/ValueSet/loinc-answers" ];
-         fhir:Coding.code [ fhir:value "LA21254-0" ];
-         fhir:Coding.display [ fhir:value "Chr1" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "Chr1" ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes" ];
-         fhir:Coding.code [ fhir:value "exact-start-end" ];
-         fhir:Coding.display [ fhir:value "Variant exact start and end" ]
-       ]
-     ];
-     fhir:Observation.component.valueRange [
-       fhir:Range.low [
-         fhir:Quantity.value [ fhir:value "225592153"^^xsd:decimal ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "exact-start-end" ] ;
+         fhir:display [ fhir:v "Variant exact start and end" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Range ;
+       fhir:low [
+         fhir:value [ fhir:v "225592153"^^xsd:decimal ]
        ]
      ]
-  ], [
-     fhir:index 3;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:69547-8;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "69547-8" ];
-         fhir:Coding.display [ fhir:value "Genomic ref allele [ID]" ]
-       ]
-     ];
-     fhir:Observation.component.valueString [ fhir:value "T" ]
-  ], [
-     fhir:index 4;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:69551-0;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "69551-0" ];
-         fhir:Coding.display [ fhir:value "Genomic alt allele [ID]" ]
-       ]
-     ];
-     fhir:Observation.component.valueString [ fhir:value "C" ]
-  ], [
-     fhir:index 5;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:53034-5;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "53034-5" ];
-         fhir:Coding.display [ fhir:value "Allelic state" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:LA6706-1;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "LA6706-1" ];
-         fhir:Coding.display [ fhir:value "Heterozygous" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "Heterozygous" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69547-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69547-8" ] ;
+         fhir:display [ fhir:v "Genomic ref allele [ID]" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "T" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:69551-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "69551-0" ] ;
+         fhir:display [ fhir:v "Genomic alt allele [ID]" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "C" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:53034-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "53034-5" ] ;
+         fhir:display [ fhir:v "Allelic state" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA6706-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA6706-1" ] ;
+         fhir:display [ fhir:v "Heterozygous" ]
+       ] ) ;
+       fhir:text [ fhir:v "Heterozygous" ]
      ]
-  ], [
-     fhir:index 6;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:62374-4;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "62374-4" ];
-         fhir:Coding.display [ fhir:value "Human reference sequence assembly version" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:LA14029-5;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "LA14029-5" ];
-         fhir:Coding.display [ fhir:value "GRCh37" ]
-       ];
-       fhir:CodeableConcept.text [ fhir:value "GRCh37" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:62374-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "62374-4" ] ;
+         fhir:display [ fhir:v "Human reference sequence assembly version" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA14029-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA14029-5" ] ;
+         fhir:display [ fhir:v "GRCh37" ]
+       ] ) ;
+       fhir:text [ fhir:v "GRCh37" ]
      ]
-  ], [
-     fhir:index 7;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:51958-7;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "51958-7" ];
-         fhir:Coding.display [ fhir:value "Transcript reference sequence [ID]" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://www.ncbi.nlm.nih.gov/refseq" ];
-         fhir:Coding.code [ fhir:value "NM_002296.3" ];
-         fhir:Coding.display [ fhir:value "NM_002296.3" ]
-       ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:51958-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "51958-7" ] ;
+         fhir:display [ fhir:v "Transcript reference sequence [ID]" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.ncbi.nlm.nih.gov/refseq"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NM_002296.3" ] ;
+         fhir:display [ fhir:v "NM_002296.3" ]
+       ] )
      ]
-  ], [
-     fhir:index 8;
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:48004-6;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "48004-6" ];
-         fhir:Coding.display [ fhir:value "DNA change (c.HGVS)" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://varnomen.hgvs.org" ];
-         fhir:Coding.code [ fhir:value "c.1640A>G" ];
-         fhir:Coding.display [ fhir:value "c.1640A>G" ]
-       ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48004-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48004-6" ] ;
+         fhir:display [ fhir:v "DNA change (c.HGVS)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varnomen.hgvs.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "c.1640A>G" ] ;
+         fhir:display [ fhir:v "c.1640A>G" ]
+       ] )
      ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Observation/variant-example-1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

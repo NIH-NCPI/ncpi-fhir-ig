@@ -5,40 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-5> a fhir:ObservationDefinition;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-study-data-dictionary-variable-1-5"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable";
-       fhir:index 0;
+<https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-5> a fhir:ObservationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-study-data-dictionary-variable-1-5"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable"^^xsd:anyURI ;
        fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/StructureDefinition/study-data-dictionary-variable>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b><a name=\"example-study-data-dictionary-variable-1-5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ObservationDefinition &quot;example-study-data-dictionary-variable-1-5&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-study-data-dictionary-variable.html\">NCPI Study Data Dictionary Data Variable</a></p></div><p><b>code</b>: Subject's status (Case or Control) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#status)</span></p><p><b>permittedDataType</b>: CodeableConcept</p><p><b>validCodedValueSet</b>: <a href=\"ValueSet-example-study-data-dictionary-case-control-vs-1.html\">ValueSet/example-study-data-dictionary-case-control-vs-1</a> &quot;ExampleStudyDataDictionaryCaseControlVS1&quot;</p></div>"
-  ]; # 
-  fhir:ObservationDefinition.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1" ];
-       fhir:Coding.code [ fhir:value "status" ]
-     ]
-  ]; # 
-  fhir:ObservationDefinition.permittedDataType [
-     fhir:value "CodeableConcept";
-     fhir:index 0
-  ]; # 
-  fhir:ObservationDefinition.validCodedValueSet [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1>;
-     fhir:Reference.reference [ fhir:value "ValueSet/example-study-data-dictionary-case-control-vs-1" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ObservationDefinition</b><a name=\"example-study-data-dictionary-variable-1-5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ObservationDefinition &quot;example-study-data-dictionary-variable-1-5&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-study-data-dictionary-variable.html\">NCPI Study Data Dictionary Data Variable</a></p></div><p><b>code</b>: Subject's status (Case or Control) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-example-study-data-dictionary-datatable-codesystem-1.html\">Datatable CodeSystem (lists all variables)</a>#status)</span></p><p><b>permittedDataType</b>: CodeableConcept</p><p><b>validCodedValueSet</b>: <a href=\"ValueSet-example-study-data-dictionary-case-control-vs-1.html\">ValueSet/example-study-data-dictionary-case-control-vs-1</a> &quot;ExampleStudyDataDictionaryCaseControlVS1&quot;</p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/example-study-data-dictionary-datatable-codesystem-1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "status" ]
+     ] )
+  ] ; # 
+  fhir:permittedDataType ( [ fhir:v "CodeableConcept"] ) ; # 
+  fhir:validCodedValueSet [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/example-study-data-dictionary-case-control-vs-1> ;
+     fhir:reference [ fhir:v "ValueSet/example-study-data-dictionary-case-control-vs-1" ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/ObservationDefinition/example-study-data-dictionary-variable-1-5.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

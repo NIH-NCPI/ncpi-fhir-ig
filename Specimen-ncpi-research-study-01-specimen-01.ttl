@@ -5,31 +5,25 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/ncpi-research-study-01-specimen-01> a fhir:Specimen;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ncpi-research-study-01-specimen-01"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"ncpi-research-study-01-specimen-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;ncpi-research-study-01-specimen-01&quot; </p></div><p><b>status</b>: available</p><p><b>type</b>: Blood Sample <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncit.html\">NCI Thesaurus</a>#C17610)</span></p><p><b>subject</b>: <a href=\"Patient-ncpi-research-study-01-patient-01.html\">Patient/ncpi-research-study-01-patient-01</a></p></div>"
-  ]; # 
-  fhir:Specimen.status [ fhir:value "available"]; # 
-  fhir:Specimen.type [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://purl.obolibrary.org/obo/ncit.owl" ];
-       fhir:Coding.code [ fhir:value "C17610" ];
-       fhir:Coding.display [ fhir:value "Blood Sample" ]
-     ]
-  ]; # 
-  fhir:Specimen.subject [
-     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/ncpi-research-study-01-patient-01>;
-     fhir:Reference.reference [ fhir:value "Patient/ncpi-research-study-01-patient-01" ]
+<https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/ncpi-research-study-01-specimen-01> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ncpi-research-study-01-specimen-01"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"ncpi-research-study-01-specimen-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;ncpi-research-study-01-specimen-01&quot; </p></div><p><b>status</b>: available</p><p><b>type</b>: Blood Sample <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ncit.html\">NCI Thesaurus</a>#C17610)</span></p><p><b>subject</b>: <a href=\"Patient-ncpi-research-study-01-patient-01.html\">Patient/ncpi-research-study-01-patient-01</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "available"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://purl.obolibrary.org/obo/ncit.owl"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C17610" ] ;
+       fhir:display [ fhir:v "Blood Sample" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig/Patient/ncpi-research-study-01-patient-01> ;
+     fhir:reference [ fhir:v "Patient/ncpi-research-study-01-patient-01" ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://nih-ncpi.github.io/ncpi-fhir-ig/Specimen/ncpi-research-study-01-specimen-01.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

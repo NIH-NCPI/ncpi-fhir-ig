@@ -3,14 +3,14 @@
   "id" : "condition-inheritance-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ConditionInheritanceMode.html\"><code>https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ConditionInheritanceMode</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/condition-inheritance-vs",
   "version" : "0.2.0",
   "name" : "ConditionInheritanceModeVS",
   "title" : "Condition Inheritance Pattern",
   "status" : "active",
-  "date" : "2022-12-09T17:30:30+00:00",
+  "date" : "2023-09-15T20:59:49+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
