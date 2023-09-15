@@ -7,7 +7,7 @@ on:
 jobs:
   publish:
     name: 📝 Preview Implementation Guide
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: 👩‍💻 Checkout code
         uses: actions/checkout@v3
@@ -15,7 +15,7 @@ jobs:
       - name: 🛠 Set up OpenJDK
         uses: actions/setup-java@v1
         with:
-          java-version: 8
+          java-version: 17
 
       - name: 🛠 Set up Jekyll
         run: |
@@ -30,7 +30,7 @@ jobs:
 
       - name: 🛠 Install SUSHI and add FSH definitions
         run: |
-          npm install -g fsh-sushi
+          npm install -g fsh-sushi@^2.10.2
           sushi .
 
       - name: ⬆️ Update IG publisher
