@@ -25,6 +25,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get -y install ruby-full build-essential zlib1g-dev
+          sudo gem update --system
           sudo gem install sass-embedded -v 1.63.6
           sudo gem install jekyll bundler
 
