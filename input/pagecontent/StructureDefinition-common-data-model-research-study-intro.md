@@ -1,0 +1,2 @@
+With regard to this Implementation Guide, a research study is a collection of data gathered through a systematic investigation aimed at acquiring insights into healthcare-related topics. A research study can encompass a standalone unit or consists of sub-studies often hosted in public databases, such as dbGaP. The study, or studies, may or may not be integrated into a broader consortia of research studies and is composed of the following elements described [below](StructureDefinition-common-data-model-research-study.html#notes). 
+

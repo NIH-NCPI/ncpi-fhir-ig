@@ -2,7 +2,7 @@ CodeSystem: LoincAnswers
 Id: loinc-answers
 Title: "LOINC Answers"
 Description: "LOINC ANSWERS used by NCPI resources"
-* ^url = "ncpi:loinc-answers"
+* ^url = "https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/loinc-answers"
 * ^status = #draft
 * ^experimental = false
 * ^caseSensitive = true

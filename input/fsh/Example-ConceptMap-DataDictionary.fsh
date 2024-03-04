@@ -24,8 +24,8 @@ The codes used below were chosen purely for example's sake and are in no way an 
 * $loinc#LP35925-4 "Body mass index (BMI)"
 * $umls#C0872128 "case control"
 * $hpo#HP:0010772 "Anomalous pulmonary venous return"
-* $mondo#0017705 "congenital pulmonary venous return anomaly"
-* $mondo#0007130 "congenital total pulmonary venous return anomaly"
+* $mondo#MONDO:0017705 "congenital pulmonary venous return anomaly"
+* $mondo#MONDO:0007130 "congenital total pulmonary venous return anomaly"
 
 Instance: example-study-data-dictionary-conceptmap-1
 InstanceOf: StudyDataDictionaryHarmony

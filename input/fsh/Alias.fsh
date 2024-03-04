@@ -36,6 +36,8 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $refseq = http://www.ncbi.nlm.nih.gov/refseq
 Alias: $varnomen = http://varnomen.hgvs.org
 Alias: $umls = https://uts.nlm.nih.gov/uts/umls
+Alias: $nihcc = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/nih-consent
+Alias: $studydesign = https://dbgap-api.ncbi.nlm.nih.gov/fhir/x1/CodeSystem/ResearchStudy-StudyDesign
 
 // ValueSet
 Alias: $v3-FamilyMember = http://terminology.hl7.org/ValueSet/v3-FamilyMember
@@ -58,6 +60,8 @@ Alias: $hpo = http://purl.obolibrary.org/obo/hp.owl
 Alias: $omim = https://omim.org/
 Alias: $mondo = http://purl.obolibrary.org/obo/mondo.owl
 
+Alias: $mesh = urn:oid:2.16.840.1.113883.6.177
+
 // ValueSet
 Alias: $disease-codes = http://fhir.ncpi-project-forge.io/ValueSet/disease-codes
 Alias: $phenotype-codes = http://fhir.ncpi-project-forge.io/ValueSet/phenotype-codes
@@ -67,4 +71,5 @@ Alias: $condition-interitanc-codes = http://fhir.ncpi-project-forge.io/ValueSet/
 // NCPI Observations
 Alias: $ncpi = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi
 Alias: $ncpi_datatypes = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-data-types
+Alias: $ncpi-study-types = https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem/ncpi-study-types
 Alias: $ucum = http://unitsofmeasure.org

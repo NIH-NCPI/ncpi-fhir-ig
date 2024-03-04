@@ -10,7 +10,8 @@ description: "FHIR Implementation Guide for the NIH Cloud Platform Interoperabil
 status: draft
 license: CC0-1.0
 version: 0.2.0
-fhirVersion: 4.0.1
+#fhirVersion: 4.0.1
+fhirVersion: 4.3.0
 copyrightYear: 2021+
 releaseLabel: ci-build
 publisher:
@@ -52,10 +53,19 @@ menu:
     Childhood Cancer: childhood_cancer.html
     Using "Source" Data: use_case_tabular_data.html
     EHR Data: ehr.html
-  Artifacts: 
-    All Artifacts: artifacts.html
+  Examples:
+    Research Study Examples: example-research-study-baylor-cmg.html
     Metadata Examples: example_study_metadata.html
     Raw Data Examples: example_raw_data.html
+    Example Resources: artifacts.html#example-example-instances
+  Artifacts: 
+    All Artifacts: artifacts.html
+    Profiles: artifacts.html#structures-resource-profiles
+    Code Systems: artifacts.html#terminology-code-systems
+    Value Sets: artifacts.html#terminology-value-sets
+    Extensions: artifacts.html#structures-extension-definitions
+    Data Types: artifacts.html#structures-data-type-profiles
   Support: 
+    FHIR Versions: fhir_version.html
     FHIR Spec: http://hl7.org/fhir/R4/index.html
     Downloads: downloads.html

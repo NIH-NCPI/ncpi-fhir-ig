@@ -11,3 +11,4 @@ Description: "NCI Thesaurus (NCIt) provides reference terminology for many NCI a
 * #C3270 "Neuroblastoma"
 * #C5437 "Extracranial Neuroblastoma"
 * #C84505 "Tetralogy of Fallot"
+* #C142710 "Study Participant"

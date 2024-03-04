@@ -10,7 +10,7 @@ on:
 jobs:
   publish:
     name: Publish Implementation Guide
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         node-version: [10, 12]
@@ -21,7 +21,7 @@ jobs:
       - name: Set up OpenJDK
         uses: actions/setup-java@v1
         with:
-          java-version: 8
+          java-version: 11
 
       - name: Set up Jekyll
         run: |
@@ -36,7 +36,7 @@ jobs:
 
       - name: Install SUSHI and add FSH definitions
         run: |
-          npm install -g fsh-sushi
+          npm install -g fsh-sushi@^2.10.2
           sushi .
 
       - name: Update IG publisher

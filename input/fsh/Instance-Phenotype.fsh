@@ -7,7 +7,8 @@ InstanceOf: Phenotype
 Usage: #example
 Description: "Example of the representation of observed Phenotype."
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
-* code = $hpo#HP:0000076 "Vesicoureteral reflux"
+* code.coding[+] = $hpo#HP:0000076 "Vesicoureteral reflux" 
+* code.coding[+] = $ExampleStudyTableCS#phenotype
 * code.text = "Present: Vesicoureteral reflux"
 * subject = Reference(patient-example-1)
 * recordedDate.extension.url = $cqf-relativeDateTime
