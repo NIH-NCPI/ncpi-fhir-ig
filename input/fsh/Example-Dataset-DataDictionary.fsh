@@ -37,6 +37,7 @@ Description: "Example CodeSystem for a data-dictionary table with 4 variables re
 * #age_at_enrollment "Subject's Age at Enrollment in days"
 * #bmi "Subject's BMI, Measured at Enrollment"
 * #status "Subject's status (Case or Control)"
+* #phenotype "An example phenotype observed for study"
 
 ValueSet: ExampleStudyDataDictionaryCaseControlVS1
 Id: example-study-data-dictionary-case-control-vs-1
